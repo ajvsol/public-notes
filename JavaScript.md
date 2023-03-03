@@ -8023,11 +8023,16 @@
 					- https://hackr.io/tutorials/learn-typescript
 		- Others
 		  collapsed:: true
-			- Coffeescript, Clojure, Dart, Elm, Haxe, ScalaJs, and a whole host more (see this [list](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS))
+			- [Coffeescript](https://coffeescript.org/)
+			- [Clojure](https://clojure.org/)
+			- Dart
+			- [Haxe](https://haxe.org/)
+			- [ScalaJs](https://www.scala-js.org/)
+			- and a whole host more (see this [list](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS))
 			- There's two ends: languages which compile to JS and
 				- On the one hand, you have future proof tools that take modern ECMAScript standards and compile it down to older JavaScript versions with Babel being the most popular one. On the other hand, you have languages that may totally differ from JavaScript which target JavaScript, like Coffeescript, Clojure, Dart, Elm, Haxe, ScalaJs, and a whole host more (see this list). These languages, though they might be better than where JavaScript's future might ever lead, run a greater risk of not finding enough adoption for their futures to be guaranteed. You might also have more trouble finding experienced developers for some of these languages, though the ones you will find can often be more enthusiastic. Interop with JavaScript can also be a bit more involved, since they are farther removed from what JavaScript actually is.
 				- TypeScript sits in between these two extremes, thus balancing the risk. TypeScript is not a risky choice by any standard. It takes very little effort to get used to if you are familiar with JavaScript, since it is not a completely different language, has excellent JavaScript interoperability support and it has seen a lot of adoption recently.
-			- Elm (Rust-like)
+			- [Elm](https://elm-lang.org/) (Rust-like)
 	- _Frameworks and Libraries_
 	  id:: 63baa386-e89b-4c6f-9dad-19586353252f
 		- Frontend

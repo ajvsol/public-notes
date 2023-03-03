@@ -242,7 +242,7 @@
 				- [Coin Change](https://leetcode.com/problems/coin-change)
 				- [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum)
 				- [Unique Paths](https://leetcode.com/problems/unique-paths)
-	- Blind 75
+	- [Blind 75](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 	  id:: 64bcadf7-2fb0-4d59-89a7-7b565d18560b
 	  collapsed:: true
 		- [Best practice questions by the author of Blind 75 | Tech Interview Handbook](https://www.techinterviewhandbook.org/best-practice-questions/)
@@ -600,4 +600,3 @@
 		- Math
 		- Others
 	- [Study cheatsheet from Grind 75 site](https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/)
-		-
