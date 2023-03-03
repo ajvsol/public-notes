@@ -9244,7 +9244,7 @@
 					- Related: CSS-in-[CSS](((629ccb26-0f8b-4a06-a8bb-6e57ecbfc824)))
 			- Others
 				- [Ember](https://emberjs.com/)
-				- jQuery
+				- [jQuery](https://jquery.com/)
 				  collapsed:: true
 					- Heavy?
 				- Asynchronous JavaScript (AJAX)
@@ -10255,7 +10255,7 @@
 				- [Learning Resources]
 					- [You don't need Node to use NPM packages - YouTube](https://youtu.be/cv7ci6GT5Hg)
 					-
-			- Bun
+			- [Bun](https://bun.sh/)
 			- _JavaScript CMS_
 			  id:: 629ccb26-512b-4462-9cb0-4527492e6ddb
 			  collapsed:: true
@@ -10298,9 +10298,8 @@
 				  collapsed:: true
 					- Strapi is the most advanced Node.js open-source Content Management Framework to build powerful API with no effort.
 			- Npm microservices
-			- Polymer
+			- [Polymer](https://www.polymer-project.org/)
 			  collapsed:: true
-				- https://www.polymer-project.org/
 		- Libraries
 		  collapsed:: true
 			- [Block Protocol](https://blockprotocol.org/)
