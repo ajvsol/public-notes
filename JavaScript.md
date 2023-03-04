@@ -644,6 +644,9 @@
 									  collapsed:: true
 										- `index`: An integer greater than or equal to `0` and less than the `length` of the string. If `index` is not a number, it defaults to `0`.
 										- Return value = A number representing the UTF-16 code unit value of the character at the given `index`. If `index` is out of range, `charCodeAt()` returns [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+								- Meta
+									- If just checking for letters, you can use greater or less than operators instead
+										- e.g. `if (character > "m")` to check for letters that start with `n` or after
 								- Examples
 									- ((63736445-7ccf-467e-a7ca-877a38cfd6a5))
 										- {{embed ((63736445-7ccf-467e-a7ca-877a38cfd6a5))}}
@@ -976,18 +979,10 @@
 							- [`RegExp.prototype.unicode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/unicode)
 						- Methods
 						  id:: 63470fd1-c9a9-4a92-a92a-7c9fafdac157
-							- [*Overview*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-								- ((63470fd1-44ff-442e-89fc-2acc67948977)) - Executes a search for a match in a string. It returns an array of information or  `null`  on a mismatch.
-								- ((85fecdc2-4e32-4a5d-a102-51e4adb6069c)) = Tests for a match in a string. It returns  `true`  or  `false` .
-								- ((63470fd1-6951-493e-9e6b-6151b68269a1)) = Returns an array containing all of the matches, including capturing groups, or  `null`  if no match is found.
-								- ((63470fd1-76ac-435d-abf4-bca22c9baf5c)) = Returns an iterator containing all of the matches, including capturing groups.
-								- ((63470fd1-89fb-4e50-8ef8-14e05d96a727)) = Tests for a match in a string. It returns the index of the match, or  `-1`  if the search fails.
-								- ((63470fd1-332b-4ebf-965d-7073b319c11b)) = Executes a search for a match in a string, and replaces the matched substring with a replacement substring.
-								- ((63470fd1-78ae-41e3-a0b5-43bf0527755d)) = Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring.
-								- ((63470fd1-8016-47b5-ad4c-dd2015ad5be9)) = Uses a regular expression or a fixed string to break a string into an array of substrings.
 							- [`RegExp.prototype[@@match]()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@match)
 							  id:: 63470fd1-6951-493e-9e6b-6151b68269a1
 							  collapsed:: true
+							  Returns an array containing all of the matches, including capturing groups, or  `null`  if no match is found.
 								- The **`[@@match]()`** method of a regular expression specifies how [`String.prototype.match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match) should behave. In addition, its presence (or absence) can influence whether an object is regarded as a regular expression.
 								- Example
 									- ```javascript
@@ -1004,14 +999,27 @@
 									  console.log('2012-07-02'.match(new RegExp1('([0-9]+)-([0-9]+)-([0-9]+)')));
 									  // expected output: "VALID"
 									  ```
+									- [String ends with?](https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d)
+										- ```javascript
+										  function solution(str, ending){
+										    var l = ending.length;
+										    var str = str.slice(-l);
+										    return str.match(ending) ? true : false;
+										  }
+										  ```
+									- ((6401f353-f6bc-44da-9e8e-6128381908c8))
+										- {{embed ((5ea4d18a-04f9-49d8-8ea9-5343e80b2316))}}
 								- Related: ((63470fd1-76ac-435d-abf4-bca22c9baf5c))
 							- [`RegExp.prototype[@@matchAll]()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@matchAll)
 							  id:: 63470fd1-76ac-435d-abf4-bca22c9baf5c
 							  collapsed:: true
+							  Returns an iterator containing all of the matches, including capturing groups.
 								- Related: ((63470fd1-6951-493e-9e6b-6151b68269a1))
 							- [`RegExp.prototype[@@replace]()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@replace)
 							  id:: 63470fd1-332b-4ebf-965d-7073b319c11b
 							  collapsed:: true
+							  Executes a search for a match in a string, and replaces the matched substring with a replacement substring.
+								- ((63470fd1-78ae-41e3-a0b5-43bf0527755d)) = Executes a search for all matches in a string, and replaces the matched substrings with a replacement substring.
 								- Can replace all given characters in a string with the `g` flag
 								  id:: 63f297c1-a028-4e79-a600-e12e670fbca2
 								- Examples
@@ -1026,20 +1034,21 @@
 										- Can replace all given characters in a string with the `g` flag
 							- [`RegExp.prototype[@@search]()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@search)
 							  id:: 63470fd1-89fb-4e50-8ef8-14e05d96a727
+							  Tests for a match in a string. It returns the index of the match, or  `-1`  if the search fails.
 							- [`RegExp.prototype[@@split]()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/@@split)
 							  id:: 63470fd1-8016-47b5-ad4c-dd2015ad5be9
-							- [`RegExp.prototype.compile()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/compile) (Deprecated)
+							  Uses a regular expression or a fixed string to break a string into an array of substrings.
 							- [`RegExp.prototype.exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
 							  id:: 63470fd1-44ff-442e-89fc-2acc67948977
+							  Executes a search for a match in a string. It returns an array of information or  `null`  on a mismatch.
 							- [`RegExp.prototype.test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
 							  id:: 85fecdc2-4e32-4a5d-a102-51e4adb6069c
 							  collapsed:: true
-								- Executes a search for a match between a  regular expression and a specified string. Returns `true` or  `false`.
+							  Executes a search for a match between a  regular expression and a specified string. Returns `true` or  `false`.
 								- Examples
-									- [Training on String ends with? | Codewars](https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript)
-										- ```javascript
-										  ```
 							- [`RegExp.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toString)
+							  Returns a string representing the regular expression.
+							- (Deprecated) [`RegExp.prototype.compile()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/compile)
 						- [Learning Resources]
 							- RegEx builder
 								- [regex101: build, test, and debug regex](https://regex101.com/)
@@ -1285,8 +1294,9 @@
 							- [`Array.prototype.find()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 							  id:: 63679853-bf0c-44a1-9fba-087790dbcc45
 							  collapsed:: true
-							  Returns the first element which satisfies the provided testing function
+							  ((63fdd9d7-f6c7-4b7b-8eda-521c5d014922))
 								- Returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, [`undefined`](https://devdocs.io/javascript/global_objects/undefined) is returned.
+								  id:: 63fdd9d7-f6c7-4b7b-8eda-521c5d014922
 								- Syntax
 								  collapsed:: true
 									- ```javascript
@@ -1737,7 +1747,9 @@
 							- [`Array.prototype.pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 							  id:: 63679853-27fd-40a4-bd44-b836c61f4394
 							  collapsed:: true
-							  Removes from end of array | Opposite side to ((63679853-dcb7-4c52-a93f-2ba70da4b082)) | Inverse of ((63679853-975f-4456-b131-53731a001078))
+							  ((64024d45-68f1-4b21-8fe3-af5d7a8489a3)) | Opposite side to ((63679853-dcb7-4c52-a93f-2ba70da4b082)) | Inverse of ((63679853-975f-4456-b131-53731a001078))
+								- (Mutable) Removes the last element from an array and returns it
+								  id:: 64024d45-68f1-4b21-8fe3-af5d7a8489a3
 								- Gets the last item of an array
 								  id:: 636a3cca-5dd4-44ff-92a8-8296b6885173
 									- ```javascript
@@ -2457,6 +2469,32 @@
 						- Methods
 							- [`Set.prototype[@@iterator]()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/@@iterator)
 							- [`Set.prototype.add()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add)
+							  id:: 63fdd9d6-f868-4e2f-9946-fd408c683a6e
+							  collapsed:: true
+								- Inserts a new element with a specified value in to a `Set` object, if there isn't an element with the same value already in the `Set`.
+								- Examples
+									- ```js
+									  const set1 = new Set();
+									  
+									  set1.add(42);
+									  set1.add(42);
+									  set1.add(13);
+									  
+									  for (const item of set1) {
+									    console.log(item);
+									    // Expected output: 42
+									    // Expected output: 13
+									  }
+									  ```
+									- ```js
+									  const mySet = new Set();
+									  
+									  mySet.add(1);
+									  mySet.add(5).add("some text"); // chainable
+									  
+									  console.log(mySet);
+									  // Set [1, 5, "some text"]
+									  ```
 							- [`Set.prototype.clear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear)
 							- [`Set.prototype.delete()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete)
 							- [`Set.prototype.entries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/entries)
@@ -3225,7 +3263,9 @@
 					- [`[a, b] = arr`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 
 					  id:: 63679853-46c2-4992-ab73-5c27acc7ce2e
 					  collapsed:: true
-					  AKA array destructuring
+					  AKA array destructuring / destructuring assignment | ((640234da-c807-43bd-a52e-b122082e86d4))
+						- Makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+						  id:: 640234da-c807-43bd-a52e-b122082e86d4
 						- [Destructuring assignment](https://javascript.info/destructuring-assignment#array-destructuring)
 						- Rest property
 						  id:: 636cd42d-7ad8-4aff-8bbc-efd56ec59808
@@ -3237,6 +3277,20 @@
 							  id:: 64010eac-b5f5-404e-851f-6eca86550049
 								- Examples
 									- {{embed ((f0479460-b90a-487a-9ec1-a856476855d5))}}
+						- Examples
+							- ```js
+							  let arr = [1, 2, 3, 4];
+							  let [a, b,,d] = arr;
+							  console.log(b)
+							  // returns: 2
+							  console.log(d)
+							  // returns: 4
+							  ```
+							- ((63fdda25-ba87-476a-a007-24d16ef62e64))
+								- {{embed ((dc1d62b5-0302-4fcf-b0b8-3fa1df96d4fb))}}
+							- ((6402327c-0104-4468-8317-98fcece06095))
+								- {{embed ((640232da-375d-448e-b655-994974cdc230))}}
+						- Related: ((63679853-25dd-4d52-85a8-466697c801b8))
 					- [`{ a, b } = obj`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 					  id:: 63679853-25dd-4d52-85a8-466697c801b8
 					  collapsed:: true
@@ -3252,6 +3306,7 @@
 								  };
 								  ```
 								- Importing
+								  collapsed:: true
 									- You can import them all either in an named object
 									  ```javascript
 									  import bothFunctions from './bootcampers';
@@ -3265,6 +3320,7 @@
 										  ```javascript
 										  import { bootcampers } from './bootcampers';
 										  ```
+						- Related: ((63679853-46c2-4992-ab73-5c27acc7ce2e))
 				- Other operators
 					- [`(condition ? ifTrue : ifFalse)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 					  collapsed:: true
@@ -3274,6 +3330,8 @@
 						- Examples
 							- ((63fd0a42-815d-4882-bde6-68c78297e37c))
 								- {{embed ((63fd0a5c-cfda-4354-8c91-418c07c23978))}}
+							- ((60082e89-1d10-424a-baec-143f315a44ad))
+								- {{embed ((60082e89-1d10-424a-baec-143f315a44ad))}}
 					- [`,`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator)
 					  AKA Comma operators
 			- [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
@@ -3924,7 +3982,7 @@
 							  Returns: false 
 							  4
 								- The right side of && in the expression evaluates to true, so to make the entire expression evaluate to false, you need the left side of && to evaluate to false.
-							- [Ternary Operator](((629ccb26-aed8-440e-92ad-39ed84c0651f)))
+							- ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49))
 							- Ice cream (uses both || and &&)
 							  collapsed:: true
 							  id:: 629ccb26-d63f-4904-8f83-b7efee476837
@@ -4048,7 +4106,7 @@
 									   console.log("N/A");
 									  }
 									  ```
-									- [Ternary Operator](((629ccb26-aed8-440e-92ad-39ed84c0651f)))
+									- ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49))
 					- `||` Logical OR operator
 					  e.g. `value1 || value2`
 					  collapsed:: true
@@ -4138,8 +4196,9 @@
 							- To use the ternary operator, first provide a conditional statement on the left-side of the ?. Then, between the ? and : write the code that would run if the condition is true and on the right-hand side of the : write the code that would run if the condition is false.
 						- Multiple choice template
 						  collapsed:: true
-						  `javascript 
-						  conditional1 ? (if condition1 is true) : conditional2 ? (if condition2 is true) : conditional3 ? (if condition3 is true)`
+						  ```javascript 
+						  conditional1 ? (if condition1 is true) : conditional2 ? (if condition2 is true) : conditional3 ? (if condition3 is true)
+						  ```
 							- Example - Navigating the Food Chain
 							  `javascript
 							   * Use a series of ternary operator to set the category to one of the following:
@@ -4192,6 +4251,7 @@
 								  
 								  console.log("It costs $" + (adult ? "40.00" : "20.00") + " to attend the concert. Pick up your tickets at the " + (preorder ? "will call" : "gate") + ".");
 								  `
+						- Related: ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49))
 					- Switch Statements
 					  collapsed:: true
 					  id:: 629ccb26-b359-481c-9476-3e881f17f95d
@@ -4511,7 +4571,7 @@
 							  `
 								- Explanation
 									- `(x % 3 ? "" : "Julia")`
-										- [Ternary Operator](((629ccb26-aed8-440e-92ad-39ed84c0651f))) for `? "" : "Julia"`
+										- ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49)) for `? "" : "Julia"`
 											- `""` is falsy ([Falsy values (only 6 in total)](((629ccb26-9661-457c-b1b7-6c39cc955e05))))
 											- Given that x is supposed to refer to a number, `x % 3` is truthy if and only if `x % 3 !== 0` is true.
 									- `x++`

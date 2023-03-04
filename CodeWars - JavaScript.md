@@ -83,7 +83,11 @@
 			- ((63470fd1-d1aa-49cd-95ec-4a5a0cf2ef74)) : ((63f298d8-e92e-4e36-bfa2-37818da7cf4d))
 			- ((63470fd1-335a-43ad-be82-547be1c10d07)) : ((63f2995e-3c1d-4961-8d40-38ed8cd83373))
 		- *Array manipulation*
-			- ((63679853-46c2-4992-ab73-5c27acc7ce2e)) : ((64010eac-b5f5-404e-851f-6eca86550049))
+			- ((63679853-bf0c-44a1-9fba-087790dbcc45)) : ((63fdd9d7-f6c7-4b7b-8eda-521c5d014922))
+			- ((63679853-27fd-40a4-bd44-b836c61f4394)) : ((64024d45-68f1-4b21-8fe3-af5d7a8489a3))
+			- ((63679853-46c2-4992-ab73-5c27acc7ce2e)) :
+				- ((64010eac-b5f5-404e-851f-6eca86550049))
+				- ((640234da-c807-43bd-a52e-b122082e86d4))
 			- To empty an array set `arr.length = 0`
 			  id:: 6350374c-0936-4de6-a686-4e1b2329412c
 			- ((d0a968a6-4f22-48e4-ae07-45629e7372db))
@@ -194,124 +198,6 @@
 	- 5 kyu (21 score)
 	  id:: 634bc0c2-116f-4261-95d8-6bf05209b071
 	  collapsed:: true
-		- [Valid Parentheses | Codewars](https://www.codewars.com/kata/52774a314c2333f0a7000688/javascript)
-		  id:: 63cf9164-5abf-48eb-b525-6356c001e05f
-		  collapsed:: true
-			- Best practice
-			  id:: 63f8fe4c-e392-47d9-8aa9-fb166942f2c0
-				- ```javascript
-				  function validParentheses(parens){
-				    var n = 0;
-				    for (var i = 0; i < parens.length; i++) {
-				      if (parens[i] == '(') n++;
-				      if (parens[i] == ')') n--;
-				      if (n < 0) return false;
-				    }
-				    
-				    return n == 0;
-				  }
-				  ```
-		- [Human Readable Time | Codewars](https://www.codewars.com/kata/52685f7382004e774f0001f7/javascript)
-		  id:: 63cf8fab-9e03-4a7f-bb01-6aaa6560f99c
-		  collapsed:: true
-			- Best practice
-				- ```javascript
-				  function humanReadable(seconds) {
-				    var pad = function(x) { 
-				      return (x < 10) ? "0"+x : x; 
-				    }
-				    return pad(parseInt(seconds / (60*60))) + ":" +
-				           pad(parseInt(seconds / 60 % 60)) + ":" +
-				           pad(seconds % 60)
-				  }
-				  ```
-		- [Directions Reduction](https://www.codewars.com/kata/550f22f4d758534c1100025a/javascript)
-		  id:: 63cf8891-e99e-4e5a-9cbe-9dc1e009b37a
-		  collapsed:: true
-			- My solutions
-				- Final solution
-					-
-				- WIP solution
-				  collapsed:: true
-					- ```javascript
-					  export function dirReduc(arr: string[]): string[] { 
-					    let y = 0;
-					    let x = 0;
-					    
-					    arr.map((item) => {
-					      switch (item) {
-					          case 'NORTH': y++; break;
-					          case 'SOUTH': y--; break;
-					          case 'EAST': x++; break;
-					          case 'WEST': x--; break;
-					      }
-					    })
-					    console.log(`arr: `, arr)
-					    console.log(`x:`, x)
-					    console.log(`y:`, y)
-					  
-					    if (x === 0 && y === 0) {
-					      return arr
-					    }
-					    
-					    return arr.filter((item) => {
-					      console.log(`item:`, item)
-					      switch (item) {
-					          case 'NORTH': 
-					            if (y > 0) {
-					              console.log('NORTH')
-					              y--
-					              return item
-					            } else {
-					              break
-					            }
-					          case 'SOUTH': 
-					            if (y < 0) {
-					              console.log('SOUTH')
-					              y++
-					              return item
-					            } else {
-					              break
-					            }
-					          case 'EAST':
-					            if (x > 0) {
-					              console.log('EAST')
-					              x--
-					              return item
-					            } else {
-					              break
-					            }
-					          case 'WEST': 
-					            if (x < 0) {
-					              console.log('WEST')
-					              x++
-					              return item
-					            } else {
-					              break
-					            }
-					    }})
-					  }
-					  ```
-			- Best practice
-			  id:: 9baa8144-5bc0-47ae-ad63-afdd84db3c7d
-				- ```javascript
-				  function dirReduc(plan) {
-				    var opposite = {
-				      'NORTH': 'SOUTH', 
-				      'EAST': 'WEST', 
-				      'SOUTH': 'NORTH', 
-				      'WEST': 'EAST'
-				    };
-				    
-				    return plan.reduce((dirs, dir) => {
-				        if (dirs[dirs.length - 1] === opposite[dir])
-				          dirs.pop();
-				        else
-				          dirs.push(dir);
-				        return dirs;
-				      }, []);
-				  }
-				  ```
 		- [Simple Pig Latin](https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/typescript)
 		  id:: 63a3afae-a986-4d53-acfa-a72c13b9fc86
 		  collapsed:: true
@@ -379,8 +265,161 @@
 				    return arr
 				  }
 				  ```
+		- [Valid Parentheses | Codewars](https://www.codewars.com/kata/52774a314c2333f0a7000688/javascript)
+		  id:: 63cf9164-5abf-48eb-b525-6356c001e05f
+		  collapsed:: true
+			- Best practice
+			  id:: 63f8fe4c-e392-47d9-8aa9-fb166942f2c0
+				- ```javascript
+				  function validParentheses(parens){
+				    var n = 0;
+				    for (var i = 0; i < parens.length; i++) {
+				      if (parens[i] == '(') n++;
+				      if (parens[i] == ')') n--;
+				      if (n < 0) return false;
+				    }
+				    
+				    return n == 0;
+				  }
+				  ```
+		- [Human Readable Time | Codewars](https://www.codewars.com/kata/52685f7382004e774f0001f7/javascript)
+		  id:: 63cf8fab-9e03-4a7f-bb01-6aaa6560f99c
+		  collapsed:: true
+			- Best practice
+				- ```javascript
+				  function humanReadable(seconds) {
+				    var pad = function(x) { 
+				      return (x < 10) ? "0"+x : x; 
+				    }
+				    return pad(parseInt(seconds / (60*60))) + ":" +
+				           pad(parseInt(seconds / 60 % 60)) + ":" +
+				           pad(seconds % 60)
+				  }
+				  ```
+		- [Directions Reduction](https://www.codewars.com/kata/550f22f4d758534c1100025a/javascript)
+		  id:: 63cf8891-e99e-4e5a-9cbe-9dc1e009b37a
+		  collapsed:: true
+			- My solution
+			  collapsed:: true
+				- ```javascript
+				  export function dirReduc(arr: string[]): string[] { 
+				    let y = 0;
+				    let x = 0;
+				    
+				    arr.map((item) => {
+				      switch (item) {
+				          case 'NORTH': y++; break;
+				          case 'SOUTH': y--; break;
+				          case 'EAST': x++; break;
+				          case 'WEST': x--; break;
+				      }
+				    })
+				    console.log(`arr: `, arr)
+				    console.log(`x:`, x)
+				    console.log(`y:`, y)
+				  
+				    if (x === 0 && y === 0) {
+				      return arr
+				    }
+				    
+				    return arr.filter((item) => {
+				      console.log(`item:`, item)
+				      switch (item) {
+				          case 'NORTH': 
+				            if (y > 0) {
+				              console.log('NORTH')
+				              y--
+				              return item
+				            } else {
+				              break
+				            }
+				          case 'SOUTH': 
+				            if (y < 0) {
+				              console.log('SOUTH')
+				              y++
+				              return item
+				            } else {
+				              break
+				            }
+				          case 'EAST':
+				            if (x > 0) {
+				              console.log('EAST')
+				              x--
+				              return item
+				            } else {
+				              break
+				            }
+				          case 'WEST': 
+				            if (x < 0) {
+				              console.log('WEST')
+				              x++
+				              return item
+				            } else {
+				              break
+				            }
+				    }})
+				  }
+				  ```
+			- Best practice
+			  id:: 9baa8144-5bc0-47ae-ad63-afdd84db3c7d
+				- ```javascript
+				  function dirReduc(plan) {
+				    var opposite = {
+				      'NORTH': 'SOUTH', 
+				      'EAST': 'WEST', 
+				      'SOUTH': 'NORTH', 
+				      'WEST': 'EAST'
+				    };
+				    
+				    return plan.reduce((dirs, dir) => {
+				        if (dirs[dirs.length - 1] === opposite[dir])
+				          dirs.pop();
+				        else
+				          dirs.push(dir);
+				        return dirs;
+				      }, []);
+				  }
+				  ```
 	- 6 kyu (8 score)
 	  collapsed:: true
+		- [Equal Sides Of An Array](https://www.codewars.com/kata/5679aa472b8f57fb8c000047/javascript)
+		  collapsed:: true
+			- My solution
+				- ```javascript
+				  function findEvenIndex(arr) {
+				    let left = 0
+				    let total = arr.reduce((a,b) => a+b)
+				    if (total - arr[0] === 0) return 0
+				    
+				    for (let i = 0; i < arr.length; i++) {
+				      left += arr[i]
+				      if ((total - left - arr[i+1]) === left) {
+				          return i+1
+				      }
+				    }
+				    return -1
+				  }
+				  ```
+			- Best practice
+				- ```javascript
+				  function findEvenIndex(arr) {
+				    let left = 0, 
+				    let right = arr.reduce((a,b) => a+b);
+				    
+				    for (let i = 0; i < arr.length; i++) {
+				        if (i > 0) {
+				          left += arr[i-1];
+				        }
+				        right -= arr[i];
+				        
+				        if(left == right) {
+				          return i
+				        }
+				    }
+				    
+				    return -1;
+				  }
+				  ```
 		- [FizzBuzz Backwards](https://www.codewars.com/kata/59ad13d5589d2a1d84000020/javascript)
 		  id:: 63ef9163-b156-414c-ba00-27c352c96685
 		  collapsed:: true
@@ -535,6 +574,7 @@
 						  ```
 		- [N-th Fibonacci](https://www.codewars.com/kata/522551eee9abb932420004a0/javascript)
 		  collapsed:: true
+		  id:: 63fdda25-ba87-476a-a007-24d16ef62e64
 			- My solution
 				- ```javascript
 				  export function nthFibo(n: number): number {
@@ -558,12 +598,15 @@
 				- ```javascript
 				  function nthFibo(n) {
 				    let [prev, curr] = [0, 1];
-				    for (let i = 1; i < n; i++) [prev, curr] = [curr, prev + curr];
+				    for (let i = 1; i < n; i++) {
+				      [prev, curr] = [curr, prev + curr];
+				    }
 				    return prev;
 				  }
 				  ```
 					- Destructuring Assignment
-						- `let [prev, curr] = [0, 1]` is an example of **destructuring assignment**
+					  id:: 63fdda25-a79c-4c89-928b-dc133cc0891d
+						- `let [prev, curr] = [0, 1]` is an example of **destructuring assignment** ( ((63679853-46c2-4992-ab73-5c27acc7ce2e)) )
 						  id:: 63f33581-f747-4705-b965-a7371bc28f77
 							- Declaring two variables, `prev` and `curr`, and initialize them to the values `0` and `1`, respectively
 							- Destructuring assignment is a feature of JavaScript that allows you to unpack values from arrays or objects into separate variables. In this case, the code is using array destructuring to unpack the first two values from the array `[0, 1]` into the variables `prev` and `curr`.
@@ -1391,8 +1434,110 @@
 				    return sum;
 				  }
 				  ```
+	- [Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/javascript)
+	  id:: 6402327c-0104-4468-8317-98fcece06095
+		- My solution
+		  collapsed:: true
+			- ```javascript
+			  function findUniq(arr) {
+			    
+			    let set = new Set();
+			    let nonUniq
+			    
+			    set.add(arr[0]).add(arr[1])
+			    
+			    if (set.size === 1) {
+			      nonUniq = arr[0]
+			      for (let i = 2; i < arr.length; i++) {
+			        if (arr[i] !== nonUniq) {
+			          return arr[i]
+			        }
+			      }
+			    } else {
+			      for (let i = 2; i < arr.length; i++) {
+			        if (arr[i] === arr[0]) {
+			          return arr[1]
+			        } else if (arr[i] === arr[1]) {
+			          return arr[0]
+			        }
+			      }
+			    }
+			  }
+			  ```
+				- ((63fdd9d6-f868-4e2f-9946-fd408c683a6e))
+		- Best practice
+			- ```javascript
+			  function findUniq(arr) {
+			    arr.sort((a,b) => a-b);
+			    return arr[0] == arr[1] ? arr.pop() : arr[0]
+			  }
+			  ```
+			- ```js
+			  function findUniq(arr) {
+			    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
+			  }
+			  ```
+			- id:: 640232da-375d-448e-b655-994974cdc230
+			  ```js
+			  function findUniq(arr) {
+			    let [a,b,c] = arr.slice(0,3);
+			    if (a !== b && a !== c) return a;
+			    for (let x of arr ) {
+			      if (x !== a) return x
+			    }
+			  }
+			  ```
+				- ((63679853-46c2-4992-ab73-5c27acc7ce2e))
 	- 7 kyu (3 score)
 	  collapsed:: true
+		- [Odd or Even?](https://www.codewars.com/kata/5949481f86420f59480000e7/javascript)
+		  collapsed:: true
+			- My solution
+				- ```javascript
+				  function oddOrEven(array) {
+				     let sum=0;
+				     array.forEach(el => sum+=el);
+				     return sum%2===0?'even':'odd'
+				  }
+				  ```
+			- Best practice
+			  id:: 60082e89-1d10-424a-baec-143f315a44ad
+				- ```javascript
+				  function oddOrEven(arr) {
+				    return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
+				  }
+				  ```
+		- [Printer Errors](https://www.codewars.com/kata/56541980fa08ab47a0000040/javascript)
+		  id:: 6401f353-f6bc-44da-9e8e-6128381908c8
+		  collapsed:: true
+			- My solution
+			  id:: 5ea4d18a-04f9-49d8-8ea9-5343e80b2316
+				- ```javascript
+				  function printerError(s) {
+				    const errChar = /[^a-mA-M]/;
+				    
+				    let errors = 0;
+				    for (let char of s) {
+				      if (char.match(errChar)) {
+				        errors++
+				      }
+				    }
+				    return `${errors}/${s.length}`
+				  }
+				  ```
+			- Best practice
+				- ```javascript
+				  function printerError(s) {
+				      // your code
+				      var count = 0;
+				      for(var i = 0; i < s.length; i++) {
+				        if (s[i] > "m") {
+				          count++;
+				        }
+				      }
+				      return count+"/"+s.length;
+				  }
+				  ```
 		- [Categorize New Member](https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa/javascript)
 		  collapsed:: true
 			- My solution
@@ -1495,7 +1640,7 @@
 					- ((63f2965f-e63c-44c2-89f3-ecd6f644632f))
 				- Good example of ternary ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49))
 				  id:: 63fd0a5c-cfda-4354-8c91-418c07c23978
-					- ```javascript
+					- ```js
 					  let bigger = a > b ? a : b;
 					  let smaller = a > b ? b : a;
 					  
