@@ -53,7 +53,13 @@
 					  }
 					  ```
 				- Constants are dropped
-					-
+					- 0(2N) -> O(N) and this makes sense. That is because Big 0 is meant to describe the upper bound of the algorithm (the growth of the algorithm). The constant eventually becomes irrelevant.
+					- Take the following:
+						- N = 1, O(10N) = 10, O(N^2) = 1
+						  N = 5, O(10N) = 50, O(N^2) = 25
+						  N = 100, O(10N) = 1,000, O(N^2) = 10,000 // 10x bigger
+						  N = 1000, O(10N) = 10,000, O(N^2) = 1,000,000 // 100x bigger
+						  N = 10000, O(10N) = 100,000, O(N^2) = 100,000,000 // 1000x bigger
 				- Related: ((6409c272-fb95-49b3-8138-16beba759cda))
 			- ### Arrays Data Structure
 			- ### Arrayss Q&A
