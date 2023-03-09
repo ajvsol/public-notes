@@ -26,6 +26,360 @@
 				- It will be the primary framework on Fuchsia, and that's almost certainly going to replace Android's Linux kernel
 - Documentation
   #A002 `~/Documents/MUSEUM/Programming/Anki1.ods`
+	- Cheatsheet
+	  id:: 635593b2-818d-4d6c-a00c-cfa7f4cd850a
+	  collapsed:: true
+		- JavaScript / TypeScript
+			- **To ingrain**
+			  id:: 6408d44e-1000-4594-ab4b-8e5a18543479
+				- ((64024e3f-d75a-46c3-98e3-e4679ebc4b50)) manipulation
+				  collapsed:: true
+					- ((63484525-06f3-4d0d-a0cc-2c93b0f6be60))
+					- ((63fdd9d7-2555-4f15-8f94-798587be6b3c))
+					- To get last character of a string use either `String[String.length-1]` or `String.slice(-1)`
+					- Inline ternary operator is can be useful for some functions like conditional string concatenation
+					  collapsed:: true
+						- Example: ((63f33e7b-1a4b-413e-b00d-efe1a87c0a8a))
+							- {{embed ((d6066a95-9e02-45c9-8d0c-6a3db80390be))}}
+					- ((63470fd1-1f37-4428-9546-d674c323d5d1)) : ((63baa388-24f2-42ae-913a-d2efcaf9f4bf))
+					  collapsed:: true
+						- Example: ((db967743-4408-46dc-a72c-7a0efcc2f248))
+							- {{embed ((db967743-4408-46dc-a72c-7a0efcc2f248))}}
+					- ((63f33e7c-dd58-4555-93f9-15a02fe35376)) is useful during string concatenation
+					- ((63470fd1-de4c-4705-9fb1-e734bf59cdd7)) : ((63f29925-f6ae-4cd6-96ad-e6c66a96f1cb))
+					- ((63904f3d-d998-45d3-9f94-c97030425ec2)) : ((63f215db-3662-4702-823a-59316716ef34))
+					- ((63470fd1-1f37-4428-9546-d674c323d5d1)) : ((63baa388-24f2-42ae-913a-d2efcaf9f4bf))
+					  id:: 6347b91e-ec78-403e-a18d-de40ff54f345
+					- ((63470fd1-5259-4cdb-a208-b49d213b679b)) : ((63baa388-4fe1-416f-a1b2-6e3755f6aede))
+					  id:: 6347b43d-34fb-4d29-85b1-934bc0212c36
+					- ((63470fd1-332b-4ebf-965d-7073b319c11b)) : ((63f297c1-a028-4e79-a600-e12e670fbca2))
+					- ((6345ae08-f477-4d93-8a9e-e1825a4dbf30)) : ((63baa388-00f3-4cf9-9e71-e74211713820))
+					- ((63470fd1-d1aa-49cd-95ec-4a5a0cf2ef74)) : ((63f298d8-e92e-4e36-bfa2-37818da7cf4d))
+					- ((63470fd1-335a-43ad-be82-547be1c10d07)) : ((63f2995e-3c1d-4961-8d40-38ed8cd83373))
+				- ((64024e3f-2a66-4456-816f-f0b00cfd0c4e)) manipulation
+				  collapsed:: true
+					- ((63679853-bf0c-44a1-9fba-087790dbcc45)) : ((63fdd9d7-f6c7-4b7b-8eda-521c5d014922))
+					- ((63679853-27fd-40a4-bd44-b836c61f4394)) : ((64024d45-68f1-4b21-8fe3-af5d7a8489a3))
+					- ((63679853-46c2-4992-ab73-5c27acc7ce2e)) :
+						- ((64010eac-b5f5-404e-851f-6eca86550049))
+						- ((640234da-c807-43bd-a52e-b122082e86d4))
+					- To empty an array set `arr.length = 0`
+					  id:: 6350374c-0936-4de6-a686-4e1b2329412c
+					- ((d0a968a6-4f22-48e4-ae07-45629e7372db))
+					  id:: 63470fd1-76d3-45ab-89f6-95d278c0dabe
+					- ((634bc0c2-38ee-4fdb-b785-2b19b9d2a6e1))
+					- ((635eb08f-48a4-41e1-9112-9f62670ddec2))
+					- ((63679853-7115-4961-bd6b-0b224f149a11)) is superb for FizzBuzz and other times you need to replace items in an array
+					  collapsed:: true
+						- Example: ((63ef9163-b156-414c-ba00-27c352c96685))
+					- ((63470fd1-ed0f-45f6-9b63-2ee67c3c152f)) : ((63f2aa4d-31c4-4f62-817c-a1bfae893094))
+					- ((6350374d-3846-414b-a27e-7d32b86eec86)) : ((63f239d8-2241-4838-9121-3b0ccc43dee7))
+					- ((63642a10-4e86-4101-961a-8311efb8ae4f)) : ((63f294fd-f0e1-453a-afc4-17a340b58e16))
+					- ((63679853-1c98-454a-8932-e67322c119d9)) : ((63f2952f-86d7-4fdd-aafa-51bf4fa40dfb))
+					- ((63906cf1-ee3b-481e-9b7e-08ad98c55c5d))
+					  collapsed:: true
+						- {{embed ((63906cf1-ee3b-481e-9b7e-08ad98c55c5d))}}
+					- ((63470fd1-5c6c-4c4d-aea0-9d111a003975)) : ((63f2965f-e63c-44c2-89f3-ecd6f644632f))
+					- ((63470fd1-ed0f-45f6-9b63-2ee67c3c152f)) : ((63f2976f-4508-41b5-9d84-47dd345a0990))
+					- ((63f903ec-e5f7-44e5-9bd6-7aa607d0b969))
+				- ((63f33e7c-e71b-4d14-b352-7b9fe2d600b1)) manipulation
+					- ((6377ece4-b9b9-413a-8195-15de9b9c5ec2)) : ((6408bfe1-6ca4-4ba1-8f6a-1d72eb69ffce))
+					- ((6408649f-1747-45ba-95c1-5bf5984a32a6))
+					- ((64084faa-6068-42d4-a193-2263c4b4d039))
+					- ((64024e3f-549b-4656-8bac-049e1eb3580b)) : ((766969c0-49a0-4a07-9b69-02351708da55))
+				- *Type conversion*
+					- ((6351322c-6b12-4902-b961-9ad79f67c9dc))
+					  collapsed:: true
+						- {{embed ((6351322c-6b12-4902-b961-9ad79f67c9dc))}}
+					- ((63513279-b287-4afa-89fd-764214eba393))
+					- ((63470fd1-c937-4cd7-9301-de009d1fb7e0)) : ((63f29878-1bf7-47ea-9b60-6a90394d0c12))
+					- ((638f4569-62ae-4ff5-bcd8-05d9e9794183)) : ((63f90cc1-edf9-4d69-8bf3-2f444910e465))
+					- ((638f490f-1505-4a98-9399-94834d07c5b6)) : ((63f90c9d-a27c-454b-8848-98c6627b7905))
+					- ((63642a10-4e86-4101-961a-8311efb8ae4f)) : ((6400dd4b-2309-4368-a90e-564bc9f5cbb0))
+					- ((507dc5b1-e753-4ada-9eee-5acd64ec1f7d)) : ((6408c102-0f97-4a12-820b-ce707252c952))
+					- ((64024e3f-dbb1-4d5c-9b49-76009df56467)) : ((64024e3f-ab8d-4776-964c-79c44a5c8c1f))
+					- ((63470fd1-de4c-4705-9fb1-e734bf59cdd7)) : ((63f219c9-6008-4f84-beba-7db15dd52f76))
+				- ((64024e3f-184c-440e-b9e6-c2e0abf1a2a3)) manipulation
+					- ((0257c452-a8cc-40b2-b47a-235d81f263ce)) : ((63f90e8f-6ac5-4eff-ad9f-4aa51f3a52a1))
+					- ((63fd16e2-0108-4579-b85a-717d83927648)) is great for getting the sum of a sequence of integers
+				- *Binary and other base manipulation*
+					- ((63470fd1-de4c-4705-9fb1-e734bf59cdd7)) : ((63f219c9-6008-4f84-beba-7db15dd52f76))
+				- *Assorted*
+					- For `if` statements (and more?) curly brackets `{ }` are not actually necessary if the expression is on a single line
+					  collapsed:: true
+						- `if` statements
+							- Examples
+							  collapsed:: true
+								- ((63cf9164-5abf-48eb-b525-6356c001e05f))
+									- {{embed ((63f8fe4c-e392-47d9-8aa9-fb166942f2c0))}}
+								- ((63cf8ec4-f24a-4619-83be-737562d558e6))
+									- {{embed ((63f90938-2ffa-431b-8137-172d6187dc67))}}
+								- ((63cf8c8e-16ef-4c89-8d92-69f6e63c6f47))
+									-
+						- `for` loops
+							- Examples
+							  collapsed:: true
+								- ((63cf8ec4-f24a-4619-83be-737562d558e6))
+									- {{embed ((63f90938-2ffa-431b-8137-172d6187dc67))}}
+					- If a function is supposed to return a boolean, can just use a `return` with an equality operator, instead of a conditional
+					  collapsed:: true
+						- Example: ((63f33e7b-8d10-4739-8c49-2dfefc8d2c1e))
+							- {{embed ((5aee7c7d-c7f5-4201-936b-8e496e51e5dc))}}
+					- It's possible to add new methods to prototypes, allowing their use similar to native methods
+					  collapsed:: true
+						- Examples
+							- `String.prototype.toJadenCase = function () { }` in ((63f66f5b-a9f1-4c41-9489-9e5c904781c0))
+							  collapsed:: true
+								- This line of JavaScript code is adding a new method to the `String` prototype called `toJadenCase`.
+								- `String.prototype` is the prototype object for all string instances in JavaScript. By adding a new method to the `String` prototype, we can use this method on any string object in our code.
+					- ((63e40d8b-b5b5-4124-a386-e28fb962d7e1)) : useful for ((63f33e83-b36c-46b9-b411-2886cc6f9d53))
+					- ((636d5df2-5117-4f9e-8113-83bbb5eff6c1)) : ((63f33e7b-8224-497b-ad76-70ab74cdfa1e))
+					- ((63f33581-f747-4705-b965-a7371bc28f77))
+					- ((63baa388-27f4-48ce-9808-643b128297a7)) : ((63f29ee4-1022-4275-a0ec-1dc01640e128))
+					  id:: 63baa387-43de-492a-be69-95132a6e47b5
+					- ((635593b3-9619-4902-8342-f7649f68f90c)) : ((64024e3f-d5e7-43db-9093-a6a28044ff60))
+					- ((635593b3-9619-4902-8342-f7649f68f90c)) : ((6400db4c-de72-46ec-98f5-c79d918326c6))
+					- ((63f33e7c-e71b-4d14-b352-7b9fe2d600b1)) : ((63f8fedc-7c7f-4902-abd1-b925c86c93ce))
+					  collapsed:: true
+						- {{embed ((63f8fedc-7c7f-4902-abd1-b925c86c93ce))}}
+					- Other
+						- ((6343d976-fbe8-45fe-bc74-1fe1b5309a59)) can be ((63fcf532-1fe3-44e0-8423-d49da84a864e))
+						- `parseInt(n.toString().split('').sort().reverse().join(''))` to sort a number
+						  collapsed:: true
+							- Related: ((6364185a-26c2-4213-9783-0dc15ec30342))
+						- `return dt === 10 && dx === 0 && dy === 0` is a more concise way than writing `if` all of these, return true
+						  collapsed:: true
+							- Related: ((6391b172-3c6f-47b6-9b37-f49aa9a2edf0))
+								- {{embed ((6391b186-4fc6-47cd-a1ad-d06df9799a79))}}
+						- ((63f8fe4d-795b-436e-9fc4-1c0cb402cbda))
+					- Multiple takeaways from one example: ((63d18142-3084-4ee3-af2a-1e3187a3705f))
+						- {{embed ((63f8d6e9-0f6e-4b56-ab8a-04626cbb3244))}}
+				-
+			- {Archive} - *Probably ingrained now*
+			  collapsed:: true
+				- ((63470fd1-b8ce-43b2-ab22-5ba17988fc3e)) : ((63f29a8b-25b6-4d4a-a671-068a6eff4ca9))
+				- ((63470fd1-5ac6-4b0c-a9ee-f54e0c50692f)) : ((63f29a65-5fa1-4742-b615-5b45a1bfac86))
+				- ((63470fd1-ff2c-4b9a-b116-136a41a52b94)) : ((63f29a46-c5f9-4702-9615-3e231e17ffd2))
+				- ((6363f60d-5a9d-48a8-a1d9-996e21bd4858))
+				  id:: 634bc0c2-1dad-4964-ae4a-39d0b670b534
+		- **Unsorted**
+			- Improve these notes
+				- If doing Two Sum algorithm or similar where you loop over an array twice, then have the second loop start from `let j = i + 1` rather than `let j = 0` so that it always is 1 above the previous
+					- [source] [Page not found · GitHub · GitHub](https://github.com/PercaysoRecruitment/pe1-soc-cohort13-ajvsol)
+				- ((629ccb26-3115-4d41-b4db-a686fe51a4a2)) : ((63679852-8d12-4f83-994e-52e0dcbd642f))
+				- ((629ccb26-aed8-440e-92ad-39ed84c0651f))
+				- ((6377ece3-fcd7-4478-bf93-a27d3a9eac32)) : ((64024e3f-d36c-4958-be87-5d90de5e50c5))
+				- ((6377ece3-44b2-4063-961a-dfdb67fa6ac6))
+				- ((63679853-e408-4028-a2c0-eefdd34febd3))
+				- ((63904f3d-b287-478d-9e3a-106f8528a920))
+				- ((638d0621-0b12-4e67-b88a-3ed069b90233))
+				- ((64024e3f-159e-41ab-800d-5a5bf7e98bda))
+				- ((64024e3f-dada-457c-af41-eb8557bcff5c))
+				- ((635eb08f-d0ba-48f3-aeae-1b2d10f55c84)) : ((6408a8c5-f56e-4a9a-86b5-6a1fabc26812))
+			- Stuff to use more often
+				- ((63679853-c651-4513-ae6a-b293b5290bd8))
+				- ((63a9bb68-a490-44d5-a4db-57db695b5146))
+				- ((63470fd1-ff2c-4b9a-b116-136a41a52b94)) : ((64084faa-6068-42d4-a193-2263c4b4d039))
+			- ((636d1397-3729-49ea-bdd0-7f5745334aa8))
+			- ((2e08cf60-c991-45bb-b23d-a34699a9d300))
+			- ((634d55c2-c0e5-4126-b819-8be4151dbd5f)) / ((63642a2b-028e-460f-aed5-9d6bf0113e1e))
+			- ((636d5df2-5117-4f9e-8113-83bbb5eff6c1))
+			- Code snippets
+			  id:: 6341c12f-21ed-489f-bb16-1734abd32b1f
+			  collapsed:: true
+				- By topic
+				  id:: 6343d976-3539-4362-a57f-0b267a7fe4fa
+					- `push()`
+						- Adding an object into an array
+						  collapsed:: true
+							- ```javascript
+							  let importantThings = [];
+							  
+							  function addItem() {
+							      let newItemText = 'test';
+							      let newItemPriority = 1;
+							  
+							      importantThings.push({
+							        text: newItemText, 
+							        priority: newItemPriority
+							      });
+							  }
+							  ```
+					- `removeChild()`
+					  collapsed:: true
+						- How to remove an element without specifying it's parent element
+						  id:: 63430fd1-9771-4a61-9095-091e4cb7c952
+							- ```javascript
+							  let elem = document.getElementById('dummy');
+							  elem.parentNode.removeChild(elem);
+							  ```
+							- Related: [((63430fd1-9771-4a61-9095-091e4cb7c952))](((63431477-5948-4b94-8790-2179c4b7a5fa)))
+						- Removing all `X` elements
+						  id:: 63431477-5948-4b94-8790-2179c4b7a5fa
+							- ```javascript
+							  // basically loop for the number of elements that exist, and then use querySelector to select the first questionCard detected each time on the page, then parentNode.removeChild it
+							  
+							  
+							  for (var i = 0; i < importantThings.length; i++) {
+							    let li = document.querySelector('li');
+							    li.parentNode.removeChild(li);
+							  ```
+							- Related: ((63430fd1-9771-4a61-9095-091e4cb7c952))
+				- By source
+					- Others'
+						- Useful snippets
+						  https://github.com/Chalarangelo/30-seconds-of-code
+					- Coding test answers
+						- [Coding1](https://www.reddit.com/r/javascript/comments/3f7rx5/been_interviewing_with_a_lot_of_tech_startups_as/)
+						  id:: 629ccb26-e681-4b75-8aac-44d41708e661
+						  collapsed:: true
+							- The first few the employer stole from You Can't JavaScript Under Pressure :)
+							- Write a function that takes an integer and returns it doubled
+							  ```javascript
+							  function doubleInteger(i) {
+							      //your code here
+							      
+							  }
+							  ```
+							- Write a function that takes a number and returns true if it's even and false if not
+							  ```javascript
+							  function isNumberEven(i) {
+							      // i will be an integer. Return true if it's even, and false if it isn't.
+							  }
+							  ```
+							- Write a function that returns a file extension
+							  ```javascript
+							  function getFileExtension(i) {
+							      
+							      // i will be a string, but it may not have a file extension.
+							      // return the file extension (with no period) if it has one, otherwise false
+							      
+							  }
+							  ```
+							- What will be printed to the console? Why?
+							  ```javascript
+							  (function() {
+							     var a = b = 5;
+							  })();
+							  console.log(b);
+							  ```
+							- Define a repeatify function on the String object. The function accepts an integer that specifies how many times the string has to be repeated. The function returns the string repeated the number of times specified.
+							- For example:
+							  ```javascript
+							  console.log('hello'.repeatify(3));
+							  //Should print hellohellohello.
+							  ```
+							- What will log out here?
+							  ```javascript
+							  function test() {
+							     console.log(a); 
+							     console.log(foo());
+							      
+							     var a = 1;
+							     function foo() {
+							        return 2;
+							     }
+							  }
+							  test();
+							  ```
+							- What will log out here
+							  var fullname = 'John Doe';
+							  var obj = {
+							     fullname: 'Colin Ihrig',
+							     prop: {
+							        fullname: 'Aurelio De Rosa',
+							        getFullname: function() {
+							           return this.fullname;
+							        }
+							     }
+							  };
+							  
+							  console.log(obj.prop.getFullname()); 
+							   
+							  var test = obj.prop.getFullname; 
+							   
+							  console.log(test());
+							- Fix the previous question’s issue so that the last console.log() prints Aurelio De Rosa.
+							- The following recursive code will cause a stack overflow if the array list is too large. How can you fix this and still retain the recursive pattern?
+							  var list = readHugeList();
+							  
+							  var nextListItem = function() {
+							      var item = list.pop();
+							  
+							      if (item) {
+							          // process the list item...
+							          nextListItem();
+							      }
+							  };
+							- What will alert out here
+							  var a = 'value';
+							  
+							  (function() {
+							    alert(a); 
+							    var a = 'value2';
+							  })();
+							- The following code will output "my name is rex, Woof!" and then "my name is, Woof!" one second later, fix it so prints correctly the second time
+							  var Dog = function (name) {
+							    this.name = name;
+							  };
+							  
+							  Dog.prototype.bark = function () {
+							    console.log('my name is '+ this.name + ', Woof!');
+							  }
+							  
+							  var rex = new Dog('rex');
+							  
+							  rex.bark();
+							  
+							  setTimeout(rex.bark, 1000);
+							- The following code outputs 100, a hundred times, fix it so it outputs every number with a 100ms delay between each
+							  for (var i = 0; i < 100; ++i) {
+							    setTimeout(function() {
+							      console.log(i);
+							    }, 100);
+							  }
+							- The following code is outputting the array but it's filled with every number, we just want the even numbers, what's gone wrong?
+							  var evenNumbers = []
+							  
+							  var findEvenNumbers = function (i) {
+							    if (i % 2 === 0)
+							      console.log(i, 'is an even number, adding to array!');
+							      evenNumbers.push(i);
+							  }
+							  
+							  for (var i = 0; i < 10; i++) {
+							    findEvenNumbers(i);
+							  }
+							  
+							  console.log(evenNumbers);
+							  //outputs:
+							  //0 "is an even number, adding to array!"
+							  //2 "is an even number, adding to array!"
+							  //4 "is an even number, adding to array!"
+							  //6 "is an even number, adding to array!"
+							  //8 "is an even number, adding to array!"
+							  //[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+							- The following is outputting 0, but if 42 = 16 and 22 = 4 then the result should be 12
+							  var square = function (number) {
+							    result = number * number;
+							    return result;
+							  }
+							  
+							  result = square(4);
+							  result2 = square(2);
+							  difference = result - result2;
+							  
+							  console.log(difference);
+							- Write a function that when passed an array of numbers it gives you the max difference between the largest and smallest number ONLY if the small number is in front of the large number, not behind it, so for example: [3,4,8,1] = 5, notice how the biggest difference is between 8 and 1, but because the 1 is after the 8 in the array it shouldn't count, so really the biggest gap is the 3 and the 8.
+							- fizzbuzz (lol)
+							- I was presented with a html element with a border, and asked to animate it left to right full width of browser
+							- I was presented with another html box and asked to centre it both horizontally and vertically
+			- ((63721cd2-b29c-49d6-8cdc-e568df1dff6a))
+			- ((6367b609-cc62-4567-92f9-93038f30fdd4))
+		- ((629ccb26-62cc-426a-9616-4d8969f32580)) : ((6408d4c2-ff21-45ef-af97-e8bd60dbbcfb))
+		- Related:
+			- ((6364c41b-0024-4b36-a6e3-adc75e044ac8))
+			- [[CodeWars - JavaScript]]
 	- Completed learning resources (references)
 		- [MDN References: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 		  id:: 6343d066-e388-4d88-808d-94ce2960681d
@@ -75,21 +429,65 @@
 							- Dot notation vs Bracket notation
 							  id:: 63f8fedc-7c7f-4902-abd1-b925c86c93ce
 							  collapsed:: true
+								- AKA ((64024e3f-e59e-42a6-9fba-1c86518b4b19))
 								- ((63f8d8cf-e3ec-47f7-b296-7e8e026a0d45))
 								- Need to use bracket notation instead of dot notation if using ((6350374d-fdba-4eb4-b17a-f80e5e5a3fcb)) to update an object (adding new key/value pairs or updating the existing) otherwise `element` will be read as a string
+								- To access an object in an array whose name is defined by a var
+									- ```js
+									  sentPacks[i][packSizes[i]]
+									  ```
 								- Related:
 									- ((63679853-975f-4456-b131-53731a001078)) : ((63910f56-dc95-4d5c-a222-f623d8081b4e))
 									- [Introducing JavaScript objects - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
+							- ((507dc5b1-e753-4ada-9eee-5acd64ec1f7d)) : ((6408c102-0f97-4a12-820b-ce707252c952))
 						- Properties
 							- [`Object.prototype.constructor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)
-							- Deprecated [`Object.prototype.__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+							- {Archive} ^^Deprecated^^
+							  collapsed:: true
+								- [`Object.prototype.__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
 						- Methods
-							- Deprecated [`Object.prototype.__defineGetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineGetter__)
-							- Deprecated [`Object.prototype.__defineSetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineSetter__)
-							- Deprecated [`Object.prototype.__lookupGetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupGetter__)
-							- Deprecated [`Object.prototype.__lookupSetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupSetter__)
 							- [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+							  collapsed:: true
+							  ((6408c21b-fe9b-4417-b6a1-d9442a257977))
+								- It copies all [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable) [own properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn) from one or more *source objects* to a *target object*. It returns the modified target object.
+								  id:: 6408c21b-fe9b-4417-b6a1-d9442a257977
+								- Meta
+									- #+BEGIN_WARNING
+									  This is a **shallow copy**. Use ((507dc5b1-e753-4ada-9eee-5acd64ec1f7d)) and ((634eb27a-5613-4a08-8634-3fe0a916e99e)) to do a deep copy.
+									  #+END_WARNING
+								- Examples
+									- ```js
+									  const target = { a: 1, b: 2 };
+									  const source = { b: 4, c: 5 };
+									  
+									  const returnedTarget = Object.assign(target, source);
+									  
+									  console.log(target);
+									  // Expected output: Object { a: 1, b: 4, c: 5 }
+									  
+									  console.log(returnedTarget === target);
+									  // Expected output: true
+									  ```
 							- [`Object.create()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+							  collapsed:: true
+								- It creates a new object, using an existing object as the prototype of the newly created object.
+								- Examples
+									- ```js
+									  const person = {
+									    isHuman: false,
+									    printIntroduction: function() {
+									      console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+									    }
+									  };
+									  
+									  const me = Object.create(person);
+									  
+									  me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+									  me.isHuman = true; // Inherited properties can be overwritten
+									  
+									  me.printIntroduction();
+									  // Expected output: "My name is Matthew. Am I human? true"
+									  ```
 							- [`Object.defineProperties()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties)
 							- [`Object.defineProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 							  id:: 63679853-849e-4274-8f95-b5178cb66a6c
@@ -111,9 +509,10 @@
 									  ```
 									- Limited usecases since it still can be called directly. Better to use environment variables for secrets
 							- [`Object.entries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
-							  collapsed:: true
 							  id:: 6377ece4-3a89-4765-b6d0-8c1620f49c11
-								- It converts key-value pairs to arrays
+							  collapsed:: true
+							  ((6367a177-676f-4518-ad91-4fad0759ab49))
+								- It returns an array of a given object's own enumerable string-keyed property names and values.
 								  id:: 6367a177-676f-4518-ad91-4fad0759ab49
 									- Opposite of ((6367a146-06fc-4e50-b64f-a112da9ad635))
 									- ```javascript
@@ -122,15 +521,41 @@
 									    age: 20
 									  };
 									  console.log(Object.entries(obj));
-									  // expected output: [['name', 'bob'], ['age', 20]]
+									  // expected output: [ ['name', 'bob'], ['age', 20] ]
 									  ```
 								- Related:
 									- ((6377ece4-b9b9-413a-8195-15de9b9c5ec2)) for the keys
 									- ((6377ece4-268b-452d-b61a-2237d410c507)) for the values
+									- ((64024e42-a0ab-4278-9c5b-4cc98409efd8)) for checking non-object data structures
 							- [`Object.freeze()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
-							- [`Object.fromEntries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
+							  id:: 64024e3f-2814-4615-b4f0-a2b49b57e78f
 							  collapsed:: true
-								- It transforms a list of key-value pairs into an object.
+							  ((6408c51c-ad3a-4c43-b4b1-9cd9fee3d51b))
+								- This *freezes* an object
+								  id:: 6408c51c-ad3a-4c43-b4b1-9cd9fee3d51b
+									- Freezing an object [prevents extensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) and makes existing properties non-writable and non-configurable. A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned. `freeze()` returns the same object that was passed in.
+									- Freezing an object is the highest integrity level that JavaScript provides.
+								- Examples
+									- ```js
+									  const obj = {
+									    prop: 42
+									  };
+									  
+									  Object.freeze(obj);
+									  
+									  obj.prop = 33;
+									  // Throws an error in strict mode
+									  
+									  console.log(obj.prop);
+									  // Expected output: 42
+									  ```
+								- Related: ((64024e3f-ac91-4d7c-a821-0002462bb14d))
+							- [`Object.fromEntries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
+							  id:: 64024e3f-dbb1-4d5c-9b49-76009df56467
+							  collapsed:: true
+							  ((64024e3f-ab8d-4776-964c-79c44a5c8c1f))
+								- It transforms a list of key-value pairs (e.g. an array) into an object.
+								  id:: 64024e3f-ab8d-4776-964c-79c44a5c8c1f
 								- Example
 									- ```javascript
 									  const entries = new Map([
@@ -162,8 +587,33 @@
 							- [`Object.getOwnPropertySymbols()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols)
 							- [`Object.getPrototypeOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)
 							- [`Object.hasOwn()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn)
+							  id:: 64024e3f-34f6-4295-8f37-be8258ca0c9e
+							  collapsed:: true
+							  ((640866c5-5fd1-4955-b2c3-4393598adecc))
+								- It returns `true` if the specified object has the indicated property as its *own* property.  If the property is inherited, or does not exist, the method returns `false`.
+								  id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- [`Object.prototype.hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
+							  Replaced by ((64024e3f-34f6-4295-8f37-be8258ca0c9e))
 							- [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
+							  collapsed:: true
+							  ((6408c5ad-72f9-4e3d-b81d-e991970e1fd3))
+								- It determines whether two values are [the same value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is).
+								  id:: 6408c5ad-72f9-4e3d-b81d-e991970e1fd3
+								- Examples
+									- ```js
+									  console.log(Object.is('1', 1));
+									  // Expected output: false
+									  
+									  console.log(Object.is(NaN, NaN));
+									  // Expected output: true
+									  
+									  console.log(Object.is(-0, 0));
+									  // Expected output: false
+									  
+									  const obj = {};
+									  console.log(Object.is(obj, {}));
+									  // Expected output: false
+									  ```
 							- [`Object.isExtensible()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible)
 							- [`Object.isFrozen()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen)
 							- [`Object.prototype.isPrototypeOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf)
@@ -171,7 +621,12 @@
 							- [`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
 							  id:: 6377ece4-b9b9-413a-8195-15de9b9c5ec2
 							  collapsed:: true
+							  ((6408bfe1-6ca4-4ba1-8f6a-1d72eb69ffce))
 								- It returns an array of a given object's own enumerable string-keyed property names.
+								  id:: 6408bfe1-6ca4-4ba1-8f6a-1d72eb69ffce
+								- Meta
+									- `Object.keys(myObj).length` can be used to get an object's length
+									  id:: 6408649f-1747-45ba-95c1-5bf5984a32a6
 								- Example
 									- ```javascript
 									  const object1 = {
@@ -190,14 +645,39 @@
 							- [`Object.preventExtensions()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions)
 							- [`Object.prototype.propertyIsEnumerable()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable)
 							- [`Object.seal()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal)
+							  id:: 64024e3f-ac91-4d7c-a821-0002462bb14d
+							  collapsed:: true
+							  ((6408c777-a52c-47e7-b0fc-f11ed609ce1f))
+								- It *seals* an object, preventing adding new properties but still allowing existing properties to be changed.
+								  id:: 6408c777-a52c-47e7-b0fc-f11ed609ce1f
+									- Sealing an object [prevents extensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) and makes existing properties non-configurable. A sealed object has a fixed set of properties: new properties cannot be added, existing properties cannot be removed, their enumerability and configurability cannot be changed, and its prototype cannot be re-assigned. Values of existing properties can still be changed as long as they are writable. `seal()` returns the same object that was passed in.
+								- Related: ((64024e3f-2814-4615-b4f0-a2b49b57e78f))
 							- [`Object.setPrototypeOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf)
 							- [`Object.prototype.toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)
 							- [`Object.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
+							  id:: 64024e3f-cc84-4091-bb07-e55be6c3abdb
+							  collapsed:: true
+							  ((6408c62a-82f4-428e-929a-3194dc6790f2))
+								- This returns a string representing the object. This method is meant to be overridden by derived objects for custom [type conversion](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#type_coercion) logic.
+								  id:: 6408c62a-82f4-428e-929a-3194dc6790f2
+								- Meta
+									- `Object.prototype.toString.call(arr)` to identify arrays
+									  id:: 64085108-7822-43fd-93e3-9c5e514101f0
+										- ```js
+										  const arr = [1, 2, 3];
+										  
+										  arr.toString(); // "1,2,3"
+										  Object.prototype.toString.call(arr); // "[object Array]"
+										  
+										  ```
+										- Related: ((63470fd1-ff2c-4b9a-b116-136a41a52b94))
 							- [`Object.prototype.valueOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf)
 							- [`Object.values()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
 							  id:: 6377ece4-268b-452d-b61a-2237d410c507
 							  collapsed:: true
+							  ((64024e3f-a154-4ef3-807a-8dd85e3f34dc))
 								- It returns an array of a given object's own enumerable string-keyed property values.
+								  id:: 64024e3f-a154-4ef3-807a-8dd85e3f34dc
 								- Example
 									- ```javascript
 									  const object1 = {
@@ -212,6 +692,12 @@
 								- Related:
 									- ((6377ece4-b9b9-413a-8195-15de9b9c5ec2)) for the keys
 									- ((6377ece4-3a89-4765-b6d0-8c1620f49c11)) for the keys and values
+							- {Archive} ^^Deprecated^^
+							  collapsed:: true
+								- [`Object.prototype.__defineGetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineGetter__)
+								- [`Object.prototype.__defineSetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineSetter__)
+								- [`Object.prototype.__lookupGetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupGetter__)
+								- [`Object.prototype.__lookupSetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupSetter__)
 					- [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 					  collapsed:: true
 						- Properties
@@ -413,6 +899,7 @@
 					- [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
 					- [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 					  collapsed:: true
+					  id:: 64024e3f-184c-440e-b9e6-c2e0abf1a2a3
 						- Properties
 							- [`Math.E`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/E)
 							- [`Math.LN10`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/LN10)
@@ -587,6 +1074,7 @@
 				- Text processing
 					- [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 					  collapsed:: true
+					  id:: 64024e3f-d75a-46c3-98e3-e4679ebc4b50
 						- Documentation
 							- String methods cheatsheet
 							  id:: 63484525-06f3-4d0d-a0cc-2c93b0f6be60
@@ -1084,6 +1572,7 @@
 				- Indexed Collections
 					- [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 					  collapsed:: true
+					  id:: 64024e3f-2a66-4456-816f-f0b00cfd0c4e
 						- Properties
 							- [`get Array[@@species]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@species)
 							- [`Array.prototype[@@unscopables]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@unscopables)
@@ -1592,6 +2081,8 @@
 									- ((63679853-9c2f-4df7-859c-e2278dbebdb7))
 									- ((63470fd1-d1aa-49cd-95ec-4a5a0cf2ef74))
 							- [`Array.isArray()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+							  id:: 64024e3f-ad1c-4953-807a-ebedd4878008
+								- Related: ((63470fd1-ff2c-4b9a-b116-136a41a52b94)) : ((64084faa-6068-42d4-a193-2263c4b4d039))
 							- [`Array.prototype.join()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 							  id:: 635eb08f-cba9-45d7-a72b-d207d55081db
 							  collapsed:: true
@@ -2124,7 +2615,9 @@
 										  ```
 											- Note: have to use a ((63642aac-c79a-4855-9c12-fae94a472481)) because otherwise it'll go `0, 1, 10, 2`
 									- Sort an array of objects
+									  collapsed:: true
 										- Sorting an array of objects of people allowed to get into a nightclub
+										  collapsed:: true
 											- ```javascript
 											  const allowedGuests = [];
 											  	const sortedArray = [];
@@ -2146,6 +2639,7 @@
 											  ```
 												- ((635eb08f-9a44-4545-88c0-b7064e94f590))
 										- Sort array of objects - Hogwarts potions
+										  collapsed:: true
 											- ```javascript
 											  // Using the .sort() method and the shelf property of each potions object, rearrange the four potions in the 'potions' array so they are in DESCENDING order of their shelves, with the 'draught of living death' at index 0 and the 'pepperup potion' at index 3.
 											  const potions = [
@@ -2299,16 +2793,21 @@
 					- [`Float64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array)
 				- Keyed collections
 					- [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
-					  collapsed:: true
 					  id:: 6377ece3-fcd7-4478-bf93-a27d3a9eac32
-						- This object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)) may be used as either a key or a value.
+					  collapsed:: true
+					  ((64024e3f-d36c-4958-be87-5d90de5e50c5))
+						- This object holds key-value pairs, accepts no duplicate **keys** and remembers the original insertion order of the keys. Any value (both objects and [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)) may be used as either a key or a value.
+						  id:: 64024e3f-d36c-4958-be87-5d90de5e50c5
 						- Properties
 							- [`get Map[@@species]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/@@species)
 							- [`Map.prototype.size`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size)
+							  Return the current element count
 						- Methods
 							- [`Map.prototype[@@iterator]()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/@@iterator)
 							- [`Map.prototype.clear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear)
+							  Removes everything from the Map.
 							- [`Map.prototype.delete()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete)
+							  Removes the value, accessed via the key
 							- [`Map.prototype.entries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries)
 							- [`Map.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach)
 							  id:: 63baa387-c3bf-4f09-8aea-264508378625
@@ -2317,10 +2816,13 @@
 							- [`Map.prototype.get()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get)
 							  id:: 63904f3d-6b67-461e-bf92-5f55bc24fa36
 							  collapsed:: true
-								- It returns a specified element from a `Map` object. If the value that is associated to the provided key is an object, then you will get a reference to that object and any change made to that object will effectively modify it inside the `Map` object.
+							  ((64024e3f-b62b-49c4-8673-8455fc16b39c))
+								- It returns a specified element from a `Map` object, accessed via the key.
+								  id:: 64024e3f-b62b-49c4-8673-8455fc16b39c
+									- If the value that is associated to the provided key is an object, then you will get a reference to that object and any change made to that object will effectively modify it inside the `Map` object.
 								- Syntax
 									- ```javascript
-									  get(key)
+									  myMap.get(key)
 									  ```
 									- Parameters
 										- `key` = The key of the element to return from the Map object.
@@ -2349,7 +2851,9 @@
 							- [`Map.prototype.has()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/has)
 							  id:: 63904f3d-96c1-429e-af8b-4a46b1bf89c5
 							  collapsed:: true
+							  ((64024e3f-c4b0-4849-bce2-74663e4e35ba))
 								- It returns a boolean indicating whether an element with the  specified key exists or not.
+								  id:: 64024e3f-c4b0-4849-bce2-74663e4e35ba
 								- Syntax
 									- ```javascript
 									  has(key)
@@ -2380,10 +2884,12 @@
 							- [`Map.prototype.set()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set)
 							  id:: 63904f3d-93d0-4f88-8826-258b6e04558a
 							  collapsed:: true
+							  ((64024e3f-00c8-469b-b07b-29f7a416676a))
 								- It adds or updates an entry in a `Map` object with a specified key and a value.
+								  id:: 64024e3f-00c8-469b-b07b-29f7a416676a
 								- Syntax
 									- ```javascript
-									  set(key, value)
+									  myMap.set(key, value)
 									  ```
 									- Parameters
 										- `key` = The key of the element to add to the Map object. The key may be any [JavaScript type](((63904f3d-07c5-4adc-87cd-6cfc1c5ecdde))) (any primitive value or any type of JavaScript object).
@@ -2413,6 +2919,7 @@
 						- Examples
 							- ```javascript
 							  let mapTest = new Map();
+							  
 							  mapTest.set("name", "keira");
 							  mapTest.set("age", 27);
 							  mapTest.set("city", "london");
@@ -2429,7 +2936,9 @@
 					- [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 					  id:: 635593b3-9619-4902-8342-f7649f68f90c
 					  collapsed:: true
-						- It's an object type that accepts no duplicates (i.e. every character inside is unique)
+					  ((64024e3f-d5e7-43db-9093-a6a28044ff60))
+						- Is an object type that accepts no duplicates (i.e. every character inside is unique). It stores unique values of any type, whether [primitive values](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) or object references. Does not store key-value pairs, unlike an ((63f33e7c-e71b-4d14-b352-7b9fe2d600b1)) or ((635593b3-9619-4902-8342-f7649f68f90c))
+						  id:: 64024e3f-d5e7-43db-9093-a6a28044ff60
 						- Constructor
 							- [`Set() constructor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/Set)
 							  collapsed:: true
@@ -2536,20 +3045,35 @@
 						- Methods
 							- [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
 							  id:: 634eb27a-5613-4a08-8634-3fe0a916e99e
+							  collapsed:: true
+								- It parses a JSON string, constructing the JavaScript value or object described by the string. An optional *reviver* function can be provided to perform a transformation on the resulting object before it is returned.
+								- Examples
+									- ```js
+									  const json = '{"result":true, "count":42}';
+									  const obj = JSON.parse(json);
+									  
+									  console.log(obj.count);
+									  // Expected output: 42
+									  
+									  console.log(obj.result);
+									  // Expected output: true
+									  ```
 							- [`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 							  id:: 507dc5b1-e753-4ada-9eee-5acd64ec1f7d
 							  collapsed:: true
+							  ((6408c102-0f97-4a12-820b-ce707252c952))
+								- It converts a JavaScript value to a JSON string (especially useful for objects). Optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified
+								  id:: 6408c102-0f97-4a12-820b-ce707252c952
+								- Meta
 								- Examples
-									- ```javascript
-									  console.log(JSON.stringify({ x: 5, y: 6 }));
-									  // expected output: "{"x":5,"y":6}"
+									- ```js
 									  ```
-								- Can ensure that JSON file keeps indentation so it remains readable
-								  id:: 63528e53-2831-43a9-8463-6fb0afb8cbf0
-									- ```javascript
-									  stringify(myData, null, 4) // will indent with tabs of 4 size
-									  ```
-									- Related: ((63525cd5-d5e5-4705-835a-88eb5a163206))
+									- Can ensure that JSON file keeps indentation so it remains readable
+									  id:: 63528e53-2831-43a9-8463-6fb0afb8cbf0
+										- ```javascript
+										  stringify(myData, null, 4) // will indent with tabs of 4 size
+										  ```
+										- Related: ((63525cd5-d5e5-4705-835a-88eb5a163206))
 				- Memory management
 					- [`WeakRef`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakRef)
 					- [`FinalizationRegistry`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry)
@@ -2599,6 +3123,10 @@
 					  id:: 63721cd2-b29c-49d6-8cdc-e568df1dff6a
 					- [`continue`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue)
 					- [`if...else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+					  id:: 64024e3f-ef30-4e8e-bc0f-aedb5a95a08c
+						- Related:
+							- ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49))
+							- ((6343d976-fbe8-45fe-bc74-1fe1b5309a59))
 					- [`switch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 					  id:: 6343d976-fbe8-45fe-bc74-1fe1b5309a59
 					  collapsed:: true
@@ -2765,6 +3293,7 @@
 			  collapsed:: true
 				- Primary expressions
 					- [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+					  id:: 64024e3f-159e-41ab-800d-5a5bf7e98bda
 					- [`function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 					- [`class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class)
 					  id:: 6377ece3-63be-4271-b21a-f601ef2cccd1
@@ -2888,6 +3417,7 @@
 					- [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)
 				- Left-hand-side expressions
 					- [Property accessors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors)
+					  id:: 64024e3f-e59e-42a6-9fba-1c86518b4b19
 					- [`?.`(Optional chaining)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 					  id:: 63679853-e408-4028-a2c0-eefdd34febd3
 					  collapsed:: true
@@ -3126,6 +3656,33 @@
 					- [`--A`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement)
 				- Unary operators
 					- [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
+					  id:: 64024e3f-549b-4656-8bac-049e1eb3580b
+						- Examples
+							- Can remove a property from an object (mutating the object)
+							  id:: 766969c0-49a0-4a07-9b69-02351708da55
+							  ```js
+							  delete myObject.regex;
+							  // or,
+							  delete myObject['regex'];
+							  // or,
+							  var prop = "regex";
+							  delete myObject[prop];
+							  ```
+								- [source](https://stackoverflow.com/questions/208105/how-do-i-remove-a-property-from-a-javascript-object)
+								- Immutable alternative is using object destructuring, or perhaps spread operator
+									- Object destructuring version
+									  ```js
+									  const { a, ...rest } = { a: 1, b: 2, c: 3 };
+									  ```
+								- Advanced
+									- How to delete the first property in an object
+									  ```js
+									  delete myObj[Object.keys(myObj)[0]]
+									  ```
+									- How to delete the last property in an object
+									  ```js
+									  delete myObj[Object.keys(myObj)[Object.keys(myObj).length-1]]
+									  ```
 					- [`void`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void)
 					- [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 					  id:: 63470fd1-ff2c-4b9a-b116-136a41a52b94
@@ -3133,10 +3690,14 @@
 					  ((63f29a46-c5f9-4702-9615-3e231e17ffd2))
 						- Can check the data type of a variable
 						  id:: 63f29a46-c5f9-4702-9615-3e231e17ffd2
+						- Meta
+							- Arrays give the type `object`, so to differentiate them from regular objects instead use ((64024e3f-ad1c-4953-807a-ebedd4878008)) or ((64085108-7822-43fd-93e3-9c5e514101f0))
+							  id:: 64084faa-6068-42d4-a193-2263c4b4d039
 						- Example
 						  id:: 63486044-2706-4d24-aa13-8910366bf45b
 							- `typeof unknownVariable` can check the type of `unknownVariable`
 							- ((63485e7f-a73d-4dff-aae6-57fe42e82542))
+							  collapsed:: true
 								- {{embed ((63485e7f-a73d-4dff-aae6-57fe42e82542))}}
 					- [`+`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_plus)
 					- [`-`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Unary_negation)
@@ -3180,6 +3741,7 @@
 					- [`**`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)
 				- Relational operators
 					- [`in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in)
+					  id:: 64024e3f-dada-457c-af41-eb8557bcff5c
 					- [`instanceof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)
 					- [`<`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Less_than)
 					- [`>`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Greater_than)
@@ -3205,6 +3767,52 @@
 						  id:: 63a43279-e0c1-42db-9086-caee87fce24e
 					- [`||`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR)
 					  id:: 635eb08f-d0ba-48f3-aeae-1b2d10f55c84
+					  collapsed:: true
+					  AKA Logical OR / Logical disjunction
+						- For a set of operands is true if and only if one or more of its operands is true. It is typically used with boolean (logical) values. When it is, it returns a Boolean value. However, the ((635eb08f-d0ba-48f3-aeae-1b2d10f55c84)) operator actually returns the value of one of the specified operands, so if this operator is used with non-Boolean values, it will return a non-Boolean value.
+						- Examples
+							- Standard use - is with `boolean` values
+							  ```js
+							  const a = 3;
+							  const b = -2;
+							  
+							  console.log(a > 0 || b > 0);
+							  // Expected output: true
+							  ```
+							- Most concise way of conditionally assigning a variable 
+							  id:: 6408a8c5-f56e-4a9a-86b5-6a1fabc26812
+							  collapsed:: true
+							  ```js
+							  let a = [1, 1, 1]
+							  
+							  a[2] = ++a[2] || 9;
+							  console.log(a)
+							  // Expected output:Array [1, 1, 2]
+							  
+							  a[4] = ++a[4] || 9;
+							  console.log(a);
+							  // Expected output: Array [1, 1, 1, undefined, 9]
+							  ```
+								- Explanation
+									- You only have to state the variable name twice, unlike the other methods which need it 3x
+									- This statement assigns `1` to `sentPacks[packSizes[packSizes.length - 2]]` if its previous value is falsy (i.e., undefined, null, 0, false, or NaN), and then increments its value by 1 using the postfix increment operator. If `sentPacks[packSizes[packSizes.length - 2]]` already has a truthy value, it increments the value by 1 without assigning 1 to it.
+									- Note that the original statement uses a ternary operator to achieve the same result, but the ternary operator isn't necessary in this case because the postfix increment operator already returns the original value of `sentPacks[packSizes[packSizes.length - 2]]` before it is incremented.
+								- ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49)) ternary version
+								  ```js
+								  let a = [1, 1, 1]
+								  
+								  a[2] = a[2] ? ++a[2] : 9
+								  ```
+								- ((64024e3f-ef30-4e8e-bc0f-aedb5a95a08c)) version
+								  ```js
+								  let a = [1, 1, 1]
+								  
+								  if (a[2]) {
+								    ++a[2]
+								  } else {
+								    a[2] = 1
+								  }
+								  ```
 					- [`??`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
 					  id:: 63904f3d-b287-478d-9e3a-106f8528a920
 				- Assignment operators
@@ -3237,6 +3845,23 @@
 					- [`|=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment)
 					- [`&&=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)
 					- [`||=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)
+					  collapsed:: true
+						- The **logical OR assignment (`x ||= y`)** operator only assigns if `x` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
+						- Examples
+							- ```js
+							  const a = { duration: 50, title: '' };
+							  
+							  a.duration ||= 10;
+							  console.log(a.duration);
+							  // Expected output: 50
+							  
+							  a.title ||= 'title is empty.';
+							  console.log(a.title);
+							  // Expected output: "title is empty"
+							  ```
+						- Related: ((635eb08f-d0ba-48f3-aeae-1b2d10f55c84)) : ((6408a8c5-f56e-4a9a-86b5-6a1fabc26812))
+							- Shortest way of checking if a variable is falsy, and if so assigning it
+							  id:: 6408694e-91e6-4452-8891-9f6c75d9e8eb
 					- [`??=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_nullish_assignment)
 					  id:: 63679853-35a3-4095-bffa-b1266212d17b
 					  collapsed:: true
@@ -3332,6 +3957,9 @@
 								- {{embed ((63fd0a5c-cfda-4354-8c91-418c07c23978))}}
 							- ((60082e89-1d10-424a-baec-143f315a44ad))
 								- {{embed ((60082e89-1d10-424a-baec-143f315a44ad))}}
+						- Related:
+							- ((64024e3f-ef30-4e8e-bc0f-aedb5a95a08c))
+							- ((6343d976-fbe8-45fe-bc74-1fe1b5309a59))
 					- [`,`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comma_Operator)
 					  AKA Comma operators
 			- [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
@@ -3422,6 +4050,7 @@
 					-
 				- [Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 				  id:: 63a9bb68-a490-44d5-a4db-57db695b5146
+				  collapsed:: true
 				  AKA Default function parameters
 					- They allow named parameters to be initialized with default values if no value or undefined is passed.
 					- Examples
@@ -3447,6 +4076,25 @@
 				- [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 				  id:: 63679853-b363-45f7-bfaa-0f44b5d29804
 				  collapsed:: true
+				  ((6408c704-578a-4596-8997-e6c27e827648))
+					- It allows a function to accept an indefinite number of arguments as an array, providing a way to represent [variadic functions](https://en.wikipedia.org/wiki/Variadic_function) in JavaScript.
+					  id:: 6408c704-578a-4596-8997-e6c27e827648
+					- Examples
+						- ```js
+						  function sum(...theArgs) {
+						    let total = 0;
+						    for (const arg of theArgs) {
+						      total += arg;
+						    }
+						    return total;
+						  }
+						  
+						  console.log(sum(1, 2, 3));
+						  // Expected output: 6
+						  
+						  console.log(sum(1, 2, 3, 4));
+						  // Expected output: 10
+						  ```
 					- Related:
 						- ((636cd42d-7ad8-4aff-8bbc-efd56ec59808))
 						- ((63642a10-4e86-4101-961a-8311efb8ae4f))
@@ -4221,6 +4869,7 @@
 						- Examples
 							- [Sizing chart](((629ccb26-d441-47f6-bd47-83290746b134)))
 							- eg1: the variable color is being assigned to either "green" or "red" based on the value of isGoing
+							  collapsed:: true
 								- Long way
 								  ```javascript
 								  var isGoing = true;
@@ -4243,7 +4892,6 @@
 								  console.log(color);
 								  ```
 							- eg2
-							  collapsed:: true
 								- code
 								  `javascript
 								  var adult = true;
@@ -6730,17 +7378,23 @@
 			  collapsed:: true
 				- Cons
 					- First free easy exercise I've seen uses Classes not Hooks, so it's at least two years out of date
+		- [[Currently_studying]]
 		- _Intermediate_
 		  id:: 629d5445-b4d5-4e4a-86e1-539ebb4a897b
+			- [Frontend Masters](https://frontendmasters.com)
+			  id:: 640991f2-e312-4f6d-843f-f8b8789c5a98
+			  collapsed:: true
+				- Recommended
+					- [Deep JavaScript Foundations | Frontend Masters | Frontend Masters](https://frontendmasters.com/courses/deep-javascript-v3/)
+					- [Algorithms & Data Structures | Learn Algorithms with TypeScript for Interviews | Frontend Masters](https://frontendmasters.com/courses/algorithms/)
 			- Watch and Code premium course
 			- ((637210b6-f566-4a57-94d5-4b2ecbda71e8))
 			- https://github.com/jwasham/coding-interview-university
-			- [CodeWars](((629ccb26-051d-46ed-910d-bd6d0e0af723)))
+			- ((629ccb26-051d-46ed-910d-bd6d0e0af723))
 			- _Frameworks_
 				- https://www.hntrends.com - tells you what language/frameworks is popular
-				- ((637210b6-f566-4a57-94d5-4b2ecbda71e8))
 				- [React](((629ccb26-62cc-426a-9616-4d8969f32580)))
-			- [TypeScript](((629ccb26-1eab-4686-a7b8-f9433a871440)))
+			- ((629ccb26-1eab-4686-a7b8-f9433a871440))
 			- [freeCodeCamp](((629ccb25-3ea5-4bc3-84fd-050077003522))) backend course
 			- [CSS3: The Missing Manual](((629ccb26-11e7-4183-bc26-3a72de4fcae6)))
 			- Learn what is
@@ -6755,237 +7409,7 @@
 						- https://nomadiq.hashnode.dev/reimagining-front-end-web-development-with-htmx-and-hyperscript
 						-
 					- ((63471096-6708-422f-8f02-088fc7da91a1))
-					- TailwindCSS
 				- ((629ccb26-6ecf-41ff-b479-f404b7eddbe0)) once I reach like 3 kyu in CodeWars
-	- Cheatsheet
-	  id:: 635593b2-818d-4d6c-a00c-cfa7f4cd850a
-	  collapsed:: true
-		- Improve these notes
-			- If doing Two Sum algorithm or similar where you loop over an array twice, then have the second loop start from `let j = i + 1` rather than `let j = 0` so that it always is 1 above the previous
-				- [source] [Page not found · GitHub · GitHub](https://github.com/PercaysoRecruitment/pe1-soc-cohort13-ajvsol)
-			- ((635eb08f-9a44-4545-88c0-b7064e94f590))
-			- ((6350374d-fdba-4eb4-b17a-f80e5e5a3fcb))
-			- ((6347acac-fc18-424a-9d4f-f9e14aba1e30)) - basic OR statement
-			  id:: 6347b381-2ecc-4221-a96f-ff871985fb99
-			- ((63452279-b225-492b-a205-b9d7c6305edf))
-			  collapsed:: true
-				- {{embed ((63452279-b225-492b-a205-b9d7c6305edf))}}
-			- ((629ccb26-3115-4d41-b4db-a686fe51a4a2)) : ((63679852-8d12-4f83-994e-52e0dcbd642f))
-			- ((629ccb26-aed8-440e-92ad-39ed84c0651f))
-			- ((635593b3-9619-4902-8342-f7649f68f90c))
-			- ((6377ece3-fcd7-4478-bf93-a27d3a9eac32))
-			- ((6377ece4-3a89-4765-b6d0-8c1620f49c11))
-			- ((6377ece4-b9b9-413a-8195-15de9b9c5ec2))
-			- ((6377ece4-268b-452d-b61a-2237d410c507))
-			- ((6377ece3-44b2-4063-961a-dfdb67fa6ac6))
-			- ((63679853-e408-4028-a2c0-eefdd34febd3))
-			- ((63904f3d-b287-478d-9e3a-106f8528a920))
-			- ((638d0621-0b12-4e67-b88a-3ed069b90233))
-		- Stuff to use more often
-			- ((63679853-c651-4513-ae6a-b293b5290bd8))
-			- ((63a9bb68-a490-44d5-a4db-57db695b5146))
-		- ((629ccb26-62cc-426a-9616-4d8969f32580)) : ((63949a8e-7fdf-4a7e-ac4f-7197e9eb9dbe))
-			- {{embed ((63949a8e-7fdf-4a7e-ac4f-7197e9eb9dbe))}}
-		- ((63484525-06f3-4d0d-a0cc-2c93b0f6be60))
-		- ((636d1397-3729-49ea-bdd0-7f5745334aa8))
-		- ((2e08cf60-c991-45bb-b23d-a34699a9d300))
-		- ((634d55c2-c0e5-4126-b819-8be4151dbd5f)) / ((63642a2b-028e-460f-aed5-9d6bf0113e1e))
-		- ((636d5df2-5117-4f9e-8113-83bbb5eff6c1))
-		- Code snippets
-		  id:: 6341c12f-21ed-489f-bb16-1734abd32b1f
-		  collapsed:: true
-			- By topic
-			  id:: 6343d976-3539-4362-a57f-0b267a7fe4fa
-				- `push()`
-					- Adding an object into an array
-					  collapsed:: true
-						- ```javascript
-						  let importantThings = [];
-						  
-						  function addItem() {
-						      let newItemText = 'test';
-						      let newItemPriority = 1;
-						  
-						      importantThings.push({
-						        text: newItemText, 
-						        priority: newItemPriority
-						      });
-						  }
-						  ```
-				- `removeChild()`
-				  collapsed:: true
-					- How to remove an element without specifying it's parent element
-					  id:: 63430fd1-9771-4a61-9095-091e4cb7c952
-						- ```javascript
-						  let elem = document.getElementById('dummy');
-						  elem.parentNode.removeChild(elem);
-						  ```
-						- Related: [((63430fd1-9771-4a61-9095-091e4cb7c952))](((63431477-5948-4b94-8790-2179c4b7a5fa)))
-					- Removing all `X` elements
-					  id:: 63431477-5948-4b94-8790-2179c4b7a5fa
-						- ```javascript
-						  // basically loop for the number of elements that exist, and then use querySelector to select the first questionCard detected each time on the page, then parentNode.removeChild it
-						  
-						  
-						  for (var i = 0; i < importantThings.length; i++) {
-						    let li = document.querySelector('li');
-						    li.parentNode.removeChild(li);
-						  ```
-						- Related: ((63430fd1-9771-4a61-9095-091e4cb7c952))
-			- By source
-				- Others'
-					- Useful snippets
-					  https://github.com/Chalarangelo/30-seconds-of-code
-				- Coding test answers
-					- [Coding1](https://www.reddit.com/r/javascript/comments/3f7rx5/been_interviewing_with_a_lot_of_tech_startups_as/)
-					  id:: 629ccb26-e681-4b75-8aac-44d41708e661
-					  collapsed:: true
-						- The first few the employer stole from You Can't JavaScript Under Pressure :)
-						- Write a function that takes an integer and returns it doubled
-						  ```javascript
-						  function doubleInteger(i) {
-						      //your code here
-						      
-						  }
-						  ```
-						- Write a function that takes a number and returns true if it's even and false if not
-						  ```javascript
-						  function isNumberEven(i) {
-						      // i will be an integer. Return true if it's even, and false if it isn't.
-						  }
-						  ```
-						- Write a function that returns a file extension
-						  ```javascript
-						  function getFileExtension(i) {
-						      
-						      // i will be a string, but it may not have a file extension.
-						      // return the file extension (with no period) if it has one, otherwise false
-						      
-						  }
-						  ```
-						- What will be printed to the console? Why?
-						  ```javascript
-						  (function() {
-						     var a = b = 5;
-						  })();
-						  console.log(b);
-						  ```
-						- Define a repeatify function on the String object. The function accepts an integer that specifies how many times the string has to be repeated. The function returns the string repeated the number of times specified.
-						- For example:
-						  ```javascript
-						  console.log('hello'.repeatify(3));
-						  //Should print hellohellohello.
-						  ```
-						- What will log out here?
-						  ```javascript
-						  function test() {
-						     console.log(a); 
-						     console.log(foo());
-						      
-						     var a = 1;
-						     function foo() {
-						        return 2;
-						     }
-						  }
-						  test();
-						  ```
-						- What will log out here
-						  var fullname = 'John Doe';
-						  var obj = {
-						     fullname: 'Colin Ihrig',
-						     prop: {
-						        fullname: 'Aurelio De Rosa',
-						        getFullname: function() {
-						           return this.fullname;
-						        }
-						     }
-						  };
-						  
-						  console.log(obj.prop.getFullname()); 
-						   
-						  var test = obj.prop.getFullname; 
-						   
-						  console.log(test());
-						- Fix the previous question’s issue so that the last console.log() prints Aurelio De Rosa.
-						- The following recursive code will cause a stack overflow if the array list is too large. How can you fix this and still retain the recursive pattern?
-						  var list = readHugeList();
-						  
-						  var nextListItem = function() {
-						      var item = list.pop();
-						  
-						      if (item) {
-						          // process the list item...
-						          nextListItem();
-						      }
-						  };
-						- What will alert out here
-						  var a = 'value';
-						  
-						  (function() {
-						    alert(a); 
-						    var a = 'value2';
-						  })();
-						- The following code will output "my name is rex, Woof!" and then "my name is, Woof!" one second later, fix it so prints correctly the second time
-						  var Dog = function (name) {
-						    this.name = name;
-						  };
-						  
-						  Dog.prototype.bark = function () {
-						    console.log('my name is '+ this.name + ', Woof!');
-						  }
-						  
-						  var rex = new Dog('rex');
-						  
-						  rex.bark();
-						  
-						  setTimeout(rex.bark, 1000);
-						- The following code outputs 100, a hundred times, fix it so it outputs every number with a 100ms delay between each
-						  for (var i = 0; i < 100; ++i) {
-						    setTimeout(function() {
-						      console.log(i);
-						    }, 100);
-						  }
-						- The following code is outputting the array but it's filled with every number, we just want the even numbers, what's gone wrong?
-						  var evenNumbers = []
-						  
-						  var findEvenNumbers = function (i) {
-						    if (i % 2 === 0)
-						      console.log(i, 'is an even number, adding to array!');
-						      evenNumbers.push(i);
-						  }
-						  
-						  for (var i = 0; i < 10; i++) {
-						    findEvenNumbers(i);
-						  }
-						  
-						  console.log(evenNumbers);
-						  //outputs:
-						  //0 "is an even number, adding to array!"
-						  //2 "is an even number, adding to array!"
-						  //4 "is an even number, adding to array!"
-						  //6 "is an even number, adding to array!"
-						  //8 "is an even number, adding to array!"
-						  //[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-						- The following is outputting 0, but if 42 = 16 and 22 = 4 then the result should be 12
-						  var square = function (number) {
-						    result = number * number;
-						    return result;
-						  }
-						  
-						  result = square(4);
-						  result2 = square(2);
-						  difference = result - result2;
-						  
-						  console.log(difference);
-						- Write a function that when passed an array of numbers it gives you the max difference between the largest and smallest number ONLY if the small number is in front of the large number, not behind it, so for example: [3,4,8,1] = 5, notice how the biggest difference is between 8 and 1, but because the 1 is after the 8 in the array it shouldn't count, so really the biggest gap is the 3 and the 8.
-						- fizzbuzz (lol)
-						- I was presented with a html element with a border, and asked to animate it left to right full width of browser
-						- I was presented with another html box and asked to centre it both horizontally and vertically
-		- ((63721cd2-b29c-49d6-8cdc-e568df1dff6a))
-		- ((6367b609-cc62-4567-92f9-93038f30fdd4))
-		- Related:
-			- ((6364c41b-0024-4b36-a6e3-adc75e044ac8))
-			- [[CodeWars - JavaScript]]
 	- Assorted topics
 	  collapsed:: true
 		- 7 Data Types : `number`, `string`, `boolean`, `undefined`, `null`, `object`, `symbol` (ES2015)
@@ -7468,6 +7892,28 @@
 							- Add to parameters
 						- Use `tsc --watch` in a side process to check if your types are passing
 					- Features
+						- Changelog
+							- [5.0 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/)
+							  collapsed:: true
+								- Here’s a quick list of what’s new in TypeScript 5.0!
+									- [Decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#decorators)
+										- complete support for ECMAScript decorators. Decorators are a widely-used feature in JavaScript frameworks and libraries, allowing developers to add functionalities to classes and methods in a declarative and expressive way. With TypeScript 5.0, developers can use decorators in all positions where an expression is allowed, including classes, methods, properties, and function parameters.
+									- [`const` Type Parameters](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#const-type-parameters)
+									- [Supporting Multiple Configuration Files in `extends`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#supporting-multiple-configuration-files-in-extends)
+									- [All `enum`s Are Union `enum`s](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#all-enums-are-union-enums)
+									- [`--moduleResolution bundler`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#moduleresolution-bundler)
+									- [Resolution Customization Flags](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#resolution-customization-flags)
+									- [`--verbatimModuleSyntax`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#verbatimmodulesyntax)
+									- [Support for `export type *`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#support-for-export-type)
+									- [`@satisfies` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#satisfies-support-in-jsdoc)
+									- [`@overload` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#overload-support-in-jsdoc)
+									- [Passing Emit-Specific Flags Under `--build`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#passing-emit-specific-flags-under-build)
+									- [Case-Insensitive Import Sorting in Editors](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#case-insensitive-import-sorting-in-editors)
+									- [Exhaustive `switch`/`case` Completions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#exhaustive-switch-case-completions)
+									- [Speed, Memory, and Package Size Optimizations](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#speed-memory-and-package-size-optimizations)
+									- [Breaking Changes and Deprecations](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#breaking-changes-and-deprecations)
+									- [What’s Next?](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#whats-next)
+									- Optional chaining and nullish coalescing operators, two features that were introduced in [ECMAScript 2020.](https://262.ecma-international.org/11.0/)
 						- It adds extra features not yet available in JavaScript
 						  collapsed:: true
 							- [Currently JavaScript proposals](https://github.com/tc39/proposals)
@@ -7564,6 +8010,7 @@
 					- [Packages to install on new Linux installs](((629ccb26-9519-414a-937d-8b616597d270)))
 					- `tsconfig.json`
 					- Type annotations for parameters
+					  collapsed:: true
 						- Basic parameters
 							- `function ascending (a: number, b: number): number {`
 						- React props? Unsure if I got this correct. Check next-ssg project with Stefan
@@ -7588,6 +8035,7 @@
 								  ```
 					- How to do types for ((636b8509-62c3-4b08-ae56-fcc1e632600c))
 					  id:: 412041b3-482c-4ccf-9ec5-c62c5dca2da8
+					  collapsed:: true
 						- `import { Beer } from "@/types/types";`
 						-
 						- `const [data, setData] = useState<Beer>()`
@@ -8098,1147 +8546,7 @@
 		- Frontend
 		  id:: 63679852-9cb5-4278-b624-6f742ac0088f
 			- Most notable
-				- [React](https://reactjs.org)
-				  id:: 629ccb26-62cc-426a-9616-4d8969f32580
-				  collapsed:: true
-					- Pros/Cons
-					  collapsed:: true
-						- Pros
-							- Much more concise than vanilla JS
-							  collapsed:: true
-								- ![image.png](../assets/image_1667902908435_0.png)
-								- ```javascript
-								  <body>
-								  </body>
-								  ```
-								- ```react
-								  function HelloWorld()
-								  ```
-								- Especially ((636a77ab-b77d-42e3-b10c-663b40a68510))
-							- Superb for indie developers and small businesses who don't have the capacity to support multiple native apps
-							- Synchronous - it will keep your app in sync with changes
-							  collapsed:: true
-								- ![image.png](../assets/image_1667903017024_0.png)
-							- Simplicity - simple to use once you get the hang of it
-							- Modular - reusable components to break down big tasks
-							- Scalable and maintainable - your app can grow and maintain efficiency
-							- Performance - reduces latency
-							- Open-source - it's free to use and you can contribute to it
-							- Widely used and influential
-							- Other frameworks are similar so skills are transferable
-							- It's got similar syntax to vanilla JavaScript
-							- Single Page Applications using vanilla JS have many problems
-								- One testimonial: Menus are constantly broken, back button is a game of roulette, caching is constantly a problem showing stale data, xss and other vulnerabilities are ubiquitous.
-						- Cons
-					- Documentation
-						- Learning resource sorted by priority
-						  id:: 63fe006b-aa93-44ff-84fa-847827628a8a
-							- [A Visual Guide to useEffect | Alex Sidorenko](https://alexsidorenko.com/blog/useeffect/)
-							- Pass week 9 project through ((63f8fe5a-255e-4682-b228-cc2790a41d73)) to get explanations for code I didn't write
-							  id:: 63971ba1-a27d-4380-a456-4c0a8e3486bd
-							  collapsed:: true
-							  `/home/boss/Documents/WORK/Programming/School-of-Code/1DRAFT-REPOS/project-forks/bc13_w9_project-frontend-teamrocket`
-								- Display
-								- DONE Results
-								- DONE Body
-								  :LOGBOOK:
-								  CLOCK: [2022-12-22 Thu 15:29:06]--[2022-12-22 Thu 15:29:07] =>  00:00:01
-								  :END:
-								- DONE MultipleChoiceInput
-								  :LOGBOOK:
-								  CLOCK: [2022-12-22 Thu 15:28:27]--[2022-12-22 Thu 15:28:27] =>  00:00:00
-								  :END:
-								- ((63a47815-76b6-4989-b764-be3950f14c6e))
-							- ((63735841-a8f0-4256-a782-ac0ff9c314f9))
-							- ((6377ecf1-7342-4415-bca4-70688780c97d))
-							- ((6391cf38-8655-4c31-9539-0f62cd7542ba))
-							- ((63fe0044-57d1-45e1-b9d3-f4eea235d205))
-							- ((6390fbe4-a18e-4e43-ab0d-1527337223ee))
-						- Cheatsheet
-						  id:: 63949a8e-7fdf-4a7e-ac4f-7197e9eb9dbe
-							- Using `input` and submit `button` components together with state
-							  id:: 63949a90-ea47-4e98-b427-fa1600cebcb8
-							  collapsed:: true
-								- ```jsx
-								  import React from "react";
-								  import { useState } from "react";
-								  
-								  export function App() {
-								    const [userSearch, setUserSearch] = useState("");
-								    const [text, setText] = useState("andrew");
-								  
-								    // When any text is entered, `userSearch` will always match it
-								    function handleChange(event) {
-								      setUserSearch(event.target.value);
-								    }
-								  
-								    // When the button is clicked, 
-								    function handleClick() {
-								      setText(userSearch);
-								    };
-								  
-								    return (
-								        <div className="App">
-								          <textarea
-								            placeholder="Enter text here"
-								            type="text"
-								            onChange={handleChange}
-								          ></textarea>
-								          <button type="button" onClick={handleClick}>
-								            creep
-								          </button>
-								        </div>
-								    );
-								  }
-								  ```
-							- ((637b4083-78e0-4293-91a8-8047a037ec35)) : ((63a47815-76b6-4989-b764-be3950f14c6e))
-						- SOPs
-						  collapsed:: true
-							- How to setup a React project
-							  id:: 636cbcc0-80d6-4064-b925-0149c2ed7a67
-								- *Either*
-									- 1) Manual setup
-									  id:: 636c117a-e623-445d-8449-613edad2ae94
-									  collapsed:: true
-										- #+BEGIN_WARNING
-										  This method focuses on `index.html`. The alternative method instead has a very minimal `index.html`, and instead splits logic across multiple JS files
-										  #+END_WARNING
-										- `index.html`
-										  id:: 636c0eff-2e69-4df6-9629-3e5322b081ee
-											- #+BEGIN_TIP
-											  Skip to last bullet to see a template for what final HTML page should be like: ((636c1225-2a65-4f32-ae95-e52b6fe3683d))
-											  #+END_TIP
-											- Add two separate script tags at the bottom of the `<head>` element to load React
-												- ```html
-												  <head>
-												    <script
-												    src="https://unpkg.com/react@18/umd/react.development.js"
-												    crossorigin
-												    ></script>
-												    <script
-												    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-												    crossorigin
-												    ></script>
-												  </head>
-												  ```
-											- At the top of the `<body>` element, add a `div` with the id of `root`
-											  id:: 3c3e4623-780a-49c0-bb34-06ff445fdddc
-												- ```html
-												  <div id="root"></div>
-												  ```
-											- Below that root div, add
-											  ```javascript
-											  // Select root element and create root in ReactDOM
-											  const rootElement = document.querySelector('#root');
-											  const root = ReactDOM.createRoot(rootElement);
-											  ```
-											- Add to the bottom of `<script>` element a `root.render()` to render
-												- ```javascript
-												  root.render(Heading)
-												  ```
-												- Render element in the root
-											- Final HTML should be similar to
-											  id:: 636c1225-2a65-4f32-ae95-e52b6fe3683d
-											  collapsed:: true
-												- ```html
-												  <html lang="en">
-												    <head>
-												      <meta charset="UTF-8" />
-												      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-												      <title>Document</title>
-												      <link rel="stylesheet" href="styles/styles.css">
-												      <script
-												        src="https://unpkg.com/react@18/umd/react.development.js"
-												        crossorigin
-												      ></script>
-												      <script
-												        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-												        crossorigin
-												      ></script>
-												    </head>
-												    <body>
-												      <div id="root"></div>
-												      <script>
-												        const rootElement = document.querySelector("#root");
-												        const root = ReactDOM.createRoot(rootElement);
-												  
-												        root.render(element);
-												      </script>
-												    </body>
-												  </html>
-												  ```
-											- {Archive}
-												- [Add React to a Website – React](https://reactjs.org/docs/add-react-to-a-website.html)
-										- ((63692527-206a-4987-83f9-18970d12058a))
-										  collapsed:: true
-											- {{embed ((63692527-206a-4987-83f9-18970d12058a))}}
-									- 2) ((636a77ab-fbaf-4088-8f12-12f334ce25b7))
-									  collapsed:: true
-										- {{embed ((636a77ab-fbaf-4088-8f12-12f334ce25b7))}}
-								- *If using create-react-app*
-									- `npm start` will run a script to launch the React app, which becomes accessible at http://localhost:3000
-							- Main `index.js`
-								- // only need to import these particular modules on this file
-								  ```javascript
-								  import React from "react"; 
-								  import ReactDOM from "react-dom/client";
-								  import App from "./components/App/App";
-								  ```
-						- [Official docs - Beta](https://beta.reactjs.org/learn)
-						  collapsed:: true
-							- Note: Beta docs are better because the older docs are more tailored towards the older way of writing React (class components) rather than new Hooks
-							- Learn
-								- Installation
-									- Methods of getting started
-									  collapsed:: true
-										- 1) Minimal toolchains
-										  collapsed:: true
-											- Cons
-												- Create React App doesn’t handle backend logic or databases. You can use it with any backend. When you build a project, you’ll get a folder with static HTML, CSS and JS. Because Create React App can’t take advantage of the server, it doesn’t provide the best performance. If you’re looking for faster loading times and built-in features like routing and server-side logic, we recommend using a framework instead.
-											- Examples
-												- ((636a77ab-fbaf-4088-8f12-12f334ce25b7))
-												- ((63a048ff-b45a-4636-af0a-339ae76bbf8f))
-										- ((6396fb64-9aeb-4ee3-bf46-849eac2fb748)) : ((6396fb64-f1fa-498a-ac4f-242eed1e3dff))
-										- 3) Custom [toolchains](((63904f3c-e689-458b-a036-672778a7e77c)))
-								- Quick Start
-								- Describing the UI
-									- [Passing Props to a Component](https://beta.reactjs.org/learn/passing-props-to-a-component)
-									  id:: 636cf19d-e2d4-420d-9b86-9b519fbb7dde
-									  collapsed:: true
-										- 1) Pass props to the child component
-											- Example passing on two props to `Avatar`: `person` and `size`
-											  ```javascript
-											  export default function Profile() {
-											    return (
-											      <Avatar
-											        person={{ name: 'Lin Lanying', imageId: '1bX5QH6' }}
-											        size={100}
-											      />
-											    );
-											  }
-											  ```
-										- 2) Read props inside the child component
-											- Can either
-												- Access all props
-												  ```jsx
-												  function Avatar(props) { // this can be named anything, convention is 'props'
-												    let person = props.person;
-												    let size = props.size;
-												    // ...
-												  }
-												  ```
-												- Access specific props via destructuring
-												  ```jsx
-												  function Avatar({ person, size }) {
-												    // person and size are available here
-												    return ( 
-												      <Metadata> 
-												        <h1>{person}</h1> 
-												        <h3>{size}</h3> 
-												      </Metadata>
-												    )
-												  }
-												  ```
-										- Forwarding props with the JSX spread syntax
-										  id:: 636cf37f-b67f-47be-8306-727e28a84ca6
-											- Pros/Cons
-												- Pros
-													- ((636cf3a1-5bf5-42f9-adac-ec4cae939742))
-													  id:: 636cf88c-3b99-4d16-ada7-d4731eff942f
-												- Cons
-													- Should be used sparingly. Instead split up components and ((636cf9a2-abcb-4d8f-a75d-eb5fa0b593c4))
-											- You can use the ((63642a10-4e86-4101-961a-8311efb8ae4f)) to more concisely pass all props to a child component
-											  id:: 636cf3a1-5bf5-42f9-adac-ec4cae939742
-											  ```javascript
-											  // without spread operator
-											  function Profile({ person, size, isSepia, thickBorder }) {
-											    return (
-											      <div className="card">
-											        <Avatar
-											          person={person}
-											          size={size}
-											          isSepia={isSepia}
-											          thickBorder={thickBorder}
-											        />
-											      </div>
-											    );
-											  }
-											  
-											  // with spread operator
-											  function Profile(props) {
-											    return (
-											      <div className="card">
-											        <Avatar {...props} />
-											      </div>
-											    );
-											  }
-											  ```
-										- [Passing JSX as children](https://beta.reactjs.org/learn/passing-props-to-a-component#passing-jsx-as-children)
-										  id:: 636cf9a2-abcb-4d8f-a75d-eb5fa0b593c4
-											-
-								- Adding Interactivity
-								- Managing State
-								- Escape Hatches
-							- API
-						- Hooks
-						  collapsed:: true
-							- [`useState`](https://beta.reactjs.org/apis/react/useState)
-							  id:: 636b8509-62c3-4b08-ae56-fcc1e632600c
-							  collapsed:: true
-								- Pros
-								  collapsed:: true
-									- Local variables don’t persist between renders. When React renders this component a second time, it renders it from scratch—it doesn’t consider any changes to the local variables.
-									- Changes to local variables won’t trigger renders. React doesn’t realize it needs to render the component again with the new data.
-								- Syntax
-									- ```javascript
-									  const [state, setState] = useState(initialState)
-									  ```
-										- `state` = the name of your state
-										- `setState` = the function you'll eventually use to change the value of your state. Convention is to prefix it with `set`
-										- `useState` = the native React Hook
-										  id:: 63fdd9d5-a4ab-4485-b82e-87cff41794d2
-										- `initialState` = the starting value of your state
-										- Note: `[state, setState]` is array destructuring
-										  collapsed:: true
-											- Similar example using custom hooks: ((6390a570-5eb8-473e-9e65-397641b89e76))
-												- {{embed ((6390a570-5eb8-473e-9e65-397641b89e76))}}
-								- How to use
-									- First import it: `import { useState } from 'react';`
-								- Example
-									- *Basic*
-										- Turning on/off a lightbulb
-										  collapsed:: true
-											- ```javascript
-											  const [isLit, setIsLit] = useState(false);
-											  ```
-											  
-											  ```javascript
-											  function turnOn(){ 
-											    setIsLit(true); 
-											  }
-											  function turn0ff(){ 
-											    setIsLit(false); 
-											  }
-											  function toggleLight( ){ 
-											    setIsLit(!isLit); 
-											  }
-											  ```
-										- Squat counter
-										  collapsed:: true
-											- ```jsx
-											  function App() {
-											    const [squatCount, setSquatCount] = useState(0);
-											    
-											    function addSquats() {
-											      setSquatCount(squatCount++);
-											    }
-											  }
-											  ```
-											- ```jsx
-											  <section className="add-squats—buttons">
-											    <button
-											      // note: an arrow function is needed to wrap it because otherwise `onClick=addSquats(1)` on it's own would instead just immediately invoke it
-											      onClick={() => {
-											        addSquats(1)
-											      }}
-											    >Add 1</button>
-											    <button className="reset—button" onClick={resetSquats}>
-											      Reset
-											    </button>
-											  </section>
-											  ```
-									- *Advanced*
-										- ((635fba79-b85e-4821-810a-ce45a268a6ad)) 13 - passing state to every page
-										  id:: 63e7a1ee-722c-443c-bf8e-b8f5393aea0b
-											- Using `pages` directory only
-											  collapsed:: true
-												- `_app.tsx`
-													- ```tsx
-													  export default function App({ Component, pageProps }: AppProps) {
-													    const [isMounted, setIsMounted] = useState("test");
-													  
-													    return (
-													      <Component
-													        {...pageProps}
-													        isMounted={isMounted}
-													        setIsMounted={setIsMounted}
-													      />
-													    );
-													  }
-													  ```
-												- `RandomPage.tsx`
-													- ```tsx
-													  export default function RandomPage({ isMounted, setIsMounted }: any) {
-													    return (<div></div>)
-													  }
-													  ```
-											- Using `app` directory only
-											  collapsed:: true
-												- `layout.tsx`
-													- ```tsx
-													  ```
-												- `RandomPage.tsx`
-													- ```tsx
-													  ```
-											- Using `pages` directory + `StateContextProvider` pattern
-											  id:: 63e79f3b-c770-4212-be0c-3ba1860ea88a
-											  collapsed:: true
-												- `/context/StateContextProvider.tsx`
-												  collapsed:: true
-													- ```tsx
-													  "use client";
-													  /**
-													   * Makes the stored state accessible to all pages easily.
-													   */
-													  import { createContext, useContext, useState } from "react";
-													  
-													  export const StateContext = createContext([] as any);
-													  
-													  // Context provider
-													  export function StateContextProvider({ children }: any) {
-													    const [search, setSearch] = useState("");
-													    const [searchResults, setSearchResults] = useState(exampleData);
-													  
-													    return (
-													      <StateContext.Provider
-													        value={{
-													          search,
-													          setSearch,
-													          searchResults,
-													          setSearchResults,
-													        }}
-													      >
-													        {children}
-													      </StateContext.Provider>
-													    );
-													  }
-													  
-													  // Custom hook
-													  export function useStateContext() {
-													    return useContext(StateContext);
-													  }
-													  ```
-												- `_app.tsx`
-													- ```tsx
-													  export default function MyApp({ Component, pageProps }: AppProps<{}>) {
-													    return (
-													      <StateContextProvider>
-													        <Component {...pageProps} />
-													      </StateContextProvider>
-													    );
-													  }
-													  ```
-												- `RandomPage.tsx`
-													- ```tsx
-													  // Useful library for behavioural components
-													  import { useStateContext } from "../context/StateContextProvider";
-													  
-													  export default function MyModal() {
-													    const {
-													      searchResults,
-													      setSearchResults,
-													    } = useStateContext();
-													  ```
-												- Related: ((635eb08e-60ed-4881-9b34-a2a27b514521)) : ((63e4cd45-0139-423a-aa13-050a0dc7f64c))
-								- [State: A Component's Memory](https://beta.reactjs.org/learn/state-a-components-memory)
-									- Example
-									  collapsed:: true
-										- Need to change several things to get state to work
-											- The [useState](https://beta.reactjs.org/apis/react/useState) Hook provides those two things:
-												- A state variable to retain the data between renders.
-												- A state setter function to update the variable and trigger React to render the component again.
-										- Full example `app.js`
-										  collapsed:: true
-											- ```javascript
-											  import { sculptureList } from './data.js';
-											  import { useState } from 'react';
-											  
-											  export default function Gallery() {
-											    let [index, setIndex] = useState(0);
-											  
-											    function handleClick() {
-											      index = index + 1;
-											    }
-											  
-											    let sculpture = sculptureList[index];
-											    return (
-											      <>
-											        <button onClick={handleClick}>
-											          Next
-											        </button>
-											        <h2>
-											          <i>{sculpture.name} </i> 
-											          by {sculpture.artist}
-											        </h2>
-											        <h3>  
-											          ({index + 1} of {sculptureList.length})
-											        </h3>
-											        <img 
-											          src={sculpture.url} 
-											          alt={sculpture.alt}
-											        />
-											        <p>
-											          {sculpture.description}
-											        </p>
-											      </>
-											    );
-											  }
-											  ```
-										- 1) To add a state variable, import `useState` from React at the top of the file:
-											- `import { useState } from 'react';`
-										- 2) Then, replace this line
-											- Old
-												- ```javascript
-												  let index = 0;
-												  ```
-											- New
-												- ```javascript
-												  const [index, setIndex] = useState(0);
-												  ```
-										- Then replace
-											- Old
-												- ```javascript
-												  function handleClick() {
-												    index = index + 1;
-												  }
-												  ```
-											- New
-												- ```javascript
-												  function handleClick() {
-												    setIndex(index + 1);
-												  }
-												  ```
-								- ((412041b3-482c-4ccf-9ec5-c62c5dca2da8))
-							- [`useContext`](https://beta.reactjs.org/apis/react/useContext)
-							  id:: 639073b3-ddf4-4970-a354-36398856b7af
-							  collapsed:: true
-								- Pros
-									- [Professional companies use this to manage state instead of Redux or similar](https://news.ycombinator.com/item?id=34131623)
-									  id:: 63a9cb00-b7a6-431e-9e9b-ee202a1568d1
-								- Useful instead of passing down props down e.g. 3 parents up
-								- Note: `{children}` can be used to
-									- ```javascript
-									  export default function Section({ children }) {
-									    return (
-									      <section className="section">
-									        {children}
-									      </section>
-									    );
-									  }
-									  
-									  ```
-								- `ContextProvider`
-								  collapsed:: true
-									- Example 1
-										- SearchContextProvider only needs to be imported in one file
-										- useSearchContext needs to be imported in any file that needs to use it
-										- Example files to import it into
-											- `/context/search.tsx`
-											  ```tsx
-											  import { createContext, useContext, useState } from 'react';
-											  
-											  export const SearchContext = createContext([] as any);
-											  
-											  // Context provider
-											  export function SearchContextProvider({children}: any) {
-											  	
-											  	const[search, setSearch] = useState('')
-											  	const[text, setText] = useState('')
-											  
-											  	return <SearchContext.Provider value={[search, setSearch, text, setText]} >
-											  		{children}
-											  	</SearchContext.Provider>
-											  }
-											  
-											  // Custom hook
-											  export function useSearchContext() {
-											  	return useContext(SearchContext)
-											  }
-											  ```
-											- `/app/layout.tsx`
-											  ```tsx
-											  "use client";
-											  
-											  import { SearchContextProvider, useSearchContext } from "../context/search";
-											  
-											  export function SearchBar() {
-											    const [search, setSearch, text, setText] = useSearchContext();
-											  
-											    function handleChange(event: any) {
-											      setSearch(event.target.value);
-											    }
-											  
-											    function handleClick() {
-											      setText(search);
-											    }
-											  
-											    function handleEnter(event: any) {
-											      if (event.keyCode == 13) {
-											        setText(search);
-											      }
-											    }
-											      
-											  
-											    return (
-											      <div>
-											        <input
-											          type="search"
-											          onChange={handleChange}
-											          onKeyDown={handleEnter}
-											        ></input>
-											        <button onClick={handleClick}>Submit</button>
-											      </div>
-											    );
-											  }
-											  
-											  export default function RootLayout({
-											    children,
-											  }: {
-											    children: React.ReactNode;
-											  }) {
-											  
-											    return (
-											      <html>
-											        <head />
-											        <body>
-											          <p>test</p>
-											          <SearchContextProvider>
-											            <SearchBar />
-											            {children}
-											          </SearchContextProvider>
-											          Example text
-											        </body>
-											      </html>
-											    );
-											  }
-											  
-											  ```
-											- `/app/About/page.tsx`
-											  ```tsx
-											  "use client";
-											  
-											  import { useSearchContext } from "../../context/search"
-											  
-											  export default function About() {
-											  	const [search, setSearch, text, setText]: any = useSearchContext();
-											  	
-											  	return <>
-											  		<p>About</p>
-											  		<p>{search}</p>
-											  		<p>{text}</p>
-											  		<button onClick={testClick}>Click</button>
-											  	</>
-											  }
-											  ```
-								- [Passing Data Deeply with Context](https://beta.reactjs.org/learn/passing-data-deeply-with-context)
-								- [Pass Data Between React Components with the useContext Hook | egghead.io](https://egghead.io/lessons/react-pass-data-between-react-components-with-the-usecontext-hook)
-								- [A Guide to React Context and useContext() Hook](https://dmitripavlutin.com/react-context-and-usecontext/)
-								-
-							- [`useEffect`](https://beta.reactjs.org/apis/react/useEffect)
-							  id:: 6391cf38-8655-4c31-9539-0f62cd7542ba
-							  collapsed:: true
-								- Syntax
-									- ```jsx
-									  useEffect(setup, dependencies?)
-									  ```
-									- ```jsx
-									  useEffect(() => {
-									    // do some stuff
-									    // it can be encapsulated in a named function, as long as you call it within here also
-									  }, [dependency])
-									  ```
-									- Parameters
-										- `setup`: The function with your Effect’s logic. Your setup function may also optionally return a *cleanup* function. When your component is first added to the DOM, React will run your setup function. After every re-render with changed dependencies, React will first run the cleanup function (if you provided it) with the old values, and then run your setup function with the new values. After your component is removed from the DOM, React will run your cleanup function one last time.
-										- `dependencies`: (optional) The list of all reactive values referenced inside of the `setup` code. Reactive values include props, state, and all the variables and functions declared directly inside your component body. If your linter is [configured for React](https://beta.reactjs.org/learn/editor-setup#linting), it will verify that every reactive value is correctly specified as a dependency. The list of dependencies must have a constant number of items and be written inline like `[dep1, dep2, dep3]`. React will compare each dependency with its previous value using the [`Object.is`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) comparison algorithm. If you don’t specify the dependencies at all, your Effect will re-run after every re-render of the component.
-											- [See the difference between passing an array of dependencies, an empty array, and no dependencies at all.](https://beta.reactjs.org/reference/react/useEffect#examples-dependencies)
-											- Common choices
-											  id:: 63a9dbe1-b08a-425a-8a43-94ef6230fa33
-												- ` ` (no dependency argument) = activate this function constantly (multiple times per second)
-												- `[]` = call it only on mount (page load)
-												- `[a, b]` i.e. name of different state = call this useEffect only when these states change
-								- Documentation
-									- ((6377ecf1-7342-4415-bca4-70688780c97d))
-								- Examples
-									- ((63949785-b051-42e5-b85e-38551cea11a8))
-									  collapsed:: true
-										- {{embed ((63949785-b051-42e5-b85e-38551cea11a8))}}
-									- TypeScript-based: also using `useFetch` custom hook
-									  id:: 639cb088-a174-4266-9211-52b82a1772f0
-									  collapsed:: true
-										- `/home/boss/Documents/WORK/Programming/School-of-Code/1DRAFT-REPOS/week-12/bc13_w12d5_hackathon_react-typescript-aaron-hicham-room-39/frontend`
-										- `/src/hooks/useFetch.tsx`
-											- ```tsx
-											  import {useState, useEffect} from 'react';
-											  
-											  export default function useFetch(url: string) {
-											      const [data, setData] = useState("");
-											      const [error, setError] = useState(null);
-											    
-											      useEffect(() => {
-											        async function fetchStuff() {
-											          try {
-											            const responseJSON = await fetch(url);
-											            const result = await responseJSON.json();
-											            setData(result);
-											          } catch (e: any) {
-											            setError(e);
-											          }
-											        }
-											        fetchStuff();
-											      }, [url]);
-											  
-											      return { data, error };
-											  }
-											  ```
-										- `/components/App.tsx`
-											- ```tsx
-											  import React, { useState, useEffect } from 'react';
-											  
-											  export default function App() {
-											    const[submittedText, setSubmittedText] = useState("")
-											    const[locationInput, setLocationInput] = useState("")
-											  
-											    function handleChange (e:React.ChangeEvent<HTMLInputElement>) {
-											      setLocationInput(e.target.value);
-											    }
-											  
-											    const handleClick = ()=>{
-											      setSubmittedText(locationInput);
-											    }
-											  
-											    return (
-											      <div>
-											        <Search onClick={handleClick} onChange={handleChange}/>
-											        <Viewer submittedText={submittedText}/>
-											      </div>
-											    );
-											  }
-											  ```
-										- `/components/Search/index.tsx`
-											- ```tsx
-											  interface locationInputs {
-											      onClick: React.MouseEventHandler<HTMLButtonElement>;
-											      onChange: React.ChangeEventHandler<HTMLInputElement>;
-											  }
-											  
-											  export default function Search({onClick, onChange}: locationInputs) {
-											      return(
-											          <div >
-											              <input onChange={onChange}/>
-											              <button onClick={onClick}>Search</button> 
-											          </div>
-											      )
-											  }
-											  ```
-										- `/components/Viewer/index.tsx`
-											- ```tsx
-											  import useFetch from "../../hooks/useFetch";
-											  
-											  type SubmittedText = {
-											    submittedText: string;
-											  };
-											  
-											  export default function Viewer({ submittedText }: SubmittedText) {
-											    const url = `[HTTP Status 400 – Bad Request](https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${submittedText}?unitGroup=us&key=AJZXJYXLMAFWDEZE6FHKCAHHL&contentType=json`;)
-											    const { data, error } = useFetch(url);
-											  
-											    return (
-											      <div>
-											        <p className="text-2xl text-blue-800 p-5 mt-2">{data.description}</p>
-											      </div>
-											    );
-											  }
-											  ```
-							- [`useReducer`](https://beta.reactjs.org/apis/react/useReducer)
-							  id:: 6396f76e-d0d4-4d27-b88d-8faf03d8a429
-							  collapsed:: true
-								- ((63904f45-3135-4957-8487-b22e6b434b30))
-								- Related:
-									- ((6396f621-cf87-4714-9fa3-6b98e79e910a))
-									- ((6350374d-3846-414b-a27e-7d32b86eec86))
-							- Custom Hooks
-							  id:: 63909c79-1a45-4724-9f97-086c3c278e32
-							  collapsed:: true
-								- ((63949785-b051-42e5-b85e-38551cea11a8))
-								- Pros
-									- Separation of concerns - a custom hook can do one thing and do it well
-									- Abstracting detail away makes for clean, human-readable components
-									- Logic becomes reusable (plug-and-play!)
-									- Logic that's separated out is naturally easier to test
-									- Can use React hooks inside of custom hooks
-									- React knows not to re-render custom hooks each time, so they can maintain states
-								- Meta
-									- They're basically functions with state
-									- Great way to make code cleaner, same as why you might use functions normally
-									- 2
-									  collapsed:: true
-										- ![image.png](../assets/image_1670426096899_0.png){:height 593, :width 1217}
-								- Hooks rules
-									- Hooks should only be called at the top level in a component (not inside loops or if statements!)
-									- Hooks should only be called from React functional components, not normal functions or class components.
-									- Each time you use a custom hook, any states in there are a new, independent instance.
-								- [Reusing Logic with Custom Hooks](https://beta.reactjs.org/learn/reusing-logic-with-custom-hooks)
-								- Examples
-								  collapsed:: true
-									- [useHooks - Easy to understand React Hook recipes](https://usehooks.com/)
-									- Example 1
-									  id:: 6390a570-5eb8-473e-9e65-397641b89e76
-										- `/src/components/index.jsx`
-										  ```js
-										  import React, { useEffect } from "react"; 
-										  import { useState } from "react";
-										  import useDocumentTitle from "../../ hooks/useDocumentTitle.js";
-										  import useRandomNumber from "../../hooks/ useRandomNumber.js";
-										  
-										  function Randomizer() { 
-										    const [number, randomize] = useRandosNumber (4080, 5000);
-										    
-										    useDocumentTitle(number);
-										    return ( 
-										      <div className="Randomiser">
-										      	<button onClick={randomize}> 
-										      	{number}</button> 
-										  	</div> 
-										  );
-										  ```
-										- `/src/hooks/useRandomNumber.js`
-										  ```js
-										  // number, including the random generation 
-										  // return random number and functionality to re-roll random number
-										  
-										  function useRandomNumber(min = 0, max = 100) { 
-										    const [number, setNumber] = useState (0);
-										    
-										    function randomize() { 
-										      setNumber (Math.floor(Math.random() * (max - min)) + min);
-										    }
-										    
-										    return [number, randomize];
-										  }
-										  
-										  export default useRandomNumber;
-										  ```
-								- SOP
-									- Create a file e.g. `/src/hooks/useDocumentTitle.js`
-									- Example hook
-										- ```javascript
-										  export default function useDocumentTitle(newTitle) { 
-										    useEffect(() => { 
-										      document.title = newTitle; 
-										    }, [newTitle]);
-										  } 
-										  ```
-									- In the other file
-									  ```javascript
-									  import useDocumentTitle from '../hooks/useDocumentTitle.js';
-									  
-									  function ComponentName() {
-									  	useDocumentTitle(number);
-									  }
-									  ```
-									- As a rule of thumb, you need to return an array with the props you'd need in the file e.g.
-									  ```javascript
-									  return [text, file];
-									  ```
-									- `https://github.com/SchoolOfCode/bc13_w11d3_workshop_custom-hooks-aaron-and-mike`
-									  id:: 6391c9ba-2843-4497-8ae0-a938be3622f2
-									  collapsed:: true
-										- Task 3
-											- `/src/hooks/useFetch.js`
-											  ```jsx
-											  import { useEffect, useState } from "react";
-											  
-											  export default function useFetch(url) {
-											    const [data, setData] = useState(null);
-											    const [error, setError] = useState(null);
-											  
-											    useEffect(() => {
-											      if (undefined === url) {
-											        return;
-											      }
-											  
-											      fetch(url, {
-											        headers: { Accept: "application/json" },
-											      })
-											        .then((res) => res.json())
-											        .then((data) => {
-											          setData(data);
-											          setError(null);
-											        })
-											        .catch((err) => {
-											          setData(null);
-											          setError(err);
-											        });
-											    }, [url]);
-											  
-											    const isLoading = data === null && error == null;
-											  
-											    return {
-											      data: data,
-											      error: error,
-											      isLoading: isLoading,
-											    };
-											  }
-											  ```
-												- > Ben Freemantle: 
-												  it doesnt help that it was written in promise syntax and not async / await
-												  async await is easier imo to understand, .then can be 'cleaner' so its preference but yeh, we haven't got through promise based which adds to the confusion
-												- > Arshi: async/await is the more modern approach and is preferable, this code is just a bit older
-												- > Arshi: You can return it as an array OR an object, doesn't make a difference
-												- [Fullstack React: Introduction to Promises](https://www.newline.co/fullstack-react/30-days-of-react/day-15/)  this is good for explaining `then`
-												- [How to Build a Custom React Hook for API Calls](https://www.makeuseof.com/react-build-custom-hook-api-calls/#:~:text=Creating%20a%20Custom%20React%20Hook&text=The%20hook%20should%20make%20the,receive%20responses%20over%20HTTP%20asynchronously.) this is good for explaining the whole task 3
-												- `[url]);` only fires once/twice because the dependency is static e.g. it's always `"[icanhazdadjoke](https://icanhazdadjoke.com/"`,) thus it'll never rerender this `useEffect` again
-											- `/src/components/DadJoke.js`
-											  ```jsx
-											  import useFetch from "../../hooks/useFetch.js";
-											  
-											  function DadJoke() {
-											    const { data, error } = useFetch("[icanhazdadjoke](https://icanhazdadjoke.com/");)
-											  
-											    if (error) {
-											      return <p>Error!</p>;
-											    }
-											  
-											    if (null === data) {
-											      return <p>Still fetching data... please wait...</p>;
-											    }
-											  
-											    return (
-											      <section>
-											        <h4>Dad Joke!</h4>
-											        <p>{data.joke}</p>
-											      </section>
-											    );
-											  }
-											  
-											  export default DadJoke;
-											  ```
-												- > Arshi: Instead of 
-												  ```jsx
-												    if (null === data} {
-												          return <p>Still fetching data.... please wait...</p>
-												        }
-												  ```
-												  we can use optional chaining
-												  ```jsx
-												   return (
-												      <section>
-												        {<h4>Dad Joke!</h4>}
-												        {<p>{data.joke}</p>}
-												      </section>
-												    );
-												  ```
-												  in order to prevent against the brief window when `data` is still `null`
-												- `data.joke`
-												  `data` is the returned object from the API, `joke` is the property of the object that contains the string for the actual joke
-											- `/src/components/PokemonViewer.js`
-											  ```jsx
-											  import { useState } from "react";
-											  import useFetch from "../../hooks/useFetch.js";
-											  
-											  function PokemonViewer() {
-											    const [id, setId] = useState("");
-											    const url = id !== "" ? `https://pokeapi.co/api/v2/pokemon/${id}` : undefined;
-											    const { data: pokemon, error } = useFetch(url);
-											  
-											    if (error) {
-											      return <p>Error!</p>;
-											    }
-											  
-											    return (
-											      <section>
-											        <h4>Pokemon</h4>
-											        <input type="number" onChange={(e) => setId(e.target.value)} value={id} />
-											        <p>{pokemon ? pokemon.name : "Fetching pokemon... please wait..."}</p>
-											      </section>
-											    );
-											  }
-											  
-											  export default PokemonViewer;
-											  ```
-						- Components
-						  collapsed:: true
-							- ![image.png](../assets/image_1667903056526_0.png)
-							- The arguments you pass in are known as props
-						- JSX
-						  id:: 6353be22-20aa-447b-ba89-1b401ac74063
-						  collapsed:: true
-						  AKA JavaScript XML
-							- JSX stands for JavaScript XML, as it's an embeddable XML-like Syntax
-							- It allows us to write HTML code directly in our React project. Using TypeScript with React provides better IntelliSense and code completion for JSX.
-							- [Learning Resources]
-								- https://reactjs.org/docs/introducing-jsx.html
-								- https://facebook.github.io/jsx/
-							- Related: ((629ccb26-1eab-4686-a7b8-f9433a871440)) : ((6353bf0f-3b39-4ebf-8458-740378a0e562))
-						- {Archive} Older methods
-						  collapsed:: true
-							- Using `createElement`
-							  collapsed:: true
-								- ```javascript
-								  function Heading(text, className) {
-								    return React.createElement( 
-								    // 1st arg: element type 
-								    "h1", 
-								    // 2nd arg: any attributes in an object
-								    { 
-								      className: "greeting",
-								  	onClick: handleClick, 
-								    }, 
-								    //text content
-								    text
-								    );
-								  }
-								  //Render element in the root 
-								  root.render(Heading("New React project!", "heading"));
-								  ```
-					- React libraries
-						- React Native
-						  collapsed:: true
-							- Pros/Cons
-							  collapsed:: true
-								- Cons
-									- [React Native apps are larger in size and slower to startup. Even Facebook rewrote their mobile apps because they have the resources to maximise performance](https://www.infoq.com/news/2020/03/facebook-messenger-rewrite/)
-						- React Spring (animations)
-						  collapsed:: true
-							- [GitHub - pmndrs/react-spring: ✌️ A spring physics based React animation library](https://github.com/react-spring/react-spring)
-							  id:: 63904f3c-2c1a-4a69-b89b-e07a08b6d1fe
-						- D3
-						  collapsed:: true
-							- https://news.ycombinator.com/item?id=26628679
-							- https://news.ycombinator.com/item?id=27490892
-						- ((635fba79-b85e-4821-810a-ce45a268a6ad)) - useful for server-side React?
-						- *State management*
-							- [Redux](https://react-redux.js.org)
-							  id:: 6396f61d-f951-4ca8-baf8-ba8937b02e1d
-							  collapsed:: true
-								- Pros/Cons
-									- Cons
-										- ((639073b3-ddf4-4970-a354-36398856b7af)) : ((63a9cb00-b7a6-431e-9e9b-ee202a1568d1))
-										- ((6396f61d-f951-4ca8-baf8-ba8937b02e1d)) is similar to ((6396f76e-d0d4-4d27-b88d-8faf03d8a429))
-										  id:: 6396f621-cf87-4714-9fa3-6b98e79e910a
-											- [react usereducer vs redux - Brave Search](https://search.brave.com/search?q=react%20usereducer%20vs%20redux)
-											- [Redux vs. Context API + useReducer | by Mohsen Taleb | Medium](https://medium.com/@mohsentaleb/redux-vs-context-api-usereducer-when-to-use-which-b625b436259)
-								- ```javascript
-								  function reducer(state, action) {
-								    return {
-								      ... state,
-								      message: action.payload
-								    }
-								  }
-								  ```
-								- [Learning Resources]
-									- {{video https://youtu.be/_shA5Xwe8_4}}
-									- [Getting Started with React Redux | React Redux](https://react-redux.js.org/introduction/getting-started)
-							- [XState](https://xstate-catalogue.com/)
-							  collapsed:: true
-								- [Learning Resources]
-									- [This Library Makes State Management So Much Easier - YouTube](https://youtu.be/s0h34OkEVUE)
-									-
-						- *Routing*
-							- [React Router](https://reactrouter.com)
-							  id:: 638878fd-2b0f-4fbe-a0ba-28c81137dc55
-							  collapsed:: true
-								- Cons
-									- More time-consuming, verbose than ((635fba79-b85e-4821-810a-ce45a268a6ad))
-								- Examples
-									- ![Screenshot_20221201_093825.png](../assets/Screenshot_20221201_093825_1669889931353_0.png)
-									- ![Screenshot_20221201_093842.png](../assets/Screenshot_20221201_093842_1669889938660_0.png)
-							- [TanStack Router](https://tanstack.com/router/v1)
-							  collapsed:: true
-								- Pros
-									- Type safety, however Next.js now recently has it too ((c5d8f4df-6a5a-4dfb-8062-ed2dd325bd3f))
-									- Autocomplete for routes
-								- [GitHub - TanStack/router: 🤖 Type-safe router w/ built-in caching & URL state management for JS/TS, React, Preact, Solid, Vue, Svelte and Angular](https://github.com/TanStack/router)
-								- [Learning Resources]
-									- [What Is TanStack Router And Why I Love It - YouTube](https://youtu.be/OwoZtv6u9p4)
-									-
-						- [React Query](https://react-query-v3.tanstack.com/)
-						  id:: 63dbd6a4-82b9-40bc-b9b2-b918dc176d68
-						  collapsed:: true
-							- [Learning Resources]
-								- [React Query in 100 Seconds - YouTube](https://youtu.be/novnyCaa7To)
-									- Allows more advanced usage of data fetching
-								- [React Query Makes Writing React Code 200% Better - YouTube](https://youtu.be/lVLz_ASqAio)
-								- [Learn React Query In 50 Minutes - YouTube](https://youtu.be/r8Dg0KVnfMA)
-								-
-						- [TanStack | High Quality Open-Source Software for Web Developers](https://tanstack.com/)
-						- [Learning Resources]
-						  collapsed:: true
-							- [React Libraries for 2023](https://www.robinwieruch.de/react-libraries/)
-							  id:: 63fe0044-57d1-45e1-b9d3-f4eea235d205
-					- Android app data encryption (not necessarily React)
-					  collapsed:: true
-						- https://source.android.com/security/keystore/
-						- Recommendations
-							- react-native-keychain
-							  https://github.com/oblador/react-native-keychain
-								- https://stackoverflow.com/a/45550361
-							- Use the Realm db - https://realm.io/docs/javascript/latest
-							  https://stackoverflow.com/a/50384345
-							- Do NOT use AsyncStorage - not encrypted
-						- Example app with such - andOTP
-						  https://github.com/andOTP/andOTP
-							- Encrypted storage with two backends:
-								- Android KeyStore
-								- Password / PIN
-							- https://github.com/andOTP/andOTP/wiki/Encryption-details
-							- https://github.com/andOTP/andOTP/commit/bc3563685bb0a3ea39b47d04ec6f1b32680a2b2d#diff-12aff25ea21765f5c3954a88600911a8
-					- [Learning Resources]
-						- ((63fe006b-aa93-44ff-84fa-847827628a8a))
-							- {{embed ((63fe006b-aa93-44ff-84fa-847827628a8a))}}
-						- Lower priority
-						  id:: 636d509a-59fa-42e5-821a-b0736ce57b86
-							- ((63938f46-8c84-4a9a-9584-e4fb375eb7e9))
-							- ((6391c9ba-2843-4497-8ae0-a938be3622f2))
-							- Improve SOP: ((636cbcc0-80d6-4064-b925-0149c2ed7a67))
-							- ((636cb6d2-c165-4874-9e18-177ff208c156))
-							- ((636b61a2-646f-458c-8565-d67bff40d73d))
-							- ((63a04903-cab3-45f4-9a0a-1451cf558f49))
-						- React interactive exercises
-						  id:: 6390fbe4-a18e-4e43-ab0d-1527337223ee
-							- [Coding Challenges | React Interview Prep Platform | reacterry](https://www.portal.reacterry.com/portal/challenges)
-							- [Clientside - The Platform for Frontend Experts](https://www.clientside.dev/)
-							- [React Tutorial](https://react-tutorial.app) interactive exercises
-							  id:: 6390fb7b-a3a6-4bab-8c3f-2ecfddfa2a15
-							- [React quizzes  | BFE.dev - prepare for Front-End job interviews.](https://bigfrontend.dev/react-quiz) exercises
-							  id:: 6390fba9-ac27-46b5-b04c-4b7828fd7142
-							- Search `react` on CodeWars
-						- Courses
-							- ((63904f42-0ce7-4773-819c-8a33f348c870))
-							- [Courses](https://fireship.io/courses)
-							- [React 18 Fundamentals Crash Course 2022 - YouTube](https://youtu.be/jLS0TkAHvRg)
-							  id:: 636b61a2-646f-458c-8565-d67bff40d73d
-							- *Udemy*
-								- [Complete React Developer in 2023 (w/ Redux, Hooks, GraphQL) | Udemy](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
-								- [Modern React with Redux Training Course | Udemy](https://www.udemy.com/course/react-redux/) (2022)
-								- [React Tutorial and Projects Course (2022) | Udemy](https://www.udemy.com/course/react-tutorial-and-projects-course/)
-								- [React Front To Back 2022 | Udemy](https://www.udemy.com/course/react-front-to-back-2022/)
-								- [Next.js & React - The Complete Guide (incl. Two Paths!) | Udemy](https://www.udemy.com/course/nextjs-react-the-complete-guide/) (2022)
-								- [The Modern React Bootcamp (Hooks, Context, NextJS, Router) | Udemy](https://www.udemy.com/course/modern-react-bootcamp/)
-								- [The Complete React Developer Course (w/ Hooks and Redux) | Udemy](https://www.udemy.com/course/react-2nd-edition/) (2020)
-							- [Full React Tutorial video course by Net Ninja](https://www.youtube.com/watch?v=j942wKiXFu8&list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d)
-						- Misc
-							- [React Developer Roadmap](https://roadmap.sh/react)
-							  id:: 63938f46-8c84-4a9a-9584-e4fb375eb7e9
-								- [GitHub - adam-golab/react-developer-roadmap: Roadmap to becoming a React developer](https://github.com/adam-golab/react-developer-roadmap)
-								- ![react.pdf](../assets/react_1670615941716_0.pdf)
-								-
-						- ((636f80b0-9945-4922-850d-aaeceb3a0b2f))
-						- [Hooks Cheatsheet](https://react-hooks-cheatsheet.com/)
-						- ((637210b6-f566-4a57-94d5-4b2ecbda71e8))
-						- [Beta docs](https://beta.reactjs.org/)
-						- [Utopia (React-based)](((629ccb26-34e4-4041-a48a-329e0be2cbde))) for low-code prototyping
-						- [Getting Started – React](https://reactjs.org/docs/getting-started.html#react-for-beginners)
-						- Learning guide
-						- https://react.semantic-ui.com/
-						- https://reddit.com/comments/8wo9dl
-						- [Facebook React tutorial](http://facebook.github.io/react/docs/tutorial.html)
-						- https://github.com/coderplex/learn/blob/master/web-dev/Frontend/Libraries%20%26%20Frameworks/Learn-React.md
-						- React from zero: a simple tutorial for React - [https://github.com/kay-is/react-from-zero](https://github.com/kay-is/react-from-zero)
-						  id:: 629ccb26-6968-4414-8120-28e18a52056d
-						- https://www.javascriptstuff.com/getting-started-tutorials/
-						- https://reactjs.org/tutorial/tutorial.html
-						- Roadmap to becoming a React developer in 2018 - https://news.ycombinator.com/item?id=17470496
+				- ((629ccb26-62cc-426a-9616-4d8969f32580))
 				- _Page builders_
 				  collapsed:: true
 					- https://github.com/JefMari/awesome-wysiwyg
@@ -9314,7 +8622,6 @@
 					- Heavy?
 				- Asynchronous JavaScript (AJAX)
 			- ((6396fb64-9aeb-4ee3-bf46-849eac2fb748)) : ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
-			  collapsed:: true
 				- {{embed ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))}}
 		- Backend
 		  id:: 63baa386-3de1-4a21-b62e-a339148671de
@@ -10712,7 +10019,7 @@
 			- http://exercism.io/languages/javascript/about
 			- Grasshopper
 			  https://play.google.com/store/apps/details?id=com.area120.grasshopper&hl=en
-			- https://www.codewars.com
+			- [CodeWars](https://www.codewars.com)
 			  id:: 629ccb26-051d-46ed-910d-bd6d0e0af723
 			- https://www.coderbyte.com/
 			- https://www.codingame.com/start

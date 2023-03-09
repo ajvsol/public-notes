@@ -10,124 +10,10 @@
 - Takeaways
 	-
 	- ^^- converted everything below from CodeWars links to a link to a method and notes of how to utilise it - ^^
-	- **To ingrain**
-		- *Assorted*
-			- For `if` statements (and more?) curly brackets `{ }` are not actually necessary if the expression is on a single line
-			  collapsed:: true
-				- `if` statements
-					- Examples
-					  collapsed:: true
-						- ((63cf9164-5abf-48eb-b525-6356c001e05f))
-							- {{embed ((63f8fe4c-e392-47d9-8aa9-fb166942f2c0))}}
-						- ((63cf8ec4-f24a-4619-83be-737562d558e6))
-							- {{embed ((63f90938-2ffa-431b-8137-172d6187dc67))}}
-						- ((63cf8c8e-16ef-4c89-8d92-69f6e63c6f47))
-							-
-				- `for` loops
-					- Examples
-					  collapsed:: true
-						- ((63cf8ec4-f24a-4619-83be-737562d558e6))
-							- {{embed ((63f90938-2ffa-431b-8137-172d6187dc67))}}
-			- If a function is supposed to return a boolean, can just use a `return` with an equality operator, instead of a conditional
-			  collapsed:: true
-				- Example: ((63f33e7b-8d10-4739-8c49-2dfefc8d2c1e))
-					- {{embed ((5aee7c7d-c7f5-4201-936b-8e496e51e5dc))}}
-			- It's possible to add new methods to prototypes, allowing their use similar to native methods
-			  collapsed:: true
-				- Examples
-					- `String.prototype.toJadenCase = function () { }` in ((63f66f5b-a9f1-4c41-9489-9e5c904781c0))
-					  collapsed:: true
-						- This line of JavaScript code is adding a new method to the `String` prototype called `toJadenCase`.
-						- `String.prototype` is the prototype object for all string instances in JavaScript. By adding a new method to the `String` prototype, we can use this method on any string object in our code.
-			- ((63e40d8b-b5b5-4124-a386-e28fb962d7e1)) : useful for ((63f33e83-b36c-46b9-b411-2886cc6f9d53))
-			- ((636d5df2-5117-4f9e-8113-83bbb5eff6c1)) : ((63f33e7b-8224-497b-ad76-70ab74cdfa1e))
-			- ((63f33581-f747-4705-b965-a7371bc28f77))
-			- ((63baa388-27f4-48ce-9808-643b128297a7)) : ((63f29ee4-1022-4275-a0ec-1dc01640e128))
-			  id:: 63baa387-43de-492a-be69-95132a6e47b5
-			- ((635593b3-9619-4902-8342-f7649f68f90c)) should be used more as it prevents duplicates
-			- ((635593b3-9619-4902-8342-f7649f68f90c)) : ((6400db4c-de72-46ec-98f5-c79d918326c6))
-			- ((63f33e7c-e71b-4d14-b352-7b9fe2d600b1)) : ((63f8fedc-7c7f-4902-abd1-b925c86c93ce))
-				- {{embed ((63f8fedc-7c7f-4902-abd1-b925c86c93ce))}}
-			- Other
-				- ((6343d976-fbe8-45fe-bc74-1fe1b5309a59)) can be ((63fcf532-1fe3-44e0-8423-d49da84a864e))
-				- `parseInt(n.toString().split('').sort().reverse().join(''))` to sort a number
-				  collapsed:: true
-					- Related: ((6364185a-26c2-4213-9783-0dc15ec30342))
-				- `return dt === 10 && dx === 0 && dy === 0` is a more concise way than writing `if` all of these, return true
-				  collapsed:: true
-					- Related: ((6391b172-3c6f-47b6-9b37-f49aa9a2edf0))
-						- {{embed ((6391b186-4fc6-47cd-a1ad-d06df9799a79))}}
-				- ((63f8fe4d-795b-436e-9fc4-1c0cb402cbda))
-			- Multiple takeaways from one example: ((63d18142-3084-4ee3-af2a-1e3187a3705f))
-				- {{embed ((63f8d6e9-0f6e-4b56-ab8a-04626cbb3244))}}
-		- *String manipulation*
-			- ((63fdd9d7-2555-4f15-8f94-798587be6b3c))
-			- To get last character of a string use either `String[String.length-1]` or `String.slice(-1)`
-			- Inline ternary operator is can be useful for some functions like conditional string concatenation
-			  collapsed:: true
-				- Example: ((63f33e7b-1a4b-413e-b00d-efe1a87c0a8a))
-					- {{embed ((d6066a95-9e02-45c9-8d0c-6a3db80390be))}}
-			- ((63470fd1-1f37-4428-9546-d674c323d5d1)) : ((63baa388-24f2-42ae-913a-d2efcaf9f4bf))
-			  collapsed:: true
-				- Example: ((db967743-4408-46dc-a72c-7a0efcc2f248))
-					- {{embed ((db967743-4408-46dc-a72c-7a0efcc2f248))}}
-			- ((63f33e7c-dd58-4555-93f9-15a02fe35376)) is useful during string concatenation
-			- ((63470fd1-de4c-4705-9fb1-e734bf59cdd7)) : ((63f29925-f6ae-4cd6-96ad-e6c66a96f1cb))
-			- ((63904f3d-d998-45d3-9f94-c97030425ec2)) : ((63f215db-3662-4702-823a-59316716ef34))
-			- ((63470fd1-1f37-4428-9546-d674c323d5d1)) : ((63baa388-24f2-42ae-913a-d2efcaf9f4bf))
-			  id:: 6347b91e-ec78-403e-a18d-de40ff54f345
-			- ((63470fd1-5259-4cdb-a208-b49d213b679b)) : ((63baa388-4fe1-416f-a1b2-6e3755f6aede))
-			  id:: 6347b43d-34fb-4d29-85b1-934bc0212c36
-			- ((63470fd1-332b-4ebf-965d-7073b319c11b)) : ((63f297c1-a028-4e79-a600-e12e670fbca2))
-			- ((6345ae08-f477-4d93-8a9e-e1825a4dbf30)) : ((63baa388-00f3-4cf9-9e71-e74211713820))
-			- ((63470fd1-d1aa-49cd-95ec-4a5a0cf2ef74)) : ((63f298d8-e92e-4e36-bfa2-37818da7cf4d))
-			- ((63470fd1-335a-43ad-be82-547be1c10d07)) : ((63f2995e-3c1d-4961-8d40-38ed8cd83373))
-		- *Array manipulation*
-			- ((63679853-bf0c-44a1-9fba-087790dbcc45)) : ((63fdd9d7-f6c7-4b7b-8eda-521c5d014922))
-			- ((63679853-27fd-40a4-bd44-b836c61f4394)) : ((64024d45-68f1-4b21-8fe3-af5d7a8489a3))
-			- ((63679853-46c2-4992-ab73-5c27acc7ce2e)) :
-				- ((64010eac-b5f5-404e-851f-6eca86550049))
-				- ((640234da-c807-43bd-a52e-b122082e86d4))
-			- To empty an array set `arr.length = 0`
-			  id:: 6350374c-0936-4de6-a686-4e1b2329412c
-			- ((d0a968a6-4f22-48e4-ae07-45629e7372db))
-			  id:: 63470fd1-76d3-45ab-89f6-95d278c0dabe
-			- ((634bc0c2-38ee-4fdb-b785-2b19b9d2a6e1))
-			- ((635eb08f-48a4-41e1-9112-9f62670ddec2))
-			- ((63679853-7115-4961-bd6b-0b224f149a11)) is superb for FizzBuzz and other times you need to replace items in an array
-			  collapsed:: true
-				- Example: ((63ef9163-b156-414c-ba00-27c352c96685))
-			- ((63470fd1-ed0f-45f6-9b63-2ee67c3c152f)) : ((63f2aa4d-31c4-4f62-817c-a1bfae893094))
-			- ((6350374d-3846-414b-a27e-7d32b86eec86)) : ((63f239d8-2241-4838-9121-3b0ccc43dee7))
-			- ((63642a10-4e86-4101-961a-8311efb8ae4f)) : ((63f294fd-f0e1-453a-afc4-17a340b58e16))
-			- ((63679853-1c98-454a-8932-e67322c119d9)) : ((63f2952f-86d7-4fdd-aafa-51bf4fa40dfb))
-			- ((63906cf1-ee3b-481e-9b7e-08ad98c55c5d))
-			  collapsed:: true
-				- {{embed ((63906cf1-ee3b-481e-9b7e-08ad98c55c5d))}}
-			- ((63470fd1-5c6c-4c4d-aea0-9d111a003975)) : ((63f2965f-e63c-44c2-89f3-ecd6f644632f))
-			- ((63470fd1-ed0f-45f6-9b63-2ee67c3c152f)) : ((63f2976f-4508-41b5-9d84-47dd345a0990))
-			- ((63f903ec-e5f7-44e5-9bd6-7aa607d0b969))
-		- *Type conversion*
-			- ((6351322c-6b12-4902-b961-9ad79f67c9dc))
-			  collapsed:: true
-				- {{embed ((6351322c-6b12-4902-b961-9ad79f67c9dc))}}
-			- ((63513279-b287-4afa-89fd-764214eba393))
-			- ((63470fd1-c937-4cd7-9301-de009d1fb7e0)) : ((63f29878-1bf7-47ea-9b60-6a90394d0c12))
-			- ((638f4569-62ae-4ff5-bcd8-05d9e9794183)) : ((63f90cc1-edf9-4d69-8bf3-2f444910e465))
-			- ((638f490f-1505-4a98-9399-94834d07c5b6)) : ((63f90c9d-a27c-454b-8848-98c6627b7905))
-			- ((63642a10-4e86-4101-961a-8311efb8ae4f)) : ((6400dd4b-2309-4368-a90e-564bc9f5cbb0))
-		- *Math*
-			- ((0257c452-a8cc-40b2-b47a-235d81f263ce)) : ((63f90e8f-6ac5-4eff-ad9f-4aa51f3a52a1))
-			- ((63fd16e2-0108-4579-b85a-717d83927648)) is great for getting the sum of a sequence of integers
-		- *Binary and other base manipulation*
-			- ((63470fd1-de4c-4705-9fb1-e734bf59cdd7)) : ((63f219c9-6008-4f84-beba-7db15dd52f76))
-	- *Probably ingrained now*
+	- ((6408d44e-1000-4594-ab4b-8e5a18543479))
+	  id:: 64024e31-432b-4873-bee4-82ed3e796a76
 	  collapsed:: true
-		- ((63470fd1-b8ce-43b2-ab22-5ba17988fc3e)) : ((63f29a8b-25b6-4d4a-a671-068a6eff4ca9))
-		- ((63470fd1-5ac6-4b0c-a9ee-f54e0c50692f)) : ((63f29a65-5fa1-4742-b615-5b45a1bfac86))
-		- ((63470fd1-ff2c-4b9a-b116-136a41a52b94)) : ((63f29a46-c5f9-4702-9615-3e231e17ffd2))
-		- ((6363f60d-5a9d-48a8-a1d9-996e21bd4858))
-		  id:: 634bc0c2-1dad-4964-ae4a-39d0b670b534
+		- {{embed ((6408d44e-1000-4594-ab4b-8e5a18543479))}}
 - Completed solutions
 	- 1 kyu (1097 score)
 	- 2 kyu (404 score)
@@ -382,6 +268,61 @@
 				  ```
 	- 6 kyu (8 score)
 	  collapsed:: true
+		- [Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/javascript)
+		  id:: 6402327c-0104-4468-8317-98fcece06095
+		  collapsed:: true
+			- My solution
+			  collapsed:: true
+				- ```javascript
+				  function findUniq(arr) {
+				    
+				    let set = new Set();
+				    let nonUniq
+				    
+				    set.add(arr[0]).add(arr[1])
+				    
+				    if (set.size === 1) {
+				      nonUniq = arr[0]
+				      for (let i = 2; i < arr.length; i++) {
+				        if (arr[i] !== nonUniq) {
+				          return arr[i]
+				        }
+				      }
+				    } else {
+				      for (let i = 2; i < arr.length; i++) {
+				        if (arr[i] === arr[0]) {
+				          return arr[1]
+				        } else if (arr[i] === arr[1]) {
+				          return arr[0]
+				        }
+				      }
+				    }
+				  }
+				  ```
+					- ((63fdd9d6-f868-4e2f-9946-fd408c683a6e))
+			- Best practice
+				- ```javascript
+				  function findUniq(arr) {
+				    arr.sort((a,b) => a-b);
+				    return arr[0] == arr[1] ? arr.pop() : arr[0]
+				  }
+				  ```
+				- ```js
+				  function findUniq(arr) {
+				    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
+				  }
+				  ```
+				- id:: 640232da-375d-448e-b655-994974cdc230
+				  ```js
+				  function findUniq(arr) {
+				    let [a,b,c] = arr.slice(0,3);
+				    if (a !== b && a !== c) return a;
+				    for (let x of arr ) {
+				      if (x !== a) return x
+				    }
+				  }
+				  ```
+					- ((63679853-46c2-4992-ab73-5c27acc7ce2e))
 		- [Equal Sides Of An Array](https://www.codewars.com/kata/5679aa472b8f57fb8c000047/javascript)
 		  collapsed:: true
 			- My solution
@@ -1434,60 +1375,6 @@
 				    return sum;
 				  }
 				  ```
-	- [Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/javascript)
-	  id:: 6402327c-0104-4468-8317-98fcece06095
-		- My solution
-		  collapsed:: true
-			- ```javascript
-			  function findUniq(arr) {
-			    
-			    let set = new Set();
-			    let nonUniq
-			    
-			    set.add(arr[0]).add(arr[1])
-			    
-			    if (set.size === 1) {
-			      nonUniq = arr[0]
-			      for (let i = 2; i < arr.length; i++) {
-			        if (arr[i] !== nonUniq) {
-			          return arr[i]
-			        }
-			      }
-			    } else {
-			      for (let i = 2; i < arr.length; i++) {
-			        if (arr[i] === arr[0]) {
-			          return arr[1]
-			        } else if (arr[i] === arr[1]) {
-			          return arr[0]
-			        }
-			      }
-			    }
-			  }
-			  ```
-				- ((63fdd9d6-f868-4e2f-9946-fd408c683a6e))
-		- Best practice
-			- ```javascript
-			  function findUniq(arr) {
-			    arr.sort((a,b) => a-b);
-			    return arr[0] == arr[1] ? arr.pop() : arr[0]
-			  }
-			  ```
-			- ```js
-			  function findUniq(arr) {
-			    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
-			  }
-			  ```
-			- id:: 640232da-375d-448e-b655-994974cdc230
-			  ```js
-			  function findUniq(arr) {
-			    let [a,b,c] = arr.slice(0,3);
-			    if (a !== b && a !== c) return a;
-			    for (let x of arr ) {
-			      if (x !== a) return x
-			    }
-			  }
-			  ```
-				- ((63679853-46c2-4992-ab73-5c27acc7ce2e))
 	- 7 kyu (3 score)
 	  collapsed:: true
 		- [Odd or Even?](https://www.codewars.com/kata/5949481f86420f59480000e7/javascript)
