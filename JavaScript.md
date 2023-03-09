@@ -7384,9 +7384,11 @@
 			- [Frontend Masters](https://frontendmasters.com)
 			  id:: 640991f2-e312-4f6d-843f-f8b8789c5a98
 			  collapsed:: true
+				- [[Currently_studying]] : ((64099096-2639-4fff-9b71-b0619e5d4dc2))
 				- Recommended
 					- [Deep JavaScript Foundations | Frontend Masters | Frontend Masters](https://frontendmasters.com/courses/deep-javascript-v3/)
 					- [Algorithms & Data Structures | Learn Algorithms with TypeScript for Interviews | Frontend Masters](https://frontendmasters.com/courses/algorithms/)
+					- [JavaScript Learning Path - Write Professional, Modern JavaScript | Frontend Masters](https://frontendmasters.com/learn/javascript/)
 			- Watch and Code premium course
 			- ((637210b6-f566-4a57-94d5-4b2ecbda71e8))
 			- https://github.com/jwasham/coding-interview-university
@@ -9628,6 +9630,11 @@
 					- [You don't need Node to use NPM packages - YouTube](https://youtu.be/cv7ci6GT5Hg)
 					-
 			- [Bun](https://bun.sh/)
+			- [NestJS](https://nestjs.com/)
+			  collapsed:: true
+				- [NestJS in 100 Seconds - YouTube](https://www.youtube.com/watch?v=0M8AYU_hPas)
+				- [Nest.js Crash Course #1 - Introduction & Setup - YouTube](https://www.youtube.com/watch?v=pcX97ZrTE6M)
+				-
 			- _JavaScript CMS_
 			  id:: 629ccb26-512b-4462-9cb0-4527492e6ddb
 			  collapsed:: true
@@ -9669,9 +9676,12 @@
 				- Strapi CMS
 				  collapsed:: true
 					- Strapi is the most advanced Node.js open-source Content Management Framework to build powerful API with no effort.
-			- Npm microservices
-			- [Polymer](https://www.polymer-project.org/)
+			- [Lit](https://lit.dev/)
 			  collapsed:: true
+				- Polymer abandoned, they recommend Lit instead
+				  collapsed:: true
+					- [Polymer](https://www.polymer-project.org/)
+					  collapsed:: true
 		- Libraries
 		  collapsed:: true
 			- [Block Protocol](https://blockprotocol.org/)
