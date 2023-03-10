@@ -162,4 +162,5 @@
 			- {{youtube-timestamp 73418}} Lecture 9 - Flask
 			- {{youtube-timestamp 81541}} Lecture 10 - Emoji
 			- {{youtube-timestamp 86570}} Cybersecurity
+	- Original location
 	- {{embed ((629ccb26-fd59-47b6-b479-60e77b734217))}}

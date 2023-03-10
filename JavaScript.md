@@ -9697,6 +9697,9 @@
 				- [react-virtualized (js table](https://bvaughn.github.io/react-virtualized/#/components/Table)
 				- [Espalier | uses Handsontable for spreadsheet component](http://sdg.csail.mit.edu/projects/espalier). More info https://news.ycombinator.com/item?id=12576093
 			- JSDoc - An API documentation generator for JavaScript. http://usejsdoc.org
+			- Audio
+				- [GitHub - goldfire/howler.js: Javascript audio library for the modern web.](https://github.com/goldfire/howler.js)
+				-
 	- Tooling
 	  id:: 63904f3c-e689-458b-a036-672778a7e77c
 	  collapsed:: true
