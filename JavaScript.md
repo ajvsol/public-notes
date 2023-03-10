@@ -7372,12 +7372,12 @@
 			- [You Don't Know JavaScript series by Kyle Simpson](((629ccb26-ef1d-47b6-a890-d6be1548a7f5)))
 			- [TeamTreehouse](((629ccb25-b2a8-4026-a415-7a478c4b5337)))
 			- [Exercism track for JavaScript](https://exercism.org/tracks/javascript)
-			- ((6343d066-e388-4d88-808d-94ce2960681d))
 			- [MDN Web Docs - JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
 			- [Clientside.dev](https://www.clientside.dev)
 			  collapsed:: true
 				- Cons
 					- First free easy exercise I've seen uses Classes not Hooks, so it's at least two years out of date
+			- ((64024e3e-a577-4332-943b-5427a406cb7b))
 		- [[Currently_studying]]
 		- _Intermediate_
 		  id:: 629d5445-b4d5-4e4a-86e1-539ebb4a897b
@@ -10132,7 +10132,8 @@
 			- https://developer.mozilla.org/en-US/docs/Learn - a good starting point to learn about web dev fundamentals
 			- https://javascript.info/ - quite a good JS tutorial according to many posts
 			- https://www.freecodecamp.org - curriculum including HTML/CSS/JS, React, Node.js, Express, and MongoDB
-			- https://www.theodinproject.com - curriculum including HTML/CSS/JS, Ruby on Rails, and SQL
+			- [Your Career in Web Development Starts Here | The Odin Project](https://www.theodinproject.com) - curriculum including HTML/CSS/JS, Ruby on Rails, and SQL
+			  id:: 64024e3e-a577-4332-943b-5427a406cb7b
 			- https://fullstackopen.com/en/ - requires you to have basic web dev, db and git knowledge
 			- [[Videogames]] : ((6370ba73-3874-4ffe-980c-64541990ee2f))
 			- https://flexboxfroggy.com/ and https://codepip.com/games/grid-garden/ - learn flex/grid in CSS

@@ -150,7 +150,7 @@
 					  }
 					  ```
 				- Smooth, square and curly brackets (braces) `( [ {`
-				-
+				- {{youtube-timestamp 9056}}
 				- ..
 			- {{youtube-timestamp 15203}} Lecture 2 - Arrays
 			- {{youtube-timestamp 22843}} Lecture 3 - Algorithms
