@@ -52,8 +52,9 @@
 					    return sum;
 					  }
 					  ```
-				- Constants are dropped
-					- 0(2N) -> O(N) and this makes sense. That is because Big 0 is meant to describe the upper bound of the algorithm (the growth of the algorithm). The constant eventually becomes irrelevant.
+				- Constants are not counted
+				  collapsed:: true
+					- 0(2N) -> O(N) reduction happens and this makes sense. That is because Big 0 is meant to describe the upper bound of the algorithm (the growth of the algorithm). The constant eventually becomes irrelevant.
 					- Example:
 						- **N = 1**
 						  O(10N) = 10 
@@ -80,6 +81,8 @@
 						  vs 
 						  O(N^2) = 100,000,000 // 1000x bigger
 						-
+				- Practical vs theoretical differences
+					- Just because N is faster than N^2, doesn't mean it's practcally always faster for smaller input
 				- Related: ((6409c272-fb95-49b3-8138-16beba759cda))
 			- ### Arrays Data Structure
 			- ### Arrayss Q&A
@@ -88,3 +91,51 @@
 		- [Learning Resources]
 			- {{embed ((6409b245-cab3-4cfa-b9e5-96c9c1b8e769))}}
 		- Related: ((629ccb26-0a29-4173-9b05-5c002e526487))
+- Harvard CS50: Introduction to Computer Science
+  id:: 640b4f37-0156-41c2-a5c1-0206af889c36
+  Move to ((629ccb26-fd59-47b6-b479-60e77b734217)) when complete
+	- [CS50 2021](https://youtube.com/8mAITcNt710)
+	  collapsed:: true
+		- {{video https://youtu.be/8mAITcNt710}}
+			- Meta
+				- ⭐️ Course Contents ⭐️
+				  collapsed:: true
+					- {{youtube-timestamp 0}} Lecture 0 - Scratch
+					- {{youtube-timestamp 6310}} Lecture 1 - C
+					- {{youtube-timestamp 15203}} Lecture 2 - Arrays
+					- {{youtube-timestamp 22843}} Lecture 3 - Algorithms
+					- {{youtube-timestamp 31075}} Lecture 4 - Memory
+					- {{youtube-timestamp 39797}} Lecture 5 - Data Structures
+					- {{youtube-timestamp 47736}} Lecture 6 - Python
+					- {{youtube-timestamp 56365}} Lecture 7 - SQL
+					- {{youtube-timestamp 64855}} Lecture 8 - HTML, CSS, JavaScript
+					- {{youtube-timestamp 73418}} Lecture 9 - Flask
+					- {{youtube-timestamp 81541}} Lecture 10 - Emoji
+					- {{youtube-timestamp 86570}} Cybersecurity
+				- Slides, source code, and more at [CS50: Computer Science Courses and Programs from Harvard | edX](https://cs50.harvard.edu)
+			- {{youtube-timestamp 0}} Lecture 0 - Scratch
+			  id:: 63becc33-7a6a-4d5c-8222-f25ff15aa742
+			  collapsed:: true
+				- Related: ((63bae0c2-287d-4995-9929-1a277166e286))
+			- {{youtube-timestamp 6310}} Lecture 1 - C
+				- {{youtube-timestamp 6494}} Conditionals AKA if statements
+				- {{youtube-timestamp 6613}} Correctness, Design and Style are the most important axis for good code
+				- {{youtube-timestamp 6882}} Hello world program
+					- ```c
+					  #include <stdio.h>
+					  int main(void)
+					  {
+					    printf("hello, world\n")
+					  }
+					  ```
+			- {{youtube-timestamp 15203}} Lecture 2 - Arrays
+			- {{youtube-timestamp 22843}} Lecture 3 - Algorithms
+			- {{youtube-timestamp 31075}} Lecture 4 - Memory
+			- {{youtube-timestamp 39797}} Lecture 5 - Data Structures
+			- {{youtube-timestamp 47736}} Lecture 6 - Python
+			- {{youtube-timestamp 56365}} Lecture 7 - SQL
+			- {{youtube-timestamp 64855}} Lecture 8 - HTML, CSS, JavaScript
+			- {{youtube-timestamp 73418}} Lecture 9 - Flask
+			- {{youtube-timestamp 81541}} Lecture 10 - Emoji
+			- {{youtube-timestamp 86570}} Cybersecurity
+	- {{embed ((629ccb26-fd59-47b6-b479-60e77b734217))}}
