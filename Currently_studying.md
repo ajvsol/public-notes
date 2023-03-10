@@ -94,6 +94,10 @@
 - Harvard CS50: Introduction to Computer Science
   id:: 640b4f37-0156-41c2-a5c1-0206af889c36
   Move to ((629ccb26-fd59-47b6-b479-60e77b734217)) when complete
+	- Online course
+		- [Gradebook](https://cs50.me/cs50x)
+		- [Learning Resources]
+			- [submit50](https://cs50.readthedocs.io/submit50/) info
 	- [CS50 2021](https://youtube.com/8mAITcNt710)
 	  collapsed:: true
 		- {{video https://youtu.be/8mAITcNt710}}
