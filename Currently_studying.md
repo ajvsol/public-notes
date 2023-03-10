@@ -127,6 +127,7 @@
 						- ```c
 						  #include <cs50.h>
 						  #include <stdio.h>
+						  
 						  int main(void)
 						  {
 						    string answer = get_string("What's your name? ");
@@ -163,21 +164,60 @@
 						  ```c
 						  if (x < y)
 						  {
-						    
+						    printf("x is less than y\n");
 						  }
 						  else if (x > y)
 						  {
-						    
+						    printf("x is greater than y\n");
 						  }
 						  else if (x == y)
 						  {
-						    
+						    printf("x is equal to y\n");
 						  }
 						  else
 						  {
-						    
+						    printf("error");
 						  }
 						  ```
+						- {{youtube-timestamp 3605}} `code filename.txt` is a Visual Studio Code shortcut similar to `touch filename.txt` and open it in a tab
+						- d
+						  ```c
+						  #include <cs50.h>
+						  #include <stdio.h>
+						  
+						  int main(void) {
+						    int x = get_int("What's x? ");
+						    int y = get_int("What's y? ");
+						    
+						    if (x < y) {
+						      printf("x is less than y\n");
+						    }
+						    else {
+						      printf("x is not less than y\n");
+						    }
+						  }
+						  ```
+						- {{youtube-timestamp 3898}} Remember to run `make filename` whenever you make changes before running the binary with `./`
+						- {{youtube-timestamp 4020}} Placement of `{` on a newline (like above examples) or not (like in JavaScript) is style choice, up to the programmer
+						- {{youtube-timestamp 4107}} Similar to shorthand to use `i` for `index`, name variables `c` for `char`, `s` for `string`, etc
+							- `char c`
+							  ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void) {
+							    char c = get_char("Do you agree? ");
+							    
+							    if (c == 'y') {
+							      printf("Agreed.\n");
+							    }
+							    else if (c == 'n') {
+							      printf("Not agreed.\n");
+							    }
+							  }
+							  ```
+							- {{youtube-timestamp 4195}} Single quotes `'` are needed for `char` type, double quotes `"` for `string`
+					- Loops, Variables
 				-
 				-
 			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
