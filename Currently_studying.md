@@ -121,13 +121,22 @@
 				- {{youtube-timestamp 6494}} Conditionals AKA if statements
 				- {{youtube-timestamp 6613}} Correctness, Design and Style are the most important axis for good code
 				- {{youtube-timestamp 6882}} Hello world program
-					- ```c
+					- `hello.c`
+					  ```c
 					  #include <stdio.h>
 					  int main(void)
 					  {
 					    printf("hello, world\n")
 					  }
 					  ```
+				- {{youtube-timestamp 7058}} Source code -> compiler -> machine code (binary/base-2)
+				- {{youtube-timestamp 7263}} `make hello` will compile it. Then `./hello` to run the binary
+				- {{youtube-timestamp 7736}} Explaning the code snippet
+					- `printf` stands for "print formatted"
+					- `printf("test")` requires for strings double quotes, not single quotes
+					- `;` semicolons required
+				- {{youtube-timestamp 7889}}
+				- ..
 			- {{youtube-timestamp 15203}} Lecture 2 - Arrays
 			- {{youtube-timestamp 22843}} Lecture 3 - Algorithms
 			- {{youtube-timestamp 31075}} Lecture 4 - Memory
