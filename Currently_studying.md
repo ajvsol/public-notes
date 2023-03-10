@@ -101,11 +101,85 @@
 			- [CS50 2022 - Lecture 1 - C - YouTube](https://youtu.be/ywg7cW0Txs4)
 			  collapsed:: true
 				- {{video https://www.youtube.com/watch?v=ywg7cW0Txs4}}
-					- {{youtube-timestamp 44}}
-					-
-					-
-					- ((64024e47-1e4d-4a05-9cb4-a6f9185246a5))
-						- {{embed ((64024e47-1e4d-4a05-9cb4-a6f9185246a5))}}
+					- {{youtube-timestamp 223}}
+					- OLD
+					- {{youtube-timestamp 1251}} Hello world program
+						- `hello.c`
+						  ```c
+						  #include <stdio.h>
+						  int main(void)
+						  {
+						    printf("hello, world\n")
+						  }
+						  ```
+					- Source code -> compiler -> machine code (binary/base-2)
+					- `make hello` will compile it. Then `./hello` to run the binary
+					- Explaining the code snippet
+						- `printf` stands for "print formatted"
+						- `printf("test")` requires for strings double quotes, not single quotes. They also need to be on the same line, generally
+						- `;` semicolons required
+						- `int` needed because you need to define the *data type* for the function
+						- {{youtube-timestamp 1641}} `\n` to make a new line
+						- {{youtube-timestamp 1885}} `#include <stdio.h>` is importing a library for Standard I/O (input/output). Needed to use `printf`
+					- {{youtube-timestamp 2582}} `%s` is a format code (placeholder)
+						- Can be used as a variable within a string, then put a variable name (`answer`) after a `,`
+						- e.g. `printf("hello, %s\n", answer);` to mean "put a string here eventually"
+						- ```c
+						  #include <cs50.h>
+						  #include <stdio.h>
+						  int main(void)
+						  {
+						    string answer = get_string("What's your name? ");
+						    printf("hello, %s\n", answer);
+						  }
+						  ```
+					- Terminology
+						- Smooth, square and curly brackets (braces) `( [ {`
+						- Parentheses `"`
+					- {{youtube-timestamp 3012}} To escape `%` symbols in a string, you need to write `%%` which will escape to only be one `%`
+					- {{youtube-timestamp 3133}} Types in C
+					  collapsed:: true
+						- `bool`
+						- `char`
+						- `double`
+						- `float`
+						- `int`
+						- `long`
+						- `string`
+						- and more
+					- {{youtube-timestamp 3222}} Conditionals
+						- ```c
+						  if (x < y)
+						  {
+						    printf("x is less than y\n");
+						  }
+						  else
+						  {
+						    printf("x is not less than y\n");
+						  }
+						  ```
+						- {{youtube-timestamp 3345}} If you have only one line of code between `{` and`}` then they're not strictly needed, but stylistically it's better to use them
+						- {{youtube-timestamp 3454}}
+						  ```c
+						  if (x < y)
+						  {
+						    
+						  }
+						  else if (x > y)
+						  {
+						    
+						  }
+						  else if (x == y)
+						  {
+						    
+						  }
+						  else
+						  {
+						    
+						  }
+						  ```
+				-
+				-
 			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
@@ -141,42 +215,6 @@
 			  id:: 63becc33-7a6a-4d5c-8222-f25ff15aa742
 			  collapsed:: true
 				- Related: ((63bae0c2-287d-4995-9929-1a277166e286))
-			- {{youtube-timestamp 6310}} Lecture 1 - C
-			  id:: 64024e47-1e4d-4a05-9cb4-a6f9185246a5
-				- {{youtube-timestamp 6494}} Conditionals AKA if statements
-				- {{youtube-timestamp 6613}} Correctness, Design and Style are the most important axis for good code
-				- {{youtube-timestamp 6882}} Hello world program
-					- `hello.c`
-					  ```c
-					  #include <stdio.h>
-					  int main(void)
-					  {
-					    printf("hello, world\n")
-					  }
-					  ```
-				- {{youtube-timestamp 7058}} Source code -> compiler -> machine code (binary/base-2)
-				- {{youtube-timestamp 7263}} `make hello` will compile it. Then `./hello` to run the binary
-				- {{youtube-timestamp 7736}} Explaining the code snippet
-					- `printf` stands for "print formatted"
-					- `printf("test")` requires for strings double quotes, not single quotes. They also need to be on the same line, generally
-					- `;` semicolons required
-					- {{youtube-timestamp 8083}} `int` needed because you need to define the *data type* for the function
-					- {{youtube-timestamp 8249}} `\n` to make a new line
-					- {{youtube-timestamp 8497}} `#include <stdio.h>` is importing a library for Standard I/O (input/output). Needed to use `printf`
-				- {{youtube-timestamp 8648}} `%s` can be used as a variable within a string, then put a variable name (`answer`) after a `,`
-					- e.g. `printf("hello, %s\n", answer);` to mean "put a string here eventually"
-					- ```c
-					  #include <cs50.h>
-					  #include <stdio.h>
-					  int main(void)
-					  {
-					    string answer = get_string("What's your name? ");
-					    printf("hello, %s\n", answer);
-					  }
-					  ```
-				- Smooth, square and curly brackets (braces) `( [ {`
-				- {{youtube-timestamp 9056}}
-				- ..
 			- {{youtube-timestamp 15203}} Lecture 2 - Arrays
 			- {{youtube-timestamp 22843}} Lecture 3 - Algorithms
 			- {{youtube-timestamp 31075}} Lecture 4 - Memory
