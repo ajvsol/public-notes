@@ -96,6 +96,26 @@
   Move to ((629ccb26-fd59-47b6-b479-60e77b734217)) when complete
 	- Online course
 		- [Gradebook](https://cs50.me/cs50x)
+		- [CS50 Lectures 2022](https://youtu.be/ywg7cW0Txs4)
+			- [CS50 2022 - Lecture 0 - Scratch - YouTube](https://youtu.be/IDDmrzzB14M)
+			- [CS50 2022 - Lecture 1 - C - YouTube](https://youtu.be/ywg7cW0Txs4)
+			  collapsed:: true
+				- {{video https://www.youtube.com/watch?v=ywg7cW0Txs4}}
+					- {{youtube-timestamp 44}}
+					-
+					-
+					- ((64024e47-1e4d-4a05-9cb4-a6f9185246a5))
+						- {{embed ((64024e47-1e4d-4a05-9cb4-a6f9185246a5))}}
+			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
+			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
+			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
+			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
+			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
+			- [CS50 2022 - Lecture 7 - SQL - YouTube](https://youtu.be/zrCLRC3Ci1c)
+			- [CS50 2022 - Lecture 8 - HTML, CSS, JavaScript - YouTube](https://youtu.be/alnzFK-4xMY)
+			- [CS50 2022 - Cybersecurity - YouTube](https://youtu.be/Kuy4cEXpXEE)
+			- [CS50 2022 - Lecture 9 - Flask - YouTube](https://youtu.be/oVA0fD13NGI)
+			- [CS50 2022 - Lecture 10 - Emoji - YouTube](https://youtu.be/iXG0sXlzuF0)
 		- [Learning Resources]
 			- [submit50](https://cs50.readthedocs.io/submit50/) info
 	- [CS50 2021](https://youtube.com/8mAITcNt710)
@@ -122,6 +142,7 @@
 			  collapsed:: true
 				- Related: ((63bae0c2-287d-4995-9929-1a277166e286))
 			- {{youtube-timestamp 6310}} Lecture 1 - C
+			  id:: 64024e47-1e4d-4a05-9cb4-a6f9185246a5
 				- {{youtube-timestamp 6494}} Conditionals AKA if statements
 				- {{youtube-timestamp 6613}} Correctness, Design and Style are the most important axis for good code
 				- {{youtube-timestamp 6882}} Hello world program
