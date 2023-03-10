@@ -135,11 +135,11 @@
 					- `printf` stands for "print formatted"
 					- `printf("test")` requires for strings double quotes, not single quotes. They also need to be on the same line, generally
 					- `;` semicolons required
-					- {{youtube-timestamp 8083}} `int` needed because you need to define the *type* that a function returns
+					- {{youtube-timestamp 8083}} `int` needed because you need to define the *data type* for the function
 					- {{youtube-timestamp 8249}} `\n` to make a new line
 					- {{youtube-timestamp 8497}} `#include <stdio.h>` is importing a library for Standard I/O (input/output). Needed to use `printf`
-				- {{youtube-timestamp 8648}} `%s` can be used as a variable within a string, then put a variable after a `,`
-				  e.g. `printf("hello, %s\n", answer);` to mean "put a string here eventually"
+				- {{youtube-timestamp 8648}} `%s` can be used as a variable within a string, then put a variable name (`answer`) after a `,`
+					- e.g. `printf("hello, %s\n", answer);` to mean "put a string here eventually"
 					- ```c
 					  #include <cs50.h>
 					  #include <stdio.h>
@@ -148,8 +148,9 @@
 					    string answer = get_string("What's your name? ");
 					    printf("hello, %s\n", answer);
 					  }
-					  
 					  ```
+				- Smooth, square and curly brackets (braces) `( [ {`
+				-
 				- ..
 			- {{youtube-timestamp 15203}} Lecture 2 - Arrays
 			- {{youtube-timestamp 22843}} Lecture 3 - Algorithms
