@@ -98,7 +98,7 @@
 		- Meta
 			- [Gradebook](https://cs50.me/cs50x)
 			- [Visual Studio Code for CS50 — CS50 Docs](https://cs50.readthedocs.io/code/) Docs on their web editor
-			- https://submit.cs50.io/users/ajvsol submission site
+			- [Sign in to GitHub · GitHub](https://submit.cs50.io/users/ajvsol) submission site
 		- [CS50 Lectures 2022](https://youtu.be/ywg7cW0Txs4)
 			- [CS50 2022 - Lecture 0 - Scratch - YouTube](https://youtu.be/IDDmrzzB14M)
 			- [CS50 2022 - Lecture 1 - C - YouTube](https://youtu.be/ywg7cW0Txs4)
@@ -419,6 +419,9 @@
 				-
 				-
 			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
+			  collapsed:: true
+				- {{video https://youtu.be/XmYnsO7iSI8}}
+					-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
