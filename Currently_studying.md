@@ -101,8 +101,6 @@
 			- [CS50 2022 - Lecture 1 - C - YouTube](https://youtu.be/ywg7cW0Txs4)
 			  collapsed:: true
 				- {{video https://www.youtube.com/watch?v=ywg7cW0Txs4}}
-					- {{youtube-timestamp 223}}
-					- OLD
 					- {{youtube-timestamp 1251}} Hello world program
 						- `hello.c`
 						  ```c
@@ -138,7 +136,7 @@
 						- Smooth, square and curly brackets (braces) `( [ {`
 						- Parentheses `"`
 					- {{youtube-timestamp 3012}} To escape `%` symbols in a string, you need to write `%%` which will escape to only be one `%`
-					- {{youtube-timestamp 3133}} Types in C
+					- {{youtube-timestamp 3133}} Types in ((640c8362-cdc6-44a3-b991-a338f1d05b5a))
 					  collapsed:: true
 						- `bool`
 						- `char`
@@ -148,7 +146,8 @@
 						- `long`
 						- `string`
 						- and more
-					- {{youtube-timestamp 3222}} Conditionals
+					- ### {{youtube-timestamp 3222}} Conditionals
+					  collapsed:: true
 						- ```c
 						  if (x < y)
 						  {
@@ -217,11 +216,67 @@
 							  }
 							  ```
 							- {{youtube-timestamp 4195}} Single quotes `'` are needed for `char` type, double quotes `"` for `string`
-						- {{youtube-timestamp 4353}} OR operator
+						- {{youtube-timestamp 4353}} OR operator `||`
+						  collapsed:: true
 							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void) {
+							    char c = get_char("Do you agree? ");
+							    
+							    if (c == 'y' || c == 'Y') {
+							      printf("Agreed.\n");
+							    }
+							    else if (c == 'n' || c == 'N') {
+							      printf("Not agreed.\n");
+							    }
+							  }
 							  ```
-					- Loops, Variables
-					- Command-Line Interface
+					- ### {{youtube-timestamp 4552}} Loops, Variables
+					  collapsed:: true
+						- {{youtube-timestamp 4608}} ((640c8362-cdc6-44a3-b991-a338f1d05b5a)) convention is 4 spaces for indentation
+						- {{youtube-timestamp 4781}} Syntactic sugar when shorter ways of writing common expressions
+						- {{youtube-timestamp 4820}} `counter = counter + 1` == `counter += 1` == `counter++`
+						- {{youtube-timestamp 4901}} While loop
+							- ```c
+							  int i = 0;
+							  while (i < 3) {
+							    printf("meow\n");
+							    i--
+							  }
+							  ```
+							- {{youtube-timestamp 5207}} Canonical way is starting `i = 0`
+							- ```c
+							  #include <stdio.h>
+							  
+							  int main(void) {
+							    int i = 0;
+							    while (i < 30) {
+							      printf("meow\n");
+							      i++
+							    }
+							  }
+							  ```
+						- {{youtube-timestamp 5326}} For loop
+							- ```c
+							  for (int i = 0; i < 3; i++) {
+							    printf("meow\n");
+							  }
+							  ```
+						- {{youtube-timestamp 5630}} Forever while loop
+							- `while (true)` or `while (1)`
+							- Need to also `#include <stdloop.h>`
+					- ### {{youtube-timestamp 5808}} Command-Line Interface
+						- Most important commands to learn
+							- `cd` = Change Directory
+							- `cp` = Copy
+							- `ls` = List
+							- `mkdir` = Make Directory
+							- `mv` = Move
+							- `rm` = Remove (also renames)
+							- `rmdir` = Remove Directory
+						-
 					- Mario
 					- Nested Loops
 					- Do While Loops
