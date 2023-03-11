@@ -3234,6 +3234,8 @@
 				- Iterations
 				  AKA loops
 					- [`do...while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+					  id:: 64024e3f-a15d-4a78-a629-6d530a318a64
+						- [Loops and iteration - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement)
 					- [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 					  id:: 63679853-6e6e-4fce-87bc-93f106c2e05d
 					- [`for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)

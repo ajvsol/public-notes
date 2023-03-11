@@ -2,7 +2,7 @@
 
 These notes are created primarily via the outliner app [Logseq](https://github.com/logseq/logseq) currently.
 
-This repo contain 127152 words, which represents 10.59% of my coding related notes (1200864 words), and 0.93% of my total notes (12424418 words). **Last updated:** 2023-03-11 14:30:01. 
+This repo contain 127564 words, which represents 10.62% of my coding related notes (1201276 words), and 0.94% of my total notes (12424418 words). **Last updated:** 2023-03-11 15:00:01. 
 
 To do:
 

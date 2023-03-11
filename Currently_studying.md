@@ -119,7 +119,8 @@
 						- `int` needed because you need to define the *data type* for the function
 						- {{youtube-timestamp 1641}} `\n` to make a new line
 						- {{youtube-timestamp 1885}} `#include <stdio.h>` is importing a library for Standard I/O (input/output). Needed to use `printf`
-					- {{youtube-timestamp 2582}} `%s` is a format code (placeholder)
+					- ### {{youtube-timestamp 2582}} Format Codes
+						- `%s` is a format code (placeholder)
 						- Can be used as a variable within a string, then put a variable name (`answer`) after a `,`
 						- e.g. `printf("hello, %s\n", answer);` to mean "put a string here eventually"
 						- ```c
@@ -278,7 +279,8 @@
 							- `mv` = Move (also renames)
 							- `rm` = Remove
 							- `rmdir` = Remove Directory
-					- {{youtube-timestamp 6339}} Mario
+					- ### {{youtube-timestamp 6339}} Nested Loops and Mario
+					  collapsed:: true
 						- Making a 3x3 grid
 						  ```c
 						  #include <stdio.h>
@@ -293,13 +295,68 @@
 						  }
 						  ```
 						- {{youtube-timestamp 6907}} `const` e.g. `const int n = 5`
-						-
-					- Nested Loops
-					- Do While Loops
-					- Abstraction
-					- Operators
+					- ### {{youtube-timestamp 7249}} Do While Loops
+					  collapsed:: true
+						- ```c
+						  #include <stdio.h>
+						  
+						  int main(void) {
+						    int n;
+						    do {
+						      n = get_int("Size: ");
+						    } while (n < 1);
+						    
+						    for (int i = 0; i < 4; i++) {
+						      for (int j = 0; j < 3; j++) {
+						        printf("#");
+						      }
+						      printf("\n");
+						    }
+						  }
+						  ```
+					- {{youtube-timestamp 7452}} `//` for comments
+					- ### {{youtube-timestamp 7579}} Abstraction
+						- ```c
+						  #include <stdio.h>
+						  
+						  int main(void) {
+						    // Get size of grid
+						    int n = get_size();
+						    
+						    // Print grid of tickets
+						    print_grid(n)
+						  }
+						  
+						  int get_size(void) {
+						    int n;
+						    do {
+						      n = get_int("Size: ");
+						    } while (n < 1);
+						    return n;
+						  }
+						  
+						  void print_grid(int size) {
+						    for (int i = @; i < size; i++) {
+						      for (int j = 0; j < size; j++) {
+						      	printf ("#");
+						      }
+						      print("\n");
+						    }
+						  }
+						  ```
+							- ```c
+							  void print_grid(int size)
+							  ```
+								- `int size` because similar to TypeScript, parameters need a type annotation
+								- `void` because the function returns no type (`void`)
+						- {{youtube-timestamp 7837}} Teasing (related to hoisting?)
+							- Copy the first line of code from the function and end it with a semi-colon
+							  ```c
+							  ```
+					- ### Operators
 					- Integer Overflow
-					-
+					- [Learning Resources]
+						- ((64024e3f-a15d-4a78-a629-6d530a318a64))
 				-
 				-
 			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
