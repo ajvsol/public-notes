@@ -316,6 +316,7 @@
 						  ```
 					- {{youtube-timestamp 7452}} `//` for comments
 					- ### {{youtube-timestamp 7579}} Abstraction
+					  collapsed:: true
 						- ```c
 						  #include <stdio.h>
 						  
@@ -350,11 +351,66 @@
 								- `int size` because similar to TypeScript, parameters need a type annotation
 								- `void` because the function returns no type (`void`)
 						- {{youtube-timestamp 7837}} Teasing (related to hoisting?)
+							- Cleaner solution rather than having to move functions to the top of the file
 							- Copy the first line of code from the function and end it with a semi-colon
 							  ```c
+							  #include <stdio.h>
+							  
+							  // Teasing
+							  int get_size(void);
+							  void print_grid(int size);
+							  
+							  int main(void) {
+							    // Get size of grid
+							    int n = get_size();
+							    
+							    // Print grid of tickets
+							    print_grid(n)
+							  }
+							  
+							  int get_size(void) {
+							    int n;
+							    do {
+							      n = get_int("Size: ");
+							    } while (n < 1);
+							    return n;
+							  }
+							  
+							  void print_grid(int size) {
+							    for (int i = @; i < size; i++) {
+							      for (int j = 0; j < size; j++) {
+							      	printf ("#");
+							      }
+							      print("\n");
+							    }
+							  }
 							  ```
-					- ### Operators
-					- Integer Overflow
+					- ### {{youtube-timestamp 8175}} Integer Overflow
+						- In 32-bit you can only go ~2 billion positive or negative. Integer overflow is when you try to represent an integer outside this range
+						- Instead of `int` you can use `long` which allows for bigger numbers
+					- Truncation
+						- {{youtube-timestamp 8288}} Other format codes
+							- `%c` = char
+							- `%f` == `float` == floating point values (has decimals)
+							- `%li` = long integer (64-bit)
+							- `%s` = string
+							- `%i` = integer (32-bit)
+						- {{youtube-timestamp 8453}} `int` and `long` don't have support for decimals
+						- {{youtube-timestamp 8525}} Type casting
+							- `(float)` has to be added infront of the variables
+							  ```c
+							  int main(void) {
+							    long x = get_long("x: ");
+							    long y = get_long("y: ");
+							    
+							    float z = (float) x / (float) y; 
+							    printf("%f\n", z);
+							  }
+							  ```
+					- {{youtube-timestamp 8604}} Floating-point imprecision
+						- `printf("%.20f\n", z);` = added `.20`to show 20 decimal places for the `%f`
+						- {{youtube-timestamp 8726}} How to prevent
+							- `double` = 2x as many bits as `float` (32 -> 64)
 					- [Learning Resources]
 						- ((64024e3f-a15d-4a78-a629-6d530a318a64))
 				-
