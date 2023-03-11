@@ -217,7 +217,9 @@
 							  }
 							  ```
 							- {{youtube-timestamp 4195}} Single quotes `'` are needed for `char` type, double quotes `"` for `string`
-						-
+						- {{youtube-timestamp 4353}} OR operator
+							- ```c
+							  ```
 					- Loops, Variables
 					- Command-Line Interface
 					- Mario
