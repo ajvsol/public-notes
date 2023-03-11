@@ -239,6 +239,7 @@
 						- {{youtube-timestamp 4781}} Syntactic sugar when shorter ways of writing common expressions
 						- {{youtube-timestamp 4820}} `counter = counter + 1` == `counter += 1` == `counter++`
 						- {{youtube-timestamp 4901}} While loop
+						  collapsed:: true
 							- ```c
 							  int i = 0;
 							  while (i < 3) {
@@ -268,16 +269,31 @@
 							- `while (true)` or `while (1)`
 							- Need to also `#include <stdloop.h>`
 					- ### {{youtube-timestamp 5808}} Command-Line Interface
+					  collapsed:: true
 						- Most important commands to learn
 							- `cd` = Change Directory
 							- `cp` = Copy
 							- `ls` = List
 							- `mkdir` = Make Directory
-							- `mv` = Move
-							- `rm` = Remove (also renames)
+							- `mv` = Move (also renames)
+							- `rm` = Remove
 							- `rmdir` = Remove Directory
+					- {{youtube-timestamp 6339}} Mario
+						- Making a 3x3 grid
+						  ```c
+						  #include <stdio.h>
+						  
+						  int main(void) {
+						    for (int i = 0; i < 4; i++) {
+						      for (int j = 0; j < 3; j++) {
+						        printf("#");
+						      }
+						      printf("\n");
+						    }
+						  }
+						  ```
+						- {{youtube-timestamp 6907}} `const` e.g. `const int n = 5`
 						-
-					- Mario
 					- Nested Loops
 					- Do While Loops
 					- Abstraction
