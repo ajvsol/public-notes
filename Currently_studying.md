@@ -217,7 +217,16 @@
 							  }
 							  ```
 							- {{youtube-timestamp 4195}} Single quotes `'` are needed for `char` type, double quotes `"` for `string`
+						-
 					- Loops, Variables
+					- Command-Line Interface
+					- Mario
+					- Nested Loops
+					- Do While Loops
+					- Abstraction
+					- Operators
+					- Integer Overflow
+					-
 				-
 				-
 			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
