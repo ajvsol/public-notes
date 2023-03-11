@@ -95,7 +95,10 @@
   id:: 640b4f37-0156-41c2-a5c1-0206af889c36
   Move to ((629ccb26-fd59-47b6-b479-60e77b734217)) when complete
 	- Online course
-		- [Gradebook](https://cs50.me/cs50x)
+		- Meta
+			- [Gradebook](https://cs50.me/cs50x)
+			- [Visual Studio Code for CS50 — CS50 Docs](https://cs50.readthedocs.io/code/) Docs on their web editor
+			- https://submit.cs50.io/users/ajvsol submission site
 		- [CS50 Lectures 2022](https://youtu.be/ywg7cW0Txs4)
 			- [CS50 2022 - Lecture 0 - Scratch - YouTube](https://youtu.be/IDDmrzzB14M)
 			- [CS50 2022 - Lecture 1 - C - YouTube](https://youtu.be/ywg7cW0Txs4)
