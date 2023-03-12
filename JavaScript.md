@@ -8657,41 +8657,43 @@
 							- Basic install
 								- `sudo apt install nodejs`
 							- [Install via a Node version manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-nodejs-and-npm)
+							  id:: 64024e3e-17bd-46f7-b70d-41a02bf20981
 								- Install `nvm`
-								  collapsed:: true
 									- Note: don't have to uninstall npm to use this
-									- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash`
-									  [This script will install or update nvm](https://github.com/nvm-sh/nvm#install--update-script)
+									- ```bash
+									  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+									  ```
+										- [This script will install or update nvm](https://github.com/nvm-sh/nvm#install--update-script)
 									- `source ~/.bashrc` to refresh bash
 									- `command -v nvm` to check if it's installed (it should return `nvm`)
 								- Using `nvm` (current [[Dec 22nd, 2022]] )
 								  collapsed:: true
 									- `nvm install node` = "node" is an alias for the latest version
-									  collapsed:: true
 										- Output
 										  ```bash
 										  Your user’s .npmrc file (${HOME}/.npmrc)
 										  has a `globalconfig` and/or a `prefix` setting, which are incompatible with nvm.
 										  Run `nvm use --delete-prefix v19.3.0` to unset it.
 										  ```
-								- Basic install using `fnm`
-								  collapsed:: true
-									- `curl -fsSL https://fnm.vercel.app/install | bash`
-									- `sudo nano ~/.bashrc`
-									- `source ~/.bashrc`
-									  Reload bash
-									- `fnm list-remote`
-									  List available versions to install
-									- `fnm install 18.1.0`
-									  Install a chosen version
-								- Using `fnm` (used prior to [[Dec 22nd, 2022]] )
-								  collapsed:: true
-									- `fnm list` - shows all the node versions installed in the system
-									- `fnm list-remote` - Shows all the available node versions which can be installed.
-									- `fnm install <version>` - Install the node version locally which we got from list command. eg- fnm install v14.0.2  would install v14.0.2 locally.
-									- `fnm use <version>` - Activate the given version which is installed in the system. eg - fnm use v16.13.2 would activate v16.13.2 which is installed
-									- `fnm default <version>` - Set the node version to default alias. eg fnm default v16.13.2 would make  v16.13.2 as the default version for the system.
-									- `fnm current` - Prints the current node version which is activated.
+								- {Archive}
+									- Using `fnm` (used prior to [[Dec 22nd, 2022]] )
+									  collapsed:: true
+										- `fnm list` - shows all the node versions installed in the system
+										- `fnm list-remote` - Shows all the available node versions which can be installed.
+										- `fnm install <version>` - Install the node version locally which we got from list command. eg- fnm install v14.0.2  would install v14.0.2 locally.
+										- `fnm use <version>` - Activate the given version which is installed in the system. eg - fnm use v16.13.2 would activate v16.13.2 which is installed
+										- `fnm default <version>` - Set the node version to default alias. eg fnm default v16.13.2 would make  v16.13.2 as the default version for the system.
+										- `fnm current` - Prints the current node version which is activated.
+									- Basic install using `fnm`
+									  collapsed:: true
+										- `curl -fsSL https://fnm.vercel.app/install | bash`
+										- `sudo nano ~/.bashrc`
+										- `source ~/.bashrc`
+										  Reload bash
+										- `fnm list-remote`
+										  List available versions to install
+										- `fnm install 18.1.0`
+										  Install a chosen version
 							- Change permissions if using ((63209272-1088-4824-a762-4ac7ded04b0a)) Flatpak
 								- Used ((634bc1ee-d662-4244-bf4d-6bd64e77dbd1)) to check that `~/.fnm/fnm` is owned by `root`, so Visual Studio Code in a Flatpak is unable to access that directory
 								- `cd ~` to change to home directory
@@ -8853,6 +8855,7 @@
 					  id:: 634bc0c1-c4b8-488f-9c11-5918d0bfb50d
 					  collapsed:: true
 						- Notable packages
+						  collapsed:: true
 							- [npx](https://www.npmjs.com/package/npx)
 							  id:: 636a7232-bbde-4f4c-80d5-0ef4c9c21da5
 							  collapsed:: true
@@ -9580,6 +9583,7 @@
 								- https://github.com/tailwindlabs/tailwindcss
 								- https://tailwindcss.com/
 								-
+						- Related: ((64024e3e-17bd-46f7-b70d-41a02bf20981))
 					- Related: ((63dbdafa-6dcc-450f-8253-0fa668ed2b8a))
 				- _Node.js-based frameworks_
 				  collapsed:: true
