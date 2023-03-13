@@ -437,7 +437,9 @@
 							  ```
 						- {{youtube-timestamp 950}} Need to run with `clang -o hello hello.c -lcs50` so that `clang` knows where the third-party imported library is located. `stdio` on the other hand is first-party, built-into C
 						- {{youtube-timestamp 1181}} There's really 4 steps in compiling:
-							- {{youtube-timestamp 1216}} Preprocessing =
+							- {{youtube-timestamp 1216}} Preprocessing
+							  collapsed:: true
+								- Converts everything to proper C code by adding in the imports
 								- The libraries we included before are actually stored in `/usr/include`
 								- The `include`s get transformed
 								  ```c
@@ -446,11 +448,27 @@
 								  // #include <stdio.h>
 								  int printf(string format, ...);
 								  ```
-									- `...` =
-							- Compiling
-							- Assembling
-							- Linking
-					- ### Debugging
+									- `...` = any number of variables
+									-
+							- {{youtube-timestamp 1534}} Compiling
+							  collapsed:: true
+								- Changes everything to assembly code
+								- Example assembly code for our C code
+								  collapsed:: true
+									- ![image.png](../assets/image_1678709069073_0.png)
+							- {{youtube-timestamp 1689}} Assembling
+							  collapsed:: true
+								- Converts Assembly to binary (base-2/machine code)
+							- {{youtube-timestamp 1724}} Linking
+							  collapsed:: true
+								- Combines the machine code for your code with the machine code for all your imports
+						- {{youtube-timestamp 2240}} Decompiling is possible but you lose variable and function names, it becomes very hard to read. Probably better off just writing it from scratch
+					- ### {{youtube-timestamp 2302}} Debugging
+						- {{youtube-timestamp 2549}} `printf` is the simplest form of debugging (equivalent to `console.log`)
+						- {{youtube-timestamp 2752}} Debugger
+							- Breakpoints can be added in normal Visual Studio Code view by clicking in the gutter. Execute file as normal `./hello`
+							- {{youtube-timestamp 2968}} Step-over - it'll step over functions like `printf`. Step-into would show each line of code beign executed in `printf`
+							- The highlighted line hasn't yet been executed
 					- ### Arrays
 					- ### Strings
 					- ### Command-Line Arguments
