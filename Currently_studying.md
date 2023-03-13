@@ -469,6 +469,7 @@
 							- Breakpoints can be added in normal Visual Studio Code view by clicking in the gutter. Execute file as normal `./hello`
 							- {{youtube-timestamp 2968}} Step-over - it'll step over functions like `printf`. Step-into would show each line of code beign executed in `printf`
 							- The highlighted line hasn't yet been executed
+							- {{youtube-timestamp 3129}}
 					- ### Arrays
 					- ### Strings
 					- ### Command-Line Arguments
