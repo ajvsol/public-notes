@@ -483,7 +483,52 @@
 							- `double` = 8
 							- `char` = 1
 							- `string` = ? bytes
-						-
+						- {{youtube-timestamp 4176}} Arithmetic example
+							- ```c
+							  int main(void) {
+							    int score1 = 72;
+							    int score2 = 73;
+							    int score3 = 33;
+							    
+							    printf("Average: %i\n", (score1 + score2 + score3) / 3)
+							  }
+							  ```
+						- {{youtube-timestamp 4331}} Can't swap out `%i` for %f` unless you change another part of code
+							- A) Make at least one of the existing numbers a `float` e.g. change `3` to `3.0`
+							- B) Typecast instead e.g. `3` becomes `(float) 3`
+						- {{youtube-timestamp 4530}} `int scores[3]` creates an array with space for `3` integers
+						- `scores[0] = 72` inserts `72` as the first item of the array
+						- {{youtube-timestamp 4633}} Replacing int variables with an integer array
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void) {
+							    int scores[3]
+							    scores[0] = get_int("Score: ");
+							    scores[1] = get_int("Score: ");
+							    scores[2] = get_int("Score: ");
+							    
+							    printf("Average: %i\n", (scores[0] + scores[1] + scores[2]) / 3)
+							  }
+							  ```
+						- {{youtube-timestamp 4962}} How to write that a function takes an array of integers. `array` is just the var name, it's the `int ___[]` that defines it as an int array
+						  ```c
+						  float average(int array[]);
+						  ```
+						- {{youtube-timestamp 5127}} You want to set the array length and loop length to a var so you only have to change the number from one place (it's not a "magic number" you have to edit in multiple places)
+							- ```c
+							  const int N = 4; 
+							  
+							  float average(int array[]);
+							  
+							  int main(void) { 
+							    int scores[N]; 
+							    for (int i = 0; i<N; i++) { 
+							      scores[i] = get_int("Score: "); 
+							    }
+							  }
+							  ```
 					- ### Strings
 					- ### Command-Line Arguments
 					- ### Exit Status
