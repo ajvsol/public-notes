@@ -529,8 +529,19 @@
 							    }
 							  }
 							  ```
-						- {{youtube-timestamp 5181}}
-					- ### Strings
+						- {{youtube-timestamp 5239}}
+							- ```c
+							  float average(int array[]) {
+							    int sum = 0;
+							    for (int i = 0; i < N; i++) {
+							      sum += array[i];
+							    }
+							    return sum / (float) N;
+							  }
+							  ```
+						- {{youtube-timestamp 5609}} You can't find out the length of an array after initialising it
+					- ### {{youtube-timestamp 5704}} Strings
+						-
 					- ### Command-Line Arguments
 					- ### Exit Status
 					- ### Cryptography
