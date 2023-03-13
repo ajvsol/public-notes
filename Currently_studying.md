@@ -464,6 +464,7 @@
 								- Combines the machine code for your code with the machine code for all your imports
 						- {{youtube-timestamp 2240}} Decompiling is possible but you lose variable and function names, it becomes very hard to read. Probably better off just writing it from scratch
 					- ### {{youtube-timestamp 2302}} Debugging
+					  collapsed:: true
 						- {{youtube-timestamp 2549}} `printf` is the simplest form of debugging (equivalent to `console.log`)
 						- {{youtube-timestamp 2752}} Debugger
 							- Breakpoints can be added in normal Visual Studio Code view by clicking in the gutter. Execute file as normal `./hello`
@@ -473,7 +474,16 @@
 						- {{youtube-timestamp 3625}} Rubber duck debugging
 							- Out loud talk through your issue
 							-
-					- ### Arrays
+					- ### {{youtube-timestamp 3904}} Arrays
+						- {{youtube-timestamp 3904}} Each data structure takes up differing amounts of memory
+							- `bool` = 1 byte (8 bits)
+							- `int` = 4 bytes (32 bits)
+							- `long` = 8 bytes (64 bits)
+							- `float` = 4
+							- `double` = 8
+							- `char` = 1
+							- `string` = ? bytes
+						-
 					- ### Strings
 					- ### Command-Line Arguments
 					- ### Exit Status
