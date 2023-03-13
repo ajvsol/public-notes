@@ -541,7 +541,7 @@
 							  ```
 						- {{youtube-timestamp 5609}} You can't find out the length of an array after initialising it
 					- ### {{youtube-timestamp 5704}} Strings
-						-
+						- {{youtube-timestamp 5777}}
 					- ### Command-Line Arguments
 					- ### Exit Status
 					- ### Cryptography
