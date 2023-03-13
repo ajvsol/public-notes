@@ -421,7 +421,26 @@
 			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
 			  collapsed:: true
 				- {{video https://youtu.be/XmYnsO7iSI8}}
-					- {{youtube-timestamp 1}}
+					- ### {{youtube-timestamp 376}} Compiling
+						- {{youtube-timestamp 442}} `make` isn't a compiler, it automates one. It utilises `clang` as the compiler
+						- {{youtube-timestamp 501}} `clang hello` instead of `make hello` produces an `a.out` file (assembler output). To make it use the same filename, instead do `clang -o hello hello.c`
+							- `-o hello` = name the output file as `hello`
+							-
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void) { 
+							    string name = get_string("What's your name? "); 
+							    printf("hello, %s\n", name);
+							  }
+							  ```
+					- ### Debugging
+					- ### Arrays
+					- ### Strings
+					- ### Command-Line Arguments
+					- ### Exit Status
+					- ### Cryptography
 					-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
