@@ -425,7 +425,7 @@
 						- {{youtube-timestamp 442}} `make` isn't a compiler, it automates one. It utilises `clang` as the compiler
 						- {{youtube-timestamp 501}} `clang hello` instead of `make hello` produces an `a.out` file (assembler output). To make it use the same filename, instead do `clang -o hello hello.c`
 							- `-o hello` = name the output file as `hello`
-							-
+						- {{youtube-timestamp 930}} Our file from last week won't compile as-is using `clang`
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
@@ -435,6 +435,21 @@
 							    printf("hello, %s\n", name);
 							  }
 							  ```
+						- {{youtube-timestamp 950}} Need to run with `clang -o hello hello.c -lcs50` so that `clang` knows where the third-party imported library is located. `stdio` on the other hand is first-party, built-into C
+						- {{youtube-timestamp 1181}} There's really 4 steps in compiling:
+							- {{youtube-timestamp 1216}} Preprocessing =
+								- The libraries we included before are actually stored in `/usr/include`
+								- The `include`s get transformed
+								  ```c
+								  // #include <cs50.h>
+								  string get_string(string prompt);
+								  // #include <stdio.h>
+								  int printf(string format, ...);
+								  ```
+									- `...` =
+							- Compiling
+							- Assembling
+							- Linking
 					- ### Debugging
 					- ### Arrays
 					- ### Strings
