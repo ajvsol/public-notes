@@ -101,8 +101,10 @@
 			- [Sign in to GitHub · GitHub](https://submit.cs50.io/users/ajvsol) submission site
 		- [CS50 Lectures 2022](https://youtu.be/ywg7cW0Txs4)
 			- [CS50 2022 - Lecture 0 - Scratch - YouTube](https://youtu.be/IDDmrzzB14M)
+			  Computer Science. Computational Thinking. Problem Solving: Inputs, Outputs. Representation: Unary, Binary, Decimal, ASCII, Unicode, RGB. Abstraction. Algorithms. Running Times. Pseudocode. Scratch: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops; Events; Threads.
 			- [CS50 2022 - Lecture 1 - C - YouTube](https://youtu.be/ywg7cW0Txs4)
 			  collapsed:: true
+			  C. Source Code. Machine Code. Compiler. Correctness, Design, Style. Visual Studio Code. Syntax Highlighting. Escape Sequences. Header Files. Libraries. Manual Pages. Types. Conditionals. Variables. Loops. Linux. Graphical User Interface (GUI). Command-Line Interface (CLI). Constants. Comments. Pseudocode. Operators. Integer Overflow. Floating-Point Imprecision.
 				- {{video https://www.youtube.com/watch?v=ywg7cW0Txs4}}
 					- {{youtube-timestamp 1251}} Hello world program
 						- `hello.c`
@@ -420,6 +422,7 @@
 				-
 			- [CS50 2022 - Lecture 2 - Arrays - YouTube](https://youtu.be/XmYnsO7iSI8)
 			  collapsed:: true
+			  Preprocessing. Compiling. Assembling. Linking. Debugging. Arrays. Strings. Command-Line Arguments. Cryptography.
 				- {{video https://youtu.be/XmYnsO7iSI8}}
 					- ### {{youtube-timestamp 376}} Compiling
 						- {{youtube-timestamp 442}} `make` isn't a compiler, it automates one. It utilises `clang` as the compiler
@@ -541,21 +544,54 @@
 							  ```
 						- {{youtube-timestamp 5609}} You can't find out the length of an array after initialising it
 					- ### {{youtube-timestamp 5704}} Strings
-						- {{youtube-timestamp 5777}}
+						- {{youtube-timestamp 5777}} A string is an array of characters, which is why you can access individual characters via bracket notation
+						- {{youtube-timestamp 5866}} At the end of each string is a "sentinel value"/delimiter which is `0` char to separate the string from others. Similarly int arrays have a hidden `0` char at the end, which allows computers to know when the array ends. AKA `null`
+						- {{youtube-timestamp 6058}} How to do multiple variables in a `printf`
+						  ```c
+						  int main(void) { 
+						    char c1 = "H";
+						    char c2 = "I"; 
+						    char c3 = '!';
+						    
+						    printf ("%c%c%c\n", c1, c2, c3);
+						  }
+						  ```
+						- {{youtube-timestamp 6168}}
 					- ### Command-Line Arguments
 					- ### Exit Status
 					- ### Cryptography
 					-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
+			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: � , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
+			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
+			  Abstract Data Types. Queues, Stacks. Linked Lists. Trees, Binary Search Trees. Hash Tables. Tries.
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
+			  Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
 			- [CS50 2022 - Lecture 7 - SQL - YouTube](https://youtu.be/zrCLRC3Ci1c)
+			  SQL: Tables; Types; Statements; Constraints; Indexes; Keywords, Functions; Transactions. Race Conditionals. SQL Injection Attacks
 			- [CS50 2022 - Lecture 8 - HTML, CSS, JavaScript - YouTube](https://youtu.be/alnzFK-4xMY)
+			  Internet: Routers; TCP/IP; DNS. HTTP: URLs, GET, POST. HTML: Tags; Attributes. Servers. CSS: Properties; Selectors. Frameworks. JavaScript: Variables; Conditionals; Loops. Events.
 			- [CS50 2022 - Cybersecurity - YouTube](https://youtu.be/Kuy4cEXpXEE)
 			- [CS50 2022 - Lecture 9 - Flask - YouTube](https://youtu.be/oVA0fD13NGI)
+			  Flask. Route. Decorators. Requests, Responses. Sessions. Cookies.
 			- [CS50 2022 - Lecture 10 - Emoji - YouTube](https://youtu.be/iXG0sXlzuF0)
+			  Precision. Unicode: Emoji, Code Points, ZWJ.
 		- [Learning Resources]
+			- Recommended books
+				- Hacker’s Delight, Second Edition
+				  Henry S. Warren Jr.
+				  Pearson Education, 2013
+				  ISBN 0-321-84268-5
+				- How Computers Work, Tenth Edition
+				  Ron White
+				  Que Publishing, 2014
+				  ISBN 0-7897-4984-X
+				- Programming in C, Fourth Edition
+				  Stephen G. Kochan
+				  Pearson Education, 2015
+				  ISBN 0-321-77641-0
 			- [submit50](https://cs50.readthedocs.io/submit50/) info
 	- [CS50 2021](https://youtube.com/8mAITcNt710)
 	  collapsed:: true
