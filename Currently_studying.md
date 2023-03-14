@@ -636,7 +636,78 @@
 							    printf("%i\n", n);
 							  }
 							  ```
+						- {{youtube-timestamp 6878}} [`ctype.h`](https://manual.cs50.io/#ctype.h) library - for data types in C
+							- The difference between a lowercase letter and it's uppercase version is always 32 in ASCII
+							- ASCII chart
+							  collapsed:: true
+								- ![image.png](../assets/image_1678811769692_0.png)
+							- Make uppercase.c
+							  collapsed:: true
+								- ```c
+								  #include <cs50.h>
+								  #include <stdio.h>
+								  #include <ctype.h>
+								  
+								  int main(void) {
+								    string s = get_string("Before: ");
+								    printf("After: ");
+								    for (int i = 0; i < strlen(s); i++) {
+								      // Loop through each character, check if it's a letter
+								      if (s[i] >= 'a' && s[i] <= 'z') {
+								        // Convert it to uppercase by reducing it by 32 - see ASCII chart
+								        printf("%c", s[i] - 32);
+								      } else {
+								        printf("%c", s[i]);
+								      }
+								    }
+								    printf("\n");
+								  }
+								  ```
+							- {{youtube-timestamp 7208}} Version using the library `ctype`
+							  collapsed:: true
+								- ```c
+								  #include <cs50.h>
+								  #include <stdio.h>
+								  #include <ctype.h>
+								  
+								  int main(void) {
+								    string s = get_string("Before: ");
+								    printf("After: ");
+								    for (int i = 0; i < strlen(s); i++) {
+								        printf("%c", toupper(s[i]));
+								    }
+								    printf("\n");
+								  }
+								  ```
+							- {{youtube-timestamp 7379}} The loop checking for the length of `s` each time is inefficient, wastes CPU cycles **(important)**
+								- ```c
+								  // Before
+								  for (int i = 0; i < strlen(s); i++)
+								    
+								  // After
+								  for (int i = 0, n = strlen(s); i < n; i++)
+								  ```
 					- ### Command-Line Arguments
+						- {{youtube-timestamp 7549}} `void` in `int main(void)` means it takes no CLI arguments
+						- {{youtube-timestamp 7627}} `argc` = argument count, `argv` = argument value? the strings you enter as CL arguments
+							- ```c
+							  int main(int argc, string argv[]) { 
+							    string name = get_string("What's your name? "); 
+							    printf("hello, %s\n", name);
+							  }
+							  ```
+						- {{youtube-timestamp 7704}} How to make a basic CL argument in your program
+							- ```c
+							  int main(int argc, string argv[]) { 
+							    printf("hello, %s\n", argv[1]);
+							  }
+							  
+							  // Running this via `./greet David`
+							  // Returns: `hello, David`
+							  ```
+						- {{youtube-timestamp 7731}} `argv[0]` is `./greet` which is the expression used to execute the program
+						- and `argc` = `2`, because it's both `./greet` and `name`
+						-
 					- ### Exit Status
 					- ### Cryptography
 					-
