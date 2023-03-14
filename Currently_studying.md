@@ -424,7 +424,7 @@
 			  collapsed:: true
 			  Preprocessing. Compiling. Assembling. Linking. Debugging. Arrays. Strings. Command-Line Arguments. Cryptography.
 				- {{video https://youtu.be/XmYnsO7iSI8}}
-					- ### {{youtube-timestamp 376}} Compiling
+					- ### {{youtube-timestamp 376}} Compiling in ((640c8362-cdc6-44a3-b991-a338f1d05b5a))
 						- {{youtube-timestamp 442}} `make` isn't a compiler, it automates one. It utilises `clang` as the compiler
 						- {{youtube-timestamp 501}} `clang hello` instead of `make hello` produces an `a.out` file (assembler output). To make it use the same filename, instead do `clang -o hello hello.c`
 							- `-o hello` = name the output file as `hello`
@@ -553,10 +553,35 @@
 						    char c2 = "I"; 
 						    char c3 = '!';
 						    
-						    printf ("%c%c%c\n", c1, c2, c3);
+						    printf ("%c %c %c\n", c1, c2, c3);
 						  }
 						  ```
-						- {{youtube-timestamp 6168}}
+						- {{youtube-timestamp 6231}} Similar example but for string
+							- ```c
+							  int main(void) {
+							    string s = "HI!";
+							    // or %c is valid. Strings are arrays of chars but also be expressed as int
+							    printf("%i %i %i %i\n", s[0], s[1], s[2], s[3]);
+							  }
+							  ```
+						- {{youtube-timestamp 6428}} Strings in ((640c8362-cdc6-44a3-b991-a338f1d05b5a)) work differently to JavaScript - since they're arrays they can take arrays of **strings** and not just chars
+							- ```c
+							  int main(void) {
+							    // Initalise with a length of 2
+							    string words[2];
+							    
+							    words[0] = "HI!";
+							    words[1] = "BYE!";
+							  
+							    printf("%s\n", words[0]);
+							    printf("%s\n", words[1]);
+							    // returns: HI!
+							    // BYE!
+							  }
+							  ```
+						- {{youtube-timestamp 6467}} You can access each character in a `string` with `string` for each item by using double bracket notation
+							- ```c
+							  ```
 					- ### Command-Line Arguments
 					- ### Exit Status
 					- ### Cryptography
