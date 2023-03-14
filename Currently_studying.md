@@ -561,13 +561,25 @@
 							  int main(void) {
 							    string s = "HI!";
 							    // or %c is valid. Strings are arrays of chars but also be expressed as int
-							    printf("%i %i %i %i\n", s[0], s[1], s[2], s[3]);
+							    printf("%i %i %i\n", s[0], s[1], s[2]);
 							  }
 							  ```
-						- {{youtube-timestamp 6428}} Strings in ((640c8362-cdc6-44a3-b991-a338f1d05b5a)) work differently to JavaScript - since they're arrays they can take arrays of **strings** and not just chars
+						- {{youtube-timestamp 6318}} Each string is just an array of chars
 							- ```c
 							  int main(void) {
-							    // Initalise with a length of 2
+							    string s = "HI!";
+							    string t = "BYE!";
+							  
+							    printf("%s\n", s);
+							    printf("%s\n", t);
+							  }
+							  ```
+							- Each square being a byte:
+							  ![image.png](../assets/image_1678795894869_0.png)
+						- {{youtube-timestamp 6428}} How to initialise an array of strings in ((640c8362-cdc6-44a3-b991-a338f1d05b5a)) (`arrayType varName[arrayLength]`)
+							- ```c
+							  int main(void) {
+							    // arrayType varName[arrayLength]
 							    string words[2];
 							    
 							    words[0] = "HI!";
@@ -579,8 +591,50 @@
 							    // BYE!
 							  }
 							  ```
-						- {{youtube-timestamp 6467}} You can access each character in a `string` with `string` for each item by using double bracket notation
+						- {{youtube-timestamp 6467}} You can access each character in an array of strings by using double bracket notation
 							- ```c
+							  int main(void) {
+							    // Initalise with a length of 2
+							    string words[2];
+							    
+							    words[0] = "HI!";
+							    words[1] = "BYE!";
+							  
+							    printf("%c%c%c\n", words[0][0], words[0][1], words[0][2]);
+							    printf("%c%c%c\n", words[1][0], words[1][1], words[1][2], words[1][3]);
+							    // returns: HI!
+							    // BYE!
+							  }
+							  ```
+						- {{youtube-timestamp 6562}} There's no double `\0` to end an array of strings, it's just one `\0` for the last array item. This is why you can't figure out the length of an array once it's initialised, but you can for a `string`. Strings are special and end with `0`, whereas arrays don't have a special delimiter
+							- ![image.png](../assets/image_1678795691630_0.png)
+						- {{youtube-timestamp 6652}} How to get the length of a string using a while loop in ((640c8362-cdc6-44a3-b991-a338f1d05b5a))
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void) {
+							    string name = get_string("What's your name? ");
+							    
+							    int n = 0;
+							    while (name[n] != '\0') {
+							      n++
+							    }
+							    printf("%i\n", n);
+							  }
+							  ```
+						- {{youtube-timestamp 6788}} There's a library for `string` functions in ((640c8362-cdc6-44a3-b991-a338f1d05b5a)) called [`string.h`](https://manual.cs50.io/#string.h)
+						- {{youtube-timestamp 6809}} `strlen` is the function in `string.h` to get string length
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  #include <string.h>
+							  
+							  int main(void) {
+							    string name = get_string("What's your name? ");
+							    int n = strlen(name);
+							    printf("%i\n", n);
+							  }
 							  ```
 					- ### Command-Line Arguments
 					- ### Exit Status
