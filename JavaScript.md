@@ -30,6 +30,7 @@
 	  id:: 635593b2-818d-4d6c-a00c-cfa7f4cd850a
 	  collapsed:: true
 		- JavaScript / TypeScript
+		  collapsed:: true
 			- **To ingrain**
 			  id:: 6408d44e-1000-4594-ab4b-8e5a18543479
 				- ((64024e3f-d75a-46c3-98e3-e4679ebc4b50)) manipulation
