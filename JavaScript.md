@@ -3661,6 +3661,7 @@
 				- Unary operators
 					- [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
 					  id:: 64024e3f-549b-4656-8bac-049e1eb3580b
+					  collapsed:: true
 						- Examples
 							- Can remove a property from an object (mutating the object)
 							  id:: 766969c0-49a0-4a07-9b69-02351708da55
@@ -3817,6 +3818,9 @@
 								    a[2] = 1
 								  }
 								  ```
+								- Related:
+									- ((64024e3f-27cd-4f58-9005-b5a7d6cdbfb7))
+									- ((63679853-e408-4028-a2c0-eefdd34febd3))
 					- [`??`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator)
 					  id:: 63904f3d-b287-478d-9e3a-106f8528a920
 				- Assignment operators
@@ -3849,6 +3853,7 @@
 					- [`|=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_OR_assignment)
 					- [`&&=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND_assignment)
 					- [`||=`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment)
+					  id:: 64024e3f-27cd-4f58-9005-b5a7d6cdbfb7
 					  collapsed:: true
 						- The **logical OR assignment (`x ||= y`)** operator only assigns if `x` is [falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
 						- Examples
