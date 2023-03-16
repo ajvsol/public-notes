@@ -2083,6 +2083,7 @@
 									- ((63470fd1-d1aa-49cd-95ec-4a5a0cf2ef74))
 							- [`Array.isArray()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 							  id:: 64024e3f-ad1c-4953-807a-ebedd4878008
+							  collapsed:: true
 								- Related: ((63470fd1-ff2c-4b9a-b116-136a41a52b94)) : ((64084faa-6068-42d4-a193-2263c4b4d039))
 							- [`Array.prototype.join()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 							  id:: 635eb08f-cba9-45d7-a72b-d207d55081db
