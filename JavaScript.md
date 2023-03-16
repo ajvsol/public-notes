@@ -378,6 +378,8 @@
 			- ((63721cd2-b29c-49d6-8cdc-e568df1dff6a))
 			- ((6367b609-cc62-4567-92f9-93038f30fdd4))
 		- ((629ccb26-62cc-426a-9616-4d8969f32580)) : ((6408d4c2-ff21-45ef-af97-e8bd60dbbcfb))
+		  collapsed:: true
+			- {{embed ((6408d4c2-ff21-45ef-af97-e8bd60dbbcfb))}}
 		- Related:
 			- ((6364c41b-0024-4b36-a6e3-adc75e044ac8))
 			- [[CodeWars - JavaScript]]
