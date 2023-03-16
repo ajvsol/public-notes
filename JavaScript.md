@@ -1278,6 +1278,7 @@
 								-
 							- [`String.prototype.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 							  id:: 63470fd1-335a-43ad-be82-547be1c10d07
+							  collapsed:: true
 							  ((63f2995e-3c1d-4961-8d40-38ed8cd83373))
 								- Can be used to remove characters from a string
 								  id:: 63f2995e-3c1d-4961-8d40-38ed8cd83373
