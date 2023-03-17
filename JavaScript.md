@@ -7907,26 +7907,25 @@
 						- Use `tsc --watch` in a side process to check if your types are passing
 					- Features
 						- Changelog
-							- [5.0 RC](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/)
+							- [5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/)
 							  collapsed:: true
 								- Here’s a quick list of what’s new in TypeScript 5.0!
-									- [Decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#decorators)
-										- complete support for ECMAScript decorators. Decorators are a widely-used feature in JavaScript frameworks and libraries, allowing developers to add functionalities to classes and methods in a declarative and expressive way. With TypeScript 5.0, developers can use decorators in all positions where an expression is allowed, including classes, methods, properties, and function parameters.
-									- [`const` Type Parameters](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#const-type-parameters)
-									- [Supporting Multiple Configuration Files in `extends`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#supporting-multiple-configuration-files-in-extends)
-									- [All `enum`s Are Union `enum`s](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#all-enums-are-union-enums)
-									- [`--moduleResolution bundler`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#moduleresolution-bundler)
-									- [Resolution Customization Flags](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#resolution-customization-flags)
-									- [`--verbatimModuleSyntax`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#verbatimmodulesyntax)
-									- [Support for `export type *`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#support-for-export-type)
-									- [`@satisfies` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#satisfies-support-in-jsdoc)
-									- [`@overload` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#overload-support-in-jsdoc)
-									- [Passing Emit-Specific Flags Under `--build`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#passing-emit-specific-flags-under-build)
-									- [Case-Insensitive Import Sorting in Editors](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#case-insensitive-import-sorting-in-editors)
-									- [Exhaustive `switch`/`case` Completions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#exhaustive-switch-case-completions)
-									- [Speed, Memory, and Package Size Optimizations](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#speed-memory-and-package-size-optimizations)
-									- [Breaking Changes and Deprecations](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#breaking-changes-and-deprecations)
-									- [What’s Next?](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/#whats-next)
+									- [Decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#decorators)
+									- [`const` Type Parameters](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#const-type-parameters)
+									- [Supporting Multiple Configuration Files in `extends`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#supporting-multiple-configuration-files-in-extends)
+									- [All `enum`s Are Union `enum`s](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#all-enums-are-union-enums)
+									- [`--moduleResolution bundler`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#moduleresolution-bundler)
+									- [Resolution Customization Flags](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#resolution-customization-flags)
+									- [`--verbatimModuleSyntax`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#verbatimmodulesyntax)
+									- [Support for `export type *`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#support-for-export-type)
+									- [`@satisfies` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#satisfies-support-in-jsdoc)
+									- [`@overload` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#overload-support-in-jsdoc)
+									- [Passing Emit-Specific Flags Under `--build`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#passing-emit-specific-flags-under-build)
+									- [Case-Insensitive Import Sorting in Editors](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#case-insensitive-import-sorting-in-editors)
+									- [Exhaustive `switch`/`case` Completions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#exhaustive-switch-case-completions)
+									- [Speed, Memory, and Package Size Optimizations](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#speed-memory-and-package-size-optimizations)
+									- [Breaking Changes and Deprecations](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#breaking-changes-and-deprecations)
+									- [What’s Next?](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#whats-next)
 									- Optional chaining and nullish coalescing operators, two features that were introduced in [ECMAScript 2020.](https://262.ecma-international.org/11.0/)
 						- It adds extra features not yet available in JavaScript
 						  collapsed:: true
