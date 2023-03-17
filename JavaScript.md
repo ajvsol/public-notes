@@ -3120,6 +3120,7 @@
 					- [`Intl.Segmenter`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter)
 			- [Statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements)
 			  collapsed:: true
+			  id:: 64024e3f-971a-4fae-8c9e-ec2415404127
 				- Control flow
 					- [Block](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
 					- [Empty statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/Empty)
