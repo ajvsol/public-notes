@@ -705,8 +705,14 @@
 							  // Running this via `./greet David`
 							  // Returns: `hello, David`
 							  ```
-						- {{youtube-timestamp 7731}} `argv[0]` is `./greet` which is the expression used to execute the program
-						- and `argc` = `2`, because it's both `./greet` and `name`
+						- {{youtube-timestamp 7731}} `argv[0]` is always the name of the expression used to execute the program e.g. `./greet` here
+						- {{youtube-timestamp 7786}} and `argc` = `2` (length), because you've entered 1 expression and 1 argument i.e. `./greet` and `name`
+						- {{youtube-timestamp 7866}} Nowadays there's two official ways to define a main function:
+							- ```c
+							  int main(void)
+							    
+							  int main(int argc, string argv[])
+							  ```
 						-
 					- ### Exit Status
 					- ### Cryptography
