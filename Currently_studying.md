@@ -426,10 +426,13 @@
 			  Preprocessing. Compiling. Assembling. Linking. Debugging. Arrays. Strings. Command-Line Arguments. Cryptography.
 				- {{video https://youtu.be/XmYnsO7iSI8}}
 					- ### {{youtube-timestamp 376}} Compiling in ((640c8362-cdc6-44a3-b991-a338f1d05b5a))
+					  collapsed:: true
 						- {{youtube-timestamp 442}} `make` isn't a compiler, it automates one. It utilises `clang` as the compiler
 						- {{youtube-timestamp 501}} `clang hello` instead of `make hello` produces an `a.out` file (assembler output). To make it use the same filename, instead do `clang -o hello hello.c`
+						  collapsed:: true
 							- `-o hello` = name the output file as `hello`
 						- {{youtube-timestamp 930}} Our file from last week won't compile as-is using `clang`
+						  collapsed:: true
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
@@ -441,11 +444,13 @@
 							  ```
 						- {{youtube-timestamp 950}} Need to run with `clang -o hello hello.c -lcs50` so that `clang` knows where the third-party imported library is located. `stdio` on the other hand is first-party, built-into C
 						- {{youtube-timestamp 1181}} There's really 4 steps in compiling:
+						  collapsed:: true
 							- {{youtube-timestamp 1216}} Preprocessing
 							  collapsed:: true
 								- Converts everything to proper C code by adding in the imports
 								- The libraries we included before are actually stored in `/usr/include`
 								- The `include`s get transformed
+								  collapsed:: true
 								  ```c
 								  // #include <cs50.h>
 								  string get_string(string prompt);
@@ -471,11 +476,13 @@
 					  collapsed:: true
 						- {{youtube-timestamp 2549}} `printf` is the simplest form of debugging (equivalent to `console.log`)
 						- {{youtube-timestamp 2752}} Debugger
+						  collapsed:: true
 							- Breakpoints can be added in normal Visual Studio Code view by clicking in the gutter. Execute file as normal `./hello`
 							- {{youtube-timestamp 2968}} Step-over - it'll step over functions like `printf`. Step-into would show each line of code beign executed in `printf`
 							- The highlighted line hasn't yet been executed
 							- {{youtube-timestamp 3434}} Step-into instead of step-over when you need to lock inside what a called function is doing
 						- {{youtube-timestamp 3625}} Rubber duck debugging
+						  collapsed:: true
 							- Out loud talk through your issue
 							-
 					- ### {{youtube-timestamp 3904}} Arrays
@@ -686,8 +693,10 @@
 								  for (int i = 0, n = strlen(s); i < n; i++)
 								  ```
 					- ### Command-Line Arguments
+					  collapsed:: true
 						- {{youtube-timestamp 7549}} `void` in `int main(void)` means it takes no CLI arguments
 						- {{youtube-timestamp 7627}} `argc` = argument count, `argv` = argument value? the strings you enter as CL arguments
+						  collapsed:: true
 							- ```c
 							  int main(int argc, string argv[]) { 
 							    string name = get_string("What's your name? "); 
@@ -695,6 +704,7 @@
 							  }
 							  ```
 						- {{youtube-timestamp 7704}} How to make a basic CL argument in your program
+						  collapsed:: true
 							- ```c
 							  int main(int argc, string argv[]) { 
 							    printf("hello, %s\n", argv[1]);
@@ -706,6 +716,7 @@
 						- {{youtube-timestamp 7731}} `argv[0]` is always the name of the expression used to execute the program e.g. `./greet` here
 						- {{youtube-timestamp 7786}} and `argc` = `2` (length), because you've entered 1 expression and 1 argument i.e. `./greet` and `name`
 						- {{youtube-timestamp 7866}} Nowadays there's two official ways to define a main function:
+						  collapsed:: true
 							- ```c
 							  // No CLI arguments
 							  int main(void)
@@ -714,13 +725,16 @@
 							  int main(int argc, string argv[])
 							  ```
 					- ### {{youtube-timestamp 8046}} Exit Status
+					  collapsed:: true
 						- 404 = not found
 						- HTTP error code
 						- {{youtube-timestamp 8141}} `int` means it'll return an integer, `0` by default (success)
+						  collapsed:: true
 							- ```c
 							  int main(void)
 							  ```
 						- {{youtube-timestamp 8247}} `echo $?` can be run after executing a program (e.g. `./status` for `1` or `./status David` for `0`) to show the exit status of a program (showing what it returns)
+						  collapsed:: true
 							- ```c
 							  int main(int argc, string argv[]) {
 							    if (arge != 2) { 
@@ -734,6 +748,7 @@
 							  }
 							  ```
 					- ### {{youtube-timestamp 8379}} Cryptography
+					  collapsed:: true
 						- Transforming plaintext and key > via cipher (algorithm) > to ciphertext
 						-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
