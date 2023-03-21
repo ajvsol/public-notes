@@ -709,14 +709,35 @@
 						- {{youtube-timestamp 7786}} and `argc` = `2` (length), because you've entered 1 expression and 1 argument i.e. `./greet` and `name`
 						- {{youtube-timestamp 7866}} Nowadays there's two official ways to define a main function:
 							- ```c
+							  // No CLI arguments
 							  int main(void)
 							    
+							  // Yes CLI arguments
 							  int main(int argc, string argv[])
 							  ```
+					- ### {{youtube-timestamp 8046}} Exit Status
+						- 404 = not found
+						- HTTP error code
+						- {{youtube-timestamp 8141}} `int` means it'll return an integer, `0` by default (success)
+							- ```c
+							  int main(void)
+							  ```
+						- {{youtube-timestamp 8247}} `echo $?` can be run after executing a program (e.g. `./status` for `1` or `./status David` for `0`) to show the exit status of a program (showing what it returns)
+							- ```c
+							  int main(int argc, string argv[]) {
+							    if (arge != 2) { 
+							      printf("Missing command-line argument\n"); 
+							      return 1;
+							    }
+							    else { 
+							      printf("hello, %s\n", argv([1]);
+							      return 0;
+							    }
+							  }
+							  ```
+					- ### {{youtube-timestamp 8379}} Cryptography
+						- Transforming plaintext and key > via cipher (algorithm) > to ciphertext
 						-
-					- ### Exit Status
-					- ### Cryptography
-					-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
 			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: � , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
