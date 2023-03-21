@@ -639,10 +639,8 @@
 						- {{youtube-timestamp 6878}} [`ctype.h`](https://manual.cs50.io/#ctype.h) library - for data types in C
 							- The difference between a lowercase letter and it's uppercase version is always 32 in ASCII
 							- ASCII chart
-							  collapsed:: true
 								- ![image.png](../assets/image_1678811769692_0.png)
 							- Make uppercase.c
-							  collapsed:: true
 								- ```c
 								  #include <cs50.h>
 								  #include <stdio.h>
@@ -664,7 +662,6 @@
 								  }
 								  ```
 							- {{youtube-timestamp 7208}} Version using the library `ctype`
-							  collapsed:: true
 								- ```c
 								  #include <cs50.h>
 								  #include <stdio.h>
