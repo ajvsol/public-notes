@@ -100,6 +100,7 @@
 			- [Visual Studio Code for CS50 — CS50 Docs](https://cs50.readthedocs.io/code/) Docs on their web editor
 			- [Sign in to GitHub · GitHub](https://submit.cs50.io/users/ajvsol) submission site
 			- [Unit tests used by Check50](https://github.com/cs50/problems)
+			- https://cs50.readthedocs.io/submit50/
 		- [CS50 Lectures 2022](https://youtu.be/ywg7cW0Txs4)
 			- [CS50 2022 - Lecture 0 - Scratch - YouTube](https://youtu.be/IDDmrzzB14M)
 			  Computer Science. Computational Thinking. Problem Solving: Inputs, Outputs. Representation: Unary, Binary, Decimal, ASCII, Unicode, RGB. Abstraction. Algorithms. Running Times. Pseudocode. Scratch: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops; Events; Threads.
@@ -144,7 +145,6 @@
 						- Parentheses `"`
 					- {{youtube-timestamp 3012}} To escape `%` symbols in a string, you need to write `%%` which will escape to only be one `%`
 					- {{youtube-timestamp 3133}} Types in ((640c8362-cdc6-44a3-b991-a338f1d05b5a))
-					  collapsed:: true
 						- `bool`
 						- `char`
 						- `double`
@@ -154,7 +154,6 @@
 						- `string`
 						- and more
 					- ### {{youtube-timestamp 3222}} Conditionals
-					  collapsed:: true
 						- ```c
 						  if (x < y)
 						  {
@@ -241,7 +240,6 @@
 							  }
 							  ```
 					- ### {{youtube-timestamp 4552}} Loops, Variables
-					  collapsed:: true
 						- {{youtube-timestamp 4608}} ((640c8362-cdc6-44a3-b991-a338f1d05b5a)) convention is 4 spaces for indentation
 						- {{youtube-timestamp 4781}} Syntactic sugar when shorter ways of writing common expressions
 						- {{youtube-timestamp 4820}} `counter = counter + 1` == `counter += 1` == `counter++`
@@ -276,7 +274,6 @@
 							- `while (true)` or `while (1)`
 							- Need to also `#include <stdloop.h>`
 					- ### {{youtube-timestamp 5808}} Command-Line Interface
-					  collapsed:: true
 						- Most important commands to learn
 							- `cd` = Change Directory
 							- `cp` = Copy
@@ -286,7 +283,6 @@
 							- `rm` = Remove
 							- `rmdir` = Remove Directory
 					- ### {{youtube-timestamp 6339}} Nested Loops and Mario
-					  collapsed:: true
 						- Making a 3x3 grid
 						  ```c
 						  #include <stdio.h>
@@ -302,7 +298,6 @@
 						  ```
 						- {{youtube-timestamp 6907}} `const` e.g. `const int n = 5`
 					- ### {{youtube-timestamp 7249}} Do While Loops
-					  collapsed:: true
 						- ```c
 						  #include <stdio.h>
 						  
@@ -322,7 +317,6 @@
 						  ```
 					- {{youtube-timestamp 7452}} `//` for comments
 					- ### {{youtube-timestamp 7579}} Abstraction
-					  collapsed:: true
 						- ```c
 						  #include <stdio.h>
 						  
@@ -426,13 +420,10 @@
 			  Preprocessing. Compiling. Assembling. Linking. Debugging. Arrays. Strings. Command-Line Arguments. Cryptography.
 				- {{video https://youtu.be/XmYnsO7iSI8}}
 					- ### {{youtube-timestamp 376}} Compiling in ((640c8362-cdc6-44a3-b991-a338f1d05b5a))
-					  collapsed:: true
 						- {{youtube-timestamp 442}} `make` isn't a compiler, it automates one. It utilises `clang` as the compiler
 						- {{youtube-timestamp 501}} `clang hello` instead of `make hello` produces an `a.out` file (assembler output). To make it use the same filename, instead do `clang -o hello hello.c`
-						  collapsed:: true
 							- `-o hello` = name the output file as `hello`
 						- {{youtube-timestamp 930}} Our file from last week won't compile as-is using `clang`
-						  collapsed:: true
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
@@ -444,13 +435,10 @@
 							  ```
 						- {{youtube-timestamp 950}} Need to run with `clang -o hello hello.c -lcs50` so that `clang` knows where the third-party imported library is located. `stdio` on the other hand is first-party, built-into C
 						- {{youtube-timestamp 1181}} There's really 4 steps in compiling:
-						  collapsed:: true
 							- {{youtube-timestamp 1216}} Preprocessing
-							  collapsed:: true
 								- Converts everything to proper C code by adding in the imports
 								- The libraries we included before are actually stored in `/usr/include`
 								- The `include`s get transformed
-								  collapsed:: true
 								  ```c
 								  // #include <cs50.h>
 								  string get_string(string prompt);
@@ -460,20 +448,16 @@
 									- `...` = any number of variables
 									-
 							- {{youtube-timestamp 1534}} Compiling
-							  collapsed:: true
 								- Changes everything to assembly code
 								- Example assembly code for our C code
 								  collapsed:: true
 									- ![image.png](../assets/image_1678709069073_0.png)
 							- {{youtube-timestamp 1689}} Assembling
-							  collapsed:: true
 								- Converts Assembly to binary (base-2/machine code)
 							- {{youtube-timestamp 1724}} Linking
-							  collapsed:: true
 								- Combines the machine code for your code with the machine code for all your imports
 						- {{youtube-timestamp 2240}} Decompiling is possible but you lose variable and function names, it becomes very hard to read. Probably better off just writing it from scratch
 					- ### {{youtube-timestamp 2302}} Debugging
-					  collapsed:: true
 						- {{youtube-timestamp 2549}} `printf` is the simplest form of debugging (equivalent to `console.log`)
 						- {{youtube-timestamp 2752}} Debugger
 						  collapsed:: true
@@ -669,7 +653,7 @@
 								    printf("\n");
 								  }
 								  ```
-							- {{youtube-timestamp 7208}} Version using the library `ctype`
+							- {{youtube-timestamp 7208}} Version using the library `ctype` - using the `strlen` function
 								- ```c
 								  #include <cs50.h>
 								  #include <stdio.h>
@@ -693,7 +677,6 @@
 								  for (int i = 0, n = strlen(s); i < n; i++)
 								  ```
 					- ### Command-Line Arguments
-					  collapsed:: true
 						- {{youtube-timestamp 7549}} `void` in `int main(void)` means it takes no CLI arguments
 						- {{youtube-timestamp 7627}} `argc` = argument count, `argv` = argument value? the strings you enter as CL arguments
 						  collapsed:: true
