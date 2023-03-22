@@ -748,6 +748,7 @@
 						  Return false
 						  ```
 					- ### {{youtube-timestamp 732}} Binary Search
+						- Pre-requisite: the array has to be sorted
 						- {{youtube-timestamp 856}} Keep looking in the middle of the selection of the array, then make a new subsection using the left or right half
 						- ```
 						  If no doors left
@@ -770,8 +771,8 @@
 							  Else if 50 > doors[middle]
 							  	Search doors[middle + 1] through doors[length - 1]
 							  ```
-						-
 					- ### Running Time
+						-
 					- ### search.c
 					- ### structs
 					- ## Sorting
