@@ -739,8 +739,38 @@
 			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: � , Ω, Θ. Recursion.
 				- {{video https://youtu.be/4oqjcKenCH8}}
 					- ### {{youtube-timestamp 72}} Algorithms
-					- ### Linear Search
-					- ### Binary Search
+					- ### {{youtube-timestamp 469}} Linear Search
+						- Just starting at one end of the array and checking each sequentially
+						- ```
+						  For i from 0 to 26-1
+						  	If 50 is behind doors[i]
+						  		Return true
+						  Return false
+						  ```
+					- ### {{youtube-timestamp 732}} Binary Search
+						- {{youtube-timestamp 856}} Keep looking in the middle of the selection of the array, then make a new subsection using the left or right half
+						- ```
+						  If no doors left
+						  	Return false
+						  If 50 is behind doors[middle]
+						  	Return true
+						  Else if 50 < doors[middle]
+						  	Search left half
+						  Else if 50 > doors[middle]
+						  	Search right half
+						  ```
+						- {{youtube-timestamp 954}}
+							- ```c
+							  If no doors left
+							  	Return false
+							  If 50 is behind doors[middle]
+							  	Return true
+							  Else if 50 < doors[middle]
+							  	Search doors[0] through doors[middle - 1]
+							  Else if 50 > doors[middle]
+							  	Search doors[middle + 1] through doors[length - 1]
+							  ```
+						-
 					- ### Running Time
 					- ### search.c
 					- ### structs
