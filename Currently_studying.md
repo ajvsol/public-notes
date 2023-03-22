@@ -735,7 +735,22 @@
 						- Transforming plaintext and key > via cipher (algorithm) > to ciphertext
 						-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
+			  collapsed:: true
 			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: � , Ω, Θ. Recursion.
+				- {{video https://youtu.be/4oqjcKenCH8}}
+					- ### {{youtube-timestamp 72}} Algorithms
+					- ### Linear Search
+					- ### Binary Search
+					- ### Running Time
+					- ### search.c
+					- ### structs
+					- ## Sorting
+						- ### Selection Sort
+						- ### Bubble Sort
+						- ### Merge Sort
+						- ### Comparing Algorithms
+					- ### Recursion
+					- Asymptotic Notation: � , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
