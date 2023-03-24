@@ -772,7 +772,7 @@
 							  	Search doors[middle + 1] through doors[length - 1]
 							  ```
 					- ### Running Time
-						-
+						- {{youtube-timestamp 1182}}
 					- ### search.c
 					- ### structs
 					- ## Sorting
