@@ -772,7 +772,20 @@
 							  	Search doors[middle + 1] through doors[length - 1]
 							  ```
 					- ### Running Time
-						- {{youtube-timestamp 1182}}
+						- {{youtube-timestamp 1286}} Big O notation
+							- ![image.png](../assets/image_1680528039104_0.png)
+						- {{youtube-timestamp 1308}} O(n/2) is irrelevant because it's the same shape
+							- ![image.png](../assets/image_1680528122163_0.png)
+						- {{youtube-timestamp 1351}} Most common ways to analyse (slowest at top):
+							- O(*n*²)
+							- O(*n* log *n*)
+							- O(*n*)
+							  id:: 642ad322-cf6c-4360-9e3e-a4e24f264d56
+							- O(log *n*)
+							  id:: 642ad32c-4d27-468c-b0c5-d9f5e5eca51c
+							- O(1)
+								- Finite number of steps, can even be say 999 steps
+						- {{youtube-timestamp 1432}} Linear search is ((642ad322-cf6c-4360-9e3e-a4e24f264d56)) whereas binary search is ((642ad32c-4d27-468c-b0c5-d9f5e5eca51c))
 					- ### search.c
 					- ### structs
 					- ## Sorting
