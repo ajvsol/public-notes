@@ -736,7 +736,7 @@
 						-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
 			  collapsed:: true
-			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: � , Ω, Θ. Recursion.
+			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: *O* , Ω, Θ. Recursion.
 				- {{video https://youtu.be/4oqjcKenCH8}}
 					- ### {{youtube-timestamp 72}} Algorithms
 					- ### {{youtube-timestamp 469}} Linear Search
@@ -776,17 +776,103 @@
 							- ![image.png](../assets/image_1680528039104_0.png)
 						- {{youtube-timestamp 1308}} O(n/2) is irrelevant because it's the same shape
 							- ![image.png](../assets/image_1680528122163_0.png)
-						- {{youtube-timestamp 1351}} Most common ways to analyse (slowest at top):
+						- {{youtube-timestamp 1351}} Most common ways to describe algorithms (slowest at top):
 							- O(*n*²)
 							- O(*n* log *n*)
 							- O(*n*)
 							  id:: 642ad322-cf6c-4360-9e3e-a4e24f264d56
+							  collapsed:: true
+								- Linear search
 							- O(log *n*)
 							  id:: 642ad32c-4d27-468c-b0c5-d9f5e5eca51c
+							  collapsed:: true
+								- Binary search
 							- O(1)
+							  collapsed:: true
 								- Finite number of steps, can even be say 999 steps
 						- {{youtube-timestamp 1432}} Linear search is ((642ad322-cf6c-4360-9e3e-a4e24f264d56)) whereas binary search is ((642ad32c-4d27-468c-b0c5-d9f5e5eca51c))
+						- {{youtube-timestamp 1521}} Ω (omega) describes lower-bound of an algorithm (how fast it might be if it gets lucky first time)
+							- Ω(*n*²)
+							- Ω(*n* log *n*)
+							- Ω(*n*)
+							- Ω(log *n*)
+							- Ω(1)
+								- Linear search or binary search might get lucky and get it on first check
+						- {{youtube-timestamp 1656}} Θ (theta) can be used if an algorithm has identical Big *O* and Ω values
+							- Θ(*n*²)
+							- Θ(*n* log *n*)
+							- Θ(*n*)
+								- e.g. counting all students in a room
+							- Θ(log *n*)
+							- Θ(1)
 					- ### search.c
+						- {{youtube-timestamp 1796}} Can use curley brackets when initialising an array to get the compiler to allocate you that much memory for the array
+						  collapsed:: true
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    int numbers[] = {20, 500, 10, 5, 100, 1, 50};
+							  }
+							  ```
+								- Alternatively:
+								  ```c
+								  int numbers[7];
+								  numbers[0] = 20;
+								  numbers[1] = 500; 
+								  // etc
+								  ```
+						- {{youtube-timestamp 1891}} Example linear search
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    
+							    int numbers[] = {20, 500, 10, 5, 100, 1, 50};
+							    
+							    int n = get_int("Number: ");
+							    // Linear search
+							    for (int i = 0; i < 7; i++)
+							    {
+							      if (numbers[i] == n)
+							      {
+							        printf("Found\n");
+							        return 0;
+							      }
+							    }
+							    printf("Not found\n");
+							    return 1;
+							  }
+							  ```
+						- {{youtube-timestamp 2049}}
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    string strings[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
+							    
+							    string s = get_string("String: ");
+							    // Linear search
+							    for (int i = 0; i < 7; i++)
+							    {
+							      // The line `if (strings[i] == s)` wouldn't work
+							      // if (strings[i] == s)
+							      if (strcmp(strings[i], s) == 0)
+							      {
+							        printf("Found\n");
+							        return 0;
+							      }
+							    }
+							    printf("Not found\n");
+							    return 1;
+							  }
+							  ```
 					- ### structs
 					- ## Sorting
 						- ### Selection Sort
@@ -794,7 +880,7 @@
 						- ### Merge Sort
 						- ### Comparing Algorithms
 					- ### Recursion
-					- Asymptotic Notation: � , Ω, Θ. Recursion.
+					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
