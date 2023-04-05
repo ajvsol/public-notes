@@ -901,7 +901,57 @@
 							    return 1;
 							  }
 							  ```
+						- {{youtube-timestamp 2818}} Cons of the previous design:
+							- Difficult to update the phonebook if it scales to much more users
+							- Not built to ensure the order of arrays stays the same
 					- ### structs
+						- {{youtube-timestamp 2941}} Arrays are one type of data structure, but we can invent our own using primitives like string and int
+						- {{youtube-timestamp 3023}} How to create a struct - example
+							- ```c
+							  typedef struct // Create own definition + the type of it is a 'structure'
+							  {
+							    string name;
+							    string number;
+							  }
+							  person; // Name of type that you're creating
+							  ```
+						- {{youtube-timestamp 3090}} Integrating a struct by refactoring the previous example
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  #include <string.h>
+							  
+							  typedef struct 
+							  {
+							    string name;
+							    string number;
+							  }
+							  person;
+							  
+							  int main(void)
+							  {
+							    person people[2];
+							    
+							    people[0].name = "Carter";
+							    people[0].number = "+1-617-495-1000";
+							    
+							    people[1].name = "David";
+							    people[1].number = "+1-622-413-1001";
+							   
+							    string name = get_string("Name: ");
+							    for (int i = 0; i < 2; i++)
+							    {
+							      if (strcmp(people[i].name, name) == 0)
+							      {
+							        printf("Found %s\n", people[i].number);
+							        return 0;
+							      }
+							    }
+							    printf("Not found\n");
+							    return 1;
+							  }
+							  ```
+						-
 					- ## Sorting
 						- ### Selection Sort
 						- ### Bubble Sort
