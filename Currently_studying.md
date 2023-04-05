@@ -915,7 +915,7 @@
 							  }
 							  person; // Name of type that you're creating
 							  ```
-						- {{youtube-timestamp 3090}} Integrating a struct by refactoring the previous example
+						- {{youtube-timestamp 3090}} Integrating a struct by refactoring the previous example - uses dot notation
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
@@ -951,12 +951,27 @@
 							    return 1;
 							  }
 							  ```
-						-
-					- ## Sorting
-						- ### Selection Sort
-						- ### Bubble Sort
+					- ## {{youtube-timestamp 3532}} Sorting
+						- e.g. sort the numbers into ascending order (initially `72541603`)
+						- ### {{youtube-timestamp 3776}} Selection Sort
+							- {{youtube-timestamp 3808}} Analyses the entire list to find the smallest number, then swaps that number with the number at position `0`
+							- {{youtube-timestamp 3992}} Pseudocode version:
+								- ```c
+								  For i from 0 to n-1
+								    Find smallest number between numbers[i] and numbers[n-1]
+								    Swap smallest number with numbers[i]
+								  ```
+						- ### {{youtube-timestamp 4033}} Bubble Sort
+							- {{youtube-timestamp 4076}} Just compares one number with the next number
+							- {{youtube-timestamp 4160}} Largest numbers "bubble" their way to the top
+							- {{youtube-timestamp 4218}} To confirm when to stop, do another full loop and when there's no swaps then stop
+							- {{youtube-timestamp 4473}} Algorithm efficiency is *n*(*n*-1)/2
+								- Because to get the first smallest number is `(n - 1)`
+								- To get the  second smallest number is `(n - 2)`
+						- ### {{youtube-timestamp 4276}} Comparing Algorithms
+							- {{youtube-timestamp 4356}} To calculate efficiency of algorithms vs each other, count how many comparisons took place
+							- {{youtube-timestamp 4485}}
 						- ### Merge Sort
-						- ### Comparing Algorithms
 					- ### Recursion
 					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
