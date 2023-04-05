@@ -875,8 +875,32 @@
 							  }
 							  ```
 						- {{youtube-timestamp 2261}} Segmentation fault error occurs when you touched memory you shouldn't have e.g. looped too many times
-						- {{youtube-timestamp 2490}}
-							- ((642437fb-baa6-4c18-a3d1-596ecbccb6c4))
+						- {{youtube-timestamp 2490}} related: ((642437fb-baa6-4c18-a3d1-596ecbccb6c4))
+						- {{youtube-timestamp 2577}} Storing both names and numbers for a phonebook
+							- `phonebook.c`
+							  ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  #include <string.h>
+							  
+							  int main(void)
+							  {
+							    string names[] = {"Carter", "David"};
+							    string numbers[] = {"+1-617-495-1000", "+1-949-468-2750"};
+							    
+							    string name = get_string("Name: ");
+							    for (int i = 0; i < 2; i++)
+							    {
+							      if (strcmp(names[i], name) == 0)
+							      {
+							        printf("Found %s\n", numbers[i]);
+							        return 0;
+							      }
+							    }
+							    printf("Not found\n");
+							    return 1;
+							  }
+							  ```
 					- ### structs
 					- ## Sorting
 						- ### Selection Sort
