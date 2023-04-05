@@ -717,6 +717,7 @@
 							  int main(void)
 							  ```
 						- {{youtube-timestamp 8247}} `echo $?` can be run after executing a program (e.g. `./status` for `1` or `./status David` for `0`) to show the exit status of a program (showing what it returns)
+						  id:: 642437fb-baa6-4c18-a3d1-596ecbccb6c4
 						  collapsed:: true
 							- ```c
 							  int main(int argc, string argv[]) {
@@ -848,7 +849,7 @@
 							    return 1;
 							  }
 							  ```
-						- {{youtube-timestamp 2049}}
+						- {{youtube-timestamp 2049}} [`strcmp`](https://manual.cs50.io/3/strcmp) is needed to compare strings inside arrays
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
@@ -861,8 +862,8 @@
 							    // Linear search
 							    for (int i = 0; i < 7; i++)
 							    {
-							      // The line `if (strings[i] == s)` wouldn't work
-							      // if (strings[i] == s)
+							      // The line `if (strings[i] == s)` wouldn't work because strings are arrays of chars?
+							      // Instead use strcmp:
 							      if (strcmp(strings[i], s) == 0)
 							      {
 							        printf("Found\n");
@@ -873,6 +874,9 @@
 							    return 1;
 							  }
 							  ```
+						- {{youtube-timestamp 2261}} Segmentation fault error occurs when you touched memory you shouldn't have e.g. looped too many times
+						- {{youtube-timestamp 2490}}
+							- ((642437fb-baa6-4c18-a3d1-596ecbccb6c4))
 					- ### structs
 					- ## Sorting
 						- ### Selection Sort
