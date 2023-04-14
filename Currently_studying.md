@@ -773,25 +773,23 @@
 							  	Search doors[middle + 1] through doors[length - 1]
 							  ```
 					- ### Running Time
-					  collapsed:: true
 						- {{youtube-timestamp 1286}} Big O notation
 							- ![image.png](../assets/image_1680528039104_0.png)
 						- {{youtube-timestamp 1308}} O(n/2) is irrelevant because it's the same shape
 							- ![image.png](../assets/image_1680528122163_0.png)
 						- {{youtube-timestamp 1351}} Most common ways to describe algorithms (slowest at top):
 							- O(*n*²)
+							  id:: 642ad30b-9fff-4cba-ac25-bb3dd0262cee
+							  Selection sort
 							- O(*n* log *n*)
 							- O(*n*)
 							  id:: 642ad322-cf6c-4360-9e3e-a4e24f264d56
-							  collapsed:: true
-								- Linear search
+							  Linear search
 							- O(log *n*)
 							  id:: 642ad32c-4d27-468c-b0c5-d9f5e5eca51c
-							  collapsed:: true
-								- Binary search
+							  Binary search
 							- O(1)
-							  collapsed:: true
-								- Finite number of steps, can even be say 999 steps
+							  Finite number of steps, can even be say 999 steps
 						- {{youtube-timestamp 1432}} Linear search is ((642ad322-cf6c-4360-9e3e-a4e24f264d56)) whereas binary search is ((642ad32c-4d27-468c-b0c5-d9f5e5eca51c))
 						- {{youtube-timestamp 1521}} Ω (omega) describes lower-bound of an algorithm (how fast it might be if it gets lucky first time)
 							- Ω(*n*²)
@@ -907,7 +905,6 @@
 							- Difficult to update the phonebook if it scales to much more users
 							- Not built to ensure the order of arrays stays the same
 					- ### structs
-					  collapsed:: true
 						- {{youtube-timestamp 2941}} Arrays are one type of data structure, but we can invent our own using primitives like string and int
 						- {{youtube-timestamp 3023}} How to create a struct - example
 							- ```c
@@ -968,12 +965,15 @@
 							- {{youtube-timestamp 4076}} Just compares one number with the next number
 							- {{youtube-timestamp 4160}} Largest numbers "bubble" their way to the top
 							- {{youtube-timestamp 4218}} To confirm when to stop, do another full loop and when there's no swaps then stop
-							- {{youtube-timestamp 4473}} Algorithm efficiency is *n*(*n*-1)/2
-								- Because to get the first smallest number is `(n - 1)`
-								- To get the  second smallest number is `(n - 2)`
 						- ### {{youtube-timestamp 4276}} Comparing Algorithms
 							- {{youtube-timestamp 4356}} To calculate efficiency of algorithms vs each other, count how many comparisons took place
-							- {{youtube-timestamp 4485}}
+							- {{youtube-timestamp 4473}} Algorithm efficiency of selection sort = *n*(*n* - 1)/2 **->** (*n²* - 1)/2 **->** *n²*/2 - *n*/2
+								- i.e. `(n - 1) + (n - 2) + (n - 3) + ... + 1`
+								- Because to get the first smallest number is `(n - 1)`
+								- To get the second smallest number is `(n - 2)`
+								- etc
+							- {{youtube-timestamp 4485}} It's basically *O(n²)* ( ((642ad30b-9fff-4cba-ac25-bb3dd0262cee)) ) (you get to ignore that it gets divided by 2 and subtract a number, because when *n* is really large it doesn't really matter)
+							- {{youtube-timestamp 4574}} I
 						- ((642437fb-c486-462e-9f9c-e508fcfda137))
 					- ### Recursion
 					- ### Merge Sort
