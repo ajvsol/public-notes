@@ -773,6 +773,7 @@
 							  	Search doors[middle + 1] through doors[length - 1]
 							  ```
 					- ### Running Time
+					  collapsed:: true
 						- {{youtube-timestamp 1286}} Big O notation
 							- ![image.png](../assets/image_1680528039104_0.png)
 						- {{youtube-timestamp 1308}} O(n/2) is irrelevant because it's the same shape
@@ -807,6 +808,7 @@
 							- Θ(log *n*)
 							- Θ(1)
 					- ### search.c
+					  collapsed:: true
 						- {{youtube-timestamp 1796}} Can use curley brackets when initialising an array to get the compiler to allocate you that much memory for the array
 						  collapsed:: true
 							- ```c
@@ -905,6 +907,7 @@
 							- Difficult to update the phonebook if it scales to much more users
 							- Not built to ensure the order of arrays stays the same
 					- ### structs
+					  collapsed:: true
 						- {{youtube-timestamp 2941}} Arrays are one type of data structure, but we can invent our own using primitives like string and int
 						- {{youtube-timestamp 3023}} How to create a struct - example
 							- ```c
@@ -971,8 +974,10 @@
 						- ### {{youtube-timestamp 4276}} Comparing Algorithms
 							- {{youtube-timestamp 4356}} To calculate efficiency of algorithms vs each other, count how many comparisons took place
 							- {{youtube-timestamp 4485}}
-						- ### Merge Sort
+						- ((642437fb-c486-462e-9f9c-e508fcfda137))
 					- ### Recursion
+					- ### Merge Sort
+					  id:: 642437fb-c486-462e-9f9c-e508fcfda137
 					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
