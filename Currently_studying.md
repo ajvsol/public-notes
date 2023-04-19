@@ -1026,16 +1026,42 @@
 							  
 							  void draw(int n)
 							  {
+							    // Base case
+							    if (n <= 0) 
+							    {
+							      return;
+							    }
+							    
+							    draw(n + 1);
+							    
 							    for (int i = 0; i < n; i++)
 							    {
 							      printf("#");
 							    }
-							    	printf("\n");
-							    }
+							    printf("\n");
 							  }
 							  ```
-					- ### Merge Sort
+						- {{youtube-timestamp 6060}} Base classes can be used to exit a recursive program at the appropriate time
+							- Example in previous example
+								- ```c#
+								  if (n <= 0) 
+								  {
+								    return;
+								  }
+								  ```
+					- ### {{youtube-timestamp 6280}} Merge Sort
 					  id:: 642437fb-c486-462e-9f9c-e508fcfda137
+						- Depends on recursion
+						- Pseudocode
+							- ```
+							  If only one number
+							  	Quit
+							  Else
+							    Sort left half of numbers
+							    Sort right half of numbers
+							    Merge sorted halves
+							  ```
+						-
 					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
