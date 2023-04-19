@@ -987,7 +987,29 @@
 						- ((642437fb-c486-462e-9f9c-e508fcfda137))
 					- ### {{youtube-timestamp 5246}} Recursion
 						- Recursion is the ability of a function to call itself
-						-
+						- {{youtube-timestamp 5555}} Pyramid example
+							- ```c#
+							  #include <cs59.h>
+							  #include <stdio.h>
+							  
+							  int main(void) 
+							  { 
+							    int height = get_int("Height: "); 
+							    draw(height); 
+							  }
+							  
+							  void draw(int n)
+							  {
+							    for (int i = 0; i < n; i++)
+							    {
+							      for (int j = 0; j < i; j++) 
+							      {
+							        printf("#");
+							      }
+							      printf("\n");
+							    }
+							  }
+							  ```
 					- ### Merge Sort
 					  id:: 642437fb-c486-462e-9f9c-e508fcfda137
 					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
