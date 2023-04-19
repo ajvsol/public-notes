@@ -1010,6 +1010,7 @@
 							    }
 							  }
 							  ```
+							- {{youtube-timestamp 5616}}
 					- ### Merge Sort
 					  id:: 642437fb-c486-462e-9f9c-e508fcfda137
 					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
