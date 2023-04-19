@@ -777,7 +777,8 @@
 							- ![image.png](../assets/image_1680528039104_0.png)
 						- {{youtube-timestamp 1308}} O(n/2) is irrelevant because it's the same shape
 							- ![image.png](../assets/image_1680528122163_0.png)
-						- {{youtube-timestamp 1351}} Most common ways to describe algorithms (slowest at top):
+						- {{youtube-timestamp 1351}} Upper-bound, how long an algorithm might take in worst case scenario (slowest at top):
+						  id:: 643a7163-086b-4ebe-8f88-d1ed28f62336
 							- O(*n*²)
 							  id:: 642ad30b-9fff-4cba-ac25-bb3dd0262cee
 							  Selection sort
@@ -792,14 +793,20 @@
 							  Finite number of steps, can even be say 999 steps
 						- {{youtube-timestamp 1432}} Linear search is ((642ad322-cf6c-4360-9e3e-a4e24f264d56)) whereas binary search is ((642ad32c-4d27-468c-b0c5-d9f5e5eca51c))
 						- {{youtube-timestamp 1521}} Ω (omega) describes lower-bound of an algorithm (how fast it might be if it gets lucky first time)
+						  id:: 643a7163-c0d5-4f5f-a110-81ab4d4005b0
 							- Ω(*n*²)
+							  id:: 643a7163-5a80-4690-b11f-70282d809ee5
+							  Selection sort
 							- Ω(*n* log *n*)
 							- Ω(*n*)
+							  id:: 643a7163-9507-4130-9c35-0f5fd422c7b2
+							  Bubble sort
 							- Ω(log *n*)
 							- Ω(1)
-								- Linear search or binary search might get lucky and get it on first check
+							  Linear search or binary search might get lucky and get it on first check
 						- {{youtube-timestamp 1656}} Θ (theta) can be used if an algorithm has identical Big *O* and Ω values
 							- Θ(*n*²)
+							  id:: 643a7163-0b32-48c8-aca8-89f2a30c7ef9
 							- Θ(*n* log *n*)
 							- Θ(*n*)
 								- e.g. counting all students in a room
@@ -972,10 +979,15 @@
 								- Because to get the first smallest number is `(n - 1)`
 								- To get the second smallest number is `(n - 2)`
 								- etc
-							- {{youtube-timestamp 4485}} It's basically *O(n²)* ( ((642ad30b-9fff-4cba-ac25-bb3dd0262cee)) ) (you get to ignore that it gets divided by 2 and subtract a number, because when *n* is really large it doesn't really matter)
-							- {{youtube-timestamp 4574}} I
+							- {{youtube-timestamp 4485}} It's basically ((642ad30b-9fff-4cba-ac25-bb3dd0262cee)) (you get to ignore that it gets divided by 2 and subtract a number, because when *n* is really large it doesn't really matter)
+								- Related: ((643a7163-086b-4ebe-8f88-d1ed28f62336))
+							- {{youtube-timestamp 4574}} Selection sort is ((643a7163-5a80-4690-b11f-70282d809ee5)), so because it's also ((642ad30b-9fff-4cba-ac25-bb3dd0262cee)) that makes it ((643a7163-0b32-48c8-aca8-89f2a30c7ef9))
+								- Related: ((643a7163-c0d5-4f5f-a110-81ab4d4005b0))
+							- {{youtube-timestamp 4709}} Bubble sort is ((642ad30b-9fff-4cba-ac25-bb3dd0262cee)) and ((643a7163-9507-4130-9c35-0f5fd422c7b2))
 						- ((642437fb-c486-462e-9f9c-e508fcfda137))
-					- ### Recursion
+					- ### {{youtube-timestamp 5246}} Recursion
+						- Recursion is the ability of a function to call itself
+						-
 					- ### Merge Sort
 					  id:: 642437fb-c486-462e-9f9c-e508fcfda137
 					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
