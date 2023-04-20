@@ -783,6 +783,8 @@
 							  id:: 642ad30b-9fff-4cba-ac25-bb3dd0262cee
 							  Selection sort
 							- O(*n* log *n*)
+							  id:: 643a7163-2f8f-4e0c-829e-af060359b08f
+							  Merge sort
 							- O(*n*)
 							  id:: 642ad322-cf6c-4360-9e3e-a4e24f264d56
 							  Linear search
@@ -798,6 +800,7 @@
 							  id:: 643a7163-5a80-4690-b11f-70282d809ee5
 							  Selection sort
 							- Ω(*n* log *n*)
+							  id:: 643a7163-a94c-42e2-aada-ea92c4f7fdf5
 							- Ω(*n*)
 							  id:: 643a7163-9507-4130-9c35-0f5fd422c7b2
 							  Bubble sort
@@ -808,9 +811,11 @@
 							- Θ(*n*²)
 							  id:: 643a7163-0b32-48c8-aca8-89f2a30c7ef9
 							- Θ(*n* log *n*)
+							  id:: 643a7163-2f40-496b-82dc-83383361a586
 							- Θ(*n*)
 								- e.g. counting all students in a room
 							- Θ(log *n*)
+							  id:: 643a7163-ff68-4fad-b85d-7d75741a1847
 							- Θ(1)
 					- ### search.c
 					  collapsed:: true
@@ -960,6 +965,10 @@
 							  ```
 					- ## {{youtube-timestamp 3532}} Sorting
 						- e.g. sort the numbers into ascending order (initially `72541603`)
+						- Short description of sorting algos examined:
+							- Selection sort iterates through the unsorted portions of a list, selecting the smallest element each time and moving it to its correct location.
+							- Bubble sort compares pairs of adjacent values one at a time and swaps them if they are in the incorrect order. This continues until the list is sorted.
+							- Merge sort recursively divides the list into two repeatedly and then merges the smaller lists back into a larger one in the correct order.
 						- ### {{youtube-timestamp 3776}} Selection Sort
 							- {{youtube-timestamp 3808}} Analyses the entire list to find the smallest number, then swaps that number with the number at position `0`
 							- {{youtube-timestamp 3992}} Pseudocode version:
@@ -1063,7 +1072,7 @@
 							  ```
 						- {{youtube-timestamp 6544}} You keep looking at the left half, of the left half, of the left half until you end up with 2 numbers. Then compare and sort those.
 						- {{youtube-timestamp 6662}} Then sort the next pair -> then the merge stage involves comparing the first numbers of each half, and each digit after that
-						-
+						- {{youtube-timestamp 7038}} Merge sort is ((643a7163-2f40-496b-82dc-83383361a586)), because it's ((643a7163-2f8f-4e0c-829e-af060359b08f)) and ((643a7163-a94c-42e2-aada-ea92c4f7fdf5))
 					- Asymptotic Notation: *O* , Ω, Θ.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
