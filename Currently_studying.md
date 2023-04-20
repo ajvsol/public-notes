@@ -1061,8 +1061,10 @@
 							    Sort right half of numbers
 							    Merge sorted halves
 							  ```
-						- {{youtube-timestamp 6544}}
-					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
+						- {{youtube-timestamp 6544}} You keep looking at the left half, of the left half, of the left half until you end up with 2 numbers. Then compare and sort those.
+						- {{youtube-timestamp 6662}} Then sort the next pair -> then the merge stage involves comparing the first numbers of each half, and each digit after that
+						-
+					- Asymptotic Notation: *O* , Ω, Θ.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
