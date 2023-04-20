@@ -1061,7 +1061,7 @@
 							    Sort right half of numbers
 							    Merge sorted halves
 							  ```
-						-
+						- {{youtube-timestamp 6544}}
 					- Asymptotic Notation: *O* , Ω, Θ. Recursion.
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
