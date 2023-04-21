@@ -1074,6 +1074,8 @@
 						- {{youtube-timestamp 6662}} Then sort the next pair -> then the merge stage involves comparing the first numbers of each half, and each digit after that
 						- {{youtube-timestamp 7038}} Merge sort is ((643a7163-2f40-496b-82dc-83383361a586)), because it's ((643a7163-2f8f-4e0c-829e-af060359b08f)) and ((643a7163-a94c-42e2-aada-ea92c4f7fdf5))
 					- Asymptotic Notation: *O* , Ω, Θ.
+				- Practical exercises learnings
+					- `#define MAX 9` = create a constant named `MAX` whose value is `9`
 			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
