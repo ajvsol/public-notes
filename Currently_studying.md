@@ -738,6 +738,9 @@
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
 			  collapsed:: true
 			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: *O* , Ω, Θ. Recursion.
+				- Most important:
+					- ((643a7163-4f01-4c96-8b4c-dc3701fcbddc))
+					-
 				- {{video https://youtu.be/4oqjcKenCH8}}
 					- ### {{youtube-timestamp 72}} Algorithms
 					- ### {{youtube-timestamp 469}} Linear Search
@@ -860,6 +863,7 @@
 							  }
 							  ```
 						- {{youtube-timestamp 2049}} [`strcmp`](https://manual.cs50.io/3/strcmp) is needed to compare strings inside arrays
+						  id:: 643a7163-4f01-4c96-8b4c-dc3701fcbddc
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
