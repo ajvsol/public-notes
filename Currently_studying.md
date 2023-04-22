@@ -450,7 +450,6 @@
 							- {{youtube-timestamp 1534}} Compiling
 								- Changes everything to assembly code
 								- Example assembly code for our C code
-								  collapsed:: true
 									- ![image.png](../assets/image_1678709069073_0.png)
 							- {{youtube-timestamp 1689}} Assembling
 								- Converts Assembly to binary (base-2/machine code)
@@ -460,13 +459,11 @@
 					- ### {{youtube-timestamp 2302}} Debugging
 						- {{youtube-timestamp 2549}} `printf` is the simplest form of debugging (equivalent to `console.log`)
 						- {{youtube-timestamp 2752}} Debugger
-						  collapsed:: true
 							- Breakpoints can be added in normal Visual Studio Code view by clicking in the gutter. Execute file as normal `./hello`
 							- {{youtube-timestamp 2968}} Step-over - it'll step over functions like `printf`. Step-into would show each line of code beign executed in `printf`
 							- The highlighted line hasn't yet been executed
 							- {{youtube-timestamp 3434}} Step-into instead of step-over when you need to lock inside what a called function is doing
 						- {{youtube-timestamp 3625}} Rubber duck debugging
-						  collapsed:: true
 							- Out loud talk through your issue
 							-
 					- ### {{youtube-timestamp 3904}} Arrays
@@ -679,7 +676,6 @@
 					- ### Command-Line Arguments
 						- {{youtube-timestamp 7549}} `void` in `int main(void)` means it takes no CLI arguments
 						- {{youtube-timestamp 7627}} `argc` = argument count, `argv` = argument value? the strings you enter as CL arguments
-						  collapsed:: true
 							- ```c
 							  int main(int argc, string argv[]) { 
 							    string name = get_string("What's your name? "); 
@@ -687,7 +683,6 @@
 							  }
 							  ```
 						- {{youtube-timestamp 7704}} How to make a basic CL argument in your program
-						  collapsed:: true
 							- ```c
 							  int main(int argc, string argv[]) { 
 							    printf("hello, %s\n", argv[1]);
@@ -699,7 +694,6 @@
 						- {{youtube-timestamp 7731}} `argv[0]` is always the name of the expression used to execute the program e.g. `./greet` here
 						- {{youtube-timestamp 7786}} and `argc` = `2` (length), because you've entered 1 expression and 1 argument i.e. `./greet` and `name`
 						- {{youtube-timestamp 7866}} Nowadays there's two official ways to define a main function:
-						  collapsed:: true
 							- ```c
 							  // No CLI arguments
 							  int main(void)
@@ -708,17 +702,14 @@
 							  int main(int argc, string argv[])
 							  ```
 					- ### {{youtube-timestamp 8046}} Exit Status
-					  collapsed:: true
 						- 404 = not found
 						- HTTP error code
 						- {{youtube-timestamp 8141}} `int` means it'll return an integer, `0` by default (success)
-						  collapsed:: true
 							- ```c
 							  int main(void)
 							  ```
 						- {{youtube-timestamp 8247}} `echo $?` can be run after executing a program (e.g. `./status` for `1` or `./status David` for `0`) to show the exit status of a program (showing what it returns)
 						  id:: 642437fb-baa6-4c18-a3d1-596ecbccb6c4
-						  collapsed:: true
 							- ```c
 							  int main(int argc, string argv[]) {
 							    if (arge != 2) { 
@@ -732,7 +723,6 @@
 							  }
 							  ```
 					- ### {{youtube-timestamp 8379}} Cryptography
-					  collapsed:: true
 						- Transforming plaintext and key > via cipher (algorithm) > to ciphertext
 						-
 			- [CS50 2022 - Lecture 3 - Algorithms - YouTube](https://youtu.be/4oqjcKenCH8)
