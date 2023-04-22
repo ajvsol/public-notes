@@ -730,7 +730,7 @@
 			  Searching: Linear Search, Binary Search. Sorting: Bubble Sort, Selection Sort, Merge Sort. Asymptotic Notation: *O* , Ω, Θ. Recursion.
 				- Most important:
 					- ((643a7163-4f01-4c96-8b4c-dc3701fcbddc))
-					-
+					- For `check50` tool, ensure that there's no space before `\n`. It expects this style
 				- {{video https://youtu.be/4oqjcKenCH8}}
 					- ### {{youtube-timestamp 72}} Algorithms
 					- ### {{youtube-timestamp 469}} Linear Search
