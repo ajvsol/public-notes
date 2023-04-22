@@ -818,9 +818,7 @@
 							  id:: 643a7163-ff68-4fad-b85d-7d75741a1847
 							- Θ(1)
 					- ### search.c
-					  collapsed:: true
 						- {{youtube-timestamp 1796}} Can use curley brackets when initialising an array to get the compiler to allocate you that much memory for the array
-						  collapsed:: true
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
