@@ -1068,8 +1068,26 @@
 					- Asymptotic Notation: *O* , Ω, Θ.
 				- Practical exercises learnings
 					- `#define MAX 9` = create a constant named `MAX` whose value is `9`
-			- [CS50 2022 - Lecture 4 - Memory - YouTube](https://youtu.be/AcWIE9qazLI)
+			- [CS50 2022 - Lecture 4 - Memory](https://youtu.be/AcWIE9qazLI)
+			  collapsed:: true
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
+				- {{video https://youtu.be/AcWIE9qazLI}}
+					- ## {{youtube-timestamp 72}} Memory
+					- ## {{youtube-timestamp 419}} Hexadecimal
+					- ## {{youtube-timestamp 927}} Addresses
+					- ## {{youtube-timestamp 1382}} Pointers
+					- ## {{youtube-timestamp 2134}} Strings
+					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
+					- ## {{youtube-timestamp 3932}} Comparing Strings
+					- ## {{youtube-timestamp 4681}} Copying
+					- ## {{youtube-timestamp 5933}} Valgrind
+					- ## {{youtube-timestamp 6379}} Garbage Values
+					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
+					- ## {{youtube-timestamp 6902}} Swap
+					- ## {{youtube-timestamp 7893}} Overflow and
+					- ## {{youtube-timestamp 7990}} scanf
+					- ## {{youtube-timestamp 8446}} Phonebook
+					- Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
 			  Abstract Data Types. Queues, Stacks. Linked Lists. Trees, Binary Search Trees. Hash Tables. Tries.
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
