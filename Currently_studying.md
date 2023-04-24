@@ -1080,8 +1080,28 @@
 						- {{youtube-timestamp 766}} Hexadecimal maps very easily to binary
 					- ## {{youtube-timestamp 927}} Addresses
 						- {{youtube-timestamp 1042}} Convention to indicate a number is hexadecimal is prefixing it with `0x` e.g. 0x5, 0xF
-						-
+						- {{youtube-timestamp 1268}} `&` prefix allows us to get the address of a variable in memory
+						- {{youtube-timestamp 1291}} `*` (dereference operator) allows us to go to a specific address in memory
+						- {{youtube-timestamp 1328}} `%p`, and `&` before `n` allows us to print the address in memory
+							- ```c
+							  int main(void)
+							  {
+							    int n = 50;
+							    printf("%p\n", &n);
+							  }
+							  ```
 					- ## {{youtube-timestamp 1382}} Pointers
+						- {{youtube-timestamp 1466}} It's a variable which contains the address of some value AKA it's an address in memory
+						- {{youtube-timestamp 1493}} Prefix variable names with `*` if it's going to be a pointer (i.e. you called a variable's address using prefix `&`)
+							- ```c
+							  int main(void)
+							  {
+							    int n = 50;
+							    int *p = &n;
+							    printf("%p\n", p);
+							  }
+							  ```
+						-
 					- ## {{youtube-timestamp 2134}} Strings
 					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
 					- ## {{youtube-timestamp 3932}} Comparing Strings
