@@ -1101,6 +1101,9 @@
 							    printf("%p\n", p);
 							  }
 							  ```
+						- {{youtube-timestamp 1809}} Visual example of the previous example's variables in memory
+							- ![image.png](../assets/image_1682362618360_0.png)
+						- {{youtube-timestamp 1881}} Integers are 4 bits, but pointers are 8 bits
 						-
 					- ## {{youtube-timestamp 2134}} Strings
 					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
