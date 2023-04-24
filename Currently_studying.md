@@ -1114,7 +1114,7 @@
 						  char *s = "HI!"
 						  ```
 						- {{youtube-timestamp 2585}} They made it using `typedef char *string;`
-						-
+						- {{youtube-timestamp 2696}} next
 					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
 					- ## {{youtube-timestamp 3932}} Comparing Strings
 					- ## {{youtube-timestamp 4681}} Copying
