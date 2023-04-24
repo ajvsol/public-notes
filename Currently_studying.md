@@ -1073,6 +1073,7 @@
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
+						- {{youtube-timestamp 189}} Bitmap for images
 					- ## {{youtube-timestamp 419}} Hexadecimal
 					- ## {{youtube-timestamp 927}} Addresses
 					- ## {{youtube-timestamp 1382}} Pointers
