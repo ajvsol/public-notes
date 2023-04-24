@@ -1073,9 +1073,14 @@
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
-						- {{youtube-timestamp 189}} Bitmap for images
+						- {{youtube-timestamp 189}} Bitmap for images in just binary
 					- ## {{youtube-timestamp 419}} Hexadecimal
+						- {{youtube-timestamp 414}} RGB is max 255, 255, 255. Alternatively can be represented as hexadecimal eg. FFFFFF
+						- {{youtube-timestamp 487}} Hexadecimal is 0-9 A-F, AKA base-16
+						- {{youtube-timestamp 766}} Hexadecimal maps very easily to binary
 					- ## {{youtube-timestamp 927}} Addresses
+						- {{youtube-timestamp 1042}} Convention to indicate a number is hexadecimal is prefixing it with `0x` e.g. 0x5, 0xF
+						-
 					- ## {{youtube-timestamp 1382}} Pointers
 					- ## {{youtube-timestamp 2134}} Strings
 					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
