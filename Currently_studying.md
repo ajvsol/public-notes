@@ -1104,8 +1104,17 @@
 						- {{youtube-timestamp 1809}} Visual example of the previous example's variables in memory
 							- ![image.png](../assets/image_1682362618360_0.png)
 						- {{youtube-timestamp 1881}} Integers are 4 bits, but pointers are 8 bits
-						-
 					- ## {{youtube-timestamp 2134}} Strings
+						- {{youtube-timestamp 2205}} Recap of what strings look like in memory - ends with a null character `\0`
+							- ![image.png](../assets/image_1682362969278_0.png)
+						- {{youtube-timestamp 2302}} When you create a var (e.g. `string s = "HI!"`) you're making a pointer to the first character (`H`/`s[0]`)
+						- {{youtube-timestamp 2439}} `string` is actually a CS50 struct. In C it actually is instead called `char *`, e.g:
+						  ```c
+						  string s = "HI!"
+						  char *s = "HI!"
+						  ```
+						- {{youtube-timestamp 2585}} They made it using `typedef char *string;`
+						-
 					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
 					- ## {{youtube-timestamp 3932}} Comparing Strings
 					- ## {{youtube-timestamp 4681}} Copying
