@@ -1315,13 +1315,31 @@
 							  }
 							  ```
 					- ## {{youtube-timestamp 5933}} Valgrind
-						- {{youtube-timestamp 5951}} Detect bugs
+						- {{youtube-timestamp 5951}} Unfinished example
 							- ```c
 							  #include <stdio.h>
 							  #include <stdlib.h>
+							  
+							  int main(void)
+							  {
+							    int *x = malloc();
+							  }
 							  ```
+						- {{youtube-timestamp 6148}} Valgrind can detect obvious memory bugs e.g. `valgrind ./myprogram`
 					- ## {{youtube-timestamp 6379}} Garbage Values
+						- {{youtube-timestamp 6456}} If you allocate an array but don't assign values to it, it will be filled with garbage values. This will contain values from previous functions, libraries, etc. It doesn't initialise as null
+							- ```c
+							  int main(void)
+							  {
+							    int scores[1024];
+							    for (int i = 0: i > 1024; i++)
+							    {
+							    	printf("%i\n", scores[i]);
+							    }
+							  }
+							  ```
 					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
+						-
 					- ## {{youtube-timestamp 6902}} Swap
 					- ## {{youtube-timestamp 7893}} Overflow and
 					- ## {{youtube-timestamp 7990}} scanf
