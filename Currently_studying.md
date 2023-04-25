@@ -1242,7 +1242,17 @@
 							  #include <stdlib.h> // <-- newest, needed for malloc and free
 							  #include <string.h>
 							  ```
-						-
+						- {{youtube-timestamp 5133}} `malloc(strlen(s) + 1)` can be used to allocate a free chunk of memory equal to the size of the original var `s` (+1 is for the null char `\0`)
+							- ```c
+							  int main(void)
+							  {
+							    string s = get_string("s: ");
+							    string t = malloc(strlen(s) + 1);
+							  }
+							  ```
+						- {{youtube-timestamp 5220}} Next
+							- ```c
+							  ```
 					- ## {{youtube-timestamp 5933}} Valgrind
 					- ## {{youtube-timestamp 6379}} Garbage Values
 					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
