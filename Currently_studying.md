@@ -1128,11 +1128,70 @@
 							  }
 							  // returns: 50
 							  ```
-						- {{youtube-timestamp 2963}}
+						- {{youtube-timestamp 2963}} `%p` always shows the pointer for the var
 							- ```c
-							  rintf("%i\n", *p);
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    char *s = "HI!";
+							    printf("%p\n", s);
+							  }
+							  ```
+						- {{youtube-timestamp 3130}} `%s` can be used with `printf` string vars to call that var
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    char *s = "HI!";
+							    printf("%s\n", s);
+							  }
+							  ```
+						- {{youtube-timestamp 3264}} The pointer for a whole string var as well as the `0` index of that string are the same. `1` and other index isn't the same
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    char *s = "HI!";
+							    printf("%p\n", s); // 0x999999999
+							    printf("%p\n", &s[0]); // 0x999999999
+							    printf("%p\n", &s[1]); // 0x333333333
+							  }
 							  ```
 					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
+						- {{youtube-timestamp 3534}} To get the address of each character in a string, you can use `*` and pointer arithmetic
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    char *s = "HI!";
+							    printf("%c\n", *s); // 0x999999999
+							    printf("%c\n", *(s+1)); // 0x333333333
+							    printf("%c\n", *(s+2)); // 0x777777777
+							  }
+							  ```
+						- {{youtube-timestamp 3601}} Bracket notation is the syntactic sugar that is powered by pointer arithmetic underneath. We use square bracket notation because it's more readable
+						- {{youtube-timestamp 3690}} One way to get a segmentation fault is by trying to access say the 50000th character in a string, because you're trying to access memory which isn't allocated to that string
+						- {{youtube-timestamp 3806}} Using `%s` instead of `%c` as well as pointer arithmetic allows us to
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    char *s = "HI!";
+							    printf("%s\n", s); // returns: HI!
+							    printf("%s\n", s+1); // returns: I!
+							    printf("%s\n", s+2); // returns: !
+							  }
+							  ```
 					- ## {{youtube-timestamp 3932}} Comparing Strings
 					- ## {{youtube-timestamp 4681}} Copying
 					- ## {{youtube-timestamp 5933}} Valgrind
