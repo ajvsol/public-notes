@@ -1192,9 +1192,36 @@
 							    printf("%s\n", s+2); // returns: !
 							  }
 							  ```
-						-
 					- ## {{youtube-timestamp 3932}} Comparing Strings
+						- {{youtube-timestamp 3973}} `strcmp` had to be used last week to compare strings because you can't just use equality operator `==` as they both point to different memory addresses
+						- {{youtube-timestamp 4388}} `strcmp` solves this issue by going to the actual memory address then comparing it character by character
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  #include <string.h>
+							  
+							  int main(void)
+							  { 
+							    string s = get_string("s: "); 
+							    string t = get_string("t: ");
+							    
+							    // if (strcmp(s, t) == 0)
+							    if (s == t) 
+							    { 
+							      printf ("Same\n"); 
+							    } 
+							    else 
+							    { 
+							      printf ("Different\n");
+							    }
+							  }
+							  ```
+							- These strings point to different parts of memory (visual example)
+							  collapsed:: true
+								- ![image.png](../assets/image_1682437853396_0.png)
+						- {{youtube-timestamp 4493}} If you instead use `if (*s == *t) ` instead of `if (s == t)` that's basically what `strcmp` does, except also looping over every character for each
 					- ## {{youtube-timestamp 4681}} Copying
+						-
 					- ## {{youtube-timestamp 5933}} Valgrind
 					- ## {{youtube-timestamp 6379}} Garbage Values
 					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
