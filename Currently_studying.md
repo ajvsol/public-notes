@@ -1339,7 +1339,7 @@
 							  }
 							  ```
 					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
-						-
+						- {{youtube-timestamp 6586}} next
 					- ## {{youtube-timestamp 6902}} Swap
 					- ## {{youtube-timestamp 7893}} Overflow and
 					- ## {{youtube-timestamp 7990}} scanf
