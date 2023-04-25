@@ -1221,6 +1221,27 @@
 								- ![image.png](../assets/image_1682437853396_0.png)
 						- {{youtube-timestamp 4493}} If you instead use `if (*s == *t) ` instead of `if (s == t)` that's basically what `strcmp` does, except also looping over every character for each
 					- ## {{youtube-timestamp 4681}} Copying
+						- {{youtube-timestamp 4809}} Assigning a variable to another one just copies the pointer - the second var points to the same address:
+							- ```c
+							  string s = "hi";
+							  string t = s; // returns: "hi"
+							  
+							  s = "bye";
+							  printf("%s", s); // returns: "bye"
+							  printf("%s", t); // returns: "bye"
+							  ```
+						- {{youtube-timestamp 5012}} `malloc` and `free` are needed for copying
+							- `malloc` = memory allocation
+								- It returns the address of the first free byte of memory. Unlike strings it's not null (`\0`) terminated, so it's up to the programmer to ensure you remember how much memory you've asked for
+							- `free` = free up some memory. Inverse of `malloc`
+						- {{youtube-timestamp 5125}} Current libraries
+							- ```c
+							  #include <cs50.h>
+							  #include <ctype.h>
+							  #include <stdio.h>
+							  #include <stdlib.h> // <-- newest, needed for malloc and free
+							  #include <string.h>
+							  ```
 						-
 					- ## {{youtube-timestamp 5933}} Valgrind
 					- ## {{youtube-timestamp 6379}} Garbage Values
