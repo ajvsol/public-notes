@@ -1102,6 +1102,7 @@
 							  }
 							  ```
 						- {{youtube-timestamp 1809}} Visual example of the previous example's variables in memory
+						  collapsed:: true
 							- ![image.png](../assets/image_1682362618360_0.png)
 						- {{youtube-timestamp 1881}} Integers are 4 bits, but pointers are 8 bits
 					- ## {{youtube-timestamp 2134}} Strings
@@ -1114,7 +1115,23 @@
 						  char *s = "HI!"
 						  ```
 						- {{youtube-timestamp 2585}} They made it using `typedef char *string;`
-						- {{youtube-timestamp 2696}} next
+						- {{youtube-timestamp 2760}} How to go to an address using a variable. Code changed from `"%p", p` to `"%i", *p`. AKA dereferencing a pointer
+							- ```c
+							  #include <cs50.h>
+							  #include <stdio.h>
+							  
+							  int main(void)
+							  {
+							    int n = 50;
+							    int *p = &n;
+							    printf("%i\n", *p);
+							  }
+							  // returns: 50
+							  ```
+						- {{youtube-timestamp 2963}}
+							- ```c
+							  rintf("%i\n", *p);
+							  ```
 					- ## {{youtube-timestamp 3484}} Pointer Arithmetic
 					- ## {{youtube-timestamp 3932}} Comparing Strings
 					- ## {{youtube-timestamp 4681}} Copying
