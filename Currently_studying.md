@@ -1250,9 +1250,21 @@
 							    string t = malloc(strlen(s) + 1);
 							  }
 							  ```
-						- {{youtube-timestamp 5220}} Next
+						- {{youtube-timestamp 5220}} Next copy every character into the new string var
 							- ```c
+							  for (int i = 0; i < strlen(s) + 1; i++)
+							  {
+							    t[i] = s[i];
+							  }
 							  ```
+						- {{youtube-timestamp 5550}} Better version that doesn't call `strlen` function every loop
+							- ```c
+							  for (int i = 0, n = strlen(s) + 1; i < n; i++)
+							  {
+							    t[i] = s[i];
+							  }
+							  ```
+						-
 					- ## {{youtube-timestamp 5933}} Valgrind
 					- ## {{youtube-timestamp 6379}} Garbage Values
 					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
