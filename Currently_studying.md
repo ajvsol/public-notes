@@ -1179,7 +1179,7 @@
 							  ```
 						- {{youtube-timestamp 3601}} Bracket notation is the syntactic sugar that is powered by pointer arithmetic underneath. We use square bracket notation because it's more readable
 						- {{youtube-timestamp 3690}} One way to get a segmentation fault is by trying to access say the 50000th character in a string, because you're trying to access memory which isn't allocated to that string
-						- {{youtube-timestamp 3806}} Using `%s` instead of `%c` as well as pointer arithmetic allows us to
+						- {{youtube-timestamp 3806}} Using `%s` instead of `%c` as well as pointer arithmetic allows us to print only a substring (until the null symbol `\0`)
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
@@ -1192,6 +1192,7 @@
 							    printf("%s\n", s+2); // returns: !
 							  }
 							  ```
+						-
 					- ## {{youtube-timestamp 3932}} Comparing Strings
 					- ## {{youtube-timestamp 4681}} Copying
 					- ## {{youtube-timestamp 5933}} Valgrind
