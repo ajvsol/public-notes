@@ -1251,6 +1251,7 @@
 							  }
 							  ```
 						- {{youtube-timestamp 5220}} Next copy every character into the new string var
+						  collapsed:: true
 							- ```c
 							  for (int i = 0; i < strlen(s) + 1; i++)
 							  {
@@ -1258,14 +1259,67 @@
 							  }
 							  ```
 						- {{youtube-timestamp 5550}} Better version that doesn't call `strlen` function every loop
+						  collapsed:: true
 							- ```c
 							  for (int i = 0, n = strlen(s) + 1; i < n; i++)
 							  {
 							    t[i] = s[i];
 							  }
 							  ```
-						-
+						- {{youtube-timestamp 5640}} Best version - there's a function called `strcpy` which can be used instead of writing it out manually
+							- ```c
+							  int main(void)
+							  {
+							    string s = get_string("s: ");
+							    string t = malloc(strlen(s) + 1);
+							    
+							    strcpy(t, s);
+							  }
+							  ```
+						- {{youtube-timestamp 5765}} Prevent accidentally having too much in a string by checking for null (`if (s == NULL) return 1;`)
+							- ```c
+							  int main(void)
+							  {
+							    string s = get_string("s: ");
+							    
+							    if (s == NULL)
+							    {
+							      return 1;
+							    }
+							    
+							    string t = malloc(strlen(s) + 1);
+							    if (t == NULL)
+							    {
+							      return 1;
+							    }
+							    
+							    strcpy(t, s);
+							    
+							    printf("%s", s);
+							    printf("%s", t);
+							    
+							    return 0;
+							  }
+							  ```
+						- {{youtube-timestamp 5824}} Use `free` also after using `malloc`
+						  Note: when the program exits it'll automatically free the memory. But it's best practice to `free` throughout, especially if it's a long-running program
+							- ```c
+							  strcpy(t, s);
+							    
+							    printf("%s", s);
+							    printf("%s", t);
+							    
+							    free(t);
+							  
+							    return 0;
+							  }
+							  ```
 					- ## {{youtube-timestamp 5933}} Valgrind
+						- {{youtube-timestamp 5951}} Detect bugs
+							- ```c
+							  #include <stdio.h>
+							  #include <stdlib.h>
+							  ```
 					- ## {{youtube-timestamp 6379}} Garbage Values
 					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
 					- ## {{youtube-timestamp 6902}} Swap
