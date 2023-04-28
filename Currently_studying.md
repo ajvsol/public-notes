@@ -1346,8 +1346,11 @@
 							- ```c
 							  *x = 42;
 							  ```
-						-
+						- {{youtube-timestamp 6810}} To make another var point to the same pointee, use `y = x;`
+						- {{youtube-timestamp 6823}} And if you want to change the value for `y`, can use `*y = 13;`. Note: previous step is required
 					- ## {{youtube-timestamp 6902}} Swap
+						- {{youtube-timestamp 7013}} If you want two variables to swap the values they store with each other, you basically need a third empty variable
+						-
 					- ## {{youtube-timestamp 7893}} Overflow and
 					- ## {{youtube-timestamp 7990}} scanf
 					- ## {{youtube-timestamp 8446}} Phonebook
