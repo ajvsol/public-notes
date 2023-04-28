@@ -1340,6 +1340,13 @@
 							  ```
 					- ## {{youtube-timestamp 6552}} Pointer Fun with Blinky
 						- {{youtube-timestamp 6586}} next
+						- {{youtube-timestamp 6713}} Initialising pointers (e.g. `int* x;`) doesn't point them anywhere yet - need to create pointees
+						- {{youtube-timestamp 6722}} Next allocate memory e.g. `x = malloc(sizeof(int))` - otherwise it'll have a garbage value
+						- {{youtube-timestamp 6722}} Then dereference the pointer `*x` to store the number `42`in it's pointee
+							- ```c
+							  *x = 42;
+							  ```
+						-
 					- ## {{youtube-timestamp 6902}} Swap
 					- ## {{youtube-timestamp 7893}} Overflow and
 					- ## {{youtube-timestamp 7990}} scanf
