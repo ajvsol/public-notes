@@ -1271,7 +1271,7 @@
 							  int main(void)
 							  {
 							    string s = get_string("s: ");
-							    string t = malloc(strlen(s) + 1);
+							    string t = malloc(strlen(s) + 1); /// for int there's no need for the `+ 1`, string however has a null char at the end
 							    
 							    strcpy(t, s);
 							  }
