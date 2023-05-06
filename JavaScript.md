@@ -7416,11 +7416,11 @@
 			- **maybe** (review first)
 				- Non-JS simpler alternatives
 					- http://youmightnotneedjs.com
-					- HTMX
+					- [HTMX](https://htmx.org/)
 					  collapsed:: true
-						- https://htmx.org/
 						- [Htmx in a Nutshell | Hacker News](https://news.ycombinator.com/item?id=33987578)
 						- https://nomadiq.hashnode.dev/reimagining-front-end-web-development-with-htmx-and-hyperscript
+						- [Htmx Is the Future | Hacker News](https://news.ycombinator.com/item?id=35829733)
 						-
 					- ((63471096-6708-422f-8f02-088fc7da91a1))
 				- ((629ccb26-6ecf-41ff-b479-f404b7eddbe0)) once I reach like 3 kyu in CodeWars
