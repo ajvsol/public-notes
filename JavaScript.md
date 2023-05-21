@@ -9740,6 +9740,10 @@
 						- ((63dbe84e-9cc6-4e20-9977-8a62bc3d6502)) as compiler
 						- ((63dbe84b-71cf-44b7-aecd-b6650b6dd9d5)) as
 						- ((63baa386-a21f-43f8-942a-ed439b515f32)) as bundler
+					- [Learning Resources]
+						- [Vite Crash Course | Faster Alternative To CRA - YouTube](https://youtu.be/89NJdbYTgJ8#)
+						  collapsed:: true
+							- {{video https://youtu.be/89NJdbYTgJ8}}
 			- Package managers
 			  id:: 63dbdafa-6dcc-450f-8253-0fa668ed2b8a
 			  collapsed:: true
