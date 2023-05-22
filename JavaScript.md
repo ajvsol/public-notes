@@ -10313,7 +10313,8 @@
 		- https://www.reddit.com/r/javascript
 		- YouTube channels
 		  collapsed:: true
-			- Web Dev Junkie
+			- [Web Dev Cody](https://www.youtube.com/channel/UCsrVDPJBYeXItETFHG0qzyw)
+			  AKA Web Dev Junkie
 				- Shorts
 				  id:: 6364c41b-0024-4b36-a6e3-adc75e044ac8
 					- ((6367b609-cc62-4567-92f9-93038f30fdd4))
