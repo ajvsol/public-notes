@@ -3129,6 +3129,7 @@
 					- [`continue`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue)
 					- [`if...else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 					  id:: 64024e3f-ef30-4e8e-bc0f-aedb5a95a08c
+					  collapsed:: true
 						- Related:
 							- ((63f8fe4d-9e21-4df9-ac1f-0e20e98afc49))
 							- ((6343d976-fbe8-45fe-bc74-1fe1b5309a59))
@@ -3240,6 +3241,7 @@
 				  AKA loops
 					- [`do...while`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
 					  id:: 64024e3f-a15d-4a78-a629-6d530a318a64
+					  collapsed:: true
 						- [Loops and iteration - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#do...while_statement)
 					- [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 					  id:: 63679853-6e6e-4fce-87bc-93f106c2e05d
@@ -3692,6 +3694,32 @@
 									  delete myObj[Object.keys(myObj)[Object.keys(myObj).length-1]]
 									  ```
 					- [`void`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void)
+					  id:: 646349af-25d2-453c-8020-85d3e808aaa4
+						- The **`void`** operator evaluates the given `expression` and then returns [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined).
+						- Examples
+							- ```js
+							  const output = void 1;
+							  console.log(output);
+							  // Expected output: undefined
+							  
+							  void console.log('expression evaluated');
+							  // Expected output: "expression evaluated"
+							  
+							  void function iife() {
+							    console.log('iife is executed');
+							  }();
+							  // Expected output: "iife is executed"
+							  
+							  void function test() {
+							    console.log('test function executed');
+							  };
+							  try {
+							    test();
+							  } catch (e) {
+							    console.log('test function is not defined');
+							    // Expected output: "test function is not defined"
+							  }
+							  ```
 					- [`typeof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 					  id:: 63470fd1-ff2c-4b9a-b116-136a41a52b94
 					  collapsed:: true
@@ -3969,6 +3997,10 @@
 								- {{embed ((63fd0a5c-cfda-4354-8c91-418c07c23978))}}
 							- ((60082e89-1d10-424a-baec-143f315a44ad))
 								- {{embed ((60082e89-1d10-424a-baec-143f315a44ad))}}
+							- If you want to make one condition do nothing, then ((646349af-25d2-453c-8020-85d3e808aaa4)) 0 can be used
+								- ```js
+								  item ? count++ : void 0;
+								  ```
 						- Related:
 							- ((64024e3f-ef30-4e8e-bc0f-aedb5a95a08c))
 							- ((6343d976-fbe8-45fe-bc74-1fe1b5309a59))

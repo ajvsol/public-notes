@@ -1389,7 +1389,7 @@
 				  ```
 			- Best practice
 			  id:: 60082e89-1d10-424a-baec-143f315a44ad
-				- ```javascript
+				- ```js
 				  function oddOrEven(arr) {
 				    return arr.reduce((a,b)=>a+b,0) % 2 ? 'odd' : 'even';
 				  }
