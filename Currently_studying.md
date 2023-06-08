@@ -1349,9 +1349,34 @@
 						- {{youtube-timestamp 6810}} To make another var point to the same pointee, use `y = x;`
 						- {{youtube-timestamp 6823}} And if you want to change the value for `y`, can use `*y = 13;`. Note: previous step is required
 					- ## {{youtube-timestamp 6902}} Swap
-						- {{youtube-timestamp 7013}} If you want two variables to swap the values they store with each other, you basically need a third empty variable
-						-
-					- ## {{youtube-timestamp 7893}} Overflow and
+						- {{youtube-timestamp 7013}} If you want two variables to swap the values they store with each other, you basically need a third empty variable to temporarily store the contents of A before you move the data of B to container A
+						- {{youtube-timestamp 7023}} Code example version A (doesn't work) - uses values
+							- ```c
+							  void swap(int a, int b)
+							  {
+							    int tmp = a;
+							    a = b;
+							    b = tmp;
+							  }
+							  ```
+						- {{youtube-timestamp 7318}} Swap holds this data in this order:
+						  collapsed:: true
+							- Machine code
+							- Globals - i.e. global vars
+							- Heap - where `malloc` gets memory from. In a column of memory it gets allocated vertically downwards
+							- Stack - where functions store variables and arguments. In a column of memory it gets allocated vertically upwards
+						- {{youtube-timestamp 7617}} Code version B (working) - instead uses references
+							- ```c
+							  void swap(int *a, int *b)
+							  {
+							    int tmp = *a;
+							    *a = *b;
+							    *b = tmp;
+							  }
+							  ```
+							- Variables are locally scoped
+						- {{youtube-timestamp 7783}}
+					- ## {{youtube-timestamp 7893}} Overflow
 					- ## {{youtube-timestamp 7990}} scanf
 					- ## {{youtube-timestamp 8446}} Phonebook
 					- Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
