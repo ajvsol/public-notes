@@ -2347,6 +2347,13 @@
 										- {{embed ((63f8fe4c-acc8-4c99-b271-3bc180f53ba7))}}
 									- ((63cf8891-e99e-4e5a-9cbe-9dc1e009b37a))
 										- {{embed ((9baa8144-5bc0-47ae-ad63-afdd84db3c7d))}}
+									- [Square(n) Sum | Codewars](https://www.codewars.com/kata/515e271a311df0350d00000f/javascript)
+										- Square each number in an array then sum them together
+										- ```js
+										  function squareSum(numbers){
+										    return numbers.reduce((sum,num) => sum + (num * num), 0);
+										  }
+										  ```
 								- [JavaScript Array reduce() Method](https://www.w3schools.com/jsref/jsref_reduce.asp)
 							- [`Array.prototype.reduceRight()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
 							- [`Array.prototype.reverse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
