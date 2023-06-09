@@ -1375,9 +1375,31 @@
 							  }
 							  ```
 							- Variables are locally scoped
-						- {{youtube-timestamp 7783}}
+						- {{youtube-timestamp 7805}} To call this function use `swap(&x, &y);`
 					- ## {{youtube-timestamp 7893}} Overflow
+						- {{youtube-timestamp 7937}} Buffer overflows e.g. stack overflow, heap overflow. When your memory gets too full and causes bugs in other parts of memory
 					- ## {{youtube-timestamp 7990}} scanf
+						- {{youtube-timestamp 8036}} `scanf` scans the users keyboard for input
+						- {{youtube-timestamp 8089}} New function - replacement for `get_int` (text prompt asking for an int value)
+							- ```c
+							  int main(void)
+							  {
+							    int x;
+							    printf("x: ");
+							    scanf("%i", &x);
+							    printf("x: %i\n", x);
+							  }
+							  ```
+						- {{youtube-timestamp 8146}} Function replacement for `get_string`
+							- ```c
+							  int main(void)
+							  {
+							    char *s = NULL;
+							    printf("s: ");
+							    scanf("%s", s);
+							    printf("s: %s\n", s);
+							  }
+							  ```
 					- ## {{youtube-timestamp 8446}} Phonebook
 					- Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
