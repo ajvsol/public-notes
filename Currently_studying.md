@@ -1087,6 +1087,7 @@
 						- {{youtube-timestamp 766}} Hexadecimal maps very easily to binary
 					- ## {{youtube-timestamp 927}} Addresses
 						- {{youtube-timestamp 1042}} Convention to indicate a number is hexadecimal is prefixing it with `0x` e.g. 0x5, 0xF
+						  id:: 64634975-2e97-4e31-9123-f0dd5694ceff
 						- {{youtube-timestamp 1268}} `&` prefix allows us to get the address of a variable in memory
 						- {{youtube-timestamp 1291}} `*` (dereference operator) allows us to go to a specific address in memory
 						- {{youtube-timestamp 1328}} `%p`, and `&` before `n` allows us to print the address in memory
