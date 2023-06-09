@@ -1071,6 +1071,12 @@
 			- [CS50 2022 - Lecture 4 - Memory](https://youtu.be/AcWIE9qazLI)
 			  collapsed:: true
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
+				- Most important
+					- d
+				- Practical exercise learnings
+					- 2x hexadecimal (base-16) digits (00 to FF) is 8 bits/1 byte and is represented in binary (base-2) like so e.g. `00000000`,`11111111`
+					- RGB colour code is 24 bits per pixel (3x hexadecimal pairs)
+					- Bitmaps use 1 bit per pixel (black or white only), whereas BMP supports up to 32-bit. JPEG and PNG support 24 bit, possibly more
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
