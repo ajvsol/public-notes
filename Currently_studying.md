@@ -1074,7 +1074,8 @@
 				- Most important
 					- d
 				- Practical exercise learnings
-					- 2x hexadecimal (base-16) digits (00 to FF) is 8 bits/1 byte and is represented in binary (base-2) like so e.g. `00000000`,`11111111`
+					- 2x hexadecimal (base-16) digits (pair e.g. 00 to FF) are 8 bits/1 byte and is represented in binary (base-2) like so e.g. `00000000`,`11111111`
+					- The prefix `0x` is often used to indicate that a value is in hexadecimal format e.g. first pair is `0x00`, or `0xff`
 					- RGB colour code is 24 bits per pixel (3x hexadecimal pairs)
 					- Bitmaps use 1 bit per pixel (black or white only), whereas BMP supports up to 32-bit. JPEG and PNG support 24 bit, possibly more
 				- {{video https://youtu.be/AcWIE9qazLI}}
