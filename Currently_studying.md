@@ -1394,13 +1394,28 @@
 							- ```c
 							  int main(void)
 							  {
-							    char *s = NULL;
+							    char s[4];
 							    printf("s: ");
 							    scanf("%s", s);
 							    printf("s: %s\n", s);
 							  }
 							  ```
 					- ## {{youtube-timestamp 8446}} Phonebook
+						- {{youtube-timestamp 8475}} Saving names and numbers to a CSV file
+							- ```c
+							  int main(void)
+							  {
+							    FILE *file = fopen("phonebook.csv", "a");
+							    
+							    string name = get_string("Name: "); 
+							    string number = get_string("Number: ");
+							    
+							    fprintf(file, "%s,%s\n", name, number);
+							    
+							    fclose(file);
+							  }
+							  ```
+						-
 					- Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
 			  Abstract Data Types. Queues, Stacks. Linked Lists. Trees, Binary Search Trees. Hash Tables. Tries.
