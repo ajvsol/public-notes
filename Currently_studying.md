@@ -1097,6 +1097,8 @@
 							    int n = 50;
 							    printf("%p\n", &n);
 							  }
+							  
+							  // returns `0x7fff84f2ff0c` for example
 							  ```
 					- ## {{youtube-timestamp 1382}} Pointers
 						- {{youtube-timestamp 1466}} It's a variable which contains the address of some value AKA it's an address in memory
@@ -1108,6 +1110,8 @@
 							    int *p = &n;
 							    printf("%p\n", p);
 							  }
+							  
+							  // returns `0x7fff84f2ff0c` for example
 							  ```
 						- {{youtube-timestamp 1809}} Visual example of the previous example's variables in memory
 						  collapsed:: true
