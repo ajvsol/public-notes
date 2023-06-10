@@ -95,12 +95,14 @@
   id:: 640b4f37-0156-41c2-a5c1-0206af889c36
   Move to ((629ccb26-fd59-47b6-b479-60e77b734217)) when complete
 	- Online course
+	  collapsed:: true
 		- Meta
-			- [Gradebook](https://cs50.me/cs50x)
+			- [Gradebook](https://cs50.me/cs50x) - see my current completion progress
 			- [Visual Studio Code for CS50 — CS50 Docs](https://cs50.readthedocs.io/code/) Docs on their web editor
-			- [Sign in to GitHub · GitHub](https://submit.cs50.io/users/ajvsol) submission site
-			- [Unit tests used by Check50](https://github.com/cs50/problems)
+			- [Submission](https://submit.cs50.io/users/ajvsol) submission site
 			- [submit50 — CS50 Docs](https://cs50.readthedocs.io/submit50/)
+			- [GitHub - cs50/problems: Checks for check50](https://github.com/cs50/problems) - Checks/unit tests used for `check50`
+			-
 		- [CS50 Lectures 2022](https://youtu.be/ywg7cW0Txs4)
 			- [CS50 2022 - Lecture 0 - Scratch - YouTube](https://youtu.be/IDDmrzzB14M)
 			  Computer Science. Computational Thinking. Problem Solving: Inputs, Outputs. Representation: Unary, Binary, Decimal, ASCII, Unicode, RGB. Abstraction. Algorithms. Running Times. Pseudocode. Scratch: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops; Events; Threads.
@@ -148,7 +150,19 @@
 						- `bool`
 						- `char`
 						- `double`
+						  collapsed:: true
+						  AKA 64-bit floating point number
+							- 64-BIT
+							- Floating point number up to 15 decimal digits of precision
 						- `float`
+						  id:: 64634976-97f8-4066-9f8d-6cf3c440021f
+						  collapsed:: true
+						  AKA 32-bit floating point number
+							- 32-bit
+							- i.e. number with up to 6 decimal digits of precision
+							- Examples
+								- `10.327000`
+								-
 						- `int`
 						- `long`
 						- `string`
@@ -407,6 +421,7 @@
 							    printf("%f\n", z);
 							  }
 							  ```
+								- Related: ((64634976-97f8-4066-9f8d-6cf3c440021f))
 					- {{youtube-timestamp 8604}} Floating-point imprecision
 						- `printf("%.20f\n", z);` = added `.20`to show 20 decimal places for the `%f`
 						- {{youtube-timestamp 8726}} How to prevent
@@ -1078,6 +1093,9 @@
 					- The prefix `0x` is often used to indicate that a value is in hexadecimal format e.g. first pair is `0x00`, or `0xff`
 					- RGB colour code is 24 bits per pixel (3x hexadecimal pairs)
 					- Bitmaps use 1 bit per pixel (black or white only), whereas BMP supports up to 32-bit. JPEG and PNG support 24 bit, possibly more
+					- ### filter-less
+						- Needed to use ((64634976-97f8-4066-9f8d-6cf3c440021f)), not `int` as the var type for grayscale
+						- Needed to use `round` function from `<math.h>` to help convert ((64634976-97f8-4066-9f8d-6cf3c440021f)) back into `int`
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
