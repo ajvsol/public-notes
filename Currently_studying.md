@@ -1096,6 +1096,8 @@
 					- ### filter-less
 						- Needed to use ((64634976-97f8-4066-9f8d-6cf3c440021f)), not `int` as the var type for grayscale
 						- Needed to use `round` function from `<math.h>` to help convert ((64634976-97f8-4066-9f8d-6cf3c440021f)) back into `int`
+						- Use them together e.g. `float blurB = round(Btotal / 9);` for most effectiveness
+						-
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
