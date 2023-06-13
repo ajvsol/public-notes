@@ -689,6 +689,7 @@
 								  for (int i = 0, n = strlen(s); i < n; i++)
 								  ```
 					- ### Command-Line Arguments
+					  id:: 64634975-ab05-48ed-9688-bd8ff6f2d619
 						- {{youtube-timestamp 7549}} `void` in `int main(void)` means it takes no CLI arguments
 						- {{youtube-timestamp 7627}} `argc` = argument count, `argv` = argument value? the strings you enter as CL arguments
 							- ```c
@@ -699,7 +700,7 @@
 							  ```
 						- {{youtube-timestamp 7704}} How to make a basic CL argument in your program
 							- ```c
-							  int main(int argc, string argv[]) { 
+							  int main(int argc, char *argv[]) { 
 							    printf("hello, %s\n", argv[1]);
 							  }
 							  
@@ -716,6 +717,7 @@
 							  // Yes CLI arguments
 							  int main(int argc, string argv[])
 							  ```
+						- Related: ((642437fb-baa6-4c18-a3d1-596ecbccb6c4))
 					- ### {{youtube-timestamp 8046}} Exit Status
 						- 404 = not found
 						- HTTP error code
@@ -727,7 +729,7 @@
 						  id:: 642437fb-baa6-4c18-a3d1-596ecbccb6c4
 							- ```c
 							  int main(int argc, string argv[]) {
-							    if (arge != 2) { 
+							    if (argc != 2) { 
 							      printf("Missing command-line argument\n"); 
 							      return 1;
 							    }
@@ -1098,6 +1100,9 @@
 						- Needed to use `round` function from `<math.h>` to help convert ((64634976-97f8-4066-9f8d-6cf3c440021f)) back into `int`
 						- Use them together e.g. `float blurB = round(Btotal / 9);` for most effectiveness
 						- `continue` keyword - works like `break` in a loop except Instead of forcing termination, it forces the next iteration of the loop to take place, skipping any code in between.
+					- ### recover
+						- ((64634975-ab05-48ed-9688-bd8ff6f2d619))
+						-
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
