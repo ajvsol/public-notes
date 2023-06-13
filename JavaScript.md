@@ -29,7 +29,7 @@
 	- Cheatsheet
 	  id:: 635593b2-818d-4d6c-a00c-cfa7f4cd850a
 	  collapsed:: true
-		- JavaScript / TypeScript
+		- [[JavaScript]] / ((629ccb26-1eab-4686-a7b8-f9433a871440))
 		  collapsed:: true
 			- **To ingrain**
 			  id:: 6408d44e-1000-4594-ab4b-8e5a18543479
@@ -100,6 +100,7 @@
 					- ((507dc5b1-e753-4ada-9eee-5acd64ec1f7d)) : ((6408c102-0f97-4a12-820b-ce707252c952))
 					- ((64024e3f-dbb1-4d5c-9b49-76009df56467)) : ((64024e3f-ab8d-4776-964c-79c44a5c8c1f))
 					- ((63470fd1-de4c-4705-9fb1-e734bf59cdd7)) : ((63f219c9-6008-4f84-beba-7db15dd52f76))
+					- ((6488932a-5cd5-4e35-9412-bdaeff5fb153)) : ((64889457-d7d5-4fe8-bbf5-538be01ddd56))
 				- ((64024e3f-184c-440e-b9e6-c2e0abf1a2a3)) manipulation
 					- ((0257c452-a8cc-40b2-b47a-235d81f263ce)) : ((63f90e8f-6ac5-4eff-ad9f-4aa51f3a52a1))
 					- ((63fd16e2-0108-4579-b85a-717d83927648)) is great for getting the sum of a sequence of integers
@@ -1105,6 +1106,30 @@
 								  " Hello ".trimStart()			// "Hello "
 								  " Hello ".timEnd()				// " Hello"
 								  ```
+						- Constructor
+							- [`String() constructor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String)
+							  id:: 6488932a-5cd5-4e35-9412-bdaeff5fb153
+							  collapsed:: true
+								- The **`String()`** constructor creates [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) objects. When called as a function, it returns primitive values of type String.
+								- Syntax
+									- ```js
+									  new String(thing)
+									  String(thing)
+									  ```
+										- Parameters
+											- `thing` = Anything to be converted to a string.
+										- Return value
+											- When `String` is called as a constructor (with `new`), it creates a [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) object, which is **not** a primitive.
+											- When `String` is called as a function, it coerces the parameter to a string primitive. [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) values would be converted to `"Symbol(description)"`, where `description` is the [description](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/description) of the Symbol, instead of throwing.
+								- Examples
+									- Can convert any data type to a string
+									  id:: 64889457-d7d5-4fe8-bbf5-538be01ddd56
+										- ```js
+										  let number = 234;
+										  console.log(String(number));
+										  // "234"
+										  ```
+								- Related: ((638d0621-ae57-4cbc-b873-1bbcffc158dd))
 						- Properties
 							- [`String length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
 						- Methods
@@ -10353,6 +10378,7 @@
 		- YouTube channels
 		  collapsed:: true
 			- [Web Dev Cody](https://www.youtube.com/channel/UCsrVDPJBYeXItETFHG0qzyw)
+			  id:: 646349ac-4774-4376-b96f-863fd43d5b4d
 			  AKA Web Dev Junkie
 				- Shorts
 				  id:: 6364c41b-0024-4b36-a6e3-adc75e044ac8
