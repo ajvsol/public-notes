@@ -1102,7 +1102,11 @@
 						- `continue` keyword - works like `break` in a loop except Instead of forcing termination, it forces the next iteration of the loop to take place, skipping any code in between.
 					- ### recover
 						- ((64634975-ab05-48ed-9688-bd8ff6f2d619))
-						-
+						- [`sprintf`](https://manual.cs50.io/3/sprintf)
+							- Example
+								- ```c
+								  sprintf(buffer, "hello, %s\n", i);
+								  ```
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
