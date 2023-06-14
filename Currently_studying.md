@@ -1107,6 +1107,7 @@
 								- ```c
 								  sprintf(buffer, "hello, %s\n", i);
 								  ```
+						- ((6483382a-2a6d-4412-8896-66879d1f596f))
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
@@ -1443,6 +1444,7 @@
 							  ```
 					- ## {{youtube-timestamp 8446}} Phonebook
 						- {{youtube-timestamp 8475}} Saving names and numbers to a CSV file
+						  id:: 6483382a-2a6d-4412-8896-66879d1f596f
 							- ```c
 							  int main(void)
 							  {
