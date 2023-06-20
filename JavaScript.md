@@ -2611,6 +2611,7 @@
 									  id:: 63f2965f-e63c-44c2-89f3-ecd6f644632f
 									  collapsed:: true
 										- Examples
+											-
 											- {{embed ((0bf98572-621e-4fc4-a49d-548cbb22e8ae))}}
 											-
 								- Syntax
@@ -2650,6 +2651,7 @@
 										  // expected output: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 										  ```
 											- Note: have to use a ((63642aac-c79a-4855-9c12-fae94a472481)) because otherwise it'll go `0, 1, 10, 2`
+											  id:: 646349af-4cfb-460f-8e84-d3e34b0042a5
 									- Sort an array of objects
 									  collapsed:: true
 										- Sorting an array of objects of people allowed to get into a nightclub
