@@ -2611,7 +2611,19 @@
 									  id:: 63f2965f-e63c-44c2-89f3-ecd6f644632f
 									  collapsed:: true
 										- Examples
-											-
+											- [The highest profit wins!](https://www.codewars.com/kata/559590633066759614000063/javascript)
+												- ```js
+												  // Best practice
+												  function minMax(arr){
+												    return [Math.min(...arr), Math.max(...arr)];
+												  }
+												  
+												  // Alternative
+												  function minMax(arr){
+												    arr.sort((a,b) => a-b);
+												    return [arr[0], arr[arr.length-1]];
+												  }
+												  ```
 											- {{embed ((0bf98572-621e-4fc4-a49d-548cbb22e8ae))}}
 											-
 								- Syntax
