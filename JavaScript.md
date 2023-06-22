@@ -7985,6 +7985,12 @@
 						- Use `tsc --watch` in a side process to check if your types are passing
 					- Features
 						- Changelog
+							- 5.2
+							  collapsed:: true
+								- `using`
+									- [TypeScript 5.2's New Keyword: 'using' | Total TypeScript](https://www.totaltypescript.com/typescript-5-2-new-keyword-using)
+									- [TypeScript 5.2's new keyword: 'Using' | Hacker News](https://news.ycombinator.com/item?id=36388894)
+									-
 							- [5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/)
 							  collapsed:: true
 								- Here’s a quick list of what’s new in TypeScript 5.0!
