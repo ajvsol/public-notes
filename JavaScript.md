@@ -3741,6 +3741,7 @@
 									  ```
 					- [`void`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/void)
 					  id:: 646349af-25d2-453c-8020-85d3e808aaa4
+					  collapsed:: true
 						- The **`void`** operator evaluates the given `expression` and then returns [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined).
 						- Examples
 							- ```js
@@ -3818,8 +3819,37 @@
 								  ```
 					- [`-`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Subtraction)
 					- [`/`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Division)
+						- Example
+							- ```js
+							  console.log(12 / 2);
+							  // Expected output: 6
+							  
+							  console.log(3 / 2);
+							  // Expected output: 1.5
+							  
+							  console.log(6 / '3');
+							  // Expected output: 2
+							  
+							  console.log(2 / 0);
+							  // Expected output: Infinity
+							  ```
 					- [`*`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Multiplication)
-					- [`%`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
+					- [`%`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder) 
+					  id:: 646349af-f069-46fb-868a-d3057dbbb2a7
+					  collapsed:: true
+					  AKA [modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_()) operator
+						- determine if a number is even or odd. The modulo operater takes two numbers and returns the remainder when the first number is divided by the second one:
+						- Example
+							- ```javascript
+							  console.log(12 % 3);
+							  console.log(10 % 4);
+							  
+							  
+							  Result: 
+							  0 
+							  2
+							  ```
+							- The answer for 12 % 3 is 0 because twelve divided by three has no remainder. 10 % 4 is 2 because ten divided by 4 has a remainder of two.
 					- [`**`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation)
 				- Relational operators
 					- [`in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/in)
@@ -4667,18 +4697,7 @@
 						- Mathematically expressions are similar
 						  e.g. `+`, `-`, `*`,  `/` and `%`
 						  collapsed:: true
-							- `%` ([modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder_())) operator
-								- determine if a number is even or odd. The modulo operater takes two numbers and returns the remainder when the first number is divided by the second one:
-									- Example
-									  `javascript
-									  console.log(12 % 3);
-									  console.log(10 % 4);
-									  
-									  
-									  Result: 
-									  0 
-									  2`
-									- The answer for 12 % 3 is 0 because twelve divided by three has no remainder. 10 % 4 is 2 because ten divided by 4 has a remainder of two.
+							- ((646349af-f069-46fb-868a-d3057dbbb2a7))
 					- `&&` Logical AND operator
 					  e.g. `value1 && value2`
 					  collapsed:: true
