@@ -10462,6 +10462,7 @@
 								- {{embed ((6366bcb3-363f-471f-a46a-a9343f750433))}}
 							- ((634bc0c2-0b68-4da7-83b6-5abefa297cac))
 								- {{embed ((6367a1d7-df6e-400d-88d4-04c30f179e15))}}
+		- [Addy's Toolkit • Web Dev & Design Resources – Curated tools & resources for people who make websites](https://toolkit.addy.codes/)
 	- https://trends.builtwith.com/javascript
 		- jQuery
 		- Modernizr
