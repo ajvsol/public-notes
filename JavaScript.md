@@ -8737,6 +8737,7 @@
 				  collapsed:: true
 					- Heavy?
 				- Asynchronous JavaScript (AJAX)
+				- Password protecting and encrypting files on a website [Password protect a static HTML page | Hacker News](https://news.ycombinator.com/item?id=34849024)
 			- ((6396fb64-9aeb-4ee3-bf46-849eac2fb748)) : ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
 				- {{embed ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))}}
 		- Backend
