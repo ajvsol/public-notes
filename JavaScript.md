@@ -8741,8 +8741,9 @@
 				  collapsed:: true
 					- Heavy?
 				- Asynchronous JavaScript (AJAX)
-				- Password protecting and encrypting files on a website [Password protect a static HTML page | Hacker News](https://news.ycombinator.com/item?id=34849024)
+				-
 			- ((6396fb64-9aeb-4ee3-bf46-849eac2fb748)) : ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
+			  collapsed:: true
 				- {{embed ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))}}
 		- Backend
 		  id:: 63baa386-3de1-4a21-b62e-a339148671de
@@ -9806,7 +9807,15 @@
 					- [Polymer](https://www.polymer-project.org/)
 					  collapsed:: true
 		- Libraries
-		  collapsed:: true
+			- Multer is a good package for uploading files eg photos to a backend
+			  id:: 6497eb6b-de77-424c-b138-ec9d3ff79efa
+			  collapsed:: true
+				- Hi all, we’re trying to work out the best way of getting and storing user uploaded images which will be associated with user profiles and events that users are creating. So far we’ve investigated using Multer on the backend, to store on disk, and then save the data url as a string which is what will go up to our database. We’re a little hazy on implementation and we haven’t been able to find anything that pins down best practice here, as most guides are uploading the whole image to the database which we are trying to avoid due to the file sizes.
+				  
+				  Is anyone else looking at storing user uploaded images and have any resources or tips to share?
+				- https://www.npmjs.com/package/multer
+				- AWS S3
+			- Password protecting and encrypting files on a website [Password protect a static HTML page | Hacker News](https://news.ycombinator.com/item?id=34849024)
 			- [Block Protocol](https://blockprotocol.org/)
 			- [Mock Service Worker](https://mswjs.io/) - seamless API mocking
 			- [Three.js – JavaScript 3D Library](https://threejs.org)
