@@ -8741,7 +8741,6 @@
 				  collapsed:: true
 					- Heavy?
 				- Asynchronous JavaScript (AJAX)
-				-
 			- ((6396fb64-9aeb-4ee3-bf46-849eac2fb748)) : ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
 			  collapsed:: true
 				- {{embed ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))}}
