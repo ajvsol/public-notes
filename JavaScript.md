@@ -9829,6 +9829,7 @@
 				- [Espalier | uses Handsontable for spreadsheet component](http://sdg.csail.mit.edu/projects/espalier). More info https://news.ycombinator.com/item?id=12576093
 			- JSDoc - An API documentation generator for JavaScript. http://usejsdoc.org
 			- Audio
+			  collapsed:: true
 				- [GitHub - goldfire/howler.js: Javascript audio library for the modern web.](https://github.com/goldfire/howler.js)
 				-
 	- Tooling
