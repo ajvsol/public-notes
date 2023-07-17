@@ -1102,12 +1102,22 @@
 						- `continue` keyword - works like `break` in a loop except Instead of forcing termination, it forces the next iteration of the loop to take place, skipping any code in between.
 					- ### recover
 						- ((64634975-ab05-48ed-9688-bd8ff6f2d619))
-						- [`sprintf`](https://manual.cs50.io/3/sprintf)
+						- ((64b50f8f-8f45-4d93-8809-5e40140bd5a8))
 							- Example
 								- ```c
 								  sprintf(buffer, "hello, %s\n", i);
 								  ```
 						- ((6483382a-2a6d-4412-8896-66879d1f596f))
+						- `typedef uint8_t BYTE;`
+						  Define a `BYTE` for later use
+							- `uint8` = unsigned integer of length 8 bits
+							- Note: also need to import the relevant library via `#include <stdint.h>`
+						- Standard ((64b50f8f-d179-429d-b234-ffb5642d9615)) loop
+							- ```c
+							  while (fread(buffer, 1, BLOCK_SIZE, raw_file) == BLOCK_SIZE)
+							  {
+							  }
+							  ```
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
