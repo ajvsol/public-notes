@@ -1122,6 +1122,17 @@
 							- ```c
 							  image = fopen(filename, "w");
 							  ```
+						- To specify a string should be in the format `001.jpg`
+							- ```c
+							  sprintf(filename, "%03i.jpg", count);
+							  ```
+							- In C, the format specifier `%03i` is used in conjunction with the `printf()` function to format and print an integer value with leading zeros. Let's break down what each part of `%03i.jpg` means:
+								- `%` - It indicates the start of a format specifier.
+								- `0` - It specifies that leading zeros should be used for padding.
+								- `3` - It specifies the minimum width of the printed value. In this case, it means the minimum width is 3 characters.
+								- `i` - It specifies that the argument to be printed is an integer.
+								- `.jpg` - It is a string literal that will be printed as part of the output.
+							- So, when you use `%03i.jpg` as a format specifier with `printf()`, it means that the integer value will be printed with leading zeros to make it three characters wide, followed by the string ".jpg". This is often used in scenarios where you want to generate file names with sequential numbers padded with zeros, such as "001.jpg", "002.jpg", and so on.
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
