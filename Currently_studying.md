@@ -1118,6 +1118,10 @@
 							  {
 							  }
 							  ```
+						- Write a filename
+							- ```c
+							  image = fopen(filename, "w");
+							  ```
 				- {{video https://youtu.be/AcWIE9qazLI}}
 					- ## {{youtube-timestamp 72}} Memory
 						- {{youtube-timestamp 189}} Bitmap for images in just binary
