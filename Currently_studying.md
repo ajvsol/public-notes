@@ -1091,6 +1091,7 @@
 				- Most important
 					- d
 				- Practical exercise learnings
+				  collapsed:: true
 					- 2x hexadecimal (base-16) digits (pair e.g. 00 to FF) are 8 bits/1 byte and is represented in binary (base-2) like so e.g. `00000000`,`11111111`
 					- The prefix `0x` is often used to indicate that a value is in hexadecimal format e.g. first pair is `0x00`, or `0xff`
 					- RGB colour code is 24 bits per pixel (3x hexadecimal pairs)
@@ -1486,7 +1487,14 @@
 						-
 					- Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
+			  collapsed:: true
 			  Abstract Data Types. Queues, Stacks. Linked Lists. Trees, Binary Search Trees. Hash Tables. Tries.
+				- Most important
+					-
+				- Practical exercise learnings
+					-
+				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
+					-
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
 			  Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
 			- [CS50 2022 - Lecture 7 - SQL - YouTube](https://youtu.be/zrCLRC3Ci1c)
