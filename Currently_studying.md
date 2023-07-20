@@ -1513,18 +1513,39 @@
 							  ```
 					- ### {{youtube-timestamp 843}} Resizing Arrays
 						- {{youtube-timestamp 1038}} If trying to resize an array it's not possible normally if the next bits are already in use. A workaround is used. Otherwise involve having to move to a new memory address
-						- {{youtube-timestamp 1338}} Instead of using bracket notation
+						- {{youtube-timestamp 1338}} Instead of using bracket notation use `malloc` to assign how much memory you need. This way it can more dynamically adjust to the size requirements
 							- ```c
 							  // Old version
 							  int list[4];
 							  
-							  list[0] = 1;
-							  list[1] = 2;
-							  list[2] = 3;
-							  
 							  // New version
+							  #include <stdlib>h>
+							  
 							  int *list = malloc(3 * sizeof(int))
+							  if (list == NULL) 
+							  {
+							    return 1;
+							  }
 							  ```
+						- {{youtube-timestamp 1583}} If you need to later increase the size of malloc, can use a bigger `tmp` variable, a loop to copy it from the original store to `tmp`. You can't just create a new line with `int *list = malloc(3 * sizeof(int))` as Valgrind will complain you've lost memory
+							- ```c
+							  int *tmp = malloc(4 * sizeof(int));
+							  
+							  if (tmp == NULL)
+							  {
+							    free(list);
+							    return 1;
+							  }
+							  
+							  for (int i = 0; i < 3; i++)
+							  {
+							    tmp[i] = list[i];
+							  }
+							  
+							  free(list);
+							  list = tmp;
+							  ```
+						-
 					- ### {{youtube-timestamp 2304}} Linked Lists
 					- ### {{youtube-timestamp 5448}} Trees
 					- ### {{youtube-timestamp 6377}} Dictionaries
