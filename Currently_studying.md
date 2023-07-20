@@ -1523,7 +1523,7 @@
 							  list[2] = 3;
 							  
 							  // New version
-							  
+							  int *list = malloc(3 * sizeof(int))
 							  ```
 					- ### {{youtube-timestamp 2304}} Linked Lists
 					- ### {{youtube-timestamp 5448}} Trees
