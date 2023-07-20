@@ -1494,7 +1494,8 @@
 				- Practical exercise learnings
 					-
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
-					- {{youtube-timestamp 92}}
+					- {{youtube-timestamp 193}} Stacks and Queues
+					-
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
 			  Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
 			- [CS50 2022 - Lecture 7 - SQL - YouTube](https://youtu.be/zrCLRC3Ci1c)
