@@ -1494,8 +1494,13 @@
 				- Practical exercise learnings
 					-
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
-					- {{youtube-timestamp 193}} Stacks and Queues
-					-
+					- ### {{youtube-timestamp 193}} Stacks and Queues
+					- ### {{youtube-timestamp 843}} Resizing Arrays
+					- ### {{youtube-timestamp 2304}} Linked Lists
+					- ### {{youtube-timestamp 5448}} Trees
+					- ### {{youtube-timestamp 6377}} Dictionaries
+					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
+					- ### {{youtube-timestamp 7457}} Tries
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
 			  Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
 			- [CS50 2022 - Lecture 7 - SQL - YouTube](https://youtu.be/zrCLRC3Ci1c)
