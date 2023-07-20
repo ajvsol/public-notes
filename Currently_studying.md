@@ -1512,7 +1512,19 @@
 							  stack;
 							  ```
 					- ### {{youtube-timestamp 843}} Resizing Arrays
-						-
+						- {{youtube-timestamp 1038}} If trying to resize an array it's not possible normally if the next bits are already in use. A workaround is used. Otherwise involve having to move to a new memory address
+						- {{youtube-timestamp 1338}} Instead of using bracket notation
+							- ```c
+							  // Old version
+							  int list[4];
+							  
+							  list[0] = 1;
+							  list[1] = 2;
+							  list[2] = 3;
+							  
+							  // New version
+							  
+							  ```
 					- ### {{youtube-timestamp 2304}} Linked Lists
 					- ### {{youtube-timestamp 5448}} Trees
 					- ### {{youtube-timestamp 6377}} Dictionaries
