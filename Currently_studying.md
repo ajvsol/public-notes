@@ -1573,8 +1573,45 @@
 							- it uses more memory because each node needs to also store the address of where to point to next
 							- Bracket notation no longer works - it's not easy for the computer to work out where each index position is
 							- Binary search algorithm no longer possible because it's not possible to easily go to the middle of the array
-						- {{youtube-timestamp 3489}}
+						- {{youtube-timestamp 3489}} Working out how to create a linked list in code
 							- ```c
+							  node *list = NULL;
+							  node *n = malloc(sizeof(node));
+							  // Start at the first node and set the number property as `1`
+							  n->number = 1 // Equivalent to `(*n).number = 1`
+							  // Remove garbage value for `next`
+							  n->next = NULL;
+							  
+							  // Another way to reference `n` (linked link start)
+							  list = n;
+							  
+							  node *n = malloc(sizeof(node));
+							  
+							  ```
+						- {{youtube-timestamp 4115}} Linked Lists work like stacks (they're LIFO). It only requires making the pointing the new node to the current last list, then having the list originator point to the new last list
+						- {{youtube-timestamp 4211}} In code
+							- ```c
+							  typedef struct node
+							  {
+							    int number;
+							    struct node *next; // pointer to next list
+							  }
+							  node;
+							  
+							  int main(argc. char *argv[])
+							  {
+							    node *list = NULL;
+							    
+							    for (int i = 1; i < argc; i++)
+							    {
+							      int number = atoi(argv[i]); // atoi = string to integer conversion
+							      
+							      node *n = malloc(sizeof(node));
+							      
+							    }
+							  }
+							  
+							  // run with `./list 1 2 3`
 							  ```
 					- ### {{youtube-timestamp 5448}} Trees
 					- ### {{youtube-timestamp 6377}} Dictionaries
