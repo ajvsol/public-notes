@@ -1558,8 +1558,18 @@
 						- {{youtube-timestamp 2176}} You should still use `tmp` values with `realloc` to prevent a memory leak
 					- ### {{youtube-timestamp 2304}} Linked Lists
 						- {{youtube-timestamp 2398}} `->` operator is equivalent to `.` + `*` ?
-						- {{youtube-timestamp 2513}} Linked lists involve values in multiple different areas in memory, and each contains the address of where the list continues. It starts off with an item which only contains an address and no other value
-						-
+						- {{youtube-timestamp 2513}} Linked lists involve values in multiple different areas in memory, and each contains the address of where the list continues (links forward to the next list). It starts off with an item which only contains an address and no other value
+						- {{youtube-timestamp 3018}} `typedef` for each node (list) of a linked list. Note: written differently because it's self-referential
+							- ```c
+							  typedef struct node
+							  {
+							    int number;
+							    struct node *next; // pointer to next list
+							  }
+							  node;
+							  ```
+						- {{youtube-timestamp 3262}} Advantages of linked lists is that it works faster than stacks/queues because `malloc`/`realloc` isn't needed to copy data when resizing. Additionally they don't need be contiguous in memory (unlike arrays), they can each be in different parts of memory
+						- {{youtube-timestamp 3278}} Disadvantage is that it uses more memory because each node needs to also store the address of where to point to next
 					- ### {{youtube-timestamp 5448}} Trees
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
