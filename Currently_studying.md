@@ -1607,6 +1607,15 @@
 							      int number = atoi(argv[i]); // atoi = string to integer conversion
 							      
 							      node *n = malloc(sizeof(node));
+							      if (n == NULL)
+							      {
+							        return 1;
+							      }
+							      n->number = number;
+							      n->next = NULL; // get rid of garbage value
+							      
+							      n->next = list; 
+							      list = n;
 							      
 							    }
 							  }
