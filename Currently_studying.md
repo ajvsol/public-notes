@@ -1616,13 +1616,32 @@
 							      
 							      n->next = list; 
 							      list = n;
-							      
+							    }
+							    
+							    // loop to print each node
+							    node *ptr = list;
+							    while (ptr != NULL)
+							    {
+							      printf("%i\n", ptr->number);
+							      ptr = ptr->next; // Looks at the `next` field, which stores the address of the next node
+							    }
+							    
+							    // Free up the memory
+							    ptr = list;
+							    while (ptr != NULL)
+							    {
+							      node *next = ptr->next;
+							      free(ptr);
+							      ptr = next;
 							    }
 							  }
 							  
 							  // run with `./list 1 2 3`
 							  ```
+						- {{youtube-timestamp 5044}} Alternative method using `for` loops
+						- {{youtube-timestamp 5114}} Performance of searching linked lists is *O(n)*
 					- ### {{youtube-timestamp 5448}} Trees
+						- next
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
 					- ### {{youtube-timestamp 7457}} Tries
