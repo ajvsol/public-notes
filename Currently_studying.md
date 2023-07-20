@@ -1569,7 +1569,13 @@
 							  node;
 							  ```
 						- {{youtube-timestamp 3262}} Advantages of linked lists is that it works faster than stacks/queues because `malloc`/`realloc` isn't needed to copy data when resizing. Additionally they don't need be contiguous in memory (unlike arrays), they can each be in different parts of memory
-						- {{youtube-timestamp 3278}} Disadvantage is that it uses more memory because each node needs to also store the address of where to point to next
+						- {{youtube-timestamp 3278}} Disadvantage is that
+							- it uses more memory because each node needs to also store the address of where to point to next
+							- Bracket notation no longer works - it's not easy for the computer to work out where each index position is
+							- Binary search algorithm no longer possible because it's not possible to easily go to the middle of the array
+						- {{youtube-timestamp 3489}}
+							- ```c
+							  ```
 					- ### {{youtube-timestamp 5448}} Trees
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
