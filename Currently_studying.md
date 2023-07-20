@@ -1495,7 +1495,24 @@
 					-
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
 					- ### {{youtube-timestamp 193}} Stacks and Queues
+					  collapsed:: true
+						- {{youtube-timestamp 217}} Queues are FIFO (First In First Out) e.g. queueing for cashier, message queues
+						- {{youtube-timestamp 272}} Two functions of queues: enqueue (add item to end of queue) and dequeue (remove item from start of queue)
+						- {{youtube-timestamp 319}} Stacks are not FIFO - LIFO (Last In First Out) e.g. piling chairs in a stack, email inbox
+						- {{youtube-timestamp 447}} Two functions of stacks: push (add item to top of stack) and pop (add item to top of stack)
+						- {{youtube-timestamp 482}} Example typedef of a stack. Not suitable?
+							- ```c
+							  const int capacity = 50;
+							  
+							  typedef struct
+							  {
+							    person people[CAPACITY]; // max size
+							    int size; // current size
+							  }
+							  stack;
+							  ```
 					- ### {{youtube-timestamp 843}} Resizing Arrays
+						-
 					- ### {{youtube-timestamp 2304}} Linked Lists
 					- ### {{youtube-timestamp 5448}} Trees
 					- ### {{youtube-timestamp 6377}} Dictionaries
