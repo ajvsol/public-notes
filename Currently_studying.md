@@ -1545,8 +1545,21 @@
 							  free(list);
 							  list = tmp;
 							  ```
-						-
+						- {{youtube-timestamp 2012}} `realloc` should be used instead. It does the copy process for you
+							- ```c
+							  int *tmp = malloc(4 * sizeof(int));
+							  
+							  // Remove the for loop
+							  
+							  int *tmp = realloc(list, 4 * sizeof(int));
+							  
+							  list = tmp;
+							  ```
+						- {{youtube-timestamp 2176}} You should still use `tmp` values with `realloc` to prevent a memory leak
 					- ### {{youtube-timestamp 2304}} Linked Lists
+						- {{youtube-timestamp 2398}} `->` operator is equivalent to `.` + `*` ?
+						- {{youtube-timestamp 2513}} Linked lists involve values in multiple different areas in memory, and each contains the address of where the list continues. It starts off with an item which only contains an address and no other value
+						-
 					- ### {{youtube-timestamp 5448}} Trees
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
