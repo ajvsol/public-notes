@@ -1641,7 +1641,7 @@
 						- {{youtube-timestamp 5044}} Alternative method using `for` loops
 						- {{youtube-timestamp 5114}} Performance of searching linked lists is *O(n)*
 					- ### {{youtube-timestamp 5448}} Trees
-						- next
+						- {{youtube-timestamp 5491}} Speed of binary search but dynamism of linked list
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
 					- ### {{youtube-timestamp 7457}} Tries
