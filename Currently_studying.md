@@ -1656,7 +1656,7 @@
 							  }
 							  node;
 							  ```
-						- {{youtube-timestamp 5934}}
+						- {{youtube-timestamp 5934}} Example binary search tree code
 							- ```c
 							  // first arg is root of tree, and int is what you're looking for
 							  bool search(node *tree, int number) 
@@ -1671,8 +1671,21 @@
 							      // return the left branch's value for that level
 							      return search(tree->left, number);
 							    }
+							    // if it isn't LESS than but is GREATER than, then return it
+							    else if (number < tree->number) 
+							    {
+							      return search(tree->right, number);
+							    }
+							    // if it is instead the number in this node, then return it
+							    else
+							    {
+							      return true;
+							    }
 							  }
 							  ```
+						- {{youtube-timestamp 6125}} Disadvantage: this method above uses a lot of memory
+						- {{youtube-timestamp 6245}} To be a Binary Search Tree the values must be sorted beforehand
+						-
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
 					- ### {{youtube-timestamp 7457}} Tries
