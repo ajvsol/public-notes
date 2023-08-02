@@ -1642,6 +1642,36 @@
 						- {{youtube-timestamp 5114}} Performance of searching linked lists is *O(n)*
 					- ### {{youtube-timestamp 5448}} Trees
 						- {{youtube-timestamp 5491}} Speed of binary search but dynamism of linked list
+						- {{youtube-timestamp 5535}} Binary search trees
+						- {{youtube-timestamp 5566}} Linked lists unlike arrays allow easily inserting elements into the middle of the data structure without having to copy and move data around, as you have to give a defined size to your array in advance
+						- {{youtube-timestamp 5738}} Imagine you had a linked list of `1` to `7`. Then you can represent a binary search tree like:
+							- ![image.png](../assets/image_1690968005839_0.png)
+						- {{youtube-timestamp 5898}} typedef for `node` required
+							- ```c
+							  typedef struct node 
+							  {
+							    int number; 
+							    struct node *left; 
+							    struct node *right;
+							  }
+							  node;
+							  ```
+						- {{youtube-timestamp 5934}}
+							- ```c
+							  // first arg is root of tree, and int is what you're looking for
+							  bool search(node *tree, int number) 
+							  {
+							    if (tree == NULL)
+							    {
+							      return false;
+							    }
+							    // is what you're looking for LESS than the tree's own number
+							    else if (number < tree->number) 
+							    {
+							      return search(tree->left, number);
+							    }
+							  }
+							  ```
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
 					- ### {{youtube-timestamp 7457}} Tries
