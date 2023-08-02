@@ -1668,6 +1668,7 @@
 							    // is what you're looking for LESS than the tree's own number
 							    else if (number < tree->number) 
 							    {
+							      // return the left branch's value for that level
 							      return search(tree->left, number);
 							    }
 							  }
