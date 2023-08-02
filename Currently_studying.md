@@ -1685,7 +1685,7 @@
 							  ```
 						- {{youtube-timestamp 6125}} Disadvantage: this method above uses a lot of memory
 						- {{youtube-timestamp 6245}} To be a Binary Search Tree the values must be sorted beforehand
-						-
+						- {{youtube-timestamp 6408}} last
 					- ### {{youtube-timestamp 6377}} Dictionaries
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
 					- ### {{youtube-timestamp 7457}} Tries
