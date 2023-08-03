@@ -1300,9 +1300,7 @@
 							  printf("%s", s); // returns: "bye"
 							  printf("%s", t); // returns: "bye"
 							  ```
-						- {{youtube-timestamp 5012}} `malloc` and `free` are needed for copying
-							- ((64b5bdf0-8cba-4b0a-9c07-0c8d0e886628))
-							- `free` = free up some memory. Inverse of `malloc`
+						- {{youtube-timestamp 5012}} ((64b5bdf0-8cba-4b0a-9c07-0c8d0e886628)) and ((64b5bdf0-77d0-4577-bed4-072c62636b03)) are needed for copying
 						- {{youtube-timestamp 5125}} Current libraries
 							- ```c
 							  #include <cs50.h>
