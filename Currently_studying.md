@@ -1491,8 +1491,14 @@
 				- Most important
 					- ((64b9335b-3d6e-42d5-9830-bf7148d57a38))
 				- Practical exercise learnings
-					- ### inheritance
+					- ### Inheritance
 						- ((64b5bdf0-8cba-4b0a-9c07-0c8d0e886628))
+					- ### Speller
+						- Asymptotic time
+						  collapsed:: true
+							- Theoretically, on input of size n, an algorithm with a running time of n is “asymptotically equivalent,” in terms of O, to an algorithm with a running time of 2n. Indeed, when describing the running time of an algorithm, we typically focus on the dominant (i.e., most impactful) term (i.e., n in this case, since n could be much larger than 2). In the real world, though, the fact of the matter is that 2n feels twice as slow as n.
+							  
+							  The challenge ahead of you is to implement the fastest spell checker you can! By “fastest,” though, we’re talking actual “wall-clock,” not asymptotic, time.
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
 					- ### {{youtube-timestamp 193}} Stacks and Queues
 						- {{youtube-timestamp 217}} Queues are FIFO (First In First Out) e.g. queueing for cashier, message queues
