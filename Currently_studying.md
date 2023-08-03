@@ -1092,7 +1092,6 @@
 				- Most important
 					- d
 				- Practical exercise learnings
-				  collapsed:: true
 					- 2x hexadecimal (base-16) digits (pair e.g. 00 to FF) are 8 bits/1 byte and is represented in binary (base-2) like so e.g. `00000000`,`11111111`
 					- The prefix `0x` is often used to indicate that a value is in hexadecimal format e.g. first pair is `0x00`, or `0xff`
 					- RGB colour code is 24 bits per pixel (3x hexadecimal pairs)
@@ -1300,8 +1299,7 @@
 							  printf("%s", t); // returns: "bye"
 							  ```
 						- {{youtube-timestamp 5012}} `malloc` and `free` are needed for copying
-							- `malloc` = memory allocation
-								- It returns the address of the first free byte of memory. Unlike strings it's not null (`\0`) terminated, so it's up to the programmer to ensure you remember how much memory you've asked for
+							- ((64b5bdf0-8cba-4b0a-9c07-0c8d0e886628))
 							- `free` = free up some memory. Inverse of `malloc`
 						- {{youtube-timestamp 5125}} Current libraries
 							- ```c
@@ -1493,7 +1491,8 @@
 				- Most important
 					-
 				- Practical exercise learnings
-					-
+					- ### inheritance
+						- ((64b5bdf0-8cba-4b0a-9c07-0c8d0e886628))
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
 					- ### {{youtube-timestamp 193}} Stacks and Queues
 						- {{youtube-timestamp 217}} Queues are FIFO (First In First Out) e.g. queueing for cashier, message queues
