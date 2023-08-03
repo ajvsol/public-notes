@@ -802,7 +802,8 @@
 							  id:: 642ad32c-4d27-468c-b0c5-d9f5e5eca51c
 							  Binary search
 							- O(1)
-							  Finite number of steps, can even be say 999 steps
+							  id:: 64634975-e3c4-4a85-9a40-6f58d87852e5
+							  Finite number of steps, can even be say 999 steps. Regardless of how much underlying data there is
 						- {{youtube-timestamp 1432}} Linear search is ((642ad322-cf6c-4360-9e3e-a4e24f264d56)) whereas binary search is ((642ad32c-4d27-468c-b0c5-d9f5e5eca51c))
 						- {{youtube-timestamp 1521}} Ω (omega) describes lower-bound of an algorithm (how fast it might be if it gets lucky first time)
 						  id:: 643a7163-c0d5-4f5f-a110-81ab4d4005b0
@@ -1685,9 +1686,16 @@
 							  ```
 						- {{youtube-timestamp 6125}} Disadvantage: this method above uses a lot of memory
 						- {{youtube-timestamp 6245}} To be a Binary Search Tree the values must be sorted beforehand
-						- {{youtube-timestamp 6408}} last
 					- ### {{youtube-timestamp 6377}} Dictionaries
+						- {{youtube-timestamp 6481}} Dictionaries are Word:Definition matches. They're an example of Key-Value pairs
+						- {{youtube-timestamp 6568}} ((642ad32c-4d27-468c-b0c5-d9f5e5eca51c)) is realistic as ((64634975-e3c4-4a85-9a40-6f58d87852e5)) is unlikely
 					- ### {{youtube-timestamp 6574}} Hashing and Hash Tables
+						- {{youtube-timestamp 6594}} Transforms a value into a simpler version of that value
+						- {{youtube-timestamp 6738}} Hash tables are a combination of arrays and linked lists in order to get the best of both worlds
+						- {{youtube-timestamp 6896}} Arrays are used to sort values into buckets, then linked lists are used to hold all the values within a bucket
+							- Example: phone contacts are sorted by first letter. Each of 26 letters is a bucket
+							- Finding the correct bucket is ((64634975-e3c4-4a85-9a40-6f58d87852e5)) (as it's 26 max). Finding the correct contact card within that bucket is
+						-
 					- ### {{youtube-timestamp 7457}} Tries
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
 			  Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
