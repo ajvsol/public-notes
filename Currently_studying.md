@@ -1496,7 +1496,6 @@
 					-
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
 					- ### {{youtube-timestamp 193}} Stacks and Queues
-					  collapsed:: true
 						- {{youtube-timestamp 217}} Queues are FIFO (First In First Out) e.g. queueing for cashier, message queues
 						- {{youtube-timestamp 272}} Two functions of queues: enqueue (add item to end of queue) and dequeue (remove item from start of queue)
 						- {{youtube-timestamp 319}} Stacks are not FIFO - LIFO (Last In First Out) e.g. piling chairs in a stack, email inbox
@@ -1703,8 +1702,17 @@
 							- Harry, Hagrid
 							- ![image.png](../assets/image_1691071063402_0.png)
 						- {{youtube-timestamp 7617}} It's speed is therefore ((64634975-e3c4-4a85-9a40-6f58d87852e5)) i.e. max *O(50)* runtime if that's the longest name allowed
-						- {{youtube-timestamp 7734}} However it uses a ton of memory space
-						-
+						- {{youtube-timestamp 7734}} However it uses a lot more memory space. This is a common tradeoff for better performance
+						- {{youtube-timestamp 7815}} Example data structure
+							- ```c
+							  typedef struct node 
+							  {
+							    char *number; 
+							    struct node *children[26];
+							  }
+							  node;
+							  ```
+						- {{youtube-timestamp 7987}} It's performance is dependent on the length of the key only, not on the number of values stored
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
 			  Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
 			- [CS50 2022 - Lecture 7 - SQL - YouTube](https://youtu.be/zrCLRC3Ci1c)
