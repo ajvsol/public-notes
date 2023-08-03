@@ -1090,7 +1090,8 @@
 			  collapsed:: true
 			  Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 				- Most important
-					- d
+					- Pointers
+						- ((64634975-2aac-4c24-8965-f1768f785446))
 				- Practical exercise learnings
 					- 2x hexadecimal (base-16) digits (pair e.g. 00 to FF) are 8 bits/1 byte and is represented in binary (base-2) like so e.g. `00000000`,`11111111`
 					- The prefix `0x` is often used to indicate that a value is in hexadecimal format e.g. first pair is `0x00`, or `0xff`
@@ -1184,6 +1185,7 @@
 						  ```
 						- {{youtube-timestamp 2585}} They made it using `typedef char *string;`
 						- {{youtube-timestamp 2760}} How to go to an address using a variable. Code changed from `"%p", p` to `"%i", *p`. AKA dereferencing a pointer
+						  id:: 64634975-2aac-4c24-8965-f1768f785446
 							- ```c
 							  #include <cs50.h>
 							  #include <stdio.h>
@@ -1489,7 +1491,7 @@
 			  collapsed:: true
 			  Abstract Data Types. Queues, Stacks. Linked Lists. Trees, Binary Search Trees. Hash Tables. Tries.
 				- Most important
-					-
+					- ((64b9335b-3d6e-42d5-9830-bf7148d57a38))
 				- Practical exercise learnings
 					- ### inheritance
 						- ((64b5bdf0-8cba-4b0a-9c07-0c8d0e886628))
@@ -1556,7 +1558,15 @@
 							  ```
 						- {{youtube-timestamp 2176}} You should still use `tmp` values with `realloc` to prevent a memory leak
 					- ### {{youtube-timestamp 2304}} Linked Lists
-						- {{youtube-timestamp 2398}} `->` operator is equivalent to `.` + `*` ?
+						- {{youtube-timestamp 2398}} `->` operator is equivalent using both `.` + `*`
+						  id:: 64b9335b-3d6e-42d5-9830-bf7148d57a38
+							- `*` is used for multiplication, declaring pointers, dereferencing pointers (create it and then go to that address)
+							- `->` is used whenever you want to use both `*` and `.` i.e. you want to go to a value, go to an address, then look inside a structure
+							- e.g. these two are equivalent
+								- ```c
+								  person *parent0 = create_family(generations - 1);
+								  p->parents[0] = create_family(generations - 1);
+								  ```
 						- {{youtube-timestamp 2513}} Linked lists involve values in multiple different areas in memory, and each contains the address of where the list continues (links forward to the next list). It starts off with an item which only contains an address and no other value
 						- {{youtube-timestamp 3018}} `typedef` for each node (list) of a linked list. Note: written differently because it's self-referential
 							- ```c
