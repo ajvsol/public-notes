@@ -1694,9 +1694,17 @@
 						- {{youtube-timestamp 6738}} Hash tables are a combination of arrays and linked lists in order to get the best of both worlds
 						- {{youtube-timestamp 6896}} Arrays are used to sort values into buckets, then linked lists are used to hold all the values within a bucket
 							- Example: phone contacts are sorted by first letter. Each of 26 letters is a bucket
-							- Finding the correct bucket is ((64634975-e3c4-4a85-9a40-6f58d87852e5)) (as it's 26 max). Finding the correct contact card within that bucket is
-						-
+							- Finding the correct bucket is ((642ad322-cf6c-4360-9e3e-a4e24f264d56)) (as it's 26 max). Finding the correct contact card within that bucket is
 					- ### {{youtube-timestamp 7457}} Tries
+						- Tries isn't ((642ad322-cf6c-4360-9e3e-a4e24f264d56)), it's actually ((64634975-e3c4-4a85-9a40-6f58d87852e5))
+						- {{youtube-timestamp 7488}} It's short for "retrieval", but pronounced "try"
+						- {{youtube-timestamp 7489}} It's a tree, where each of the nodes are an array
+						- {{youtube-timestamp 7571}} Example storing a name: each letter is in a separate array, which means it scales well for searching any length name
+							- Harry, Hagrid
+							- ![image.png](../assets/image_1691071063402_0.png)
+						- {{youtube-timestamp 7617}} It's speed is therefore ((64634975-e3c4-4a85-9a40-6f58d87852e5)) i.e. max *O(50)* runtime if that's the longest name allowed
+						- {{youtube-timestamp 7734}} However it uses a ton of memory space
+						-
 			- [CS50 2022 - Lecture 6 - Python - YouTube](https://youtu.be/5Jppcxc1Qzc)
 			  Python: Functions, Arguments, Return Values; Variables; Boolean Expressions, Conditionals; Loops. Modules, Packages.
 			- [CS50 2022 - Lecture 7 - SQL - YouTube](https://youtu.be/zrCLRC3Ci1c)
