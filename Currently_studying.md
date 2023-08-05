@@ -1499,9 +1499,21 @@
 							- Theoretically, on input of size n, an algorithm with a running time of n is “asymptotically equivalent,” in terms of O, to an algorithm with a running time of 2n. Indeed, when describing the running time of an algorithm, we typically focus on the dominant (i.e., most impactful) term (i.e., n in this case, since n could be much larger than 2). In the real world, though, the fact of the matter is that 2n feels twice as slow as n.
 							  
 							  The challenge ahead of you is to implement the fastest spell checker you can! By “fastest,” though, we’re talking actual “wall-clock,” not asymptotic, time.
-						- Constants
+						- Defines
+						  collapsed:: true
 							- Example: `#define LENGTH 45`
 							- Also notice our use of `#define`, a “preprocessor directive” that defines a “constant” called `LENGTH` that has a value of `45`. It’s a constant in the sense that you can’t (accidentally) change it in your own code. In fact, `clang` will replace any mentions of `LENGTH` in your own code with, literally, `45`. In other words, it’s not a variable, just a find-and-replace trick.
+						- Makefiles
+						  collapsed:: true
+							- And, lastly, recall that `make` automates compilation of your code so that you don’t have to execute `clang` manually along with a whole bunch of switches. However, as your programs grow in size, `make` won’t be able to infer from context anymore how to compile your code; you’ll need to start telling `make` how to compile your program, particularly when they involve multiple source (i.e., `.c`) files, as in the case of this problem. And so we’ll utilize a `Makefile`, a configuration file that tells `make` exactly what to do. Open up `Makefile`, and you should see four lines:
+							  collapsed:: true
+								- The first line tells `make` to execute the subsequent lines whenever you yourself execute `make speller` (or just `make`).
+								- The second line tells `make` how to compile `speller.c` into machine code (i.e., `speller.o`).
+								- The third line tells `make` how to compile `dictionary.c` into machine code (i.e., `dictionary.o`).
+								- The fourth line tells `make` to link `speller.o` and `dictionary.o` in a file called `speller`.
+						- Your spell checker must not leak any memory. Be sure to check for leaks with `valgrind`.
+						- ((64b5bdf0-915e-41aa-819e-bfbc6cdb5d28))
+						-
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
 					- ### {{youtube-timestamp 193}} Stacks and Queues
 						- {{youtube-timestamp 217}} Queues are FIFO (First In First Out) e.g. queueing for cashier, message queues
