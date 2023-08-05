@@ -1514,7 +1514,8 @@
 								- The third line tells `make` how to compile `dictionary.c` into machine code (i.e., `dictionary.o`).
 								- The fourth line tells `make` to link `speller.o` and `dictionary.o` in a file called `speller`.
 						- Your spell checker must not leak any memory. Be sure to check for leaks with `valgrind`.
-						- ((64b5bdf0-915e-41aa-819e-bfbc6cdb5d28))
+						- [strcasecmp](https://manual.cs50.io/3/strcasecmp)
+						  Compare two strings ignoring case
 						- Good generic way to loop over any string
 							- ```c
 							  for (int i = 0; word[i] != '\0'; i++)
