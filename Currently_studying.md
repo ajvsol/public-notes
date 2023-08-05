@@ -1499,6 +1499,9 @@
 							- Theoretically, on input of size n, an algorithm with a running time of n is “asymptotically equivalent,” in terms of O, to an algorithm with a running time of 2n. Indeed, when describing the running time of an algorithm, we typically focus on the dominant (i.e., most impactful) term (i.e., n in this case, since n could be much larger than 2). In the real world, though, the fact of the matter is that 2n feels twice as slow as n.
 							  
 							  The challenge ahead of you is to implement the fastest spell checker you can! By “fastest,” though, we’re talking actual “wall-clock,” not asymptotic, time.
+						- Constants
+							- Example: `#define LENGTH 45`
+							- Also notice our use of `#define`, a “preprocessor directive” that defines a “constant” called `LENGTH` that has a value of `45`. It’s a constant in the sense that you can’t (accidentally) change it in your own code. In fact, `clang` will replace any mentions of `LENGTH` in your own code with, literally, `45`. In other words, it’s not a variable, just a find-and-replace trick.
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
 					- ### {{youtube-timestamp 193}} Stacks and Queues
 						- {{youtube-timestamp 217}} Queues are FIFO (First In First Out) e.g. queueing for cashier, message queues
