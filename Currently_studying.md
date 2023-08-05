@@ -643,7 +643,9 @@
 						- {{youtube-timestamp 6878}} [`ctype.h`](https://manual.cs50.io/#ctype.h) library - for data types in C
 							- The difference between a lowercase letter and it's uppercase version is always 32 in ASCII
 							- ASCII chart
+							  id:: 64634976-9fee-489a-b73a-2349e05c35ee
 								- ![image.png](../assets/image_1678811769692_0.png)
+								- Related: ((646349b0-26df-4b6d-9ae4-46abda612f2f))
 							- Make uppercase.c
 								- ```c
 								  #include <cs50.h>
@@ -1513,7 +1515,12 @@
 								- The fourth line tells `make` to link `speller.o` and `dictionary.o` in a file called `speller`.
 						- Your spell checker must not leak any memory. Be sure to check for leaks with `valgrind`.
 						- ((64b5bdf0-915e-41aa-819e-bfbc6cdb5d28))
-						-
+						- Good generic way to loop over any string
+							- ```c
+							  for (int i = 0; word[i] != '\0'; i++)
+							  {
+							  }
+							  ```
 				- {{video https://www.youtube.com/watch?v=X8h4dq9Hzq8}}
 					- ### {{youtube-timestamp 193}} Stacks and Queues
 						- {{youtube-timestamp 217}} Queues are FIFO (First In First Out) e.g. queueing for cashier, message queues

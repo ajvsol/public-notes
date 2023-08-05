@@ -1170,6 +1170,8 @@
 								- charCodeAt uses `utf-16`
 									- [UTF-16 table](https://asecuritysite.com/coding/asc2)
 									- ![ASCII table.pdf](../assets/ASCII_table_1677780764579_0.pdf)
+									  id:: 646349b0-26df-4b6d-9ae4-46abda612f2f
+										- Related: ((64634976-9fee-489a-b73a-2349e05c35ee))
 								- Related: ((63470fd1-b8ce-43b2-ab22-5ba17988fc3e)) : ((63f2175c-19f9-4a8e-8c4a-7443cf99d71e))
 							- [`String.prototype.codePointAt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt)
 							- [`String.prototype.concat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
