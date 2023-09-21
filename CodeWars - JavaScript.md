@@ -1,12 +1,13 @@
-- Related: [[JavaScript]] : ((6341c12f-21ed-489f-bb16-1734abd32b1f))
 - Meta
-  collapsed:: true
-	- [Review progress towards next rank here](https://www.codewars.com/users/aaronjvsol)
-	- [Awarded Score by Kata Rank](https://docs.codewars.com/gamification/ranks#awarded-score)
-	  collapsed:: true
-		- Not accurate
-			- Whilst I was 5 kyu I attempted a 4 kyu. Supposed to gain 55 score, instead gained 32 (381 -> 413)
-			- Whilst I was 5 kyu I attempted a 3 kyu. Supposed to gain 149 score, instead gained 102 (413 -> 515)
+  id:: 64634972-e662-4bbd-8873-373a8e5850cd
+	- Shared CW
+	  id:: 650bfce0-c829-4e70-9a73-b2a9738f81e5
+		- [Review progress towards next rank here](https://www.codewars.com/users/aaronjvsol)
+		- [Awarded Score by Kata Rank](https://docs.codewars.com/gamification/ranks#awarded-score)
+		  collapsed:: true
+			- Not accurate
+				- Whilst I was 5 kyu I attempted a 4 kyu. Supposed to gain 55 score, instead gained 32 (381 -> 413)
+				- Whilst I was 5 kyu I attempted a 3 kyu. Supposed to gain 149 score, instead gained 102 (413 -> 515)
 - Takeaways
 	-
 	- ^^- converted everything below from CodeWars links to a link to a method and notes of how to utilise it - ^^
@@ -2194,4 +2195,6 @@
 		- [Multiply](https://www.codewars.com/kata/50654ddff44f800200000004/train/javascript)
 		- [Even Or Odd](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript)
 		- [Sum of Positive](https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript)
-- Related: ((6400dba3-cba5-42aa-8818-111b7f4ece61))
+- Related:
+	- ((6400dba3-cba5-42aa-8818-111b7f4ece61))
+	- [[JavaScript]] : ((6341c12f-21ed-489f-bb16-1734abd32b1f))
