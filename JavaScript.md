@@ -5825,6 +5825,7 @@
 			- 7) Objects
 			- _Assorted_
 				- Javascript code comments
+				  id:: 646349ae-f6ad-4d1e-a2d5-8e9caa13af70
 				  collapsed:: true
 					- Example 1
 					  ```javascript
