@@ -1488,6 +1488,7 @@
 						-
 					- Pointers. Segmentation Faults. Dynamic Memory Allocation. Stack. Heap. Buffer Overflow. File I/O. Images.
 			- [CS50 2022 - Lecture 5 - Data Structures - YouTube](https://youtu.be/X8h4dq9Hzq8)
+			  id:: 64634975-edb5-400f-bfe6-bb629801f70c
 			  collapsed:: true
 			  Abstract Data Types. Queues, Stacks. Linked Lists. Trees, Binary Search Trees. Hash Tables. Tries.
 				- Most important
