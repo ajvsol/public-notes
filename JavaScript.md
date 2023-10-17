@@ -9778,6 +9778,7 @@
 				  collapsed:: true
 					- https://www.lullabot.com/articles/will-javascript-eat-the-monolithic-cms
 					-
+				- Related: ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
 			- ((629ccb26-3115-4d41-b4db-a686fe51a4a2))-based frameworks
 			  collapsed:: true
 				- [Meteor](https://www.meteor.com/)
