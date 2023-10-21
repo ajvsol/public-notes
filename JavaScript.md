@@ -8667,1149 +8667,1150 @@
 			- [Elm](https://elm-lang.org/) (Rust-like)
 	- _Frameworks and Libraries_
 	  id:: 63baa386-e89b-4c6f-9dad-19586353252f
-		- Frontend
-		  id:: 63679852-9cb5-4278-b624-6f742ac0088f
-			- Most notable
-				- ((629ccb26-62cc-426a-9616-4d8969f32580))
-				- _Page builders_
+		- Sorted by end
+			- Frontend
+			  id:: 63679852-9cb5-4278-b624-6f742ac0088f
+				- Most notable
+					- ((629ccb26-62cc-426a-9616-4d8969f32580))
+					- _Page builders_
+					  collapsed:: true
+						- https://github.com/JefMari/awesome-wysiwyg
+					- CSS-in-JS libraries
+					  collapsed:: true
+					  id:: 629ccb26-23a1-4361-8de0-d8e3d34c8ce1
+						- Overview
+							- Thinking in components — No longer do you have to maintain bunch of style-sheets. CSS-in-JS abstracts the CSS model to the component level, rather than the document level (modularity).
+						- Pros/Cons Vs CSS-in-CSS
+						  collapsed:: true
+							- Pros
+							  collapsed:: true
+								- the challenge is modern web is written in components not pages.
+									- CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
+								- Thinking in components — No longer do you have to maintain bunch of style-sheets. CSS-in-JS abstracts the CSS model to the component level, rather than the document level (modularity).
+								- CSS-in-JS leverages the full power of the JavaScript ecosystem to enhance CSS.
+								- “True rules isolation” — Scoped selectors are not enough. CSS has properties which are inherited automatically from the parent element, if not explicitly defined. Thanks to jss-isolate plugin, JSS rules will not inherit properties.
+								  http://cssinjs.org/jss-isolate
+								- Scoped selectors — CSS has just one global namespace. It is impossible to avoid selector collisions in non-trivial applications. Naming conventions like BEM might help within one project, but will not when integrating third-party code. JSS generates unique class names by default when it compiles JSON representation to CSS.
+								- Vendor Prefixing —The CSS rules are automatically vendor prefixed, so you don’t have to think about it.
+								- Code sharing — Easily share constants and functions between JS and CSS.
+								- Only the styles which are currently in use on your screen are also in the DOM (react-jss).
+								- Dead code elimination
+								  https://en.wikipedia.org/wiki/Dead_code_elimination
+								- Unit tests for CSS!
+							- Cons
+								- Learning curve.
+								- New dependencies.
+								- Harder for newer teammates to adapt to the code-base. People who are new to front-end have to learn “more” things.
+								- Challenging the status quo. (not necessarily a con)
+						- Libraries
+							- Comparison
+							  https://github.com/MicheleBertoli/css-in-js/blob/master/README.md
+							- CSS loader
+							  collapsed:: true
+								- https://github.com/webpack/css-loader
+							- styled-components
+							  collapsed:: true
+							  id:: 629ccb26-2f37-4f04-8f15-647f47c825c8
+								- https://www.styled-components.com/
+							- Glamor
+							  collapsed:: true
+								- https://github.com/threepointone/glamor
+							- Glamorous
+							  collapsed:: true
+								- https://github.com/paypal/glamorous
+							- Radium
+							  collapsed:: true
+								- https://github.com/FormidableLabs/radium
+							- Reactcss
+							  collapsed:: true
+								- https://github.com/casesandberg/reactcss
+							- React JSS
+							  collapsed:: true
+								- https://github.com/jsstyles/react-jss
+								- Jss
+								  collapsed:: true
+									- https://cssinjs.org/?v=v10.0.0-alpha.9
+							- Aphrodite
+							  collapsed:: true
+								- https://github.com/Khan/aphrodite
+							- Emotion
+							  collapsed:: true
+								- https://emotion.sh/
+						- Unsorted
+						- Compared against inline styles
+							- https://mxstbr.blog/2016/11/inline-styles-vs-css-in-js/
+						- Related: CSS-in-[CSS](((629ccb26-0f8b-4a06-a8bb-6e57ecbfc824)))
+				- Others
+					- [Ember](https://emberjs.com/)
+					- [jQuery](https://jquery.com/)
+					  collapsed:: true
+						- Heavy?
+					- Asynchronous JavaScript (AJAX)
+				- ((6396fb64-9aeb-4ee3-bf46-849eac2fb748)) : ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
 				  collapsed:: true
-					- https://github.com/JefMari/awesome-wysiwyg
-				- CSS-in-JS libraries
+					- {{embed ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))}}
+			- Backend
+			  id:: 63baa386-3de1-4a21-b62e-a339148671de
+				- [Node.js](https://nodejs.org)
+				  id:: 629ccb26-3115-4d41-b4db-a686fe51a4a2
 				  collapsed:: true
-				  id:: 629ccb26-23a1-4361-8de0-d8e3d34c8ce1
-					- Overview
-						- Thinking in components — No longer do you have to maintain bunch of style-sheets. CSS-in-JS abstracts the CSS model to the component level, rather than the document level (modularity).
-					- Pros/Cons Vs CSS-in-CSS
+					- [GitHub - nodejs/node: Node.js JavaScript runtime](https://github.com/nodejs/node)
+					- Pros/Cons
 					  collapsed:: true
 						- Pros
+							- allows us to use JavaScript server-side.
+							- [NPM](https://npmjs.com) - massive registry with tons of open-source libraries
+					- Documentation
+						- Info
 						  collapsed:: true
-							- the challenge is modern web is written in components not pages.
-								- CSS was never actually made for component based approaches. CSS-in-JS solves exactly this problem.
-							- Thinking in components — No longer do you have to maintain bunch of style-sheets. CSS-in-JS abstracts the CSS model to the component level, rather than the document level (modularity).
-							- CSS-in-JS leverages the full power of the JavaScript ecosystem to enhance CSS.
-							- “True rules isolation” — Scoped selectors are not enough. CSS has properties which are inherited automatically from the parent element, if not explicitly defined. Thanks to jss-isolate plugin, JSS rules will not inherit properties.
-							  http://cssinjs.org/jss-isolate
-							- Scoped selectors — CSS has just one global namespace. It is impossible to avoid selector collisions in non-trivial applications. Naming conventions like BEM might help within one project, but will not when integrating third-party code. JSS generates unique class names by default when it compiles JSON representation to CSS.
-							- Vendor Prefixing —The CSS rules are automatically vendor prefixed, so you don’t have to think about it.
-							- Code sharing — Easily share constants and functions between JS and CSS.
-							- Only the styles which are currently in use on your screen are also in the DOM (react-jss).
-							- Dead code elimination
-							  https://en.wikipedia.org/wiki/Dead_code_elimination
-							- Unit tests for CSS!
-						- Cons
-							- Learning curve.
-							- New dependencies.
-							- Harder for newer teammates to adapt to the code-base. People who are new to front-end have to learn “more” things.
-							- Challenging the status quo. (not necessarily a con)
-					- Libraries
-						- Comparison
-						  https://github.com/MicheleBertoli/css-in-js/blob/master/README.md
-						- CSS loader
-						  collapsed:: true
-							- https://github.com/webpack/css-loader
-						- styled-components
-						  collapsed:: true
-						  id:: 629ccb26-2f37-4f04-8f15-647f47c825c8
-							- https://www.styled-components.com/
-						- Glamor
-						  collapsed:: true
-							- https://github.com/threepointone/glamor
-						- Glamorous
-						  collapsed:: true
-							- https://github.com/paypal/glamorous
-						- Radium
-						  collapsed:: true
-							- https://github.com/FormidableLabs/radium
-						- Reactcss
-						  collapsed:: true
-							- https://github.com/casesandberg/reactcss
-						- React JSS
-						  collapsed:: true
-							- https://github.com/jsstyles/react-jss
-							- Jss
+							- Runtime environment = extends vanilla JavaScript with some additional stuff
+							  id:: 634d4cee-5275-4aee-a026-62b33517d5cd
+							- JavaScript engine = a program that turn JavaScript code into binary
+							- Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
+							  id:: 634bc0c1-27c9-4149-8209-3a28ead13b9e
+							- NodeJS uses [V8](https://v8.dev) as it's JavaScript engine
 							  collapsed:: true
-								- https://cssinjs.org/?v=v10.0.0-alpha.9
-						- Aphrodite
-						  collapsed:: true
-							- https://github.com/Khan/aphrodite
-						- Emotion
-						  collapsed:: true
-							- https://emotion.sh/
-					- Unsorted
-					- Compared against inline styles
-						- https://mxstbr.blog/2016/11/inline-styles-vs-css-in-js/
-					- Related: CSS-in-[CSS](((629ccb26-0f8b-4a06-a8bb-6e57ecbfc824)))
-			- Others
-				- [Ember](https://emberjs.com/)
-				- [jQuery](https://jquery.com/)
-				  collapsed:: true
-					- Heavy?
-				- Asynchronous JavaScript (AJAX)
-			- ((6396fb64-9aeb-4ee3-bf46-849eac2fb748)) : ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
-			  collapsed:: true
-				- {{embed ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))}}
-		- Backend
-		  id:: 63baa386-3de1-4a21-b62e-a339148671de
-			- [Node.js](https://nodejs.org)
-			  id:: 629ccb26-3115-4d41-b4db-a686fe51a4a2
-			  collapsed:: true
-				- [GitHub - nodejs/node: Node.js JavaScript runtime](https://github.com/nodejs/node)
-				- Pros/Cons
-				  collapsed:: true
-					- Pros
-						- allows us to use JavaScript server-side.
-						- [NPM](https://npmjs.com) - massive registry with tons of open-source libraries
-				- Documentation
-					- Info
-					  collapsed:: true
-						- Runtime environment = extends vanilla JavaScript with some additional stuff
-						  id:: 634d4cee-5275-4aee-a026-62b33517d5cd
-						- JavaScript engine = a program that turn JavaScript code into binary
-						- Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications.
-						  id:: 634bc0c1-27c9-4149-8209-3a28ead13b9e
-						- NodeJS uses [V8](https://v8.dev) as it's JavaScript engine
-						  collapsed:: true
-							- It's Google's open-source JavaScript and WebAssembly engine, written in C++
-							- DOM is exposed by a browser, not the engine. So it's unavailable to Node
-					- SOPs
-						- Installation
-						  id:: 63974fb0-ef9b-4610-9d0a-fb5337fbfefc
-						  collapsed:: true
-							- Basic install
-								- `sudo apt install nodejs`
-							- [Install via a Node version manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-nodejs-and-npm)
-							  id:: 64024e3e-17bd-46f7-b70d-41a02bf20981
-								- Install `nvm`
-									- Note: don't have to uninstall npm to use this
-									- ```bash
-									  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-									  ```
-										- [This script will install or update nvm](https://github.com/nvm-sh/nvm#install--update-script)
-									- `source ~/.bashrc` to refresh bash
-									- `command -v nvm` to check if it's installed (it should return `nvm`)
-								- Using `nvm` (current [[Dec 22nd, 2022]] )
-								  collapsed:: true
-									- `nvm install node` = "node" is an alias for the latest version
-										- Output
-										  ```bash
-										  Your user’s .npmrc file (${HOME}/.npmrc)
-										  has a `globalconfig` and/or a `prefix` setting, which are incompatible with nvm.
-										  Run `nvm use --delete-prefix v19.3.0` to unset it.
+								- It's Google's open-source JavaScript and WebAssembly engine, written in C++
+								- DOM is exposed by a browser, not the engine. So it's unavailable to Node
+						- SOPs
+							- Installation
+							  id:: 63974fb0-ef9b-4610-9d0a-fb5337fbfefc
+							  collapsed:: true
+								- Basic install
+									- `sudo apt install nodejs`
+								- [Install via a Node version manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-nodejs-and-npm)
+								  id:: 64024e3e-17bd-46f7-b70d-41a02bf20981
+									- Install `nvm`
+										- Note: don't have to uninstall npm to use this
+										- ```bash
+										  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 										  ```
-								- {Archive}
-									- Using `fnm` (used prior to [[Dec 22nd, 2022]] )
+											- [This script will install or update nvm](https://github.com/nvm-sh/nvm#install--update-script)
+										- `source ~/.bashrc` to refresh bash
+										- `command -v nvm` to check if it's installed (it should return `nvm`)
+									- Using `nvm` (current [[Dec 22nd, 2022]] )
 									  collapsed:: true
-										- `fnm list` - shows all the node versions installed in the system
-										- `fnm list-remote` - Shows all the available node versions which can be installed.
-										- `fnm install <version>` - Install the node version locally which we got from list command. eg- fnm install v14.0.2  would install v14.0.2 locally.
-										- `fnm use <version>` - Activate the given version which is installed in the system. eg - fnm use v16.13.2 would activate v16.13.2 which is installed
-										- `fnm default <version>` - Set the node version to default alias. eg fnm default v16.13.2 would make  v16.13.2 as the default version for the system.
-										- `fnm current` - Prints the current node version which is activated.
-									- Basic install using `fnm`
+										- `nvm install node` = "node" is an alias for the latest version
+											- Output
+											  ```bash
+											  Your user’s .npmrc file (${HOME}/.npmrc)
+											  has a `globalconfig` and/or a `prefix` setting, which are incompatible with nvm.
+											  Run `nvm use --delete-prefix v19.3.0` to unset it.
+											  ```
+									- {Archive}
+										- Using `fnm` (used prior to [[Dec 22nd, 2022]] )
+										  collapsed:: true
+											- `fnm list` - shows all the node versions installed in the system
+											- `fnm list-remote` - Shows all the available node versions which can be installed.
+											- `fnm install <version>` - Install the node version locally which we got from list command. eg- fnm install v14.0.2  would install v14.0.2 locally.
+											- `fnm use <version>` - Activate the given version which is installed in the system. eg - fnm use v16.13.2 would activate v16.13.2 which is installed
+											- `fnm default <version>` - Set the node version to default alias. eg fnm default v16.13.2 would make  v16.13.2 as the default version for the system.
+											- `fnm current` - Prints the current node version which is activated.
+										- Basic install using `fnm`
+										  collapsed:: true
+											- `curl -fsSL https://fnm.vercel.app/install | bash`
+											- `sudo nano ~/.bashrc`
+											- `source ~/.bashrc`
+											  Reload bash
+											- `fnm list-remote`
+											  List available versions to install
+											- `fnm install 18.1.0`
+											  Install a chosen version
+								- Change permissions if using ((63209272-1088-4824-a762-4ac7ded04b0a)) Flatpak
+									- Used ((634bc1ee-d662-4244-bf4d-6bd64e77dbd1)) to check that `~/.fnm/fnm` is owned by `root`, so Visual Studio Code in a Flatpak is unable to access that directory
+									- `cd ~` to change to home directory
+									- `chown boss .fnm/fnm` to change the ownership to `boss` (current user)
+										- May also need to do `chown boss .fnm`
+								- ...
+								- https://github.com/nodesource/distributions/blob/master/README.md#using-ubuntu
+							- Basics
+							  collapsed:: true
+								- To run code, on the terminal run `node main.js` assuming `main.js` is the JS file in the directory you're in
+								- `global` is main object, which is normally `document` in a browser (as browsers have the DOM)
+								- `process.exit()` can exit the NodeJS process
+							- How to setup a new project
+							  id:: 63679852-8d12-4f83-994e-52e0dcbd642f
+							  collapsed:: true
+								- ((634fd63d-dd88-4a10-a762-9bc0fa467de6))
+									- {{embed ((634fd63d-dd88-4a10-a762-9bc0fa467de6))}}
+								-
+								- Either
+									- `npm init`
+									- `git clone`
+								- Create a `.gitignore` file and a few standard ignores
+								  collapsed:: true
+									- ```gitignore
+									  node modules
+									  .env
+									  ```
+								- Create a `.env` file and add sensitive data
+								  collapsed:: true
+									- Store sensitive data here e.g. port number, database URL
+								- Install ((63590e56-9473-4435-9a86-177587b4ddff)) with `npm i dotenv -D`
+								  collapsed:: true
+									- Related: ((6368d436-0062-4e8d-9070-997898b5fa5a))
+								- Install `nodemon` with `npm i nodemon -D` if it's an Express project
+								- Update `package.json` with a few configs
+									- Make ES Modules the default
+									  ```json
+									  "type": "module"
+									  ```
+									- *Scripts*
+										- ```json
+										  "scripts": {
+										    "start": "node -r dotenv/config app.js",
+										    "dev": "nodemon -r dotenv/config app.js"
+										  }
+										  ```
+										- `require` will load our environment variables for us
+								- `node run dev` to run the dev script
+								- *If project uses a database*
+								  collapsed:: true
+									- `npm i pg`
+									- Declare database URL via `.env`
 									  collapsed:: true
-										- `curl -fsSL https://fnm.vercel.app/install | bash`
-										- `sudo nano ~/.bashrc`
-										- `source ~/.bashrc`
-										  Reload bash
-										- `fnm list-remote`
-										  List available versions to install
-										- `fnm install 18.1.0`
-										  Install a chosen version
-							- Change permissions if using ((63209272-1088-4824-a762-4ac7ded04b0a)) Flatpak
-								- Used ((634bc1ee-d662-4244-bf4d-6bd64e77dbd1)) to check that `~/.fnm/fnm` is owned by `root`, so Visual Studio Code in a Flatpak is unable to access that directory
-								- `cd ~` to change to home directory
-								- `chown boss .fnm/fnm` to change the ownership to `boss` (current user)
-									- May also need to do `chown boss .fnm`
-							- ...
-							- https://github.com/nodesource/distributions/blob/master/README.md#using-ubuntu
-						- Basics
-						  collapsed:: true
-							- To run code, on the terminal run `node main.js` assuming `main.js` is the JS file in the directory you're in
-							- `global` is main object, which is normally `document` in a browser (as browsers have the DOM)
-							- `process.exit()` can exit the NodeJS process
-						- How to setup a new project
-						  id:: 63679852-8d12-4f83-994e-52e0dcbd642f
-						  collapsed:: true
-							- ((634fd63d-dd88-4a10-a762-9bc0fa467de6))
-								- {{embed ((634fd63d-dd88-4a10-a762-9bc0fa467de6))}}
-							-
-							- Either
-								- `npm init`
-								- `git clone`
-							- Create a `.gitignore` file and a few standard ignores
+										- ```config
+										  DATABASE_URL = [Something.](https://something.com)
+										  PORT = 3000
+										  ```
+									- `/db/index.js`
+										- Create and export pool
+										- e.g.
+										  ```javascript
+										  const databaseURL = process.env.DATABASE_URL
+										  ```
+									- `/models/models.js`
+										- Import the database connection pool
+										- Create model functions
+										- Export functions
+									- `/routes/routes.js`
+										- Import express
+										- Import models
+										- Export as express router
+											- e.g. 
+											  ```javascript
+											  export const routerName = express.Router();
+											  ```
+								- *If project uses Express*
+									- `app.js`
+										- Install the modules
+										  collapsed:: true
+											- e.g.
+											  ```javascript
+											  import express from "express";
+											  ```
+										- Declare app
+										  collapsed:: true
+											- ```javascript
+											  const app = express();
+											  ```
+										- Mount the express server
+										  collapsed:: true
+											- ```javascript
+											  app.use(express.json());
+											  ```
+										- Instantiate the required helper functions
+										  collapsed:: true
+											- e.g.
+											  ```javascript
+											  app.use(express.json());
+											  ```
+										- Import the router
+										  collapsed:: true
+											- ```javascript
+											  import { routerName } from './routes/router.js';
+											  ```
+										- Instantiate the router with desired URL
+										  collapsed:: true
+											- ```javascript
+											  app.use('/api/name', routerName);
+											  ```
+										- Export the app mdule
+										  collapsed:: true
+											- ```javascript
+											  export default app;
+											  ```
+								- Related: ((634d2517-30eb-4bbf-b214-abae3ac1b92d))
+							- ((63890cb6-2a0e-4039-9d9d-0106f11ccbf6))
+						- [Official docs](https://nodejs.org/api/)
+							- https://github.com/nodejs/node
+							- `fs/promises`
+							  id:: 63b987bc-d2a0-4131-b5c6-c6e5271085ff
 							  collapsed:: true
-								- ```gitignore
-								  node modules
-								  .env
+								- [Use `fs/promises` instead of `fs` for better performance](https://advancedweb.hu/do-not-use-fs-sync-methods-in-javascript-use-fs-promises-instead/)
+								- The **fs/promises** API provides the following methods:
+								- ```js
+								  access, copyFile, open, read, write, rename, truncate, ftruncate, 
+								  rmdir, fdatasync, fsync, mkdir, readdir, readlink, symlink, fstat, 
+								  lstat, stat, link, unlink, fchmod, chmod, lchmod, lchown, fchown, chown,
+								   utimes, futimes, realpath, mkdtemp, writeFile, appendFile and readFile.
 								  ```
-							- Create a `.env` file and add sensitive data
-							  collapsed:: true
-								- Store sensitive data here e.g. port number, database URL
-							- Install ((63590e56-9473-4435-9a86-177587b4ddff)) with `npm i dotenv -D`
-							  collapsed:: true
-								- Related: ((6368d436-0062-4e8d-9070-997898b5fa5a))
-							- Install `nodemon` with `npm i nodemon -D` if it's an Express project
-							- Update `package.json` with a few configs
-								- Make ES Modules the default
-								  ```json
-								  "type": "module"
-								  ```
-								- *Scripts*
-									- ```json
-									  "scripts": {
-									    "start": "node -r dotenv/config app.js",
-									    "dev": "nodemon -r dotenv/config app.js"
+								- Examples
+									- ```js
+									  import { promises as fs } from 'fs';
+									  
+									  try {
+									      await fs.writeFile("/tmp/test6.js", "console.log('Hello world with Node.js v13 fs.promises!'");
+									      console.info("File created successfully with Node.js v13 fs.promises!");
+									  } catch (error){
+									      console.error(error);
 									  }
 									  ```
-									- `require` will load our environment variables for us
-							- `node run dev` to run the dev script
-							- *If project uses a database*
-							  collapsed:: true
-								- `npm i pg`
-								- Declare database URL via `.env`
+								- Related: ((63a9bb72-6751-4d71-97b9-bfb666964e68))
+								-
+							- CLI Commands
+								- [`npm install`](https://docs.npmjs.com/cli/v8/commands/npm-install)
+								  id:: 6368d436-0062-4e8d-9070-997898b5fa5a
 								  collapsed:: true
-									- ```config
-									  DATABASE_URL = [Something.](https://something.com)
-									  PORT = 3000
-									  ```
-								- `/db/index.js`
-									- Create and export pool
-									- e.g.
-									  ```javascript
-									  const databaseURL = process.env.DATABASE_URL
-									  ```
-								- `/models/models.js`
-									- Import the database connection pool
-									- Create model functions
-									- Export functions
-								- `/routes/routes.js`
-									- Import express
-									- Import models
-									- Export as express router
-										- e.g. 
-										  ```javascript
-										  export const routerName = express.Router();
-										  ```
-							- *If project uses Express*
-								- `app.js`
-									- Install the modules
-									  collapsed:: true
-										- e.g.
-										  ```javascript
-										  import express from "express";
-										  ```
-									- Declare app
-									  collapsed:: true
-										- ```javascript
-										  const app = express();
-										  ```
-									- Mount the express server
-									  collapsed:: true
-										- ```javascript
-										  app.use(express.json());
-										  ```
-									- Instantiate the required helper functions
-									  collapsed:: true
-										- e.g.
-										  ```javascript
-										  app.use(express.json());
-										  ```
-									- Import the router
-									  collapsed:: true
-										- ```javascript
-										  import { routerName } from './routes/router.js';
-										  ```
-									- Instantiate the router with desired URL
-									  collapsed:: true
-										- ```javascript
-										  app.use('/api/name', routerName);
-										  ```
-									- Export the app mdule
-									  collapsed:: true
-										- ```javascript
-										  export default app;
-										  ```
-							- Related: ((634d2517-30eb-4bbf-b214-abae3ac1b92d))
-						- ((63890cb6-2a0e-4039-9d9d-0106f11ccbf6))
-					- [Official docs](https://nodejs.org/api/)
-						- https://github.com/nodejs/node
-						- `fs/promises`
-						  id:: 63b987bc-d2a0-4131-b5c6-c6e5271085ff
+									- Aliases
+										- `npm i`, etc
+									- `-D, --save-dev` : Package will appear in your  `devDependencies` .
+						- Commands
+							- `npm ci`
+							  id:: 638f1e9b-38db-4572-ba5d-907613753986
+							  collapsed:: true
+								- [npm Blog Archive: Introducing `npm ci` for faster, more reliable builds](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable)
+								- [Difference between npm i and npm ci in Node.js - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-npm-i-and-npm-ci-in-node-js/)
+					- *Package managers*
+					  id:: 63baa386-4747-40e9-b222-ab1fb5ab1bf6
+						- [npm](https://www.npmjs.com)
+						  id:: 634bc0c1-c4b8-488f-9c11-5918d0bfb50d
 						  collapsed:: true
-							- [Use `fs/promises` instead of `fs` for better performance](https://advancedweb.hu/do-not-use-fs-sync-methods-in-javascript-use-fs-promises-instead/)
-							- The **fs/promises** API provides the following methods:
-							- ```js
-							  access, copyFile, open, read, write, rename, truncate, ftruncate, 
-							  rmdir, fdatasync, fsync, mkdir, readdir, readlink, symlink, fstat, 
-							  lstat, stat, link, unlink, fchmod, chmod, lchmod, lchown, fchown, chown,
-							   utimes, futimes, realpath, mkdtemp, writeFile, appendFile and readFile.
-							  ```
-							- Examples
-								- ```js
-								  import { promises as fs } from 'fs';
-								  
-								  try {
-								      await fs.writeFile("/tmp/test6.js", "console.log('Hello world with Node.js v13 fs.promises!'");
-								      console.info("File created successfully with Node.js v13 fs.promises!");
-								  } catch (error){
-								      console.error(error);
-								  }
-								  ```
-							- Related: ((63a9bb72-6751-4d71-97b9-bfb666964e68))
-							-
-						- CLI Commands
-							- [`npm install`](https://docs.npmjs.com/cli/v8/commands/npm-install)
-							  id:: 6368d436-0062-4e8d-9070-997898b5fa5a
+							- Notable packages
 							  collapsed:: true
-								- Aliases
-									- `npm i`, etc
-								- `-D, --save-dev` : Package will appear in your  `devDependencies` .
-					- Commands
-						- `npm ci`
-						  id:: 638f1e9b-38db-4572-ba5d-907613753986
-						  collapsed:: true
-							- [npm Blog Archive: Introducing `npm ci` for faster, more reliable builds](https://blog.npmjs.org/post/171556855892/introducing-npm-ci-for-faster-more-reliable)
-							- [Difference between npm i and npm ci in Node.js - GeeksforGeeks](https://www.geeksforgeeks.org/difference-between-npm-i-and-npm-ci-in-node-js/)
-				- *Package managers*
-				  id:: 63baa386-4747-40e9-b222-ab1fb5ab1bf6
-					- [npm](https://www.npmjs.com)
-					  id:: 634bc0c1-c4b8-488f-9c11-5918d0bfb50d
-					  collapsed:: true
-						- Notable packages
-						  collapsed:: true
-							- [npx](https://www.npmjs.com/package/npx)
-							  id:: 636a7232-bbde-4f4c-80d5-0ef4c9c21da5
-							  collapsed:: true
-							  Package executer - executes packages directly without having to install the modules
-								- [Introducing npx: an npm package runner | by Kat Marchán | Medium](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
-								- Difference between NPM vs NPX
-									- NPM is a package manager used to install, delete, and update Javascript packages on your machine. NPX is a package executer, and it is used to execute javascript packages directly, without installing them.” Google et al.
-							- [dotenv](https://www.npmjs.com/package/dotenv)
-							  id:: 63590e56-9473-4435-9a86-177587b4ddff
-							  collapsed:: true
-							  Loads environment variables from a `.env` file into `process.env`
-								- e.g. access it via the global object `process.env.S3_BUCKET`
-								- #+BEGIN_CAUTION
-								  Need to include `-r dotenv/config` in the `package.json` file in the Scripts section, in the command like for whatever run scripts are being used.
-								  #+END_CAUTION
-							- [pg](https://www.npmjs.com/package/pg)
-							  id:: 63592a1d-90b6-4646-a9ea-f1f0216bb1e6
-							  collapsed:: true
-							  AKA node-postgres | PostgreSQL client for Node.js
-								- [Documentation](https://node-postgres.com/)
-									- SOP
-										- See ((9f70e86a-d654-48fe-859a-7b19f96e9c56))
-									- [Connecting](https://node-postgres.com/features/connecting)
-									  collapsed:: true
-										- Programmatic
-											- Standard template which doesn't use environment variables
-												- ```javascript
-												  const { Pool, Client } = require('pg')
-												  const pool = new Pool({
-												    user: 'dbuser',
-												    host: 'database.server.com',
-												    database: 'mydb',
-												    password: 'secretpassword',
-												    port: 3211,
-												  })
-												  
-												  pool.query('SELECT NOW()', (err, res) => {
-												    console.log(err, res)
-												    pool.end()
-												  })
-												  
-												  const client = new Client({
-												    user: 'dbuser',
-												    host: 'database.server.com',
-												    database: 'mydb',
-												    password: 'secretpassword',
-												    port: 3211,
-												  })
-												  client.connect()
-												  
-												  client.query('SELECT NOW()', (err, res) => {
-												    console.log(err, res)
-												    client.end()
-												  })
-												  ```
-											- Page also has templates for connecting to cloud databases and via unix sockets
-											- Connection URI template - used for platforms like Heroku
-												- ```javascript
-												  const { Pool, Client } = require('pg')
-												  const connectionString = 'postgresql://dbuser:secretpassword@database.server.com:3211/mydb'
-												  const pool = new Pool({
-												    connectionString,
-												  })
-												  
-												  pool.query('SELECT NOW()', (err, res) => {
-												    console.log(err, res)
-												    pool.end()
-												  })
-												  
-												  const client = new Client({
-												    connectionString,
-												  })
-												  client.connect()
-												  
-												  client.query('SELECT NOW()', (err, res) => {
-												    console.log(err, res)
-												    client.end()
-												  })
-												  ```
-									- Queries
-									  collapsed:: true
-										- Parameterised query
-										  id:: 63594b55-df8e-49b8-95c1-f3433e23c751
-											- SQL injection vulnerability = ensuring that people can't just pass in `DROP TABLE;` as a value and damage your database
-											- Example
-												- ```javascript
-												  // Vulnerable version
-												  const result = await query ('SELECT * FROM books WHERE id = ${id}');
-												  const book = result.rows[id];
-												  return book;
-												  
-												  // Parameterised query
-												  const result = await query (`SELECT * FROM books WHERE id = $1`, [id]);
-												  const book = result.rows[id];
-												  return book;
-												  ```
-												- `$1`, `$2`, etc just means to replace that symbol in the string with whatever you write as the next parameter
-												  ```javascript
-												  const result = await query (`SELECT * FROM books WHERE id = $1 + $2`, [id], [test]);
-												  
-												  // $1 means use the next parameter here
-												  // $2 means use the second parameter 
-												  ```
-											-
-									- Pooling
-										- `pg-pool` module prevents issues with having to reconnect to databases, limited number of connections, etc
-										- It basically  manages the connections so you don't have too many
-										  id:: 63592ccf-ef7b-4af2-8232-1ab5d40af1c1
-										- https://www.cockroachlabs.com/blog/what-is-connection-pooling/
-									- [Suggested Project Structure](https://node-postgres.com/guides/project-structure) - `db/index.js`
-									  id:: 63593ebb-9355-413a-933e-d474755febe0
-										- Pros of using this standalone file
-											- Allows my project to adjust to any changes to the node-postgres API without having to trace down all the places I directly use node-postgres in my application.
-											- Allows me to have a single place to put logging and diagnostics around my database.
-											- Allows me to make custom extensions to my database access code & share it throughout the project.
-											- Allows a single place to bootstrap & configure the database.
-										- Template
-											- ```javascript
-											  // Requiring pg module and destructuring out Pool
-											  const { Pool } = require('pg');
-											  
-											  // Making a variable and storing in it a new instance of pool
-											  const pool = new Pool({
-											    // hand in connection URL from ElephantSQL as an environment variables
-											    connectionString: process.env.POSTGRES_CONNECTION_URL,
-											    
-											  });
-											  
-											  // What we're making available to require into other files
-											  module.exports = {
-											    // query key in our export object
-											    // value of the query key is a function
-											    query: (text, params, callback) => { // note: passing callback is optional for this particular version
-											      // text: SQL query
-											      // params: parameterised queries (prepared statements)
-											      return pool.query(text, params, callback); // note: passing callback is optional for this particular version
-											    },
-											  };
-											  ```
-											- Then if you want to import this into another file
-											  ```javascript
-											  const { query } = require('../db/index.js')
-											  ```
-											- Example module function
-												- Example 1
-													- ```javascript
-													  async function getBooks() {
-													    // Query the database and return all books
-													    // Use query function required in
-													    // Call query and hand it the SQL query as the first argument
-													    // Grab what that query function gives us back
-													    // Need to await!
-													    const result = await query('SELECT * FROM books;');
-													    const booksArray = result.rows;
-													    return booksArray;
-													  }
-													  ```
-												- Example 2
-													- ```javascript
-													  async function getBookById(id) {
-													    // Query the database and return the book with a matching ID
-													    	// query the books table with the book id
-													    	// just bring back the specific row that matches that book id
-													    // Use the query function that we've required in
-													    // await!
-													    // Collect what query returns in a variable (result)
-													    // Return the relevant part of the result
-													    const result = await query (`SELECT * FROM books WHERE id = $1`, [id]); // uses parameterised query for safety
-													    console.log(result.rows);
-													    const book = result.rows[0]; // 0 ensures you return an object, which is the first and only item of the array 'result.rows'
-													    return book;
-													  }
-													  ```
-													- ((63594b55-df8e-49b8-95c1-f3433e23c751))
-													- `$1` is a reference to the first argument of the function in SQL
-														- `id = $1` is similar to JavaScript `${id}`
-							- [node-postgres](https://www.npmjs.com/package/node-postgres)
-							  id:: 63904f3c-fae7-41e9-870c-43837ab8f4e5
-							  collapsed:: true
-								- Related: ((63581a1a-5436-4e35-8c2c-549fcedbb430))
-							- [uuid](https://www.npmjs.com/package/uuid)
-							  id:: 634e85bc-bc2c-4c49-8e81-fdf2b8f3b4a7
-							  Generate unique ids
-							- [jest](https://www.npmjs.com/package/jest)
-							  id:: 635eb08e-60ed-4881-9b34-a2a27b514521
-							  collapsed:: true
-							  Check your solutions with automated tests
-								- [Documentation](https://jestjs.io/docs/getting-started)
-									- Getting Started
-										- How to setup Jest
-										  id:: 63e26542-1164-4021-83d2-1e70a3ac6c09
+								- [npx](https://www.npmjs.com/package/npx)
+								  id:: 636a7232-bbde-4f4c-80d5-0ef4c9c21da5
+								  collapsed:: true
+								  Package executer - executes packages directly without having to install the modules
+									- [Introducing npx: an npm package runner | by Kat Marchán | Medium](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)
+									- Difference between NPM vs NPX
+										- NPM is a package manager used to install, delete, and update Javascript packages on your machine. NPX is a package executer, and it is used to execute javascript packages directly, without installing them.” Google et al.
+								- [dotenv](https://www.npmjs.com/package/dotenv)
+								  id:: 63590e56-9473-4435-9a86-177587b4ddff
+								  collapsed:: true
+								  Loads environment variables from a `.env` file into `process.env`
+									- e.g. access it via the global object `process.env.S3_BUCKET`
+									- #+BEGIN_CAUTION
+									  Need to include `-r dotenv/config` in the `package.json` file in the Scripts section, in the command like for whatever run scripts are being used.
+									  #+END_CAUTION
+								- [pg](https://www.npmjs.com/package/pg)
+								  id:: 63592a1d-90b6-4646-a9ea-f1f0216bb1e6
+								  collapsed:: true
+								  AKA node-postgres | PostgreSQL client for Node.js
+									- [Documentation](https://node-postgres.com/)
+										- SOP
+											- See ((9f70e86a-d654-48fe-859a-7b19f96e9c56))
+										- [Connecting](https://node-postgres.com/features/connecting)
 										  collapsed:: true
-											- Install [Jest](((635eb08e-60ed-4881-9b34-a2a27b514521)))
-											  ```javascript
-											  npm install --save-dev jest
-											  ```
-											- Add to `package.json` the script for Jest
-												- CommonJS version
-												  ```javascript
-												  "scripts": {
-												      "test": "jest"
-												  ```
-												- ESM version
-												  ```javascript
-												  "scripts": {
-												      "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
-												  }
-												  ```
-											- Make sure to export your functions from their file to make it available to the test file e.g.
-											  ```javascript
-											  module.exports = sum;
-											  ```
-												- Related: ((635eb25f-8124-4d74-8c42-bfc5541ff543))
-											- Create a test file for your tests e.g. `sum.test.js` to test your `sum.js` file
-											- In the test file import your functions
-												- ES Modules
+											- Programmatic
+												- Standard template which doesn't use environment variables
 													- ```javascript
-													  import { test, expect, describe } from "@jest/globals"; // optional
+													  const { Pool, Client } = require('pg')
+													  const pool = new Pool({
+													    user: 'dbuser',
+													    host: 'database.server.com',
+													    database: 'mydb',
+													    password: 'secretpassword',
+													    port: 3211,
+													  })
+													  
+													  pool.query('SELECT NOW()', (err, res) => {
+													    console.log(err, res)
+													    pool.end()
+													  })
+													  
+													  const client = new Client({
+													    user: 'dbuser',
+													    host: 'database.server.com',
+													    database: 'mydb',
+													    password: 'secretpassword',
+													    port: 3211,
+													  })
+													  client.connect()
+													  
+													  client.query('SELECT NOW()', (err, res) => {
+													    console.log(err, res)
+													    client.end()
+													  })
 													  ```
-												- {Archive} CommonJS example
-												  collapsed:: true
+												- Page also has templates for connecting to cloud databases and via unix sockets
+												- Connection URI template - used for platforms like Heroku
 													- ```javascript
-													  const sum = require('./sum');
+													  const { Pool, Client } = require('pg')
+													  const connectionString = 'postgresql://dbuser:secretpassword@database.server.com:3211/mydb'
+													  const pool = new Pool({
+													    connectionString,
+													  })
+													  
+													  pool.query('SELECT NOW()', (err, res) => {
+													    console.log(err, res)
+													    pool.end()
+													  })
+													  
+													  const client = new Client({
+													    connectionString,
+													  })
+													  client.connect()
+													  
+													  client.query('SELECT NOW()', (err, res) => {
+													    console.log(err, res)
+													    client.end()
+													  })
 													  ```
-											- In the test file add your test
-												- Example Jest test
-													- Syntax
+										- Queries
+										  collapsed:: true
+											- Parameterised query
+											  id:: 63594b55-df8e-49b8-95c1-f3433e23c751
+												- SQL injection vulnerability = ensuring that people can't just pass in `DROP TABLE;` as a value and damage your database
+												- Example
+													- ```javascript
+													  // Vulnerable version
+													  const result = await query ('SELECT * FROM books WHERE id = ${id}');
+													  const book = result.rows[id];
+													  return book;
+													  
+													  // Parameterised query
+													  const result = await query (`SELECT * FROM books WHERE id = $1`, [id]);
+													  const book = result.rows[id];
+													  return book;
+													  ```
+													- `$1`, `$2`, etc just means to replace that symbol in the string with whatever you write as the next parameter
 													  ```javascript
-													  test(<string-to-describe-test>, () => {
-													      expect(<our-named-function>(<test-parameters>).toBe(<expected-result>);
-													  });
+													  const result = await query (`SELECT * FROM books WHERE id = $1 + $2`, [id], [test]);
+													  
+													  // $1 means use the next parameter here
+													  // $2 means use the second parameter 
 													  ```
-													- Example file `sum.test.js`
+												-
+										- Pooling
+											- `pg-pool` module prevents issues with having to reconnect to databases, limited number of connections, etc
+											- It basically  manages the connections so you don't have too many
+											  id:: 63592ccf-ef7b-4af2-8232-1ab5d40af1c1
+											- https://www.cockroachlabs.com/blog/what-is-connection-pooling/
+										- [Suggested Project Structure](https://node-postgres.com/guides/project-structure) - `db/index.js`
+										  id:: 63593ebb-9355-413a-933e-d474755febe0
+											- Pros of using this standalone file
+												- Allows my project to adjust to any changes to the node-postgres API without having to trace down all the places I directly use node-postgres in my application.
+												- Allows me to have a single place to put logging and diagnostics around my database.
+												- Allows me to make custom extensions to my database access code & share it throughout the project.
+												- Allows a single place to bootstrap & configure the database.
+											- Template
+												- ```javascript
+												  // Requiring pg module and destructuring out Pool
+												  const { Pool } = require('pg');
+												  
+												  // Making a variable and storing in it a new instance of pool
+												  const pool = new Pool({
+												    // hand in connection URL from ElephantSQL as an environment variables
+												    connectionString: process.env.POSTGRES_CONNECTION_URL,
+												    
+												  });
+												  
+												  // What we're making available to require into other files
+												  module.exports = {
+												    // query key in our export object
+												    // value of the query key is a function
+												    query: (text, params, callback) => { // note: passing callback is optional for this particular version
+												      // text: SQL query
+												      // params: parameterised queries (prepared statements)
+												      return pool.query(text, params, callback); // note: passing callback is optional for this particular version
+												    },
+												  };
+												  ```
+												- Then if you want to import this into another file
+												  ```javascript
+												  const { query } = require('../db/index.js')
+												  ```
+												- Example module function
+													- Example 1
+														- ```javascript
+														  async function getBooks() {
+														    // Query the database and return all books
+														    // Use query function required in
+														    // Call query and hand it the SQL query as the first argument
+														    // Grab what that query function gives us back
+														    // Need to await!
+														    const result = await query('SELECT * FROM books;');
+														    const booksArray = result.rows;
+														    return booksArray;
+														  }
+														  ```
+													- Example 2
+														- ```javascript
+														  async function getBookById(id) {
+														    // Query the database and return the book with a matching ID
+														    	// query the books table with the book id
+														    	// just bring back the specific row that matches that book id
+														    // Use the query function that we've required in
+														    // await!
+														    // Collect what query returns in a variable (result)
+														    // Return the relevant part of the result
+														    const result = await query (`SELECT * FROM books WHERE id = $1`, [id]); // uses parameterised query for safety
+														    console.log(result.rows);
+														    const book = result.rows[0]; // 0 ensures you return an object, which is the first and only item of the array 'result.rows'
+														    return book;
+														  }
+														  ```
+														- ((63594b55-df8e-49b8-95c1-f3433e23c751))
+														- `$1` is a reference to the first argument of the function in SQL
+															- `id = $1` is similar to JavaScript `${id}`
+								- [node-postgres](https://www.npmjs.com/package/node-postgres)
+								  id:: 63904f3c-fae7-41e9-870c-43837ab8f4e5
+								  collapsed:: true
+									- Related: ((63581a1a-5436-4e35-8c2c-549fcedbb430))
+								- [uuid](https://www.npmjs.com/package/uuid)
+								  id:: 634e85bc-bc2c-4c49-8e81-fdf2b8f3b4a7
+								  Generate unique ids
+								- [jest](https://www.npmjs.com/package/jest)
+								  id:: 635eb08e-60ed-4881-9b34-a2a27b514521
+								  collapsed:: true
+								  Check your solutions with automated tests
+									- [Documentation](https://jestjs.io/docs/getting-started)
+										- Getting Started
+											- How to setup Jest
+											  id:: 63e26542-1164-4021-83d2-1e70a3ac6c09
+											  collapsed:: true
+												- Install [Jest](((635eb08e-60ed-4881-9b34-a2a27b514521)))
+												  ```javascript
+												  npm install --save-dev jest
+												  ```
+												- Add to `package.json` the script for Jest
+													- CommonJS version
 													  ```javascript
-													  test('adds 1 + 2 to equal 3', () => {
-													    expect(sum(1, 2)).toBe(3);
-													  });
+													  "scripts": {
+													      "test": "jest"
 													  ```
-														- Alternatively
+													- ESM version
+													  ```javascript
+													  "scripts": {
+													      "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+													  }
+													  ```
+												- Make sure to export your functions from their file to make it available to the test file e.g.
+												  ```javascript
+												  module.exports = sum;
+												  ```
+													- Related: ((635eb25f-8124-4d74-8c42-bfc5541ff543))
+												- Create a test file for your tests e.g. `sum.test.js` to test your `sum.js` file
+												- In the test file import your functions
+													- ES Modules
+														- ```javascript
+														  import { test, expect, describe } from "@jest/globals"; // optional
+														  ```
+													- {Archive} CommonJS example
+													  collapsed:: true
+														- ```javascript
+														  const sum = require('./sum');
+														  ```
+												- In the test file add your test
+													- Example Jest test
+														- Syntax
 														  ```javascript
-														  test('adds 1 + 2 to equal 3', () => {
-														    const actual = sum(1, 2);
-														    const expected = 4;
-														    expect(sum(actual)).toBe(expected);
+														  test(<string-to-describe-test>, () => {
+														      expect(<our-named-function>(<test-parameters>).toBe(<expected-result>);
 														  });
 														  ```
-											- Run `npm t` or `npm test` on the terminal
-											- Optional
-												- `import { test, expect } from "@jest/globals";`
-													- Implicit globals don't need to be imported, but it helps learning by seeing where these functions are coming from
-									- [Expect](https://jestjs.io/docs/expect)
-									  collapsed:: true
-										- Methods
-											- [`expect(value)`](https://jestjs.io/docs/expect#expectvalue)
-											- [`expect.extend(matchers)`](https://jestjs.io/docs/expect#expectextendmatchers)
-											- [`expect.anything()`](https://jestjs.io/docs/expect#expectanything)
-											- [`expect.any(constructor)`](https://jestjs.io/docs/expect#expectanyconstructor)
-											- [`expect.arrayContaining(array)`](https://jestjs.io/docs/expect#expectarraycontainingarray)
-											- [`expect.assertions(number)`](https://jestjs.io/docs/expect#expectassertionsnumber)
-											- [`expect.closeTo(number, numDigits?)`](https://jestjs.io/docs/expect#expectclosetonumber-numdigits)
-											- [`expect.hasAssertions()`](https://jestjs.io/docs/expect#expecthasassertions)
-											- [`expect.not.arrayContaining(array)`](https://jestjs.io/docs/expect#expectnotarraycontainingarray)
-											- [`expect.not.objectContaining(object)`](https://jestjs.io/docs/expect#expectnotobjectcontainingobject)
-											- [`expect.not.stringContaining(string)`](https://jestjs.io/docs/expect#expectnotstringcontainingstring)
-											- [`expect.not.stringMatching(string | regexp)`](https://jestjs.io/docs/expect#expectnotstringmatchingstring--regexp)
-											- [`expect.objectContaining(object)`](https://jestjs.io/docs/expect#expectobjectcontainingobject)
-											- [`expect.stringContaining(string)`](https://jestjs.io/docs/expect#expectstringcontainingstring)
-											- [`expect.stringMatching(string | regexp)`](https://jestjs.io/docs/expect#expectstringmatchingstring--regexp)
-											- [`expect.addSnapshotSerializer(serializer)`](https://jestjs.io/docs/expect#expectaddsnapshotserializerserializer)
-											- [`.not`](https://jestjs.io/docs/expect#not)
-											- [`.resolves`](https://jestjs.io/docs/expect#resolves)
-											- [`.rejects`](https://jestjs.io/docs/expect#rejects)
-											- [`.toBe(value)`](https://jestjs.io/docs/expect#tobevalue)
-											- [`.toHaveBeenCalled()`](https://jestjs.io/docs/expect#tohavebeencalled)
-											- [`.toHaveBeenCalledTimes(number)`](https://jestjs.io/docs/expect#tohavebeencalledtimesnumber)
-											- [`.toHaveBeenCalledWith(arg1, arg2, ...)`](https://jestjs.io/docs/expect#tohavebeencalledwitharg1-arg2-)
-											- [`.toHaveBeenLastCalledWith(arg1, arg2, ...)`](https://jestjs.io/docs/expect#tohavebeenlastcalledwitharg1-arg2-)
-											- [`.toHaveBeenNthCalledWith(nthCall, arg1, arg2, ....)`](https://jestjs.io/docs/expect#tohavebeennthcalledwithnthcall-arg1-arg2-)
-											- [`.toHaveReturned()`](https://jestjs.io/docs/expect#tohavereturned)
-											- [`.toHaveReturnedTimes(number)`](https://jestjs.io/docs/expect#tohavereturnedtimesnumber)
-											- [`.toHaveReturnedWith(value)`](https://jestjs.io/docs/expect#tohavereturnedwithvalue)
-											- [`.toHaveLastReturnedWith(value)`](https://jestjs.io/docs/expect#tohavelastreturnedwithvalue)
-											- [`.toHaveNthReturnedWith(nthCall, value)`](https://jestjs.io/docs/expect#tohaventhreturnedwithnthcall-value)
-											- [`.toHaveLength(number)`](https://jestjs.io/docs/expect#tohavelengthnumber)
-											- [`.toHaveProperty(keyPath, value?)`](https://jestjs.io/docs/expect#tohavepropertykeypath-value)
-											- [`.toBeCloseTo(number, numDigits?)`](https://jestjs.io/docs/expect#tobeclosetonumber-numdigits)
-											- [`.toBeDefined()`](https://jestjs.io/docs/expect#tobedefined)
-											- [`.toBeFalsy()`](https://jestjs.io/docs/expect#tobefalsy)
-											- [`.toBeGreaterThan(number | bigint)`](https://jestjs.io/docs/expect#tobegreaterthannumber--bigint)
-											- [`.toBeGreaterThanOrEqual(number | bigint)`](https://jestjs.io/docs/expect#tobegreaterthanorequalnumber--bigint)
-											- [`.toBeLessThan(number | bigint)`](https://jestjs.io/docs/expect#tobelessthannumber--bigint)
-											- [`.toBeLessThanOrEqual(number | bigint)`](https://jestjs.io/docs/expect#tobelessthanorequalnumber--bigint)
-											- [`.toBeInstanceOf(Class)`](https://jestjs.io/docs/expect#tobeinstanceofclass)
-											- [`.toBeNull()`](https://jestjs.io/docs/expect#tobenull)
-											- [`.toBeTruthy()`](https://jestjs.io/docs/expect#tobetruthy)
-											- [`.toBeUndefined()`](https://jestjs.io/docs/expect#tobeundefined)
-											- [`.toBeNaN()`](https://jestjs.io/docs/expect#tobenan)
-											- [`.toContain(item)`](https://jestjs.io/docs/expect#tocontainitem)
-											- [`.toContainEqual(item)`](https://jestjs.io/docs/expect#tocontainequalitem)
-											- [`.toEqual(value)`](https://jestjs.io/docs/expect#toequalvalue)
-											- [`.toMatch(regexp | string)`](https://jestjs.io/docs/expect#tomatchregexp--string)
-											- [`.toMatchObject(object)`](https://jestjs.io/docs/expect#tomatchobjectobject)
-											- [`.toMatchSnapshot(propertyMatchers?, hint?)`](https://jestjs.io/docs/expect#tomatchsnapshotpropertymatchers-hint)
-											- [`.toMatchInlineSnapshot(propertyMatchers?, inlineSnapshot)`](https://jestjs.io/docs/expect#tomatchinlinesnapshotpropertymatchers-inlinesnapshot)
-											- [`.toStrictEqual(value)`](https://jestjs.io/docs/expect#tostrictequalvalue)
-											- [`.toThrow(error?)`](https://jestjs.io/docs/expect#tothrowerror)
-											- [`.toThrowErrorMatchingSnapshot(hint?)`](https://jestjs.io/docs/expect#tothrowerrormatchingsnapshothint)
-											- [`.toThrowErrorMatchingInlineSnapshot(inlineSnapshot)`](https://jestjs.io/docs/expect#tothrowerrormatchinginlinesnapshotinlinesnapshot)
-									- [Using Matchers](https://jestjs.io/docs/using-matchers)
-									  collapsed:: true
-										- Common Matchers
-											- `toBe`
-											  collapsed:: true
-											  Test primitives with exact equality
-												- Example
-												  ```javascript
-												  test('two plus two is four', () => {
-												    expect(2 + 2).toBe(4);
-												  });
-												  ```
-											- `not.toBe`
-											  collapsed:: true
-											  Test primitives for not having exact equality
-												- Example
-												  ```javascript
-												  test('adding positive numbers is not zero', () => {
-												    for (let a = 1; a < 10; a++) {
-												      for (let b = 1; b < 10; b++) {
-												        expect(a + b).not.toBe(0);
-												      }
-												    }
-												  });
-												  ```
-											- `toEqual`
-											  collapsed:: true
-											  Test objects to check the value of them
-												- Example
-												  ```javascript
-												  test('object assignment', () => {
-												    const data = {one: 1};
-												    data['two'] = 2;
-												    expect(data).toEqual({one: 1, two: 2});
-												  });
-												  ```
-										- Truthiness
-											- Examples of many tests
-											  collapsed:: true
-												- ```javascript
-												  test('null', () => {
-												    const n = null;
-												    expect(n).toBeNull();
-												    expect(n).toBeDefined();
-												    expect(n).not.toBeUndefined();
-												    expect(n).not.toBeTruthy();
-												    expect(n).toBeFalsy();
-												  });
-												  
-												  test('zero', () => {
-												    const z = 0;
-												    expect(z).not.toBeNull();
-												    expect(z).toBeDefined();
-												    expect(z).not.toBeUndefined();
-												    expect(z).not.toBeTruthy();
-												    expect(z).toBeFalsy();
-												  });
-												  ```
-											- `toBeNull`
-											  collapsed:: true
-											  Matches only  `null`
-												- Example
-												  ```javascript
-												  test('null', () => {
-												    const n = null;
-												    expect(n).toBeNull();
-												  });
-												  
-												  test('zero', () => {
-												    const z = 0;
-												    expect(z).not.toBeNull();
-												  });
-												  ```
-											- `toBeUndefined`
-											  collapsed:: true
-											  Matches only  `undefined`
-												- Example
-												  ```javascript
-												  test('undefined', () => {
-												    const n = undefined;
-												    expect(n).toBeUndefined();
-												  });
-												  
-												  test('zero', () => {
-												    const z = 0;
-												    expect(z).not.toBeUndefined();
-												  });
-												  ```
-											- `toBeDefined`
-											  collapsed:: true
-											  Is the opposite of  `toBeUndefined`
-												- Example
-												  ```javascript
-												  test('null', () => {
-												    const n = null;
-												    expect(n).toBeDefined();
-												  });
-												  
-												  test('zero', () => {
-												    const z = 0;
-												    expect(z).toBeDefined();
-												  });
-												  ```
-											- `toBeTruthy`
-											  collapsed:: true
-											  matches anything that an  `if`  statement treats as true
-												- Example
-												  ```javascript
-												  test('one', () => {
-												    const n = 1;
-												    expect(n).toBeTruthy();
-												  });
-												  
-												  test('zero', () => {
-												    const z = 0;
-												    expect(z).not.toBeTruthy();
-												  });
-												  ```
-											- `toBeFalsy`
-											  collapsed:: true
-											  matches anything that an  `if`  statement treats as false
-												- Example
-												  ```javascript
-												  test('one', () => {
-												    const n = 1;
-												    expect(n).not.toBeFalsy();
-												  });
-												  
-												  test('zero', () => {
-												    const z = 0;
-												    expect(z).toBeFalsy();
-												  });
-												  ```
-										- Numbers
+														- Example file `sum.test.js`
+														  ```javascript
+														  test('adds 1 + 2 to equal 3', () => {
+														    expect(sum(1, 2)).toBe(3);
+														  });
+														  ```
+															- Alternatively
+															  ```javascript
+															  test('adds 1 + 2 to equal 3', () => {
+															    const actual = sum(1, 2);
+															    const expected = 4;
+															    expect(sum(actual)).toBe(expected);
+															  });
+															  ```
+												- Run `npm t` or `npm test` on the terminal
+												- Optional
+													- `import { test, expect } from "@jest/globals";`
+														- Implicit globals don't need to be imported, but it helps learning by seeing where these functions are coming from
+										- [Expect](https://jestjs.io/docs/expect)
 										  collapsed:: true
-											- Examples
-												- ```javascript
-												  test('two plus two', () => {
-												    const value = 2 + 2;
-												    expect(value).toBeGreaterThan(3);
-												    expect(value).toBeGreaterThanOrEqual(3.5);
-												    expect(value).toBeLessThan(5);
-												    expect(value).toBeLessThanOrEqual(4.5);
-												  
-												    // toBe and toEqual are equivalent for numbers
-												    expect(value).toBe(4);
-												    expect(value).toEqual(4);
-												  });
-												  ```
-											- For floating point equality, use toBeCloseTo instead of toEqual, because you don't want a test to depend on a tiny rounding error.
-												- Example
-												  ```javascript
-												  test('adding floating point numbers', () => {
-												    const value = 0.1 + 0.2;
-												    //expect(value).toBe(0.3);           This won't work because of rounding error
-												    expect(value).toBeCloseTo(0.3); // This works.
-												  });
-												  ```
-												- What is floating point numbers
-													- Decimals aren't exact numbers because they're made up of binary
+											- Methods
+												- [`expect(value)`](https://jestjs.io/docs/expect#expectvalue)
+												- [`expect.extend(matchers)`](https://jestjs.io/docs/expect#expectextendmatchers)
+												- [`expect.anything()`](https://jestjs.io/docs/expect#expectanything)
+												- [`expect.any(constructor)`](https://jestjs.io/docs/expect#expectanyconstructor)
+												- [`expect.arrayContaining(array)`](https://jestjs.io/docs/expect#expectarraycontainingarray)
+												- [`expect.assertions(number)`](https://jestjs.io/docs/expect#expectassertionsnumber)
+												- [`expect.closeTo(number, numDigits?)`](https://jestjs.io/docs/expect#expectclosetonumber-numdigits)
+												- [`expect.hasAssertions()`](https://jestjs.io/docs/expect#expecthasassertions)
+												- [`expect.not.arrayContaining(array)`](https://jestjs.io/docs/expect#expectnotarraycontainingarray)
+												- [`expect.not.objectContaining(object)`](https://jestjs.io/docs/expect#expectnotobjectcontainingobject)
+												- [`expect.not.stringContaining(string)`](https://jestjs.io/docs/expect#expectnotstringcontainingstring)
+												- [`expect.not.stringMatching(string | regexp)`](https://jestjs.io/docs/expect#expectnotstringmatchingstring--regexp)
+												- [`expect.objectContaining(object)`](https://jestjs.io/docs/expect#expectobjectcontainingobject)
+												- [`expect.stringContaining(string)`](https://jestjs.io/docs/expect#expectstringcontainingstring)
+												- [`expect.stringMatching(string | regexp)`](https://jestjs.io/docs/expect#expectstringmatchingstring--regexp)
+												- [`expect.addSnapshotSerializer(serializer)`](https://jestjs.io/docs/expect#expectaddsnapshotserializerserializer)
+												- [`.not`](https://jestjs.io/docs/expect#not)
+												- [`.resolves`](https://jestjs.io/docs/expect#resolves)
+												- [`.rejects`](https://jestjs.io/docs/expect#rejects)
+												- [`.toBe(value)`](https://jestjs.io/docs/expect#tobevalue)
+												- [`.toHaveBeenCalled()`](https://jestjs.io/docs/expect#tohavebeencalled)
+												- [`.toHaveBeenCalledTimes(number)`](https://jestjs.io/docs/expect#tohavebeencalledtimesnumber)
+												- [`.toHaveBeenCalledWith(arg1, arg2, ...)`](https://jestjs.io/docs/expect#tohavebeencalledwitharg1-arg2-)
+												- [`.toHaveBeenLastCalledWith(arg1, arg2, ...)`](https://jestjs.io/docs/expect#tohavebeenlastcalledwitharg1-arg2-)
+												- [`.toHaveBeenNthCalledWith(nthCall, arg1, arg2, ....)`](https://jestjs.io/docs/expect#tohavebeennthcalledwithnthcall-arg1-arg2-)
+												- [`.toHaveReturned()`](https://jestjs.io/docs/expect#tohavereturned)
+												- [`.toHaveReturnedTimes(number)`](https://jestjs.io/docs/expect#tohavereturnedtimesnumber)
+												- [`.toHaveReturnedWith(value)`](https://jestjs.io/docs/expect#tohavereturnedwithvalue)
+												- [`.toHaveLastReturnedWith(value)`](https://jestjs.io/docs/expect#tohavelastreturnedwithvalue)
+												- [`.toHaveNthReturnedWith(nthCall, value)`](https://jestjs.io/docs/expect#tohaventhreturnedwithnthcall-value)
+												- [`.toHaveLength(number)`](https://jestjs.io/docs/expect#tohavelengthnumber)
+												- [`.toHaveProperty(keyPath, value?)`](https://jestjs.io/docs/expect#tohavepropertykeypath-value)
+												- [`.toBeCloseTo(number, numDigits?)`](https://jestjs.io/docs/expect#tobeclosetonumber-numdigits)
+												- [`.toBeDefined()`](https://jestjs.io/docs/expect#tobedefined)
+												- [`.toBeFalsy()`](https://jestjs.io/docs/expect#tobefalsy)
+												- [`.toBeGreaterThan(number | bigint)`](https://jestjs.io/docs/expect#tobegreaterthannumber--bigint)
+												- [`.toBeGreaterThanOrEqual(number | bigint)`](https://jestjs.io/docs/expect#tobegreaterthanorequalnumber--bigint)
+												- [`.toBeLessThan(number | bigint)`](https://jestjs.io/docs/expect#tobelessthannumber--bigint)
+												- [`.toBeLessThanOrEqual(number | bigint)`](https://jestjs.io/docs/expect#tobelessthanorequalnumber--bigint)
+												- [`.toBeInstanceOf(Class)`](https://jestjs.io/docs/expect#tobeinstanceofclass)
+												- [`.toBeNull()`](https://jestjs.io/docs/expect#tobenull)
+												- [`.toBeTruthy()`](https://jestjs.io/docs/expect#tobetruthy)
+												- [`.toBeUndefined()`](https://jestjs.io/docs/expect#tobeundefined)
+												- [`.toBeNaN()`](https://jestjs.io/docs/expect#tobenan)
+												- [`.toContain(item)`](https://jestjs.io/docs/expect#tocontainitem)
+												- [`.toContainEqual(item)`](https://jestjs.io/docs/expect#tocontainequalitem)
+												- [`.toEqual(value)`](https://jestjs.io/docs/expect#toequalvalue)
+												- [`.toMatch(regexp | string)`](https://jestjs.io/docs/expect#tomatchregexp--string)
+												- [`.toMatchObject(object)`](https://jestjs.io/docs/expect#tomatchobjectobject)
+												- [`.toMatchSnapshot(propertyMatchers?, hint?)`](https://jestjs.io/docs/expect#tomatchsnapshotpropertymatchers-hint)
+												- [`.toMatchInlineSnapshot(propertyMatchers?, inlineSnapshot)`](https://jestjs.io/docs/expect#tomatchinlinesnapshotpropertymatchers-inlinesnapshot)
+												- [`.toStrictEqual(value)`](https://jestjs.io/docs/expect#tostrictequalvalue)
+												- [`.toThrow(error?)`](https://jestjs.io/docs/expect#tothrowerror)
+												- [`.toThrowErrorMatchingSnapshot(hint?)`](https://jestjs.io/docs/expect#tothrowerrormatchingsnapshothint)
+												- [`.toThrowErrorMatchingInlineSnapshot(inlineSnapshot)`](https://jestjs.io/docs/expect#tothrowerrormatchinginlinesnapshotinlinesnapshot)
+										- [Using Matchers](https://jestjs.io/docs/using-matchers)
+										  collapsed:: true
+											- Common Matchers
+												- `toBe`
+												  collapsed:: true
+												  Test primitives with exact equality
+													- Example
 													  ```javascript
-													  let number = 0.1 + 0.2;
-													  
-													  // number = 0.30000004
+													  test('two plus two is four', () => {
+													    expect(2 + 2).toBe(4);
+													  });
 													  ```
-										- `toMatch` 
-										  collapsed:: true
-										  Strings checked against ((6345ae08-b3a7-40fb-bd6a-35c0918159e5))
-											- Example
-											  ```javascript
-											  test('there is no I in team', () => {
-											    expect('team').not.toMatch(/I/);
-											  });
-											  
-											  test('but there is a "stop" in Christoph', () => {
-											    expect('Christoph').toMatch(/stop/);
-											  });
-											  ```
-										- `toContain`
-										  collapsed:: true
-										  Check if an array or iterable contains a particular item
-											- Example
-											  ```javascript
-											  const shoppingList = [
-											    'diapers',
-											    'kleenex',
-											    'trash bags',
-											    'paper towels',
-											    'milk',
-											  ];
-											  
-											  test('the shopping list has milk on it', () => {
-											    expect(shoppingList).toContain('milk');
-											    expect(new Set(shoppingList)).toContain('milk');
-											  });
-											  ```
-										- Exceptions
-										  collapsed:: true
-											- If you want to test whether a particular function throws an error when it's called, use  `toThrow` .
-											- Example
-											  ```javascript
-											  function compileAndroidCode() {
-											    throw new Error('you are using the wrong JDK!');
-											  }
-											  
-											  test('compiling android goes as expected', () => {
-											    expect(() => compileAndroidCode()).toThrow();
-											    expect(() => compileAndroidCode()).toThrow(Error);
-											  
-											    // You can also use a string that must be contained in the error message or a regexp
-											    expect(() => compileAndroidCode()).toThrow('you are using the wrong JDK');
-											    expect(() => compileAndroidCode()).toThrow(/JDK/);
-											  
-											    // Or you can match an exact error mesage using a regexp like below
-											    expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK$/); // Test fails
-											    expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK!$/); // Test pass
-											  });
-											  ```
-										- [Learning Resources]
-											- https://jestjs.io/docs/expect
-									- [`test` is an alias of `it`](https://jestjs.io/docs/api#testname-fn-timeout)
-									- How to use with ((63e79f3b-c770-4212-be0c-3ba1860ea88a))
-									  id:: 63e4cd45-0139-423a-aa13-050a0dc7f64c
-										- Examples
-											- 1 - using `render(<StateContextProvider value={{`
+												- `not.toBe`
+												  collapsed:: true
+												  Test primitives for not having exact equality
+													- Example
+													  ```javascript
+													  test('adding positive numbers is not zero', () => {
+													    for (let a = 1; a < 10; a++) {
+													      for (let b = 1; b < 10; b++) {
+													        expect(a + b).not.toBe(0);
+													      }
+													    }
+													  });
+													  ```
+												- `toEqual`
+												  collapsed:: true
+												  Test objects to check the value of them
+													- Example
+													  ```javascript
+													  test('object assignment', () => {
+													    const data = {one: 1};
+													    data['two'] = 2;
+													    expect(data).toEqual({one: 1, two: 2});
+													  });
+													  ```
+											- Truthiness
+												- Examples of many tests
+												  collapsed:: true
+													- ```javascript
+													  test('null', () => {
+													    const n = null;
+													    expect(n).toBeNull();
+													    expect(n).toBeDefined();
+													    expect(n).not.toBeUndefined();
+													    expect(n).not.toBeTruthy();
+													    expect(n).toBeFalsy();
+													  });
+													  
+													  test('zero', () => {
+													    const z = 0;
+													    expect(z).not.toBeNull();
+													    expect(z).toBeDefined();
+													    expect(z).not.toBeUndefined();
+													    expect(z).not.toBeTruthy();
+													    expect(z).toBeFalsy();
+													  });
+													  ```
+												- `toBeNull`
+												  collapsed:: true
+												  Matches only  `null`
+													- Example
+													  ```javascript
+													  test('null', () => {
+													    const n = null;
+													    expect(n).toBeNull();
+													  });
+													  
+													  test('zero', () => {
+													    const z = 0;
+													    expect(z).not.toBeNull();
+													  });
+													  ```
+												- `toBeUndefined`
+												  collapsed:: true
+												  Matches only  `undefined`
+													- Example
+													  ```javascript
+													  test('undefined', () => {
+													    const n = undefined;
+													    expect(n).toBeUndefined();
+													  });
+													  
+													  test('zero', () => {
+													    const z = 0;
+													    expect(z).not.toBeUndefined();
+													  });
+													  ```
+												- `toBeDefined`
+												  collapsed:: true
+												  Is the opposite of  `toBeUndefined`
+													- Example
+													  ```javascript
+													  test('null', () => {
+													    const n = null;
+													    expect(n).toBeDefined();
+													  });
+													  
+													  test('zero', () => {
+													    const z = 0;
+													    expect(z).toBeDefined();
+													  });
+													  ```
+												- `toBeTruthy`
+												  collapsed:: true
+												  matches anything that an  `if`  statement treats as true
+													- Example
+													  ```javascript
+													  test('one', () => {
+													    const n = 1;
+													    expect(n).toBeTruthy();
+													  });
+													  
+													  test('zero', () => {
+													    const z = 0;
+													    expect(z).not.toBeTruthy();
+													  });
+													  ```
+												- `toBeFalsy`
+												  collapsed:: true
+												  matches anything that an  `if`  statement treats as false
+													- Example
+													  ```javascript
+													  test('one', () => {
+													    const n = 1;
+													    expect(n).not.toBeFalsy();
+													  });
+													  
+													  test('zero', () => {
+													    const z = 0;
+													    expect(z).toBeFalsy();
+													  });
+													  ```
+											- Numbers
 											  collapsed:: true
-												- ```tsx
-												  import { render, screen, fireEvent } from "@testing-library/react";
-												  import { it, expect, describe } from "@jest/globals";
-												  import {
-												    exampleData,
-												    StateContextProvider,
-												    useStateContext,
-												  } from "../context/StateContextProvider";
-												  import Modal from "../components/Modal";
+												- Examples
+													- ```javascript
+													  test('two plus two', () => {
+													    const value = 2 + 2;
+													    expect(value).toBeGreaterThan(3);
+													    expect(value).toBeGreaterThanOrEqual(3.5);
+													    expect(value).toBeLessThan(5);
+													    expect(value).toBeLessThanOrEqual(4.5);
+													  
+													    // toBe and toEqual are equivalent for numbers
+													    expect(value).toBe(4);
+													    expect(value).toEqual(4);
+													  });
+													  ```
+												- For floating point equality, use toBeCloseTo instead of toEqual, because you don't want a test to depend on a tiny rounding error.
+													- Example
+													  ```javascript
+													  test('adding floating point numbers', () => {
+													    const value = 0.1 + 0.2;
+													    //expect(value).toBe(0.3);           This won't work because of rounding error
+													    expect(value).toBeCloseTo(0.3); // This works.
+													  });
+													  ```
+													- What is floating point numbers
+														- Decimals aren't exact numbers because they're made up of binary
+														  ```javascript
+														  let number = 0.1 + 0.2;
+														  
+														  // number = 0.30000004
+														  ```
+											- `toMatch` 
+											  collapsed:: true
+											  Strings checked against ((6345ae08-b3a7-40fb-bd6a-35c0918159e5))
+												- Example
+												  ```javascript
+												  test('there is no I in team', () => {
+												    expect('team').not.toMatch(/I/);
+												  });
 												  
-												  describe("Modal", () => {
-												    const searchResults = exampleData;
-												  
-												    it(`renders on the homepage`, () => {
-												      render(
-												        <StateContextProvider
-												          value={{
-												            searchResults,
-												            setSearchResults: jest.fn(),
-												            isOpen: true,
-												            setIsOpen: jest.fn(),
-												            modalIndex: 0,
-												            setModalIndex: jest.fn(),
-												          }}
-												        >
-												          <Modal />
-												        </StateContextProvider>
-												      );
-												      const actual = screen.getByTestId("Modal");
-												      expect(actual).toBeInTheDocument();
-												    });
+												  test('but there is a "stop" in Christoph', () => {
+												    expect('Christoph').toMatch(/stop/);
+												  });
 												  ```
-											- 2 - using `jest.mock`
+											- `toContain`
 											  collapsed:: true
-												- ```tsx
-												  import React from "react";
-												  import { render, fireEvent, screen } from "@testing-library/react";
-												  import { useStateContext } from "../context/StateContextProvider";
-												  import MyModal from "./MyModal";
+											  Check if an array or iterable contains a particular item
+												- Example
+												  ```javascript
+												  const shoppingList = [
+												    'diapers',
+												    'kleenex',
+												    'trash bags',
+												    'paper towels',
+												    'milk',
+												  ];
 												  
-												  jest.mock("../context/StateContextProvider", () => ({
-												    useStateContext: jest.fn().mockReturnValue({
-												      searchResults: {
-												        articles: [
-												          {
-												            title: "Sample title",
-												            content: "Sample content",
-												            url: "https://sample.url",
-												          },
-												        ],
-												      },
-												      setSearchResults: jest.fn(),
-												      isOpen: true,
-												      setIsOpen: jest.fn(),
-												      modalIndex: 0,
-												      setModalIndex: jest.fn(),
-												    }),
-												  }));
+												  test('the shopping list has milk on it', () => {
+												    expect(shoppingList).toContain('milk');
+												    expect(new Set(shoppingList)).toContain('milk');
+												  });
+												  ```
+											- Exceptions
+											  collapsed:: true
+												- If you want to test whether a particular function throws an error when it's called, use  `toThrow` .
+												- Example
+												  ```javascript
+												  function compileAndroidCode() {
+												    throw new Error('you are using the wrong JDK!');
+												  }
 												  
-												  describe("MyModal", () => {
-												    it("renders correctly and closes the modal on clicking the close button", () => {
-												      render(<MyModal />);
+												  test('compiling android goes as expected', () => {
+												    expect(() => compileAndroidCode()).toThrow();
+												    expect(() => compileAndroidCode()).toThrow(Error);
 												  
-												      expect(screen.getByTestId("Modal")).toBeInTheDocument();
-												      expect(screen.getByText("Sample title")).toBeInTheDocument();
-												      expect(screen.getByText("Sample content")).toBeInTheDocument();
+												    // You can also use a string that must be contained in the error message or a regexp
+												    expect(() => compileAndroidCode()).toThrow('you are using the wrong JDK');
+												    expect(() => compileAndroidCode()).toThrow(/JDK/);
 												  
-												      const closeModalButton = screen.getByText("Read Article");
-												      fireEvent.click(closeModalButton);
-												      expect(useStateContext().setIsOpen).toHaveBeenCalledWith(false);
+												    // Or you can match an exact error mesage using a regexp like below
+												    expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK$/); // Test fails
+												    expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK!$/); // Test pass
+												  });
+												  ```
+											- [Learning Resources]
+												- https://jestjs.io/docs/expect
+										- [`test` is an alias of `it`](https://jestjs.io/docs/api#testname-fn-timeout)
+										- How to use with ((63e79f3b-c770-4212-be0c-3ba1860ea88a))
+										  id:: 63e4cd45-0139-423a-aa13-050a0dc7f64c
+											- Examples
+												- 1 - using `render(<StateContextProvider value={{`
+												  collapsed:: true
+													- ```tsx
+													  import { render, screen, fireEvent } from "@testing-library/react";
+													  import { it, expect, describe } from "@jest/globals";
+													  import {
+													    exampleData,
+													    StateContextProvider,
+													    useStateContext,
+													  } from "../context/StateContextProvider";
+													  import Modal from "../components/Modal";
+													  
+													  describe("Modal", () => {
+													    const searchResults = exampleData;
+													  
+													    it(`renders on the homepage`, () => {
+													      render(
+													        <StateContextProvider
+													          value={{
+													            searchResults,
+													            setSearchResults: jest.fn(),
+													            isOpen: true,
+													            setIsOpen: jest.fn(),
+													            modalIndex: 0,
+													            setModalIndex: jest.fn(),
+													          }}
+													        >
+													          <Modal />
+													        </StateContextProvider>
+													      );
+													      const actual = screen.getByTestId("Modal");
+													      expect(actual).toBeInTheDocument();
+													    });
+													  ```
+												- 2 - using `jest.mock`
+												  collapsed:: true
+													- ```tsx
+													  import React from "react";
+													  import { render, fireEvent, screen } from "@testing-library/react";
+													  import { useStateContext } from "../context/StateContextProvider";
+													  import MyModal from "./MyModal";
+													  
+													  jest.mock("../context/StateContextProvider", () => ({
+													    useStateContext: jest.fn().mockReturnValue({
+													      searchResults: {
+													        articles: [
+													          {
+													            title: "Sample title",
+													            content: "Sample content",
+													            url: "https://sample.url",
+													          },
+													        ],
+													      },
+													      setSearchResults: jest.fn(),
+													      isOpen: true,
+													      setIsOpen: jest.fn(),
+													      modalIndex: 0,
+													      setModalIndex: jest.fn(),
+													    }),
+													  }));
+													  
+													  describe("MyModal", () => {
+													    it("renders correctly and closes the modal on clicking the close button", () => {
+													      render(<MyModal />);
+													  
+													      expect(screen.getByTestId("Modal")).toBeInTheDocument();
+													      expect(screen.getByText("Sample title")).toBeInTheDocument();
+													      expect(screen.getByText("Sample content")).toBeInTheDocument();
+													  
+													      const closeModalButton = screen.getByText("Read Article");
+													      fireEvent.click(closeModalButton);
+													      expect(useStateContext().setIsOpen).toHaveBeenCalledWith(false);
+													    });
+													  });
+													  ```
+										- Reference
+											- [`describe(name, fn)`](https://jestjs.io/docs/api#describename-fn)
+											  collapsed:: true
+											  Creates a block that groups together several related tests
+												- Example
+												  ```javascript
+												  describe('my beverage', () => {
+												    test('is delicious', () => {
+												      expect(myBeverage.delicious).toBeTruthy();
+												    });
+												  
+												    test('is not sour', () => {
+												      expect(myBeverage.sour).toBeFalsy();
 												    });
 												  });
 												  ```
-									- Reference
-										- [`describe(name, fn)`](https://jestjs.io/docs/api#describename-fn)
-										  collapsed:: true
-										  Creates a block that groups together several related tests
-											- Example
-											  ```javascript
-											  describe('my beverage', () => {
-											    test('is delicious', () => {
-											      expect(myBeverage.delicious).toBeTruthy();
-											    });
-											  
-											    test('is not sour', () => {
-											      expect(myBeverage.sour).toBeFalsy();
-											    });
-											  });
-											  ```
-											- Note: make sure to import it from via `@jest/globals` if using with react-testing-library, because their version of Jest doesn't have describe [[Nov 24th, 2022]]
-										- `beforeEach`
-										  id:: 636274fb-9051-4d4c-ad61-f30b71d5e5cb
-										  collapsed:: true
-											- https://stackoverflow.com/questions/57497799/what-is-the-purpose-of-beforeeach-global-in-jest
-								- Related:
-									- ((6374d432-af66-4f00-9de3-39fc99e03c51))
-									- ((63e2667d-bffb-447c-9442-5802f293903d))
-									- ((635fa5a5-76d1-4894-a44b-c3fdcfd9cd48))
-							- [supertest](https://www.npmjs.com/package/supertest)
-							  id:: 636275a3-1d1a-4c08-84ea-128a21fd3907
-							  collapsed:: true
-							  HTTP assertions made easy via [superagent](http://github.com/visionmedia/superagent).
-								- The motivation with this module is to provide a high-level abstraction for testing HTTP, while still allowing you to drop down to the [lower-level API](https://visionmedia.github.io/superagent/) provided by superagent.
-								- https://github.com/visionmedia/supertest
-								- https://github.com/visionmedia/superagent
-							- [nodemon](https://www.npmjs.com/package/nodemon)
-							  id:: 634ff3c9-3f9a-4414-9c7d-0f20fa8ab3ae
-							  auto restarts the server whenever you make changes to the API. Instead of having to close web server and start it every time to see changes
-							- ((634bc0c1-71ec-40e0-ba94-bf79e177b591))
-							  handle http requests and send responses
-							- [puppeteer](https://www.npmjs.com/package/puppeteer)
-							  id:: 637920f1-86d3-42b3-9dcd-7fd99ad01f12
-							  collapsed:: true
-							  Browser automation tool using Chromium DevTools
-								- Working example
-									- ```javascript
-									  import puppeteer from 'puppeteer';
-									  
-									  (async () => {
-									  // const browser = await puppeteer.launch();
-									  	const browser = await puppeteer.launch({
-									  		headless: true,
-									  		args: [
-									  		'--no-sandbox',
-									  		'--disable-setuid-sandbox',
-									  		]
-									  	});
-									    const page = await browser.newPage();
-									  
-									    await page.goto('[404  |  Page Not Found  |  Google Developers](https://developers.google.com/web/');)
-									  
-									    // Type into search box.
-									    await page.type('.devsite-search-field', 'Headless Chrome');
-									  
-									    // Wait for suggest overlay to appear and click "show all results".
-									    const allResultsSelector = '.devsite-suggest-all-results';
-									    await page.waitForSelector(allResultsSelector);
-									    await page.click(allResultsSelector);
-									  
-									    // Wait for the results page to load and display the results.
-									    const resultsSelector = '.gsc-results .gs-title';
-									    await page.waitForSelector(resultsSelector);
-									  
-									    // Extract the results from the page.
-									    const links = await page.evaluate(resultsSelector => {
-									      return [...document.querySelectorAll(resultsSelector)].map(anchor => {
-									        const title = anchor.textContent.split('|')[0].trim();
-									        return `${title} - ${anchor.href}`;
-									      });
-									    }, resultsSelector);
-									  
-									    // Print all the files.
-									    console.log(links.join('\n'));
-									  
-									    await browser.close();
-									  })();
-									  ```
-								- Testing sent HTTP headers
-									- ```javascript
-									  await page.goto('[404 Not Found](https://www.httpbin.org/headers');) 
-									  const pageContent = await page.$eval('pre', node => JSON.parse(node.innerText)); 
-									  const userAgent = await page.evaluate(() => navigator.userAgent); 
-									  console.log({ headers: pageContent.headers, userAgent }); 
-									  ```
-								- Documentation
-									- Commonly used
-										- `console.log(await page.content());` = Print HTML
-										-
-							- [morgan](https://www.npmjs.com/package/morgan)
-							  id:: 63512137-0fc0-4ea9-897e-cb92d4ffa8af
-							  collapsed:: true
-							  HTTP request logger middleware
-								- Related: ((635120f8-f9c9-4815-b2ad-f3b8dca80405))
-							- [npkill](https://www.npmjs.com/package/npkill)
-							  id:: 6385d52b-dfbb-4c14-8d09-e05cd3f1ff7e
-							  Easily delete large `node_modules` directories on your device
-							- [bcrypt - npm](https://www.npmjs.com/package/bcrypt)
-							  id:: 63888994-6553-4a68-97ab-ffd052af43f6
-							  Hash passwords
-						- Other packages
-							- ((63a048ff-b45a-4636-af0a-339ae76bbf8f))
-							  id:: 63baa386-f83a-429b-9d3b-402f31139e5d
-							  collapsed:: true
-							- [tailwindcss](https://www.npmjs.com/package/tailwindcss)
-							  collapsed:: true
-								- Pros/Cons
-									- Pros
-										- Instead of writing CSS, you add any number of predefined CSS classes to your HTML
-										- [Separation of concerns is less important than dependency direction](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
-									- Cons
-								- https://github.com/tailwindlabs/tailwindcss
-								- https://tailwindcss.com/
-								-
-						- Related: ((64024e3e-17bd-46f7-b70d-41a02bf20981))
-					- Related: ((63dbdafa-6dcc-450f-8253-0fa668ed2b8a))
-				- _Node.js-based frameworks_
-				  collapsed:: true
-					- [Express.js](https://www.expressjs.org/)
-					  id:: 634bc0c1-71ec-40e0-ba94-bf79e177b591
+												- Note: make sure to import it from via `@jest/globals` if using with react-testing-library, because their version of Jest doesn't have describe [[Nov 24th, 2022]]
+											- `beforeEach`
+											  id:: 636274fb-9051-4d4c-ad61-f30b71d5e5cb
+											  collapsed:: true
+												- https://stackoverflow.com/questions/57497799/what-is-the-purpose-of-beforeeach-global-in-jest
+									- Related:
+										- ((6374d432-af66-4f00-9de3-39fc99e03c51))
+										- ((63e2667d-bffb-447c-9442-5802f293903d))
+										- ((635fa5a5-76d1-4894-a44b-c3fdcfd9cd48))
+								- [supertest](https://www.npmjs.com/package/supertest)
+								  id:: 636275a3-1d1a-4c08-84ea-128a21fd3907
+								  collapsed:: true
+								  HTTP assertions made easy via [superagent](http://github.com/visionmedia/superagent).
+									- The motivation with this module is to provide a high-level abstraction for testing HTTP, while still allowing you to drop down to the [lower-level API](https://visionmedia.github.io/superagent/) provided by superagent.
+									- https://github.com/visionmedia/supertest
+									- https://github.com/visionmedia/superagent
+								- [nodemon](https://www.npmjs.com/package/nodemon)
+								  id:: 634ff3c9-3f9a-4414-9c7d-0f20fa8ab3ae
+								  auto restarts the server whenever you make changes to the API. Instead of having to close web server and start it every time to see changes
+								- ((634bc0c1-71ec-40e0-ba94-bf79e177b591))
+								  handle http requests and send responses
+								- [puppeteer](https://www.npmjs.com/package/puppeteer)
+								  id:: 637920f1-86d3-42b3-9dcd-7fd99ad01f12
+								  collapsed:: true
+								  Browser automation tool using Chromium DevTools
+									- Working example
+										- ```javascript
+										  import puppeteer from 'puppeteer';
+										  
+										  (async () => {
+										  // const browser = await puppeteer.launch();
+										  	const browser = await puppeteer.launch({
+										  		headless: true,
+										  		args: [
+										  		'--no-sandbox',
+										  		'--disable-setuid-sandbox',
+										  		]
+										  	});
+										    const page = await browser.newPage();
+										  
+										    await page.goto('[404  |  Page Not Found  |  Google Developers](https://developers.google.com/web/');)
+										  
+										    // Type into search box.
+										    await page.type('.devsite-search-field', 'Headless Chrome');
+										  
+										    // Wait for suggest overlay to appear and click "show all results".
+										    const allResultsSelector = '.devsite-suggest-all-results';
+										    await page.waitForSelector(allResultsSelector);
+										    await page.click(allResultsSelector);
+										  
+										    // Wait for the results page to load and display the results.
+										    const resultsSelector = '.gsc-results .gs-title';
+										    await page.waitForSelector(resultsSelector);
+										  
+										    // Extract the results from the page.
+										    const links = await page.evaluate(resultsSelector => {
+										      return [...document.querySelectorAll(resultsSelector)].map(anchor => {
+										        const title = anchor.textContent.split('|')[0].trim();
+										        return `${title} - ${anchor.href}`;
+										      });
+										    }, resultsSelector);
+										  
+										    // Print all the files.
+										    console.log(links.join('\n'));
+										  
+										    await browser.close();
+										  })();
+										  ```
+									- Testing sent HTTP headers
+										- ```javascript
+										  await page.goto('[404 Not Found](https://www.httpbin.org/headers');) 
+										  const pageContent = await page.$eval('pre', node => JSON.parse(node.innerText)); 
+										  const userAgent = await page.evaluate(() => navigator.userAgent); 
+										  console.log({ headers: pageContent.headers, userAgent }); 
+										  ```
+									- Documentation
+										- Commonly used
+											- `console.log(await page.content());` = Print HTML
+											-
+								- [morgan](https://www.npmjs.com/package/morgan)
+								  id:: 63512137-0fc0-4ea9-897e-cb92d4ffa8af
+								  collapsed:: true
+								  HTTP request logger middleware
+									- Related: ((635120f8-f9c9-4815-b2ad-f3b8dca80405))
+								- [npkill](https://www.npmjs.com/package/npkill)
+								  id:: 6385d52b-dfbb-4c14-8d09-e05cd3f1ff7e
+								  Easily delete large `node_modules` directories on your device
+								- [bcrypt - npm](https://www.npmjs.com/package/bcrypt)
+								  id:: 63888994-6553-4a68-97ab-ffd052af43f6
+								  Hash passwords
+							- Other packages
+								- ((63a048ff-b45a-4636-af0a-339ae76bbf8f))
+								  id:: 63baa386-f83a-429b-9d3b-402f31139e5d
+								  collapsed:: true
+								- [tailwindcss](https://www.npmjs.com/package/tailwindcss)
+								  collapsed:: true
+									- Pros/Cons
+										- Pros
+											- Instead of writing CSS, you add any number of predefined CSS classes to your HTML
+											- [Separation of concerns is less important than dependency direction](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
+										- Cons
+									- https://github.com/tailwindlabs/tailwindcss
+									- https://tailwindcss.com/
+									-
+							- Related: ((64024e3e-17bd-46f7-b70d-41a02bf20981))
+						- Related: ((63dbdafa-6dcc-450f-8253-0fa668ed2b8a))
+					- _Node.js-based frameworks_
 					  collapsed:: true
-						- [Express.js](https://expressjs.com/) is still the most popular [Node.js framework](https://snipcart.com/blog/graphql-nodejs-express-tutorial) out there. It's a fast, unopinionated & minimalist web framework. It evolved quickly because it's made simple & straightforward. It's probably the one closer to Node.js' basic ideas of a lightweight system with a modularity approach.
-						- Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
-						- Documentation
-							- Installation
-							  id:: 634eb68e-0e05-471b-944a-7c6dec69331d
-							  ```javascript
-							  npm install express
-							  ```
-							- [app.use](https://expressjs.com/en/4x/api.html#app.use)
-							  id:: 63512738-c687-4161-b976-4b66f7a9791d
-							- [Routing](https://expressjs.com/en/guide/routing.html)
-							  id:: 635161eb-4317-4c8a-a2e6-b137445663a3
-						- [Learning Resources]
-							- ((63ea1938-5a8e-4b77-a3d5-4a72dc88ba02))
-						- Related: ((c901c50e-8262-4a97-b480-1b78b0bb639d))
-					- _ExpressJS-based frameworks_
-						- Sails.js
+						- [Express.js](https://www.expressjs.org/)
+						  id:: 634bc0c1-71ec-40e0-ba94-bf79e177b591
 						  collapsed:: true
-							- is a real-time, MVC framework. It was designed to emulate the MVC pattern of Ruby on Rails but with support for modern apps requirements. It does this through data-driven APIs with a scalable, service-oriented architecture.
-						- Koa.js
+							- [Express.js](https://expressjs.com/) is still the most popular [Node.js framework](https://snipcart.com/blog/graphql-nodejs-express-tutorial) out there. It's a fast, unopinionated & minimalist web framework. It evolved quickly because it's made simple & straightforward. It's probably the one closer to Node.js' basic ideas of a lightweight system with a modularity approach.
+							- Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
+							- Documentation
+								- Installation
+								  id:: 634eb68e-0e05-471b-944a-7c6dec69331d
+								  ```javascript
+								  npm install express
+								  ```
+								- [app.use](https://expressjs.com/en/4x/api.html#app.use)
+								  id:: 63512738-c687-4161-b976-4b66f7a9791d
+								- [Routing](https://expressjs.com/en/guide/routing.html)
+								  id:: 635161eb-4317-4c8a-a2e6-b137445663a3
+							- [Learning Resources]
+								- ((63ea1938-5a8e-4b77-a3d5-4a72dc88ba02))
+							- Related: ((c901c50e-8262-4a97-b480-1b78b0bb639d))
+						- _ExpressJS-based frameworks_
+							- Sails.js
+							  collapsed:: true
+								- is a real-time, MVC framework. It was designed to emulate the MVC pattern of Ruby on Rails but with support for modern apps requirements. It does this through data-driven APIs with a scalable, service-oriented architecture.
+							- Koa.js
+							  collapsed:: true
+								- was crafted by the team behind Express. Marketed as the "next generation web framework for Node.js," it's a smaller, more expressive, and more robust foundation for web applications and APIs.
+						- Meteor
 						  collapsed:: true
-							- was crafted by the team behind Express. Marketed as the "next generation web framework for Node.js," it's a smaller, more expressive, and more robust foundation for web applications and APIs.
-					- Meteor
-					  collapsed:: true
-						- [https://www.meteor.com/](https://www.meteor.com/)
-					- There are many more to explore, so I'll drop a few real quick: Nest.js, Hapi.js, Socket.io, Mean.js, Total.js, Derby.js & Keystone.js.
-				- [Learning Resources]
-					- ((634d2517-30eb-4bbf-b214-abae3ac1b92d))
-			- [Deno](https://deno.land/)
-			  id:: 63baa386-9946-4219-9c0b-e727cadf287d
-			  collapsed:: true
-				- Pros
-					- Unlike ((629ccb26-3115-4d41-b4db-a686fe51a4a2)) it's memory-safe (built in Rust + TypeScript vs C++)
-				- https://news.ycombinator.com/item?id=26620116
-				- https://github.com/denoland
-				- Background
-					- Made by creator of Node.js
-					- Also built on V8 like Node
-				- [Deno in 100 Seconds - YouTube](https://youtu.be/F0G9lZ7gecE)
-					- Deno is aJavaScript runtime, similar to Node.js. Use it to develop secure server-side apps with built-in TypeScript support, ES modules, and promise-based APIs.
-				- Setup
-					- Deno VSCode extension
-				- [Learning Resources]
-					- [You don't need Node to use NPM packages - YouTube](https://youtu.be/cv7ci6GT5Hg)
+							- [https://www.meteor.com/](https://www.meteor.com/)
+						- There are many more to explore, so I'll drop a few real quick: Nest.js, Hapi.js, Socket.io, Mean.js, Total.js, Derby.js & Keystone.js.
+					- [Learning Resources]
+						- ((634d2517-30eb-4bbf-b214-abae3ac1b92d))
+				- [Deno](https://deno.land/)
+				  id:: 63baa386-9946-4219-9c0b-e727cadf287d
+				  collapsed:: true
+					- Pros
+						- Unlike ((629ccb26-3115-4d41-b4db-a686fe51a4a2)) it's memory-safe (built in Rust + TypeScript vs C++)
+					- https://news.ycombinator.com/item?id=26620116
+					- https://github.com/denoland
+					- Background
+						- Made by creator of Node.js
+						- Also built on V8 like Node
+					- [Deno in 100 Seconds - YouTube](https://youtu.be/F0G9lZ7gecE)
+						- Deno is aJavaScript runtime, similar to Node.js. Use it to develop secure server-side apps with built-in TypeScript support, ES modules, and promise-based APIs.
+					- Setup
+						- Deno VSCode extension
+					- [Learning Resources]
+						- [You don't need Node to use NPM packages - YouTube](https://youtu.be/cv7ci6GT5Hg)
+						-
+				- [Bun](https://bun.sh/)
+				- [NestJS](https://nestjs.com/)
+				  collapsed:: true
+					- [NestJS in 100 Seconds - YouTube](https://www.youtube.com/watch?v=0M8AYU_hPas)
+					- [Nest.js Crash Course #1 - Introduction & Setup - YouTube](https://www.youtube.com/watch?v=pcX97ZrTE6M)
 					-
-			- [Bun](https://bun.sh/)
-			- [NestJS](https://nestjs.com/)
-			  collapsed:: true
-				- [NestJS in 100 Seconds - YouTube](https://www.youtube.com/watch?v=0M8AYU_hPas)
-				- [Nest.js Crash Course #1 - Introduction & Setup - YouTube](https://www.youtube.com/watch?v=pcX97ZrTE6M)
-				-
-			- _JavaScript CMS_
-			  id:: 629ccb26-512b-4462-9cb0-4527492e6ddb
-			  collapsed:: true
-				- Ghost
+				- _JavaScript CMS_
+				  id:: 629ccb26-512b-4462-9cb0-4527492e6ddb
 				  collapsed:: true
-					- https://ghost.org/features/
-					- https://github.com/TryGhost/Ghost
-					- Ember.js admin client, Node.js JSON API, Handlebars.js front-end
-				- https://apostrophecms.org/
-				- https://www.contentful.com/
-				- https://cosmicjs.com/
-				- https://prismic.io/
-				- {Archive}
-				  collapsed:: true
-					- https://www.lullabot.com/articles/will-javascript-eat-the-monolithic-cms
-					-
-				- Related: ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
-			- ((629ccb26-3115-4d41-b4db-a686fe51a4a2))-based frameworks
-			  collapsed:: true
-				- [Meteor](https://www.meteor.com/)
-				  collapsed:: true
-					- Meteor with React
-					  https://www.google.com/search?q=meteor+react&ie=utf-8&oe=utf-8&client=firefox-b
-				- [ExpressJS](https://expressjs.com/)
-				  id:: 41be8644-9683-4528-9397-255ceda0f3a8
-				- ((41be8644-9683-4528-9397-255ceda0f3a8))-based frameworks
-					- FeatherJS
+					- Ghost
 					  collapsed:: true
-						- Build prototypes in minutes and production ready real-time apps in days.
-						- Build incredible real-time applications in record time. Feathers is a real-time, micro-service web framework for NodeJS that gives you control over your data via RESTful resources, sockets and flexible plug-ins.
-						- http://feathersjs.com/
-					- SailsJS
+						- https://ghost.org/features/
+						- https://github.com/TryGhost/Ghost
+						- Ember.js admin client, Node.js JSON API, Handlebars.js front-end
+					- https://apostrophecms.org/
+					- https://www.contentful.com/
+					- https://cosmicjs.com/
+					- https://prismic.io/
+					- {Archive}
 					  collapsed:: true
-						- MVC framework for Node.js for building practical, production-ready apps.
-						- Sails.js make it easy to build custom, enterprise-grade Node.js apps. It is designed to mimic the MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with scalable, service-oriented architecture. It's especially good for building chat, realtime dashboards, or multiplayer games.
-						- http://sailsjs.com/
-					- Others
-					  collapsed:: true
-						- https://expressjs.com/en/resources/frameworks.html
-				- Strapi CMS
+						- https://www.lullabot.com/articles/will-javascript-eat-the-monolithic-cms
+						-
+					- Related: ((635fba72-d8b2-4372-b1f9-ce7a107f2df7))
+				- ((629ccb26-3115-4d41-b4db-a686fe51a4a2))-based frameworks
 				  collapsed:: true
-					- Strapi is the most advanced Node.js open-source Content Management Framework to build powerful API with no effort.
-			- [Lit](https://lit.dev/)
-			  collapsed:: true
-				- Polymer abandoned, they recommend Lit instead
-				  collapsed:: true
-					- [Polymer](https://www.polymer-project.org/)
+					- [Meteor](https://www.meteor.com/)
 					  collapsed:: true
+						- Meteor with React
+						  https://www.google.com/search?q=meteor+react&ie=utf-8&oe=utf-8&client=firefox-b
+					- [ExpressJS](https://expressjs.com/)
+					  id:: 41be8644-9683-4528-9397-255ceda0f3a8
+					- ((41be8644-9683-4528-9397-255ceda0f3a8))-based frameworks
+						- FeatherJS
+						  collapsed:: true
+							- Build prototypes in minutes and production ready real-time apps in days.
+							- Build incredible real-time applications in record time. Feathers is a real-time, micro-service web framework for NodeJS that gives you control over your data via RESTful resources, sockets and flexible plug-ins.
+							- http://feathersjs.com/
+						- SailsJS
+						  collapsed:: true
+							- MVC framework for Node.js for building practical, production-ready apps.
+							- Sails.js make it easy to build custom, enterprise-grade Node.js apps. It is designed to mimic the MVC pattern of frameworks like Ruby on Rails, but with support for the requirements of modern apps: data-driven APIs with scalable, service-oriented architecture. It's especially good for building chat, realtime dashboards, or multiplayer games.
+							- http://sailsjs.com/
+						- Others
+						  collapsed:: true
+							- https://expressjs.com/en/resources/frameworks.html
+					- Strapi CMS
+					  collapsed:: true
+						- Strapi is the most advanced Node.js open-source Content Management Framework to build powerful API with no effort.
+				- [Lit](https://lit.dev/)
+				  collapsed:: true
+					- Polymer abandoned, they recommend Lit instead
+					  collapsed:: true
+						- [Polymer](https://www.polymer-project.org/)
+						  collapsed:: true
 		- Libraries
 			- Multer is a good package for uploading files eg photos to a backend
 			  id:: 6497eb6b-de77-424c-b138-ec9d3ff79efa
@@ -9837,6 +9838,8 @@
 			  collapsed:: true
 				- [GitHub - goldfire/howler.js: Javascript audio library for the modern web.](https://github.com/goldfire/howler.js)
 				-
+			- [GitHub - clickvote/clickvote: Add upvotes, likes, and reviews to any context ⭐️](https://github.com/clickvote/clickvote)
+			-
 	- Tooling
 	  id:: 63904f3c-e689-458b-a036-672778a7e77c
 	  collapsed:: true
