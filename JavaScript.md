@@ -9712,7 +9712,14 @@
 						- [Express.js](https://www.expressjs.org/)
 						  id:: 634bc0c1-71ec-40e0-ba94-bf79e177b591
 						  collapsed:: true
-							- [Express.js](https://expressjs.com/) is still the most popular [Node.js framework](https://snipcart.com/blog/graphql-nodejs-express-tutorial) out there. It's a fast, unopinionated & minimalist web framework. It evolved quickly because it's made simple & straightforward. It's probably the one closer to Node.js' basic ideas of a lightweight system with a modularity approach.
+							- Pros/Cons
+								- Pros
+									-
+								- Cons
+									- [2023 discussion](https://news.ycombinator.com/item?id=38059004) - it's had little feature updates in recent years, ((653e7fcc-86aa-44ca-94e6-5f4bd8fb67a7)) especially is better
+								- Unclear
+								- Comparisons
+							- It's a fast, unopinionated & minimalist web framework. It evolved quickly because it's made simple & straightforward. It's probably the one closer to Node.js' basic ideas of a lightweight system with a modularity approach.
 							- Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.
 							- Documentation
 								- Installation
@@ -9734,6 +9741,10 @@
 							- Koa.js
 							  collapsed:: true
 								- was crafted by the team behind Express. Marketed as the "next generation web framework for Node.js," it's a smaller, more expressive, and more robust foundation for web applications and APIs.
+						- [Fastify](https://fastify.dev/)
+						  id:: 653e7fcc-86aa-44ca-94e6-5f4bd8fb67a7
+						- [Hono](https://github.com/honojs/hono)
+						- Koa
 						- Meteor
 						  collapsed:: true
 							- [https://www.meteor.com/](https://www.meteor.com/)
