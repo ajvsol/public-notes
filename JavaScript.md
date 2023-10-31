@@ -2023,7 +2023,7 @@
 									  id:: 6367af82-3703-4412-acb1-e47347b5b08f
 										- ```javascript
 										  const numbers = [1, 2, 3, 4, 5];
-										  numbers.forEach((number) => {
+										  numbers.forEach(number => {
 										    console.log(`My number: ${number}`);
 										  })
 										  // expected output:
