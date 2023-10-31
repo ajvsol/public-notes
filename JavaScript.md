@@ -427,8 +427,8 @@
 					- [`encodeURIComponent()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent)
 				- Fundamental objects
 					- [`Object`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
-					  collapsed:: true
 					  id:: 63f33e7c-e71b-4d14-b352-7b9fe2d600b1
+					  collapsed:: true
 						- Meta
 							- ((63679853-975f-4456-b131-53731a001078)) : ((63910f56-dc95-4d5c-a222-f623d8081b4e))
 							- Dot notation vs Bracket notation
