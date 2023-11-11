@@ -5852,6 +5852,16 @@
 		- Sorted by priority
 			- ((654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd))
 		- Sorted by difficulty
+			- Beginner-Advanced
+				- [JavaScript 2022 | Pluralsight path](https://app.pluralsight.com/paths/skills/javascript-2022)
+				  collapsed:: true
+					- Novice
+						- [JavaScript: The Big Picture](https://app.pluralsight.com/library/courses/javascript-big-picture)
+					- Entry-level
+						- [JavaScript Fundamentals](https://app.pluralsight.com/library/courses/fundamentals-javascript)
+						- [Debugging JavaScript Applications](https://app.pluralsight.com/library/courses/javascript-debugging-applications)
+					- Practitioner
+						-
 			- _Beginner_
 			  id:: 629d542c-4f95-4966-84fe-a2170d83484d
 				- ((646349ac-4774-4376-b96f-863fd43d5b4d))
@@ -7537,6 +7547,10 @@
 				  id:: 654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd
 					- ## Course Introduction
 					- ## Understanding JavaScript Prototypes
+					- ## Using JavaScript Constructor Functions
+					- ## Inheritance with Constructor Functions and Prototypes
+					- ## Using JavaScript Classes
+					- ## Inheritance with JavaScript Classes
 				- [Functional Programming Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-functional-programming-concepts)
 	- Assorted topics
 	  collapsed:: true
