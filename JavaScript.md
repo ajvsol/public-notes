@@ -5849,1298 +5849,1316 @@
 	- Learning resource sorted by priority
 	  id:: 629d4e63-367b-48ab-a942-170b827a143f
 	  collapsed:: true
-		- _Beginner_
-		  id:: 629d542c-4f95-4966-84fe-a2170d83484d
-			- ((646349ac-4774-4376-b96f-863fd43d5b4d))
-			  collapsed:: true
-				- {{embed ((646349ac-4774-4376-b96f-863fd43d5b4d))}}
-			- Watch and Code's Programming Foundations (JavaScript beginner course by Gordon Zhu)
-			  #A005 ~/Documents/MUSEUM/Programming/Anki1.ods / AKA practical-javascript2
-			  collapsed:: true
-			  id:: 629ccb27-9bb8-46a3-8ae8-33d6da62dbcc
-				- Successor to [Watch and Code's Practical JavaScript](((629ccb27-6855-4209-8a01-0e0b2afd59e8)))
-					- OLD: Watch and Code's Practical JavaScript (11 hr JS course by Gordon Zhu)
-					  id:: 629ccb27-6855-4209-8a01-0e0b2afd59e8
-					  collapsed:: true
-					  #A004
-						- Highly recommended on /r/learnprogramming
-						- Old data store
-						  https://plnkr.co/edit/gOUroVG2g2Z16fjnJK0Q?preview
-						- Note: replaced by [Watch and Code's Programming Foundations](((629ccb27-9bb8-46a3-8ae8-33d6da62dbcc)))
-						- Screen setup for learning - 3 tiles via Vivaldi (Dynalist, W&C, Plunker
+		- Sorted by priority
+			- ((654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd))
+		- Sorted by difficulty
+			- _Beginner_
+			  id:: 629d542c-4f95-4966-84fe-a2170d83484d
+				- ((646349ac-4774-4376-b96f-863fd43d5b4d))
+				  collapsed:: true
+					- {{embed ((646349ac-4774-4376-b96f-863fd43d5b4d))}}
+				- Watch and Code's Programming Foundations (JavaScript beginner course by Gordon Zhu)
+				  #A005 ~/Documents/MUSEUM/Programming/Anki1.ods / AKA practical-javascript2
+				  collapsed:: true
+				  id:: 629ccb27-9bb8-46a3-8ae8-33d6da62dbcc
+					- Successor to [Watch and Code's Practical JavaScript](((629ccb27-6855-4209-8a01-0e0b2afd59e8)))
+						- OLD: Watch and Code's Practical JavaScript (11 hr JS course by Gordon Zhu)
+						  id:: 629ccb27-6855-4209-8a01-0e0b2afd59e8
 						  collapsed:: true
-							- Vivaldi
-							  https://i.imgur.com/80A1rk6.png
-							- Firefox
-							  https://i.imgur.com/aULh5Fr.png
-							- [Plunker](((629ccb26-b915-4995-b035-f7960ee4b57e)))
-						- Facebook group
-						  https://www.facebook.com/groups/514043678767094/
-						- _Modules_
-							- Introduction
+						  #A004
+							- Highly recommended on /r/learnprogramming
+							- Old data store
+							  https://plnkr.co/edit/gOUroVG2g2Z16fjnJK0Q?preview
+							- Note: replaced by [Watch and Code's Programming Foundations](((629ccb27-9bb8-46a3-8ae8-33d6da62dbcc)))
+							- Screen setup for learning - 3 tiles via Vivaldi (Dynalist, W&C, Plunker
 							  collapsed:: true
-								- Everything is a todo list-type structure e.g. search results show you a list of data, tweet timeline is a list of tweets, chat apps are a list of messages
-								-
-								- The program is broken up into three stages. Each stage is drastically different because as you get better, you’ll need to do different things to improve. If you keep doing the same thing, you’ll stagnate.
+								- Vivaldi
+								  https://i.imgur.com/80A1rk6.png
+								- Firefox
+								  https://i.imgur.com/aULh5Fr.png
+								- [Plunker](((629ccb26-b915-4995-b035-f7960ee4b57e)))
+							- Facebook group
+							  https://www.facebook.com/groups/514043678767094/
+							- _Modules_
+								- Introduction
 								  collapsed:: true
-									- The brief beginning stage (essentially Practical JavaScript) is an introduction to the mechanics of programming. This is a short but important part of Watch and Code as it sets the foundation for everything that comes next.
-									- The middle stage teaches you how to read code so that you can make sense of existing programs. This is the bulk of the Watch and Code experience and the most important part by a wide margin.
-									- In the later stage, you’ll learn through contributing to existing software projects. Your role will change from a consumer (someone that just reads code) to a producer (someone that writes code).
-								- Office hours AMA
-								  collapsed:: true
-									- The best way to get help if you get stuck is to ask your question during our weekly live office hours, which occur every Monday at 6PM PST. To register for office hours, join the [Watch and Code Facebook group](https://www.facebook.com/groups/514043678767094/) and then you'll find detailed information in the events section.
-									- If attending office hours is not an option, you can [submit a question using this form](https://github.com/gordonmzhu/questions/issues/new?template=Custom.md). There's a link to this form below every lesson, so it'll always be there if you get stuck.
-							- Module 1: Array
-								- _Requirements_
-								  collapsed:: true
-									- It should have a place to store to-dos
-										- `var todos = ['item 1', 'item 2', 'item 3']`
-											- ie brackets [ ]
-										- You can then later call this variable by simply typing `todos`
-									- It should have a place to display to-dos
-										- console.log('My Todos:',todos)
-										- _Prints: _ `My Todos: ['item 1', 'item 2', 'item 3']`
-									- It should have a place to add new to-dos
-										- `todos.push('item 4')`
-											- ie parentheses ( )
-										- Now `todos` shows `['item 1', 'item 2', 'item 3', 'item 4']`
-									- It should have a place to change to-dos
-										- `todos[0]` pulls `'item 1'`
-										- `todos[0] = 'item 1 updated'` makes it now `'item 1 updated'`
-									- It should have a place to delete to-dos
-										- `todos.splice(0, 1)`
-										- `0` is for what position to start deleting items
-										- `1` is for how many items to delete
-								- Array = list
-							- Module 2: Functions
-							  collapsed:: true
-								- _Intro_
-								  collapsed:: true
-									- Functions are like recipes - A series of stored steps grouped under a single name, which is performed every time the function is called
-									- They are structured like so
-									  `function makeTurkeySandwch() {
-									   step1;
-									   step2;
-									  }`
-									- Call it like `makeTurkeySandwich()`
-								- Customising Functions
-								  collapsed:: true
-									- Rather than making one function for every possibility, you can instead use the parameter `()` of your function - which can either be a variable or just a string
-									- () is called a parameter when creating your function, and it's called an argument when calling your function
-									- Example with variable
-									  `var filling = ['mayonaise', 'ketchup']
-									  
-									  function makeSandwichWith(filling) {
-									   step1;
-									   step2 add filling;
-									  }`
-									  
-									  Calling it with:
-									  `makeSandwichWith(ketchup)`
-									- Example with string
-									  `function makeSandwichWith(filling) {
-									   step1;
-									   step2 add filling;
-									  }`
-									  
-									  Calling it with:
-									  `makeSandwichWith('ketchup')`
-								- _Requirements_
-									- `var todos = ['item 1', 'item 2', 'item 3'];`
-									- It should have a function to display to-dos
+									- Everything is a todo list-type structure e.g. search results show you a list of data, tweet timeline is a list of tweets, chat apps are a list of messages
+									-
+									- The program is broken up into three stages. Each stage is drastically different because as you get better, you’ll need to do different things to improve. If you keep doing the same thing, you’ll stagnate.
 									  collapsed:: true
-										- Example
-										  `var todos = ['item 1', 'item 2', item 3']
-										  
-										  function displayTodos() {
-										   console.log('My todos:', todos);
+										- The brief beginning stage (essentially Practical JavaScript) is an introduction to the mechanics of programming. This is a short but important part of Watch and Code as it sets the foundation for everything that comes next.
+										- The middle stage teaches you how to read code so that you can make sense of existing programs. This is the bulk of the Watch and Code experience and the most important part by a wide margin.
+										- In the later stage, you’ll learn through contributing to existing software projects. Your role will change from a consumer (someone that just reads code) to a producer (someone that writes code).
+									- Office hours AMA
+									  collapsed:: true
+										- The best way to get help if you get stuck is to ask your question during our weekly live office hours, which occur every Monday at 6PM PST. To register for office hours, join the [Watch and Code Facebook group](https://www.facebook.com/groups/514043678767094/) and then you'll find detailed information in the events section.
+										- If attending office hours is not an option, you can [submit a question using this form](https://github.com/gordonmzhu/questions/issues/new?template=Custom.md). There's a link to this form below every lesson, so it'll always be there if you get stuck.
+								- Module 1: Array
+									- _Requirements_
+									  collapsed:: true
+										- It should have a place to store to-dos
+											- `var todos = ['item 1', 'item 2', 'item 3']`
+												- ie brackets [ ]
+											- You can then later call this variable by simply typing `todos`
+										- It should have a place to display to-dos
+											- console.log('My Todos:',todos)
+											- _Prints: _ `My Todos: ['item 1', 'item 2', 'item 3']`
+										- It should have a place to add new to-dos
+											- `todos.push('item 4')`
+												- ie parentheses ( )
+											- Now `todos` shows `['item 1', 'item 2', 'item 3', 'item 4']`
+										- It should have a place to change to-dos
+											- `todos[0]` pulls `'item 1'`
+											- `todos[0] = 'item 1 updated'` makes it now `'item 1 updated'`
+										- It should have a place to delete to-dos
+											- `todos.splice(0, 1)`
+											- `0` is for what position to start deleting items
+											- `1` is for how many items to delete
+									- Array = list
+								- Module 2: Functions
+								  collapsed:: true
+									- _Intro_
+									  collapsed:: true
+										- Functions are like recipes - A series of stored steps grouped under a single name, which is performed every time the function is called
+										- They are structured like so
+										  `function makeTurkeySandwch() {
+										   step1;
+										   step2;
 										  }`
-									- It should have a function to add new to-dos
+										- Call it like `makeTurkeySandwich()`
+									- Customising Functions
 									  collapsed:: true
-										- Example
-										  `function addTodo(todo) { // todo is a new variable which your function will take
-										   todos.push(todo); // the parameter of the function uses the variable at this point within the function
-										   displayTodos; // shows your updated todos list after
+										- Rather than making one function for every possibility, you can instead use the parameter `()` of your function - which can either be a variable or just a string
+										- () is called a parameter when creating your function, and it's called an argument when calling your function
+										- Example with variable
+										  `var filling = ['mayonaise', 'ketchup']
+										  
+										  function makeSandwichWith(filling) {
+										   step1;
+										   step2 add filling;
 										  }`
 										  
-										  **Example utilisation:**
-										  `addTodo('some stuff')`
-									- It should have a function to change to-dos
-									  collapsed:: true
-										- Example
-										  `function changeTodo(position, newValue) {
-										   todos[position] = newValue; // choose which todo to update, then the value it should now be. Also note, position starts from 0 not 1
-										   displayTodos(); // displays the todos after you update it
+										  Calling it with:
+										  `makeSandwichWith(ketchup)`
+										- Example with string
+										  `function makeSandwichWith(filling) {
+										   step1;
+										   step2 add filling;
 										  }`
 										  
-										  Example utilisation:
-										  `changeTodo(0, 'changed')` 
-										  // this changes the __first__ item to 'changed'
-										  
-										  Two parameters: position and newValue
-									- It should have a function to delete to-dos
+										  Calling it with:
+										  `makeSandwichWith('ketchup')`
+									- _Requirements_
+										- `var todos = ['item 1', 'item 2', 'item 3'];`
+										- It should have a function to display to-dos
+										  collapsed:: true
+											- Example
+											  `var todos = ['item 1', 'item 2', item 3']
+											  
+											  function displayTodos() {
+											   console.log('My todos:', todos);
+											  }`
+										- It should have a function to add new to-dos
+										  collapsed:: true
+											- Example
+											  `function addTodo(todo) { // todo is a new variable which your function will take
+											   todos.push(todo); // the parameter of the function uses the variable at this point within the function
+											   displayTodos; // shows your updated todos list after
+											  }`
+											  
+											  **Example utilisation:**
+											  `addTodo('some stuff')`
+										- It should have a function to change to-dos
+										  collapsed:: true
+											- Example
+											  `function changeTodo(position, newValue) {
+											   todos[position] = newValue; // choose which todo to update, then the value it should now be. Also note, position starts from 0 not 1
+											   displayTodos(); // displays the todos after you update it
+											  }`
+											  
+											  Example utilisation:
+											  `changeTodo(0, 'changed')` 
+											  // this changes the __first__ item to 'changed'
+											  
+											  Two parameters: position and newValue
+										- It should have a function to delete to-dos
+										  collapsed:: true
+											- Example
+											  `function deleteTodo(position) {
+											    todos.splice(position, 1); // position and 1 for number of items to delete
+											    displayTodos();
+											   }
+											   `
+								- Interlude - Functions and variables (just discusses scope)
+								- Module 3: Objects
+								  collapsed:: true
+									- _What is an object_
 									  collapsed:: true
-										- Example
-										  `function deleteTodo(position) {
-										    todos.splice(position, 1); // position and 1 for number of items to delete
-										    displayTodos();
+										- Example object - my computer
+										  `var myComputer = {
+										   operatingSystem: 'Linux',
+										   screenSize: '13 inches',
+										   purchaseYear: 2018
+										  };
+										  `
+										- To see the properties in the object, you can use something like `myComputer.screenSize`
+									- _Objects and functions_
+									  collapsed:: true
+										- Having a function as a property of an object is AKA a method
+										- Example of an object which contains a function that can be used to reference the object itself
+										  `var gordon = {
+										   name: 'Gordon'
+										   sayName: function() {
+										    console.log(this); // 'this' is a JavaScript tool to reference the object itself 
 										   }
-										   `
-							- Interlude - Functions and variables (just discusses scope)
-							- Module 3: Objects
-							  collapsed:: true
-								- _What is an object_
-								  collapsed:: true
-									- Example object - my computer
-									  `var myComputer = {
-									   operatingSystem: 'Linux',
-									   screenSize: '13 inches',
-									   purchaseYear: 2018
-									  };
-									  `
-									- To see the properties in the object, you can use something like `myComputer.screenSize`
-								- _Objects and functions_
-								  collapsed:: true
-									- Having a function as a property of an object is AKA a method
-									- Example of an object which contains a function that can be used to reference the object itself
-									  `var gordon = {
-									   name: 'Gordon'
-									   sayName: function() {
-									    console.log(this); // 'this' is a JavaScript tool to reference the object itself 
-									   }
-									  }
-									  `
-										- To print the object, use `gordon.sayName();`
-									- Example of an object which contains a function that can be used to reference an object property
-									  `var gordon = {
-									   name: 'Gordon'
-									   sayName: function() {
-									    console.log(this.name); // 'this' is a JavaScript tool to reference the object itself 
-									   }
-									  }
-									  `
-										- To print the object property, use `gordon.sayName();`
-									- This function is an _anonymous function_ because it doesn't have a name, it's simply referenced by the property name
-								- _Plunker_
-								  collapsed:: true
-									- https://plnkr.co
-									- Pros/Cons vs console.log
-										- Lets you type in multiple lines at once rather than entering after every line
-										- You can save your work
-									- OR alternative recommended by Tom and used by many: [Visual Studio Code](((629ccb26-e54b-4851-8144-32c05a7e8b5b)))
-									- CTRL+/ to uncomment multiple lines
-								- [online copy]
-								  https://plnkr.co/edit/gOUroVG2g2Z16fjnJK0Q v3.js
-								- [offline backup - 23/10/19]
-								  /home/boss/Documents/MUSEUM/Programming/Practical_JavaScript_course/pjs-v3.js
-								- Objects start and end like this
-								  ```var todoList = {
-								   something: 
-								  };
-								  ```
-								  
-								  OR if it's multiple properties: 
-								  ```var todoList = {
-								   something: ,
-								   something2: 
-								  };
-								  
-								  ```
-								- _It should store the todos array on an object_
-								  collapsed:: true
-									- Example
-									  `var todoList = {
-									    todos: ['item 1', 'item 2', 'item 3'],
-									  };`
-								- _It should have a displayTodos method_
-								  collapsed:: true
-									- Example
-									  `var todoList = {
-									    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
-									    displayTodos: function() {
-									      console.log('My Todos', this.todos);
-									    } 
-									  };
-									  `
-								- _It should have an addTodo method_
-								  collapsed:: true
-									- Example
-									  `var todoList = {
-									    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
-									    displayTodos: function() { // has a displayTodos method
-									      console.log('My Todos', this.todos);
-									    } 
-									    addTodos: function(todo) { // has an addTodo method
-									      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
-									      this.displayTodos(); 
-									    }
-									  };
-									  `
-								- _It should have a changeTodo method_
-								  collapsed:: true
-									- Example
-									  `var todoList = {
-									    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
-									    displayTodos: function() { // has a displayTodos method
-									      console.log('My Todos', this.todos);
-									    },
-									    addTodos: function(todo) { // has an addTodo method
-									      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
-									      this.displayTodos(); 
-									    },
-									    changeTodo: function(position, newValue) { //has a changeTodo method
-									      this.todos[position] = newValue;
-									      this.displayTodos();
-									    }
-									  };
-									  `
-								- _It should have a deleteTodo method_
-								  collapsed:: true
-									- Example
-									  `var todoList = {
-									    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
-									    displayTodos: function() { // has a displayTodos method
-									      console.log('My Todos', this.todos);
-									    },
-									    addTodos: function(todo) { // has an addTodo method
-									      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
-									      this.displayTodos(); 
-									    },
-									    changeTodo: function(position, newValue) { //has a changeTodo method
-									      this.todos[position] = newValue;
-									      this.displayTodos();
-									    },
-									    deleteTodo: function(position) {
-									      this.todos.splice(position, 1);
-									      this.displayTodos();
-									    }
-									  };
-									  `
-								- Final version
-								  collapsed:: true
-									- Example
-									  `var todoList = {
-									    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
-									    displayTodos: function() { // has a displayTodos method
-									      console.log('My Todos', this.todos);
-									    },
-									    addTodos: function(todo) { // has an addTodo method
-									      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
-									      this.displayTodos(); 
-									    },
-									    changeTodo: function(position, newValue) { //has a changeTodo method
-									      this.todos[position] = newValue;
-									      this.displayTodos();
-									    },
-									    deleteTodo: function(position) {
-									      this.todos.splice(position, 1);
-									      this.displayTodos();
-									    }
-									  };
-									  `
-							- Module 4: Booleans
-							  collapsed:: true
-								- [online copy]
-								  https://next.plnkr.co/edit/gOUroVG2g2Z16fjnJK0Q v4.js
-								- [offline backup - ?/10/19]
-								  /home/boss/Documents/MUSEUM/Programming/Practical_JavaScript_course/pjs-v4.js
-								- _todoList.addTodo should add objects_
-								  collapsed:: true
-									- Example
-									  `var todoList = {
-									    todos: [], // removed the simple text array
-									    displayTodos: function() { 
-									      console.log('My Todos', this.todos);
-									    },
-									    addTodo: function(todoText) { // parameter changed to instead reference a new method with this existing method
-									      this.todos.push({ // our todos is no longer an array, instead we’re using an object so we need an additional method for the parameter
-									        todoText: todoText, // 1st one is the static property name, 2nd one is referring to the dynamic parameter for this method (i.e. the argument that you pass when using this method)
-									        completed: false
-									      }); 
-									      this.displayTodos(); 
-									    }
-									  };
-									  `
-									- Example adding to to the list
-									  `todoList.addTodo('this is an object');`
-								- _todoList.changeTodo should change the todoText property_
-								  collapsed:: true
-									- Example
+										  }
+										  `
+											- To print the object, use `gordon.sayName();`
+										- Example of an object which contains a function that can be used to reference an object property
+										  `var gordon = {
+										   name: 'Gordon'
+										   sayName: function() {
+										    console.log(this.name); // 'this' is a JavaScript tool to reference the object itself 
+										   }
+										  }
+										  `
+											- To print the object property, use `gordon.sayName();`
+										- This function is an _anonymous function_ because it doesn't have a name, it's simply referenced by the property name
+									- _Plunker_
+									  collapsed:: true
+										- https://plnkr.co
+										- Pros/Cons vs console.log
+											- Lets you type in multiple lines at once rather than entering after every line
+											- You can save your work
+										- OR alternative recommended by Tom and used by many: [Visual Studio Code](((629ccb26-e54b-4851-8144-32c05a7e8b5b)))
+										- CTRL+/ to uncomment multiple lines
+									- [online copy]
+									  https://plnkr.co/edit/gOUroVG2g2Z16fjnJK0Q v3.js
+									- [offline backup - 23/10/19]
+									  /home/boss/Documents/MUSEUM/Programming/Practical_JavaScript_course/pjs-v3.js
+									- Objects start and end like this
 									  ```var todoList = {
-									    todos: [], 
-									    displayTodos: function() { 
-									      console.log('My Todos', this.todos);
-									    },
-									    addTodos: function(todoText) { 
-									      this.todos.push({ 
-									        todoText: todoText,
-									        completed: false
-									      }); 
-									      this.displayTodos(); 
-									    },
-									    changeTodo: function(position, todoText) { // more descriptive parameter name to use todoText than newValue
-									      // this.todos[position] = newValue; // old version, new version can access the property rather than the whole object
-									      this.todos[position].todoText = todoText
-									      this.displayTodos();
-									    },
-									    deleteTodo: function(position) { 
-									      this.todos.splice(position, 1);
-									      this.displayTodos();
-									    }
+									   something: 
 									  };
 									  ```
-								- _todoList.toggleCompleted should change the completed property_
-								  collapsed:: true
-									- bang operator e.g. !true = false (basically gives the opposite)
-										- Example
-										  `var gordonBoolean = true
-										  gordonBoolean = !gordonBoolean; // you just made it the opposite, so now it's false
-										  console.log(gordonBoolean);
-										  `Output = `false`
-									- Example
-									  `toggleCompleted: function(position) { // parameter is position so you can identify which todo to modify
-									      var todo = this.todos[position];
-									      todo.completed = !todo.completed; // this will flip it to true or false, the opposite of what it is initially
-									      this.displayTodos();
-									    }`
-								- Whole app
-								  collapsed:: true
-									- Code
-									  var todoList = {
-									    todos: [], // removed the simple text array
-									    displayTodos: function() { 
-									      console.log('My Todos', this.todos);
-									    },
-									    addTodos: function(todoText) { 
-									      this.todos.push({ // 'this' is added because you're referring the todoList object that this function is contained within. Swapped todo parameter for a method
-									        todoText: todoText, // 1st one is the static property name, 2nd one is referring to the dynamic parameter for this method
-									        completed: false
-									      }); 
-									      this.displayTodos(); 
-									    },
-									    changeTodo: function(position, todoText) { // more descriptive parameter name to use todoText than newValue
-									      // this.todos[position] = newValue; // old version, new version can access the property rather than the whole object
-									      this.todos[position].todoText = todoText
-									      this.displayTodos();
-									    },
-									    deleteTodo: function(position) { 
-									      this.todos.splice(position, 1);
-									      this.displayTodos();
-									    },
-									    toggleCompleted: function(position) { 
-									      var todo = this.todos[position];
-									      todo.completed = !todo.completed; // this will flip it to true or false, the opposite of what it is initially
-									      this.displayTodos();
-									    }
+									  
+									  OR if it's multiple properties: 
+									  ```var todoList = {
+									   something: ,
+									   something2: 
 									  };
-							- [**<--created Anki cards up to here-->**](((629e07ee-075d-4a72-9bd0-fd63cd35f152)))
-							- **<--submitted to GitHub snippets repo up to here-->**
-							- _Modules I never managed to do_
-							  collapsed:: true
-								- Module 5: Loops
-									- For loops
+									  
+									  ```
+									- _It should store the todos array on an object_
 									  collapsed:: true
-										- Format
-										  `i = 0 // Initialisation
-										  Say "hey" if i < 3 // Condition
-										  Increase i by 1 // Final-expression
-										  
-										  for (initialisation; condition; final-expression) {
-										   console.log("hey");
-										  }
-										  
-										  for (var i = 0; i <3, i = i++) {
-										   console.log("hey");
-										  }
-										  
-										  // i = i + 1
-										  // i++ 
-										  // both the same
+										- Example
+										  `var todoList = {
+										    todos: ['item 1', 'item 2', 'item 3'],
+										  };`
+									- _It should have a displayTodos method_
+									  collapsed:: true
+										- Example
+										  `var todoList = {
+										    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
+										    displayTodos: function() {
+										      console.log('My Todos', this.todos);
+										    } 
+										  };
 										  `
-									- Looping over arrays
-										-
-								- Module 6: Thinking in Code
-								- Interlude - Data types and comparisons
-								- Version 7 - HTML and the DOM
-								- Interlude - Don't wonder about things the debugger can tell you
-								- Version 8 - Getting data from inputs
-								- Version 9 - Escape from the console
-								- Interlude - Functions inside of functions
-								- Version 10 - Click to delete
-								- Version 11 - Destroy all for loops
-								- Interlude - Understanding *this*
-							- Read this multiple times, it's the most important thing
-							  https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603
-						- Need to watch something on Debugging, because watchandcode relying on an old version of Plunker for debugging methodology
-				- My workspace
-					- v0.4 workspace - different browser and outliner
-					  collapsed:: true
-						- _Left screen_
-							- Logseq - showing course notes
-							- _In background_
-								- Librewolf with separate tabs
+									- _It should have an addTodo method_
+									  collapsed:: true
+										- Example
+										  `var todoList = {
+										    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
+										    displayTodos: function() { // has a displayTodos method
+										      console.log('My Todos', this.todos);
+										    } 
+										    addTodos: function(todo) { // has an addTodo method
+										      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
+										      this.displayTodos(); 
+										    }
+										  };
+										  `
+									- _It should have a changeTodo method_
+									  collapsed:: true
+										- Example
+										  `var todoList = {
+										    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
+										    displayTodos: function() { // has a displayTodos method
+										      console.log('My Todos', this.todos);
+										    },
+										    addTodos: function(todo) { // has an addTodo method
+										      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
+										      this.displayTodos(); 
+										    },
+										    changeTodo: function(position, newValue) { //has a changeTodo method
+										      this.todos[position] = newValue;
+										      this.displayTodos();
+										    }
+										  };
+										  `
+									- _It should have a deleteTodo method_
+									  collapsed:: true
+										- Example
+										  `var todoList = {
+										    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
+										    displayTodos: function() { // has a displayTodos method
+										      console.log('My Todos', this.todos);
+										    },
+										    addTodos: function(todo) { // has an addTodo method
+										      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
+										      this.displayTodos(); 
+										    },
+										    changeTodo: function(position, newValue) { //has a changeTodo method
+										      this.todos[position] = newValue;
+										      this.displayTodos();
+										    },
+										    deleteTodo: function(position) {
+										      this.todos.splice(position, 1);
+										      this.displayTodos();
+										    }
+										  };
+										  `
+									- Final version
+									  collapsed:: true
+										- Example
+										  `var todoList = {
+										    todos: ['item 1', 'item 2', 'item 3'], // 1) todos array is in an object
+										    displayTodos: function() { // has a displayTodos method
+										      console.log('My Todos', this.todos);
+										    },
+										    addTodos: function(todo) { // has an addTodo method
+										      this.todos.push(todo); // 'this' is added because you're referring the todoList object that this function is contained within
+										      this.displayTodos(); 
+										    },
+										    changeTodo: function(position, newValue) { //has a changeTodo method
+										      this.todos[position] = newValue;
+										      this.displayTodos();
+										    },
+										    deleteTodo: function(position) {
+										      this.todos.splice(position, 1);
+										      this.displayTodos();
+										    }
+										  };
+										  `
+								- Module 4: Booleans
+								  collapsed:: true
+									- [online copy]
+									  https://next.plnkr.co/edit/gOUroVG2g2Z16fjnJK0Q v4.js
+									- [offline backup - ?/10/19]
+									  /home/boss/Documents/MUSEUM/Programming/Practical_JavaScript_course/pjs-v4.js
+									- _todoList.addTodo should add objects_
+									  collapsed:: true
+										- Example
+										  `var todoList = {
+										    todos: [], // removed the simple text array
+										    displayTodos: function() { 
+										      console.log('My Todos', this.todos);
+										    },
+										    addTodo: function(todoText) { // parameter changed to instead reference a new method with this existing method
+										      this.todos.push({ // our todos is no longer an array, instead we’re using an object so we need an additional method for the parameter
+										        todoText: todoText, // 1st one is the static property name, 2nd one is referring to the dynamic parameter for this method (i.e. the argument that you pass when using this method)
+										        completed: false
+										      }); 
+										      this.displayTodos(); 
+										    }
+										  };
+										  `
+										- Example adding to to the list
+										  `todoList.addTodo('this is an object');`
+									- _todoList.changeTodo should change the todoText property_
+									  collapsed:: true
+										- Example
+										  ```var todoList = {
+										    todos: [], 
+										    displayTodos: function() { 
+										      console.log('My Todos', this.todos);
+										    },
+										    addTodos: function(todoText) { 
+										      this.todos.push({ 
+										        todoText: todoText,
+										        completed: false
+										      }); 
+										      this.displayTodos(); 
+										    },
+										    changeTodo: function(position, todoText) { // more descriptive parameter name to use todoText than newValue
+										      // this.todos[position] = newValue; // old version, new version can access the property rather than the whole object
+										      this.todos[position].todoText = todoText
+										      this.displayTodos();
+										    },
+										    deleteTodo: function(position) { 
+										      this.todos.splice(position, 1);
+										      this.displayTodos();
+										    }
+										  };
+										  ```
+									- _todoList.toggleCompleted should change the completed property_
+									  collapsed:: true
+										- bang operator e.g. !true = false (basically gives the opposite)
+											- Example
+											  `var gordonBoolean = true
+											  gordonBoolean = !gordonBoolean; // you just made it the opposite, so now it's false
+											  console.log(gordonBoolean);
+											  `Output = `false`
+										- Example
+										  `toggleCompleted: function(position) { // parameter is position so you can identify which todo to modify
+										      var todo = this.todos[position];
+										      todo.completed = !todo.completed; // this will flip it to true or false, the opposite of what it is initially
+										      this.displayTodos();
+										    }`
+									- Whole app
+									  collapsed:: true
+										- Code
+										  var todoList = {
+										    todos: [], // removed the simple text array
+										    displayTodos: function() { 
+										      console.log('My Todos', this.todos);
+										    },
+										    addTodos: function(todoText) { 
+										      this.todos.push({ // 'this' is added because you're referring the todoList object that this function is contained within. Swapped todo parameter for a method
+										        todoText: todoText, // 1st one is the static property name, 2nd one is referring to the dynamic parameter for this method
+										        completed: false
+										      }); 
+										      this.displayTodos(); 
+										    },
+										    changeTodo: function(position, todoText) { // more descriptive parameter name to use todoText than newValue
+										      // this.todos[position] = newValue; // old version, new version can access the property rather than the whole object
+										      this.todos[position].todoText = todoText
+										      this.displayTodos();
+										    },
+										    deleteTodo: function(position) { 
+										      this.todos.splice(position, 1);
+										      this.displayTodos();
+										    },
+										    toggleCompleted: function(position) { 
+										      var todo = this.todos[position];
+										      todo.completed = !todo.completed; // this will flip it to true or false, the opposite of what it is initially
+										      this.displayTodos();
+										    }
+										  };
+								- [**<--created Anki cards up to here-->**](((629e07ee-075d-4a72-9bd0-fd63cd35f152)))
+								- **<--submitted to GitHub snippets repo up to here-->**
+								- _Modules I never managed to do_
+								  collapsed:: true
+									- Module 5: Loops
+										- For loops
+										  collapsed:: true
+											- Format
+											  `i = 0 // Initialisation
+											  Say "hey" if i < 3 // Condition
+											  Increase i by 1 // Final-expression
+											  
+											  for (initialisation; condition; final-expression) {
+											   console.log("hey");
+											  }
+											  
+											  for (var i = 0; i <3, i = i++) {
+											   console.log("hey");
+											  }
+											  
+											  // i = i + 1
+											  // i++ 
+											  // both the same
+											  `
+										- Looping over arrays
+											-
+									- Module 6: Thinking in Code
+									- Interlude - Data types and comparisons
+									- Version 7 - HTML and the DOM
+									- Interlude - Don't wonder about things the debugger can tell you
+									- Version 8 - Getting data from inputs
+									- Version 9 - Escape from the console
+									- Interlude - Functions inside of functions
+									- Version 10 - Click to delete
+									- Version 11 - Destroy all for loops
+									- Interlude - Understanding *this*
+								- Read this multiple times, it's the most important thing
+								  https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603
+							- Need to watch something on Debugging, because watchandcode relying on an old version of Plunker for debugging methodology
+					- My workspace
+						- v0.4 workspace - different browser and outliner
+						  collapsed:: true
+							- _Left screen_
+								- Logseq - showing course notes
+								- _In background_
+									- Librewolf with separate tabs
+										- _Default showing tab_
+											- Dynalist - course notetaking
+										- _In background tabs_
+											- Local HTML file `file:///home/boss/Documents/Git/1MY%20REPOS/snippets/practical-javascript2/todoList.html` + [browser console](((629de044-7257-40d7-a227-70e6aa67d172))) as [live code editor](((629ccb27-2cb7-4ac2-bc16-90c66e156174)))
+											- Watch And Code (with Picture-in-Picture for video)
+							- _Right screen_
+								- ((63209272-1088-4824-a762-4ac7ded04b0a)) (for editing code)
+									- Open folder: `/home/boss/Documents/Git/1MY REPOS/snippets/`
+								- See [Watch And Code (with Picture-in-Picture for video)](((629ccb27-f103-4d50-8386-59c70fc6a955))) (top-right quarter of right screen)
+								- _In background_
+									- GitKraken (for committing work as accountability/progress log)
+									- LibreOffice Calc (for turning course notes into Anki flashcards)
+									- Pomotroid
+									- Anki
+							- _Right half of screen_
+							  (KWin quick tile to right - meta+right)
+							- _Left half of screen_
+							  (KWin quick tile to left - meta+left)
+						- v0.3 workspace - second monitor added
+						  collapsed:: true
+							- _Left screen_
+								- Brave with separate tabs
 									- _Default showing tab_
 										- Dynalist - course notetaking
 									- _In background tabs_
-										- Local HTML file `file:///home/boss/Documents/Git/1MY%20REPOS/snippets/practical-javascript2/todoList.html` + [browser console](((629de044-7257-40d7-a227-70e6aa67d172))) as [live code editor](((629ccb27-2cb7-4ac2-bc16-90c66e156174)))
+										- Local HTML file + browser console as live code editor
+										  [Either use Visual Studio Code+browser console OR just Web Maker as live code editor](((629ccb27-2cb7-4ac2-bc16-90c66e156174)))
 										- Watch And Code (with Picture-in-Picture for video)
-						- _Right screen_
-							- ((63209272-1088-4824-a762-4ac7ded04b0a)) (for editing code)
-								- Open folder: `/home/boss/Documents/Git/1MY REPOS/snippets/`
-							- See [Watch And Code (with Picture-in-Picture for video)](((629ccb27-f103-4d50-8386-59c70fc6a955))) (top-right quarter of right screen)
-							- _In background_
-								- GitKraken (for committing work as accountability/progress log)
-								- LibreOffice Calc (for turning course notes into Anki flashcards)
-								- Pomotroid
-								- Anki
-						- _Right half of screen_
-						  (KWin quick tile to right - meta+right)
-						- _Left half of screen_
-						  (KWin quick tile to left - meta+left)
-					- v0.3 workspace - second monitor added
-					  collapsed:: true
-						- _Left screen_
-							- Brave with separate tabs
-								- _Default showing tab_
-									- Dynalist - course notetaking
-								- _In background tabs_
-									- Local HTML file + browser console as live code editor
+										  id:: 629ccb27-f103-4d50-8386-59c70fc6a955
+							- _Right screen_
+								- ((63209272-1088-4824-a762-4ac7ded04b0a)) (for editing code)
+									- Open folder: `/home/boss/Documents/Git/1MY REPOS/snippets/`
+								- See [Watch And Code (with Picture-in-Picture for video)](((629ccb27-f103-4d50-8386-59c70fc6a955))) (top-right quarter)
+								- _In background_
+									- GitKraken (for committing work as accountability/progress log)
+									- LibreOffice Calc (for turning course notes into Anki flashcards)
+									- Pomotroid
+									- Anki
+							- _Right half of screen_
+							  (KWin quick tile to right - meta+right)
+							- _Left half of screen_
+							  (KWin quick tile to left - meta+left)
+						- v0.2 workspace
+						  https://i.imgur.com/4Lm6OrI.png
+						  collapsed:: true
+							- _Right half of screen_
+							  (KWin quick tile to right - meta+right)
+								- ((63209272-1088-4824-a762-4ac7ded04b0a)) (for editing code)
+									- Open folder: `/home/boss/Documents/Git/1MY REPOS/snippets/`
+							- _Left half of screen_
+							  (KWin quick tile to left - meta+left)
+								- Ungoogled Chromium with separate tabs
+									- Dynalist
+									- Watch And Code (with Picture-in-Picture for video. PiP can be either right or left bottom)
+										- (background tab, and having the video shown via Picture-in-Picture extension on top-left quarter of screen)
+									- Local HTML file + browser console as live code editor (usually as the default showing tab)
 									  [Either use Visual Studio Code+browser console OR just Web Maker as live code editor](((629ccb27-2cb7-4ac2-bc16-90c66e156174)))
-									- Watch And Code (with Picture-in-Picture for video)
-									  id:: 629ccb27-f103-4d50-8386-59c70fc6a955
-						- _Right screen_
-							- ((63209272-1088-4824-a762-4ac7ded04b0a)) (for editing code)
-								- Open folder: `/home/boss/Documents/Git/1MY REPOS/snippets/`
-							- See [Watch And Code (with Picture-in-Picture for video)](((629ccb27-f103-4d50-8386-59c70fc6a955))) (top-right quarter)
-							- _In background_
-								- GitKraken (for committing work as accountability/progress log)
-								- LibreOffice Calc (for turning course notes into Anki flashcards)
-								- Pomotroid
-								- Anki
-						- _Right half of screen_
-						  (KWin quick tile to right - meta+right)
-						- _Left half of screen_
-						  (KWin quick tile to left - meta+left)
-					- v0.2 workspace
-					  https://i.imgur.com/4Lm6OrI.png
-					  collapsed:: true
-						- _Right half of screen_
-						  (KWin quick tile to right - meta+right)
-							- ((63209272-1088-4824-a762-4ac7ded04b0a)) (for editing code)
-								- Open folder: `/home/boss/Documents/Git/1MY REPOS/snippets/`
-						- _Left half of screen_
-						  (KWin quick tile to left - meta+left)
-							- Ungoogled Chromium with separate tabs
-								- Dynalist
-								- Watch And Code (with Picture-in-Picture for video. PiP can be either right or left bottom)
-									- (background tab, and having the video shown via Picture-in-Picture extension on top-left quarter of screen)
-								- Local HTML file + browser console as live code editor (usually as the default showing tab)
+						- _Other windows_
+						  collapsed:: true
+							- Anki (for ingraining learning)
+							  collapsed:: true
+								- ~/Documents/MUSEUM/Programming/Anki1.ods
+								- See for more info
+									- See Anki SOP - for how to add learning notes into flashcards
+									  #MetaLearning https://workflowy.com/#/be1d6e89506a
+									- use split-screen for AnkiDroid + Markor when reviewing flash cards
+									  https://imgur.com/a/FnsSRX4
+									- [<--created Anki cards up to here-->](((629ccb26-84b2-46d2-944d-7044c3629f37)))
+							- GitKraken (for submitting daily work to GitHub for accountabiliy + psuedo-CV)
+							- Either use Visual Studio Code+browser console OR just Web Maker as live code editor
+							  collapsed:: true
+							  id:: 629ccb27-2cb7-4ac2-bc16-90c66e156174
+								- Browser console
+									- Pros/Cons
+										- Pros
+											- More functionality than Web Maker
+											- Paired with Visual Studio Code has more functionality
+										- Cons
+											- Web Maker has a nicer UI
+										- Unclear
+									- Open console in a blank page or open a file to work on
+										- Open `about:blank` then right-click > `Inspect` > Console tab
+										- Edit a local file using File > Open File > select HTML file in a web browser
+											- e.g. new tab for:
+											  `file:///home/boss/Documents/Git/1MY%20REPOS/snippets/practical-javascript2/todoList.html`
+									-
+									- Reposition the docking under the vertical ellipsis button
+									  source:: https://stackoverflow.com/questions/10023640/how-to-reposition-chrome-developer-tools
+								- Web Maker
+								  id:: 63470fd0-2c8b-4064-9388-fdd55a211d5c
+						- {Archive}
+						  collapsed:: true
+							- v0.1 Vivaldi window layout
+							  collapsed:: true
+								- Tab stack with tab tiles:
+									- Dynalist
+									- Watch And Code
+									- Web Maker (editing/testing code)
+					- _Modules_
+						- _Copy of prior similar course modules_ - see [Watch and Code's Practical JavaScript](((629ccb27-6855-4209-8a01-0e0b2afd59e8)))
+						- 1) Introduction
+						  collapsed:: true
+							- Meta on course
+							  collapsed:: true
+								- The course is really difficult and you will get stuck
+								- Instead of going through every type of code possibility then giving an example for each, he shows the code first and then repeated exposure teaches you the type of code it is
+								- Goal: code 1-3 hours every day. Most important is consistency, not time
+									- "I stop every day right at the point where I feel like I can write more. Do that, and the next day's work goes surprisingly smoothly."
+							- Watch and Code vs Bootcamps
+							  collapsed:: true
+							  id:: 629ccb27-cec5-43e5-b1fe-b703520c919a
+								- Bootcamps
+									- Philosophy - teach you Breadth: popular tools, frameworks, the motions of programming
+									- Goal - get first job ASAP
+									- Work experience - student projects
+									- Inteview prep - 1-2 weeks (low)
+								- Watch and Code
+									- Philosophy - teach you Depth: logic, communication, good programming habits
+									- Goal - long-term career growth
+									- Work experience - contributing to open-source projects. Holds more weight than showing off a small app you made
+									- Inteview prep - high (instructor-led practice groups)
+							- _Language considerations_
+							  collapsed:: true
+								- Good languages for learning are:
+									- Easy to read (makes learning efficient) - Python is A, JavaScript is B
+									- Compact syntax (maintains simplicity by reducing choices/methods) - Lisp is A, JavaScript is D
+									- Easy setup - JavaScript is quick since it's browser-based. A+
+									- Clearly useful e.g. widely adopted - JavaScript A+
+							- _Get ready_
+							  collapsed:: true
+								- In Visual Studio Code go to Settings > Workspace settings > Tab size: 2 (2 is what JavaScript typically uses by convention)
+								  id:: 629ccb27-c9e2-4419-9e39-4b026e14abd4
+								  https://i.imgur.com/zKmeHKn.png
+								- _HTML_
+									- At the top of HTML files write `<!DOCTYPE html>` to define more clearly what the filetype is
+									- Typical HTML template has
+									  collapsed:: true
+										- Template
+										  ```html
+										  <!DOCTYPE html>
+										  
+										  <html>
+										   <head></head>
+										   <body>
+										   <script>
+										   </script>
+										   </body>
+										  </html>
+										  ```
+									- `<title>` can be put between the `<head>` tags and it allows renaming the webpage title
+										- Q: Give an example of how you give a webpage a title via HTML, and what are the components used called
+											- A:
+												- `<title>Practical JavaScript</title>`
+												- `<title>` is an opening tag, and `</title>` is a closing tag
+									- Tags usually come in pairs with an opening and closing tag
+								- Choose either console or Web Maker
 								  [Either use Visual Studio Code+browser console OR just Web Maker as live code editor](((629ccb27-2cb7-4ac2-bc16-90c66e156174)))
-					- _Other windows_
-					  collapsed:: true
-						- Anki (for ingraining learning)
+							- _On todo lists_
+								- Example of a good basic todo list
+								  https://todomvc.com/examples/vanillajs
+						- 2) Version 1 - getting started
 						  collapsed:: true
-							- ~/Documents/MUSEUM/Programming/Anki1.ods
-							- See for more info
-								- See Anki SOP - for how to add learning notes into flashcards
-								  #MetaLearning https://workflowy.com/#/be1d6e89506a
-								- use split-screen for AnkiDroid + Markor when reviewing flash cards
-								  https://imgur.com/a/FnsSRX4
-								- [<--created Anki cards up to here-->](((629ccb26-84b2-46d2-944d-7044c3629f37)))
-						- GitKraken (for submitting daily work to GitHub for accountabiliy + psuedo-CV)
-						- Either use Visual Studio Code+browser console OR just Web Maker as live code editor
-						  collapsed:: true
-						  id:: 629ccb27-2cb7-4ac2-bc16-90c66e156174
-							- Browser console
-								- Pros/Cons
-									- Pros
-										- More functionality than Web Maker
-										- Paired with Visual Studio Code has more functionality
-									- Cons
-										- Web Maker has a nicer UI
-									- Unclear
-								- Open console in a blank page or open a file to work on
-									- Open `about:blank` then right-click > `Inspect` > Console tab
-									- Edit a local file using File > Open File > select HTML file in a web browser
-										- e.g. new tab for:
-										  `file:///home/boss/Documents/Git/1MY%20REPOS/snippets/practical-javascript2/todoList.html`
-								-
-								- Reposition the docking under the vertical ellipsis button
-								  source:: https://stackoverflow.com/questions/10023640/how-to-reposition-chrome-developer-tools
-							- Web Maker
-							  id:: 63470fd0-2c8b-4064-9388-fdd55a211d5c
-					- {Archive}
-					  collapsed:: true
-						- v0.1 Vivaldi window layout
-						  collapsed:: true
-							- Tab stack with tab tiles:
-								- Dynalist
-								- Watch And Code
-								- Web Maker (editing/testing code)
-				- _Modules_
-					- _Copy of prior similar course modules_ - see [Watch and Code's Practical JavaScript](((629ccb27-6855-4209-8a01-0e0b2afd59e8)))
-					- 1) Introduction
-					  collapsed:: true
-						- Meta on course
-						  collapsed:: true
-							- The course is really difficult and you will get stuck
-							- Instead of going through every type of code possibility then giving an example for each, he shows the code first and then repeated exposure teaches you the type of code it is
-							- Goal: code 1-3 hours every day. Most important is consistency, not time
-								- "I stop every day right at the point where I feel like I can write more. Do that, and the next day's work goes surprisingly smoothly."
-						- Watch and Code vs Bootcamps
-						  collapsed:: true
-						  id:: 629ccb27-cec5-43e5-b1fe-b703520c919a
-							- Bootcamps
-								- Philosophy - teach you Breadth: popular tools, frameworks, the motions of programming
-								- Goal - get first job ASAP
-								- Work experience - student projects
-								- Inteview prep - 1-2 weeks (low)
-							- Watch and Code
-								- Philosophy - teach you Depth: logic, communication, good programming habits
-								- Goal - long-term career growth
-								- Work experience - contributing to open-source projects. Holds more weight than showing off a small app you made
-								- Inteview prep - high (instructor-led practice groups)
-						- _Language considerations_
-						  collapsed:: true
-							- Good languages for learning are:
-								- Easy to read (makes learning efficient) - Python is A, JavaScript is B
-								- Compact syntax (maintains simplicity by reducing choices/methods) - Lisp is A, JavaScript is D
-								- Easy setup - JavaScript is quick since it's browser-based. A+
-								- Clearly useful e.g. widely adopted - JavaScript A+
-						- _Get ready_
-						  collapsed:: true
-							- In Visual Studio Code go to Settings > Workspace settings > Tab size: 2 (2 is what JavaScript typically uses by convention)
-							  id:: 629ccb27-c9e2-4419-9e39-4b026e14abd4
-							  https://i.imgur.com/zKmeHKn.png
-							- _HTML_
-								- At the top of HTML files write `<!DOCTYPE html>` to define more clearly what the filetype is
-								- Typical HTML template has
+							- Five requirements
+								- 2.1) It should have a place to store todos
+									- Todos are stored in a list AKA **array**
+										- `['Item 1', 'Item 2', 'Item 3']`
+									- Pressing the up arrow in the console will paste the last used command, similar to terminals
+									- The array can be saved under a `var` named `todos` in order to save it in this console session
+										- `var todos = ['Item 1', 'Item 2', 'Item 3']`
+									- You enter a `;` at the end of certain lines such as this var. It’s mainly done for readability, and compatibility with tooling
+									- Format: `declaration = assignment`
+									  id:: 629ccb27-c2d9-413c-b1ee-58b23d5f7282
+										- Declaring that a variable exists
+										- Assigning a value to that variable
+										- _Related:_
+											- [Format](((629ccb27-fbf0-4d12-ba3c-c12949ec8b0b))) of functions
+								- 2.2) It should have a way to display todos
+									- Just adding `todos` as a line in the script won't print the var to the console
+									- But if you add `console.log(todos);` to the script then it'll print it to the console when you open this HTML file
+									- `console.log()` can be used to print many kinds of data to the console when added to a script
+									- If already using the console and just trying to print the var to it, `console.log()` isn't needed and just `todos;` is fine
+								- 2.3) It should have a way to add a todo
 								  collapsed:: true
-									- Template
-									  ```html
-									  <!DOCTYPE html>
-									  
-									  <html>
-									   <head></head>
-									   <body>
-									   <script>
-									   </script>
-									   </body>
-									  </html>
-									  ```
-								- `<title>` can be put between the `<head>` tags and it allows renaming the webpage title
-									- Q: Give an example of how you give a webpage a title via HTML, and what are the components used called
-										- A:
-											- `<title>Practical JavaScript</title>`
-											- `<title>` is an opening tag, and `</title>` is a closing tag
-								- Tags usually come in pairs with an opening and closing tag
-							- Choose either console or Web Maker
-							  [Either use Visual Studio Code+browser console OR just Web Maker as live code editor](((629ccb27-2cb7-4ac2-bc16-90c66e156174)))
-						- _On todo lists_
-							- Example of a good basic todo list
-							  https://todomvc.com/examples/vanillajs
-					- 2) Version 1 - getting started
-					  collapsed:: true
-						- Five requirements
-							- 2.1) It should have a place to store todos
-								- Todos are stored in a list AKA **array**
-									- `['Item 1', 'Item 2', 'Item 3']`
-								- Pressing the up arrow in the console will paste the last used command, similar to terminals
-								- The array can be saved under a `var` named `todos` in order to save it in this console session
-									- `var todos = ['Item 1', 'Item 2', 'Item 3']`
-								- You enter a `;` at the end of certain lines such as this var. It’s mainly done for readability, and compatibility with tooling
-								- Format: `declaration = assignment`
-								  id:: 629ccb27-c2d9-413c-b1ee-58b23d5f7282
-									- Declaring that a variable exists
-									- Assigning a value to that variable
-									- _Related:_
-										- [Format](((629ccb27-fbf0-4d12-ba3c-c12949ec8b0b))) of functions
-							- 2.2) It should have a way to display todos
-								- Just adding `todos` as a line in the script won't print the var to the console
-								- But if you add `console.log(todos);` to the script then it'll print it to the console when you open this HTML file
-								- `console.log()` can be used to print many kinds of data to the console when added to a script
-								- If already using the console and just trying to print the var to it, `console.log()` isn't needed and just `todos;` is fine
-							- 2.3) It should have a way to add a todo
+									- `push()` can be used to add data to the end of an array
+										- Example
+											- `todos.push('Item 4');` will add 'Item 4' as a 4th item at the end of the array
+								- 2.4) It should have a way to edit a todo
+								  collapsed:: true
+									- First you need to select an item
+										- `todos[0];` will select the first item in the array `Item 1`
+										- `todos[1];` will select the second item in the array `Item 2`
+										- `todos[4];` will select the fifth item in the array, which doesn't exist so it outputs `undefined`
+										- Basically structure format is `var[position];`
+									- Set the item as a new value
+										- `todos[0] = 'Item 1 updated';`
+										- Basic structure is `= new-value;`
+								- 2.5) It should have a way to remove a todo
+								  collapsed:: true
+									- `splice()` can be used to remove items
+										- Basic format is `var.splice(position, number of items to delete);`
+										- `todos.splice(0, 1);`
+							- When going through a quiz/problem ideally:
 							  collapsed:: true
-								- `push()` can be used to add data to the end of an array
+								- Example problem
+								  source:: https://watchandcode.com/courses/programming-foundations/lectures/22887997
+								  collapsed:: true
 									- Example
-										- `todos.push('Item 4');` will add 'Item 4' as a 4th item at the end of the array
-							- 2.4) It should have a way to edit a todo
-							  collapsed:: true
-								- First you need to select an item
-									- `todos[0];` will select the first item in the array `Item 1`
-									- `todos[1];` will select the second item in the array `Item 2`
-									- `todos[4];` will select the fifth item in the array, which doesn't exist so it outputs `undefined`
-									- Basically structure format is `var[position];`
-								- Set the item as a new value
-									- `todos[0] = 'Item 1 updated';`
-									- Basic structure is `= new-value;`
-							- 2.5) It should have a way to remove a todo
-							  collapsed:: true
-								- `splice()` can be used to remove items
-									- Basic format is `var.splice(position, number of items to delete);`
-									- `todos.splice(0, 1);`
-						- When going through a quiz/problem ideally:
-						  collapsed:: true
-							- Example problem
-							  source:: https://watchandcode.com/courses/programming-foundations/lectures/22887997
+									  ```
+									  var array1 = ['yo', 'hi'];
+									  array1[0] = array1[1];
+									  
+									  var array2 = ['bye', 'later'];
+									  array2.splice(1, 1);
+									  
+									  var array3 = [];
+									  array3[0] = array1[0];
+									  array3[1] = array2[0];
+									  ```
+								- Paste it into a new file
+								- Create code comments for what you predict to happen at each stage, as well as how certain you are that you're correct
+									- e.g. `// array1 = ['yo', 'hi'] => ['hi', 'hi'] 99%`
+								- Add `console.log();` after each stage to double-check the values are what you expect them to be
+									- Example
+									  ```
+									  var array1 = ['yo', 'hi']; 
+									  array1[0] = array1[1];
+									  console.log(array1); // array1 = ['yo', 'hi'] => ['hi', 'hi'] 99%
+									  
+									  var array2 = ['bye', 'later'];
+									  array2.splice(1, 1);
+									  console.log(array2); // array2  => ['bye'] 99%
+									  
+									  var array3 = [];
+									  array3[0] = array1[0];
+									  console.log(array3); // array3 => ['hi'] 99%
+									  array3[1] = array2[0];
+									  console.log(array3); // array3 => ['hi', 'bye'] 99%
+									  ```
+							- Semicolons
 							  collapsed:: true
 								- Example
-								  ```
-								  var array1 = ['yo', 'hi'];
-								  array1[0] = array1[1];
-								  
-								  var array2 = ['bye', 'later'];
-								  array2.splice(1, 1);
-								  
-								  var array3 = [];
-								  array3[0] = array1[0];
-								  array3[1] = array2[0];
-								  ```
-							- Paste it into a new file
-							- Create code comments for what you predict to happen at each stage, as well as how certain you are that you're correct
-								- e.g. `// array1 = ['yo', 'hi'] => ['hi', 'hi'] 99%`
-							- Add `console.log();` after each stage to double-check the values are what you expect them to be
+								  source:: https://watchandcode.com/courses/programming-foundations/lectures/23512381
+									- Example1
+									  ```
+									  var todos = ['Item 1', 'Item 2', 'Item 3'];
+									  
+									  console.log(todos);
+									  
+									  todos.push('Item 4');
+									  
+									  todos[0] = 'Item 1 updated';
+									  
+									  todos.splice(0, 1);
+									  ```
+								- Rules
+									- Every line of code ends with a semicolon
+									- Every ) is followed immediately by a semicolon.
+						- 3) Version 2 - Functions
+						  collapsed:: true
+							- 3a) Functions are a series of stored steps grouped under a single name, which is performed every time the function is called
+							- Function template
+								- `function functionName() {}`
 								- Example
 								  ```
-								  var array1 = ['yo', 'hi']; 
-								  array1[0] = array1[1];
-								  console.log(array1); // array1 = ['yo', 'hi'] => ['hi', 'hi'] 99%
-								  
-								  var array2 = ['bye', 'later'];
-								  array2.splice(1, 1);
-								  console.log(array2); // array2  => ['bye'] 99%
-								  
-								  var array3 = [];
-								  array3[0] = array1[0];
-								  console.log(array3); // array3 => ['hi'] 99%
-								  array3[1] = array2[0];
-								  console.log(array3); // array3 => ['hi', 'bye'] 99%
+								  function add() {
+								   todos.push('another item');
+								   console.log(todos);
+								  }
 								  ```
-						- Semicolons
-						  collapsed:: true
-							- Example
-							  source:: https://watchandcode.com/courses/programming-foundations/lectures/23512381
-								- Example1
+								- To run it you can use `functionName();` e.g. `add();` (parentheses required)
+							- Format
+							  id:: 629ccb27-fbf0-4d12-ba3c-c12949ec8b0b
+							  ```
+							  function demoFunction(myData) { // Declaration
+							   console.log(myData);
+							  }
+							  
+							  demoFunction('gordon'); // Assignment
+							  ```
+								- Parameter = what is between the parentheses `()` in the declaration i.e. `myData`
+									- Very similar to variables from the variable format example
+									  [Format: `declaration = assignment`](((629ccb27-c2d9-413c-b1ee-58b23d5f7282)))
+								- Argument = what is between the parentheses `()` in the assignment i.e. `'gordon'`
+									- Very similar to values from the variable format example
+									  [Format: `declaration = assignment`](((629ccb27-c2d9-413c-b1ee-58b23d5f7282)))
+							- 3b) When you run a function, you can provide the function with data (that goes between the parentheses.)
+							  collapsed:: true
+								- `demoFunction(myData);`
+								- Known as a parameter within the function, and an argument when calling the function
+							- _Note:_ do not need semicolons`;`after curly braces lines `{` and `}` in functions
+							- Questions
+							  collapsed:: true
+								- In this example what is `0, 1` known as
 								  ```
-								  var todos = ['Item 1', 'Item 2', 'Item 3'];
+								   var todos = ['Item 1', 'Item 2', 'Item 3']; 
 								  
-								  console.log(todos);
+								   console.log(todos); 
 								  
-								  todos.push('Item 4');
+								   todos.push('Item 4');
 								  
-								  todos[0] = 'Item 1 updated';
+								   todos[0] = 'Item 1 updated'; 
 								  
-								  todos.splice(0, 1);
+								   todos.splice(0, 1)
 								  ```
-							- Rules
-								- Every line of code ends with a semicolon
-								- Every ) is followed immediately by a semicolon.
-					- 3) Version 2 - Functions
-					  collapsed:: true
-						- 3a) Functions are a series of stored steps grouped under a single name, which is performed every time the function is called
-						- Function template
-							- `function functionName() {}`
-							- Example
-							  ```
-							  function add() {
-							   todos.push('another item');
-							   console.log(todos);
-							  }
-							  ```
-							- To run it you can use `functionName();` e.g. `add();` (parentheses required)
-						- Format
-						  id:: 629ccb27-fbf0-4d12-ba3c-c12949ec8b0b
-						  ```
-						  function demoFunction(myData) { // Declaration
-						   console.log(myData);
-						  }
-						  
-						  demoFunction('gordon'); // Assignment
-						  ```
-							- Parameter = what is between the parentheses `()` in the declaration i.e. `myData`
-								- Very similar to variables from the variable format example
-								  [Format: `declaration = assignment`](((629ccb27-c2d9-413c-b1ee-58b23d5f7282)))
-							- Argument = what is between the parentheses `()` in the assignment i.e. `'gordon'`
-								- Very similar to values from the variable format example
-								  [Format: `declaration = assignment`](((629ccb27-c2d9-413c-b1ee-58b23d5f7282)))
-						- 3b) When you run a function, you can provide the function with data (that goes between the parentheses.)
+									- A: Two arguments
+								- In this example what is `todos[0] = 'Item 1 updated';` known as
+								  ```
+								   var todos = ['Item 1', 'Item 2', 'Item 3']; 
+								  
+								   console.log(todos); 
+								  
+								   todos.push('Item 4');
+								  
+								   todos[0] = 'Item 1 updated'; 
+								  
+								   todos.splice(0, 1)
+								  ```
+									- A: Assignment
+								- In this example name a declaration
+								  ```
+								   var todos = ['Item 1', 'Item 2', 'Item 3']; 
+								  
+								   console.log(todos); 
+								  
+								   todos.push('Item 4');
+								  
+								   todos[0] = 'Item 1 updated'; 
+								  
+								   todos.splice(0, 1)
+								  ```
+									- A: `var todos`
+							- 3.2) It should have a function to add a todo
+							  collapsed:: true
+								- First given code
+								  ```
+								  function add() {
+								   todos.push('another item');
+								   console.log(todos);
+								  }
+								  ```
+									- Modify the code so that `add('Watch the next video in Practical JavaScript');` will add `'Watch the next video in Practical JavaScript'` as another item
+								- Solution
+								  ```
+								  var todos = ['Item 1', 'Item 2', 'Item 3']; 
+								  
+								  function add(text) {
+								  console.log(text); //optional, allows checking that the function is working properly throughout
+								   todos.push(text);
+								   console.log(todos);
+								  }
+								  ```
+							- 3.3) It should have a function to edit a todo
+							  collapsed:: true
+								- First given code
+								  `todos[0] = 'Item 1 updated'`
+									- It should take two arguments: position of item in the array to edit, and what value to set it to e.g. `edit (1, 'second item changed');`
+								- Solution
+								  ```
+								  function edit(position, newValue) {
+								   todos[position] = newValue;
+								   console.log(todos);
+								  }
+								  ```
+							- 3.4) It should have a function to remove a todo
+							  collapsed:: true
+								- First given code
+								  ` todos.splice(0, 1);`
+									- Want it to work so you can use `remove(0);` to remove the first item
+								- Solution
+								  ```
+								  function remove(position) {
+								   todos.splice(position, 1);
+								  }
+								  ```
+						- 4) Computer's perspective
 						  collapsed:: true
-							- `demoFunction(myData);`
-							- Known as a parameter within the function, and an argument when calling the function
-						- _Note:_ do not need semicolons`;`after curly braces lines `{` and `}` in functions
-						- Questions
+							- Debugger can help you understand what your program is doing
+							- _How to use the debugger_
+							  collapsed:: true
+								- Open debugger (CTRL + SHIFT + i)
+									- Go to Sources tab (next to Console) for the debugger
+									- Press the vertical ellipsis (3 dots) in the top-right to show/hide the console drawer whilst on Sources, to show them simultaneously
+									- Make sure it's also docked to bottom
+								- _In the Page tab (left panel/the Navigator), select your HTML doc_
+									- Clicking on the line number in the margin will set a Breakpoint there (the program will stop running at this line)
+									- _Running the file again, with the breakpoint_
+										- Either reload the page
+										- OR use CTRL+O to open the file again (more clicks after that too)
+							- Step over (next function call)
+							  https://i.imgur.com/vTtKroY.png This button (next to resume play/pause script execution) in the dev tools
+							  collapsed:: true
+								- AKA step over to next line of code _that's about to run_
+								- Note: it will ignore function declarations (eg `function remove(position)`) because they're not actually run. A function call would instead be something like `remove();`
+							- To exit the debugger
+							  collapsed:: true
+								- Either
+									- "Step over" over multiple lines (more time-consuming
+									- OR click the resume script execution button in the dev tools (looks like a Play button with a l to the left of it)
+										- Note: Sometimes it'll go to next breakpoint instead if you have more leftover breakpoints BUT this depends on the type of breakpoints leftover
+										  19/07/21 - this seems false
+											- It'll stop at `console.log(todos);`
+											- It'll skip past `todos.push(text);`
+										- It'll skip all break points
+							- Sidenote: it can be good to create code comments with your (expectation) and (outcome) for different code, to see where your knowledge gap is
+							  collapsed:: true
+								- e.g.
+									- // todos (expectation: undefined, 100% conf) (reality: )
+										- I expect using `todos` before I define the var it will output `undefined`, and I have 100% confidence that'll happen
+									- Can use a breakpoint to pause the code at a certain point, and then use console at that point to run commands and check the values
+							- Checking variables in the debugger
+							  collapsed:: true
+								- Step over to a particular breakpoint
+								- Type in the variable name in console, or mouseover the variable in the code itself (within the debugger)
+							- Using the step-into (next function call) button
+							  collapsed:: true
+								- It'll take you into the body of the function that you're calling
+								- If you're already in the body, then trying to step-into further will only work for non-native functions (i.e. user-made functions) (e.g. push and console.log are built-in)
+									- 3 ways to tell if a function is native or not - all by using a blank tab (about:blank) with Console dev tool open, type in a function (e.g. `console.log` or `[].push`)
+									  https://i.imgur.com/oohUJ4l.png
+										- The function will run
+										- Trying to use the function will say "native code"
+										- It will say "not defined" if it's not native
+							- Ways to stop the debugger inside of a function
+							  collapsed:: true
+								- Either
+									- Set a breakpoint within the function, then use the console to run the function
+									- Use the console to run the function, then run the whole program
+							- Setting breakpoints without writing to a file
+							  collapsed:: true
+								- Either
+									- Write the `debugger;` on a separate line, and it'll stop on the `debugger;` line
+										- e.g. 
+										  ```javascript
+										  function hello(name) {
+										    let phrase = `Hello, ${name}!`;
+										  
+										    debugger;  // <-- the debugger stops here
+										  
+										    say(phrase);
+										  }
+										  ```
+											- [source] https://javascript.info/debugging-chrome#the-command-debugger
+										- Such command works only when the development tools are open, otherwise the browser ignores it.
+								- If after you call a function then it'll stop on that function line 1
+								- Step into will skip lines with native functions, but it'll go to the next line for custom functions
+						- 5) Functions and variables
 						  collapsed:: true
-							- In this example what is `0, 1` known as
-							  ```
-							   var todos = ['Item 1', 'Item 2', 'Item 3']; 
-							  
-							   console.log(todos); 
-							  
-							   todos.push('Item 4');
-							  
-							   todos[0] = 'Item 1 updated'; 
-							  
-							   todos.splice(0, 1)
-							  ```
-								- A: Two arguments
-							- In this example what is `todos[0] = 'Item 1 updated';` known as
-							  ```
-							   var todos = ['Item 1', 'Item 2', 'Item 3']; 
-							  
-							   console.log(todos); 
-							  
-							   todos.push('Item 4');
-							  
-							   todos[0] = 'Item 1 updated'; 
-							  
-							   todos.splice(0, 1)
-							  ```
-								- A: Assignment
-							- In this example name a declaration
-							  ```
-							   var todos = ['Item 1', 'Item 2', 'Item 3']; 
-							  
-							   console.log(todos); 
-							  
-							   todos.push('Item 4');
-							  
-							   todos[0] = 'Item 1 updated'; 
-							  
-							   todos.splice(0, 1)
-							  ```
-								- A: `var todos`
-						- 3.2) It should have a function to add a todo
-						  collapsed:: true
-							- First given code
-							  ```
-							  function add() {
-							   todos.push('another item');
-							   console.log(todos);
-							  }
-							  ```
-								- Modify the code so that `add('Watch the next video in Practical JavaScript');` will add `'Watch the next video in Practical JavaScript'` as another item
-							- Solution
-							  ```
-							  var todos = ['Item 1', 'Item 2', 'Item 3']; 
-							  
-							  function add(text) {
-							  console.log(text); //optional, allows checking that the function is working properly throughout
-							   todos.push(text);
-							   console.log(todos);
-							  }
-							  ```
-						- 3.3) It should have a function to edit a todo
-						  collapsed:: true
-							- First given code
-							  `todos[0] = 'Item 1 updated'`
-								- It should take two arguments: position of item in the array to edit, and what value to set it to e.g. `edit (1, 'second item changed');`
-							- Solution
-							  ```
-							  function edit(position, newValue) {
-							   todos[position] = newValue;
-							   console.log(todos);
-							  }
-							  ```
-						- 3.4) It should have a function to remove a todo
-						  collapsed:: true
-							- First given code
-							  ` todos.splice(0, 1);`
-								- Want it to work so you can use `remove(0);` to remove the first item
-							- Solution
-							  ```
-							  function remove(position) {
-							   todos.splice(position, 1);
-							  }
-							  ```
-					- 4) Computer's perspective
-					  collapsed:: true
-						- Debugger can help you understand what your program is doing
-						- _How to use the debugger_
-						  collapsed:: true
-							- Open debugger (CTRL + SHIFT + i)
-								- Go to Sources tab (next to Console) for the debugger
-								- Press the vertical ellipsis (3 dots) in the top-right to show/hide the console drawer whilst on Sources, to show them simultaneously
-								- Make sure it's also docked to bottom
-							- _In the Page tab (left panel/the Navigator), select your HTML doc_
-								- Clicking on the line number in the margin will set a Breakpoint there (the program will stop running at this line)
-								- _Running the file again, with the breakpoint_
-									- Either reload the page
-									- OR use CTRL+O to open the file again (more clicks after that too)
-						- Step over (next function call)
-						  https://i.imgur.com/vTtKroY.png This button (next to resume play/pause script execution) in the dev tools
-						  collapsed:: true
-							- AKA step over to next line of code _that's about to run_
-							- Note: it will ignore function declarations (eg `function remove(position)`) because they're not actually run. A function call would instead be something like `remove();`
-						- To exit the debugger
-						  collapsed:: true
-							- Either
-								- "Step over" over multiple lines (more time-consuming
-								- OR click the resume script execution button in the dev tools (looks like a Play button with a l to the left of it)
-									- Note: Sometimes it'll go to next breakpoint instead if you have more leftover breakpoints BUT this depends on the type of breakpoints leftover
-									  19/07/21 - this seems false
-										- It'll stop at `console.log(todos);`
-										- It'll skip past `todos.push(text);`
-									- It'll skip all break points
-						- Sidenote: it can be good to create code comments with your (expectation) and (outcome) for different code, to see where your knowledge gap is
-						  collapsed:: true
-							- e.g.
-								- // todos (expectation: undefined, 100% conf) (reality: )
-									- I expect using `todos` before I define the var it will output `undefined`, and I have 100% confidence that'll happen
-								- Can use a breakpoint to pause the code at a certain point, and then use console at that point to run commands and check the values
-						- Checking variables in the debugger
-						  collapsed:: true
-							- Step over to a particular breakpoint
-							- Type in the variable name in console, or mouseover the variable in the code itself (within the debugger)
-						- Using the step-into (next function call) button
-						  collapsed:: true
-							- It'll take you into the body of the function that you're calling
-							- If you're already in the body, then trying to step-into further will only work for non-native functions (i.e. user-made functions) (e.g. push and console.log are built-in)
-								- 3 ways to tell if a function is native or not - all by using a blank tab (about:blank) with Console dev tool open, type in a function (e.g. `console.log` or `[].push`)
-								  https://i.imgur.com/oohUJ4l.png
-									- The function will run
-									- Trying to use the function will say "native code"
-									- It will say "not defined" if it's not native
-						- Ways to stop the debugger inside of a function
-						  collapsed:: true
-							- Either
-								- Set a breakpoint within the function, then use the console to run the function
-								- Use the console to run the function, then run the whole program
-						- Setting breakpoints without writing to a file
-						  collapsed:: true
-							- Either
-								- Write the `debugger;` on a separate line, and it'll stop on the `debugger;` line
-									- e.g. 
-									  ```javascript
-									  function hello(name) {
-									    let phrase = `Hello, ${name}!`;
+							- Scope
+							  AKA variable visibility
+							  collapsed:: true
+								- Variables within functions are only accessible within the function itself. Outside the function, the variable isn't accessible
+									- Example
+									  ```
+									  function sayName() {
+									   var secret = 'watchandcode';
+									  }
 									  
-									    debugger;  // <-- the debugger stops here
+									  console.log(secret); 
+									  ```
+									  console.log = secret is undefined
+									- Visual example - circle all functions. Then draw arrows from whenever you call a variable to that variable itself. You can draw arrows going out of circles, but never going into them
+									  https://i.imgur.com/ozvp1Sq.png
+								- Other functions on the same level can't access each other's parameters
+									- Example - `a` cannot access `bParam`
+									  ```
+									  function a() {
+									    var aVar = 'a';
+									  }
 									  
-									    say(phrase);
+									  function b(bParam) {
+									    console.log(bParam);
 									  }
 									  ```
-										- [source] https://javascript.info/debugging-chrome#the-command-debugger
-									- Such command works only when the development tools are open, otherwise the browser ignores it.
-							- If after you call a function then it'll stop on that function line 1
-							- Step into will skip lines with native functions, but it'll go to the next line for custom functions
-					- 5) Functions and variables
-					  collapsed:: true
-						- Scope
-						  AKA variable visibility
+										- You can test this with something like `console.log(bParam);` within the `a` function
+									- Example 2 - trying to call the function via `b();` will return `undefined`
+									  ```
+									  function a(aLog) {
+									   var aStore = aLog;
+									  }
+									  
+									  function b() {
+									   console.log(aLog);
+									  }
+									  ```
+						- 6) Version 3 - Objects
 						  collapsed:: true
-							- Variables within functions are only accessible within the function itself. Outside the function, the variable isn't accessible
+							- Booleans: true or false value for a variable
+								- eg `var completed = true;`
+							- Text (AKA string) is another data type that variables can be
+							- Arrays within arrays
+								- Allows you to have a single item with multiple arrays linked together (like a database)
+								- Example
+								  `var todos = [['Get groceries', true], ['Go for a run', false]];`
+									- Calling this var
+										- `todos[0]` would give you `['Get groceries', true]`
+										- `todos[0][0]` would give you `'Get groceries'` (because you're calling the item within 2 layers of arrays
+										- `todos[1]` would give you `['Go for a run', false]`
+							- Objects
+								- Objects use `{}` within a var
 								- Example
 								  ```
-								  function sayName() {
-								   var secret = 'watchandcode';
+								  var gordon = {
+								   name: 'Gordon',
+								   location: 'San Francisco',
+								   favoriteDessert: 'ice cream'
+								  }
+								  ```
+									- name, location and favouriteDessert on the left are properties, each with values on the right
+									- Calling the object
+										- `gordon` would show the whole object with all properties and values
+										- `gordon.favouriteDessert` would show only the value for the property favouriteDessert
+								- How to use objects in arrays instead of arrays inside of arrays
+									- Basic structure of an object within a variable is `[{}, {}];` or `[{something1: true, something2: 'hi'}, {}];`
+									- Example
+									  ```
+									  var todos = [
+									   {todoText: 'Get groceries', completed: true}, 
+									   {todoText: 'Go for a run', completed: false}
+									  ];
+									  ```
+									- Calling the object
+										- `todos[0].todoText` would show `'Get groceries'`
+										- `todos[1].completed` would show `false`
+										- First half is the same as for an array `[todos[1]`, the `.completed` is added to access a particular property because it's an object. Arrays within arrays would instead use `todos[1][1]`
+									- Pros/Cons of using objects rather than arrays
+										- Pros
+											- By naming the property it's more obvious what we're storing
+											- Calling objects less likely to lead to errors because it's easier to see what data type it'll output (e.g. string, boolean etc)
+										- Note: you can't call objects in arrays via something like `todos[0].[1]`, which would have otherwise allowed two methods of calling values within objects in arrays
+							- Visual Studio Code shortcut: `CTRL + /` will comment in/out multiple lines of code
+							- Requirements tasks
+								- 6.9) We should initialise the todos variable with objects
+									- Example
+									  ```
+									  var todos = [
+									   {todoText: 'Item 1', completed: false},
+									    {todoText: 'Item 2', completed: false},
+									    {todoText: 'Item 3', completed: false}
+									   ];
+									  ```
+										- Each `{}` is an object, with two properties: `todoText` and `completed`
+								- 6.11) The add function should add objects
+									- Example
+									  ```
+									  function add(initialText) { 
+									   todos.push({todoText: initialText, completed: false});
+									   console.log(todos);
+									   }
+									  ```
+								- 6.12) The edit function should edit objects
+									- Example
+									  ```
+									  function edit(position, newTodoText) {
+									   todos[position].todoText = newTodoText;
+									   console.log(todos);
+									   }
+									  ```
+							- Quiz
+								- Example
+								  ```
+								  var myArray = [{name: 'Gordon'}];
+								  
+								  function exampleFunction(thing) {
+								    thing.name = 'changed by exampleFunction';
+								    
+								    thing.thing = {name: 'new thing'};
 								  }
 								  
-								  console.log(secret); 
+								  exampleFunction(myArray[0]);
+								  exampleFunction(myArray[0].thing);
 								  ```
-								  console.log = secret is undefined
-								- Visual example - circle all functions. Then draw arrows from whenever you call a variable to that variable itself. You can draw arrows going out of circles, but never going into them
-								  https://i.imgur.com/ozvp1Sq.png
-							- Other functions on the same level can't access each other's parameters
-								- Example - `a` cannot access `bParam`
-								  ```
-								  function a() {
-								    var aVar = 'a';
-								  }
-								  
-								  function b(bParam) {
-								    console.log(bParam);
-								  }
-								  ```
-									- You can test this with something like `console.log(bParam);` within the `a` function
-								- Example 2 - trying to call the function via `b();` will return `undefined`
-								  ```
-								  function a(aLog) {
-								   var aStore = aLog;
-								  }
-								  
-								  function b() {
-								   console.log(aLog);
-								  }
-								  ```
-					- 6) Version 3 - Objects
-					  collapsed:: true
-						- Booleans: true or false value for a variable
-							- eg `var completed = true;`
-						- Text (AKA string) is another data type that variables can be
-						- Arrays within arrays
-							- Allows you to have a single item with multiple arrays linked together (like a database)
-							- Example
-							  `var todos = [['Get groceries', true], ['Go for a run', false]];`
-								- Calling this var
-									- `todos[0]` would give you `['Get groceries', true]`
-									- `todos[0][0]` would give you `'Get groceries'` (because you're calling the item within 2 layers of arrays
-									- `todos[1]` would give you `['Go for a run', false]`
-						- Objects
-							- Objects use `{}` within a var
-							- Example
-							  ```
-							  var gordon = {
-							   name: 'Gordon',
-							   location: 'San Francisco',
-							   favoriteDessert: 'ice cream'
-							  }
-							  ```
-								- name, location and favouriteDessert on the left are properties, each with values on the right
-								- Calling the object
-									- `gordon` would show the whole object with all properties and values
-									- `gordon.favouriteDessert` would show only the value for the property favouriteDessert
-							- How to use objects in arrays instead of arrays inside of arrays
-								- Basic structure of an object within a variable is `[{}, {}];` or `[{something1: true, something2: 'hi'}, {}];`
+									- Answers
+										- At some point, `myArray[0].thing.name` will be equal to 'new thing'.
+										- After the code runs, `myArray[0].thing.thing.name` will be equal to 'new thing'.
+									- Learned
+										- You can create a property which doesn't already exist for an object i.e. `myArray.myArray = {name: 'new thing'}`
+										- You can create nested objects (objects within objects) i.e. makes it into `var myArray = [{name: 'Gordon', myArray: {name: 'new thing'}}];`
+										- Length will always been 1 for an array with 1 top-level object in it, even if it has nested objects inside
+										- Use the debugger with step-over and step-in function in order to check the value of `myArray[0].thing.name` at various points
+										- Hovering over variables in the debugger will show you their current value (especially useful when using breakpoints/stepping over)
+						- 7) Version 4 - Toggling
+						  collapsed:: true
+							- If statements
+								- Basic syntax is `if () { }`
+								- `if (myBoolean)` is the same as `if (myBoolean === true)`
+							- It should have a function to toggle a todo
 								- Example
 								  ```
-								  var todos = [
-								   {todoText: 'Get groceries', completed: true}, 
-								   {todoText: 'Go for a run', completed: false}
-								  ];
-								  ```
-								- Calling the object
-									- `todos[0].todoText` would show `'Get groceries'`
-									- `todos[1].completed` would show `false`
-									- First half is the same as for an array `[todos[1]`, the `.completed` is added to access a particular property because it's an object. Arrays within arrays would instead use `todos[1][1]`
-								- Pros/Cons of using objects rather than arrays
-									- Pros
-										- By naming the property it's more obvious what we're storing
-										- Calling objects less likely to lead to errors because it's easier to see what data type it'll output (e.g. string, boolean etc)
-									- Note: you can't call objects in arrays via something like `todos[0].[1]`, which would have otherwise allowed two methods of calling values within objects in arrays
-						- Visual Studio Code shortcut: `CTRL + /` will comment in/out multiple lines of code
-						- Requirements tasks
-							- 6.9) We should initialise the todos variable with objects
-								- Example
-								  ```
-								  var todos = [
-								   {todoText: 'Item 1', completed: false},
-								    {todoText: 'Item 2', completed: false},
-								    {todoText: 'Item 3', completed: false}
-								   ];
-								  ```
-									- Each `{}` is an object, with two properties: `todoText` and `completed`
-							- 6.11) The add function should add objects
-								- Example
-								  ```
-								  function add(initialText) { 
-								   todos.push({todoText: initialText, completed: false});
+								  function toggle(position) {
+								   if (todos[position].completed === true) {
+								   todos[position].completed = false
+								   }
+								   else {
+								   todos[position].completed = true
+								   }
 								   console.log(todos);
 								   }
 								  ```
-							- 6.12) The edit function should edit objects
-								- Example
+							- When reading some code to work out what runs and what doesn't, use code comments at least. Consider highlighting where important changes happen, and bolding which lines of code actually run and ignoring that which doesn't
+							  https://i.imgur.com/qEeI0LC.png
+						- 8) Data types
+						  collapsed:: true
+						  id:: 63baa387-dafd-46a6-a6a3-6f92662d10f0
+							- JavaScript data types
+							  id:: 63f33e7a-7bf6-4c9d-8290-a4b8cc7f5cbd
+								- Objects (can be as complex as you want)
+									- `Usually {} // todoList, arrays, functions`
+								- Primitives (building blocks)
+									- `String // 'Look at this string!`
+									- `Number // 1, 2, 3, 4...`
+									- `Boolean // true, false`
+									- `Undefined // value that hasn't been set`
+									- `Null // 'Nothing'`
+							- Comparisons with primitives
+							  collapsed:: true
+								- _String comparison_
+									- `'gordon1' === 'gordon'` will output false
+							- Comparisons with objects
+							  collapsed:: true
+								- `[1, 2, 3] === [1, 2, 3]` equals `false`, and `{} === {}` equals `false`  because you have to explicitly refer to the same object, not just a separate object that has the same value. JavaScript saves the objects at different memory addresses (e.g. memory address 1)
+								- You can workaround this behaviour by using variables e.g. `var array1 = [1, 2, 3];` then `array1 === array1`
+							- Primitives comparison uses values, whereas object comparison uses references
+							- Code examples
+							  collapsed:: true
+								- Objects are saved as a memory address first, then any properties or items are attached to it. Primitives on the other hand are just saved as a value
+								- A lot of programming knowledge is based on learning how a computer thinks, and making you think like one
+								- Example 4
 								  ```
-								  function edit(position, newTodoText) {
-								   todos[position].todoText = newTodoText;
-								   console.log(todos);
-								   }
+								  var myHouse1 = {color: 'blue'};
+								  var myHouse2 = myHouse1;
+								  myHouse2.color = 'red';
 								  ```
-						- Quiz
-							- Example
-							  ```
-							  var myArray = [{name: 'Gordon'}];
-							  
-							  function exampleFunction(thing) {
-							    thing.name = 'changed by exampleFunction';
-							    
-							    thing.thing = {name: 'new thing'};
-							  }
-							  
-							  exampleFunction(myArray[0]);
-							  exampleFunction(myArray[0].thing);
-							  ```
-								- Answers
-									- At some point, `myArray[0].thing.name` will be equal to 'new thing'.
-									- After the code runs, `myArray[0].thing.thing.name` will be equal to 'new thing'.
-								- Learned
-									- You can create a property which doesn't already exist for an object i.e. `myArray.myArray = {name: 'new thing'}`
-									- You can create nested objects (objects within objects) i.e. makes it into `var myArray = [{name: 'Gordon', myArray: {name: 'new thing'}}];`
-									- Length will always been 1 for an array with 1 top-level object in it, even if it has nested objects inside
-									- Use the debugger with step-over and step-in function in order to check the value of `myArray[0].thing.name` at various points
-									- Hovering over variables in the debugger will show you their current value (especially useful when using breakpoints/stepping over)
-					- 7) Version 4 - Toggling
-					  collapsed:: true
-						- If statements
-							- Basic syntax is `if () { }`
-							- `if (myBoolean)` is the same as `if (myBoolean === true)`
-						- It should have a function to toggle a todo
-							- Example
-							  ```
-							  function toggle(position) {
-							   if (todos[position].completed === true) {
-							   todos[position].completed = false
-							   }
-							   else {
-							   todos[position].completed = true
-							   }
-							   console.log(todos);
-							   }
-							  ```
-						- When reading some code to work out what runs and what doesn't, use code comments at least. Consider highlighting where important changes happen, and bolding which lines of code actually run and ignoring that which doesn't
-						  https://i.imgur.com/qEeI0LC.png
-					- 8) Data types
-					  collapsed:: true
-					  id:: 63baa387-dafd-46a6-a6a3-6f92662d10f0
-						- JavaScript data types
-						  id:: 63f33e7a-7bf6-4c9d-8290-a4b8cc7f5cbd
-							- Objects (can be as complex as you want)
-								- `Usually {} // todoList, arrays, functions`
-							- Primitives (building blocks)
-								- `String // 'Look at this string!`
-								- `Number // 1, 2, 3, 4...`
-								- `Boolean // true, false`
-								- `Undefined // value that hasn't been set`
-								- `Null // 'Nothing'`
-						- Comparisons with primitives
+									- `myHouse1.color` and `myHouse2.color` both are `'red'` because objects are stored as references to a particular memory address, not a value. So they both refer to the same object because of the `var myHouse2 = myHouse1;` line
+							- Related: ((afddb9fb-9d0f-456f-b505-32fee333e255))
+						- 9) Version 5 - Displaying data better
 						  collapsed:: true
-							- _String comparison_
-								- `'gordon1' === 'gordon'` will output false
-						- Comparisons with objects
-						  collapsed:: true
-							- `[1, 2, 3] === [1, 2, 3]` equals `false`, and `{} === {}` equals `false`  because you have to explicitly refer to the same object, not just a separate object that has the same value. JavaScript saves the objects at different memory addresses (e.g. memory address 1)
-							- You can workaround this behaviour by using variables e.g. `var array1 = [1, 2, 3];` then `array1 === array1`
-						- Primitives comparison uses values, whereas object comparison uses references
-						- Code examples
-						  collapsed:: true
-							- Objects are saved as a memory address first, then any properties or items are attached to it. Primitives on the other hand are just saved as a value
-							- A lot of programming knowledge is based on learning how a computer thinks, and making you think like one
-							- Example 4
-							  ```
-							  var myHouse1 = {color: 'blue'};
-							  var myHouse2 = myHouse1;
-							  myHouse2.color = 'red';
-							  ```
-								- `myHouse1.color` and `myHouse2.color` both are `'red'` because objects are stored as references to a particular memory address, not a value. So they both refer to the same object because of the `var myHouse2 = myHouse1;` line
-						- Related: ((afddb9fb-9d0f-456f-b505-32fee333e255))
-					- 9) Version 5 - Displaying data better
-					  collapsed:: true
-						- For loops
-						  collapsed:: true
-							- Format
-							  ```
-							  for (initialisation; condition; final-expression) {
-							   code;
-							  }
-							  ```
-								- Example
+							- For loops
+							  collapsed:: true
+								- Format
 								  ```
+								  for (initialisation; condition; final-expression) {
+								   code;
+								  }
+								  ```
+									- Example
+									  ```
+									  for (var i = 0; i < 3; i++) {
+									   console.log('hey');
+									  }
+									  ```
+							- Looping over arrays
+							  collapsed:: true
+								- Example1 - using `i <  3` ensures it won't print the `[3]` item
+								  ```
+								  var array1 = ['a', 'b', 'c', 'd'];
+								  
 								  for (var i = 0; i < 3; i++) {
-								   console.log('hey');
+								   console.log(array1[i]);
 								  }
 								  ```
-						- Looping over arrays
+									- Output
+									  ```
+									  a
+									  b
+									  c
+									  ```
+								- Example2 - using the length function for an array allows dynamically printing any amount of items in an array
+								  ```
+								  var array1 = ['a', 'b', 'c', 'd'];
+								  
+								  for (var i = 0; i < array1.length; i++) {
+								   console.log(array1[i]);
+								  }
+								  ```
+									- Output
+									  ```
+									  a
+									  b
+									  c
+									  d
+									  ```
+								- 6) Example - looping the `todos` array in order to show items on separate lines, instead of the object in it's totality
+								  ```
+								  function displayTodos() {
+								    for (var i = 0; i < todos.length; i++) {
+								      console.log(todos[i]);
+								    }
+								  }
+								  ```
+								- Using the debugger to set a breakpoint on the for loop, then stepping over it useful for debugging the loop at various stages of the loop
+						- **<--Anki cards imported up to here-->**
+						- **<--need to rewrite flashcards in Course 4 which have anonymous functions as methods. Default should be named methods-->**
+						- 10) Version 6 - Toggle All
 						  collapsed:: true
-							- Example1 - using `i <  3` ensures it won't print the `[3]` item
+							- toggleAll() example
 							  ```
-							  var array1 = ['a', 'b', 'c', 'd'];
+							  function toggleAll() {
+							    var completedTodos = 0; // storing completed todos as an easy way to evaluate whether everything is true
 							  
-							  for (var i = 0; i < 3; i++) {
-							   console.log(array1[i]);
-							  }
-							  ```
-								- Output
-								  ```
-								  a
-								  b
-								  c
-								  ```
-							- Example2 - using the length function for an array allows dynamically printing any amount of items in an array
-							  ```
-							  var array1 = ['a', 'b', 'c', 'd'];
-							  
-							  for (var i = 0; i < array1.length; i++) {
-							   console.log(array1[i]);
-							  }
-							  ```
-								- Output
-								  ```
-								  a
-								  b
-								  c
-								  d
-								  ```
-							- 6) Example - looping the `todos` array in order to show items on separate lines, instead of the object in it's totality
-							  ```
-							  function displayTodos() {
 							    for (var i = 0; i < todos.length; i++) {
-							      console.log(todos[i]);
+							      if (todos[i].completed === true) {
+							        completedTodos++;
+							      }
 							    }
+							   // if (everything is true)
+							    if (completedTodos === todos.length) {
+							   // then change everything to false 
+							      for (var i = 0; i < todos.length; i++) {
+							        todos[i].completed = false;
+							        console.log(todos[i]);
+							      }
+							   // if otherwise
+							    } else {
+							   // then change everything to true
+							      for (var i = 0; i < todos.length; i++) {
+							        todos[i].completed = true;
+							        console.log(todos[i]);
+							      }
+							    }
+							      displayTodos();
+							  }
+							   ```
+							- weirdToggleAll() also works the same
+							  ```javascript
+							  function weirdToggleAll() {
+							    var completedTodos = 0;
+							    var allCompleted = true;
+							  
+							    for (var i = 0; i < todos.length; i++) {
+							      if (todos[i].completed !== false) {
+							        completedTodos++;
+							      }
+							  
+							      if (completedTodos !== i + 1) {
+							        allCompleted = false;
+							      }
+							    }
+							  
+							    if (allCompleted === true) {
+							      for (var i = 0; i < todos.length; i++) {
+							        todos[i].completed = false;
+							      }
+							    } else {
+							      for (var i = 0; i < todos.length; i++) {
+							        todos[i].completed = true;  
+							      }
+							    }
+							  
+							    displayTodos();
 							  }
 							  ```
-							- Using the debugger to set a breakpoint on the for loop, then stepping over it useful for debugging the loop at various stages of the loop
-					- **<--Anki cards imported up to here-->**
-					- **<--need to rewrite flashcards in Course 4 which have anonymous functions as methods. Default should be named methods-->**
-					- 10) Version 6 - Toggle All
-					  collapsed:: true
-						- toggleAll() example
-						  ```
-						  function toggleAll() {
-						    var completedTodos = 0; // storing completed todos as an easy way to evaluate whether everything is true
-						  
-						    for (var i = 0; i < todos.length; i++) {
-						      if (todos[i].completed === true) {
-						        completedTodos++;
-						      }
-						    }
-						   // if (everything is true)
-						    if (completedTodos === todos.length) {
-						   // then change everything to false 
-						      for (var i = 0; i < todos.length; i++) {
-						        todos[i].completed = false;
-						        console.log(todos[i]);
-						      }
-						   // if otherwise
-						    } else {
-						   // then change everything to true
-						      for (var i = 0; i < todos.length; i++) {
-						        todos[i].completed = true;
-						        console.log(todos[i]);
-						      }
-						    }
-						      displayTodos();
-						  }
-						   ```
-						- weirdToggleAll() also works the same
-						  ```javascript
-						  function weirdToggleAll() {
-						    var completedTodos = 0;
-						    var allCompleted = true;
-						  
-						    for (var i = 0; i < todos.length; i++) {
-						      if (todos[i].completed !== false) {
-						        completedTodos++;
-						      }
-						  
-						      if (completedTodos !== i + 1) {
-						        allCompleted = false;
-						      }
-						    }
-						  
-						    if (allCompleted === true) {
-						      for (var i = 0; i < todos.length; i++) {
-						        todos[i].completed = false;
-						      }
-						    } else {
-						      for (var i = 0; i < todos.length; i++) {
-						        todos[i].completed = true;  
-						      }
-						    }
-						  
-						    displayTodos();
-						  }
-						  ```
-					- 11) Version 7 - Buttons
-					  collapsed:: true
-						- Good resource for looking up HTML elements
-						  https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-						- `<button>` HTML element can be used to create a clickable button
-							- Example
-						- `<button>` is placed between the `<body>` tags, but not within `<script>`
-						- Sidenote about methods:
-							- Inside of a property of an object, a function can be added. This makes it no longer a `property`, but instead a `method`
+						- 11) Version 7 - Buttons
+						  collapsed:: true
+							- Good resource for looking up HTML elements
+							  https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+							- `<button>` HTML element can be used to create a clickable button
 								- Example
+							- `<button>` is placed between the `<body>` tags, but not within `<script>`
+							- Sidenote about methods:
+								- Inside of a property of an object, a function can be added. This makes it no longer a `property`, but instead a `method`
+									- Example
+									  ```
+									  sayBlame: function hello() {
+									   console.log('sayBlame');
+									  }
+									  ```
+									- `log` from `console.log` is a property/method of `console`
+							- `<button id='SOMETHING'>` can be used to give a button a unique id
+								- e.g. `<button id='display-todos-button'>`
+							- To reference that button, we can use `document.getElementById('SOMETHING');`
+								- e.g. `document.getElementById('display-todos-button');`
+							- `.addEventListener()` is a native method
+							  id:: 632092fe-45c6-48af-965e-ca89cd23b482
+								- `.addEventListener(TYPE, LISTENER, ?OPTIONS);` has 3 parameters
+									- TYPE e.g. 'click'
+									- LISTENER = what function e.g. displayTodos
+									- ?OPTIONS - optional
+								- This example works like: whenever there's a click on displayTodosButton, then trigger displayTodos function:
+								  ```html
+								  <body>
+								    <button id='display-todos-button'>Display todos</button>
+								    <script>
+								      var displayTodosButton = document.getElementById('display-todos-button');
+								      displayTodosButton.addEventListener('click', displayTodos);
+								    </script>
+								  </body>
 								  ```
-								  sayBlame: function hello() {
-								   console.log('sayBlame');
+								- Example2: it should have a toggleAll button
+								  ```html
+								  <body>
+								    <button id='toggle-all-button'>Toggle all</button>
+								    <script>
+								      var toggleAllButton = document.getElementById('toggle-all-button');
+								      toggleAllButton.addEventListener('click', toggleAll);
+								    </script>
+								  </body>
+								  ```
+								- Related: ((633bf5fd-e89b-4b5a-b92d-16210350ae21))
+						- 12) More functions
+						  collapsed:: true
+							- Creating a var that is an existing object will also point to that object
+							  collapsed:: true
+								- The output of this is `demoFunction() {}`
+								  ```
+								  function demoFunction() {}
+								  
+								  var experiment1 = demoFunction;
+								  ```
+									- Can also do `experiment1 === demoFunction` and get back `true`
+							- Creating a var that is calling an existing object will return `undefined` if the object is empty, or it'll return whatever the output is
+							  collapsed:: true
+								- The output of this is `undefined`
+								  ```
+								  function demoFunction() {}
+								  
+								  var experiment2 = demoFunction();
+								  ```
+								- The output of this is `'a string'`
+								  ```
+								  function demoFunctionThatReturnsAString() {
+								   return 'a string';
+								  }
+								  
+								  var experiment4 = demoFunctionThatReturnsAString();
+								  ```
+									- Why
+										- `return` inserts a value (in this case 'a string') where the function (demoFunctionThatReturnsAString) was called
+							- Returning undefined
+							  collapsed:: true
+								- The output of this is the function itself i.e. `function demoFunctionThatReturnsUndefined() { return undefined;}`
+								  ```
+								  function demoFunctionThatReturnsUndefined() {
+								   return undefined;
+								  }
+								  
+								  var experiment5 = demoFunctionThatReturnsUndefined;
+								  ```
+								- The output of this is `undefined`
+								  ```
+								  function demoFunctionThatReturnsUndefined() {
+								   return undefined;
+								  }
+								  
+								  var experiment6 = demoFunctionThatReturnsUndefined();
+								  ```
+									- `experiment6 === undefined`
+							- Functions will always return `undefined` if they're executed, unless they're not empty and have some other value they return
+							- `debugger;` can act like a breakpoint when used in the console
+							  collapsed:: true
+								- e.g. add it at the top of some code submitted to the console
+								  ```
+								  debugger; 
+								  
+								  function demoFunctionThatReturnsUndefined() {
+								   return undefined;
 								  }
 								  ```
-								- `log` from `console.log` is a property/method of `console`
-						- `<button id='SOMETHING'>` can be used to give a button a unique id
-							- e.g. `<button id='display-todos-button'>`
-						- To reference that button, we can use `document.getElementById('SOMETHING');`
-							- e.g. `document.getElementById('display-todos-button');`
-						- `.addEventListener()` is a native method
-						  id:: 632092fe-45c6-48af-965e-ca89cd23b482
-							- `.addEventListener(TYPE, LISTENER, ?OPTIONS);` has 3 parameters
-								- TYPE e.g. 'click'
-								- LISTENER = what function e.g. displayTodos
-								- ?OPTIONS - optional
-							- This example works like: whenever there's a click on displayTodosButton, then trigger displayTodos function:
-							  ```html
-							  <body>
-							    <button id='display-todos-button'>Display todos</button>
-							    <script>
-							      var displayTodosButton = document.getElementById('display-todos-button');
-							      displayTodosButton.addEventListener('click', displayTodos);
-							    </script>
-							  </body>
-							  ```
-							- Example2: it should have a toggleAll button
-							  ```html
-							  <body>
-							    <button id='toggle-all-button'>Toggle all</button>
-							    <script>
-							      var toggleAllButton = document.getElementById('toggle-all-button');
-							      toggleAllButton.addEventListener('click', toggleAll);
-							    </script>
-							  </body>
-							  ```
-							- Related: ((633bf5fd-e89b-4b5a-b92d-16210350ae21))
-					- 12) More functions
-					  collapsed:: true
-						- Creating a var that is an existing object will also point to that object
-						  collapsed:: true
-							- The output of this is `demoFunction() {}`
-							  ```
-							  function demoFunction() {}
-							  
-							  var experiment1 = demoFunction;
-							  ```
-								- Can also do `experiment1 === demoFunction` and get back `true`
-						- Creating a var that is calling an existing object will return `undefined` if the object is empty, or it'll return whatever the output is
-						  collapsed:: true
-							- The output of this is `undefined`
-							  ```
-							  function demoFunction() {}
-							  
-							  var experiment2 = demoFunction();
-							  ```
-							- The output of this is `'a string'`
-							  ```
-							  function demoFunctionThatReturnsAString() {
-							   return 'a string';
-							  }
-							  
-							  var experiment4 = demoFunctionThatReturnsAString();
-							  ```
-								- Why
-									- `return` inserts a value (in this case 'a string') where the function (demoFunctionThatReturnsAString) was called
-						- Returning undefined
-						  collapsed:: true
-							- The output of this is the function itself i.e. `function demoFunctionThatReturnsUndefined() { return undefined;}`
-							  ```
-							  function demoFunctionThatReturnsUndefined() {
-							   return undefined;
-							  }
-							  
-							  var experiment5 = demoFunctionThatReturnsUndefined;
-							  ```
-							- The output of this is `undefined`
-							  ```
-							  function demoFunctionThatReturnsUndefined() {
-							   return undefined;
-							  }
-							  
-							  var experiment6 = demoFunctionThatReturnsUndefined();
-							  ```
-								- `experiment6 === undefined`
-						- Functions will always return `undefined` if they're executed, unless they're not empty and have some other value they return
-						- `debugger;` can act like a breakpoint when used in the console
-						  collapsed:: true
-							- e.g. add it at the top of some code submitted to the console
-							  ```
-							  debugger; 
-							  
-							  function demoFunctionThatReturnsUndefined() {
-							   return undefined;
-							  }
-							  ```
-								- It'll pause at that first line
-						- This example will return the entire function, not print whatever is inside the function
-						  collapsed:: true
-							- AKA `console.log(function);`  will return the entire function, not run the function and print whatever the function would do
-								- e.g. this will return `function demoFunctionThatReturnsAString() { return 'a string'; }`
+									- It'll pause at that first line
+							- This example will return the entire function, not print whatever is inside the function
+							  collapsed:: true
+								- AKA `console.log(function);`  will return the entire function, not run the function and print whatever the function would do
+									- e.g. this will return `function demoFunctionThatReturnsAString() { return 'a string'; }`
+									  ```
+									  function demoFunctionThatReturnsAString() {
+									   return 'a string';
+									  }
+									  
+									  function logThis(thing) {
+									   console.log(thing);
+									  }
+									  
+									  logThis(demoFunctionThatReturnsAString);
+									  ```
+							- Example 2
+							  collapsed:: true
+								- AKA `console.log(runFunction());` will run the function, and print whatever the function would (rather than simply logging the whole function itself)
+								- This will return `'a string'` since it actually runs the function (it uses `logThis(demoFunctionThatReturnsAString());` instead of ``logThis(demoFunctionThatReturnsAString);`
 								  ```
 								  function demoFunctionThatReturnsAString() {
 								   return 'a string';
@@ -7150,385 +7168,376 @@
 								   console.log(thing);
 								  }
 								  
-								  logThis(demoFunctionThatReturnsAString);
+								  logThis(demoFunctionThatReturnsAString());
 								  ```
-						- Example 2
-						  collapsed:: true
-							- AKA `console.log(runFunction());` will run the function, and print whatever the function would (rather than simply logging the whole function itself)
-							- This will return `'a string'` since it actually runs the function (it uses `logThis(demoFunctionThatReturnsAString());` instead of ``logThis(demoFunctionThatReturnsAString);`
-							  ```
-							  function demoFunctionThatReturnsAString() {
-							   return 'a string';
-							  }
-							  
-							  function logThis(thing) {
-							   console.log(thing);
-							  }
-							  
-							  logThis(demoFunctionThatReturnsAString());
-							  ```
-						- _Key points_
-							- `return` inserts a value where the function was called
-							- Not using `return` is the same thing as having `return undefined`
-						- Experiment
-						  collapsed:: true
-							- Example
-							  ```
-							  function function1(inputFunction, inputString) { 
-							   return inputFunction(inputString);
-							  }
-							  
-							  function function2(thing) {
-							   return thing;
-							  }
-							  
-							  var experiment = function1(function2, 'yolo');
-							  ```
-								- Show my working for trying to calculate what `experiment` is equal to e.g. use `backquotes` to swap out parameters, or use code comments, or use `=something` e.g. inputFunction`=function2`,
-							- These are all true
-								- experiment will be equal to 'yolo'
-								- When function1 runs, inputFunction will be equal to function2
-								- When function1 runs, inputString will be equal to 'yolo'
-								- When function2 runs, thing will be equal to 'yolo'
-								- function2 will run once
-					- 13) Version 8 - Getting data from inputs
-					  collapsed:: true
-						- 13.4) There should be a working button for adding a todo.
-						  collapsed:: true
-							- HTML elements
-							  ```
-							   <button id='add-button'>Add</button>
-							   <input id='add-input'>
-							  ```
-							- Code for the buttons to run
-							  ```
-							   // 13.4) There should be a working button for adding a todo.
-							   var addButton = document.getElementById('add-button');
-							   var addInput = document.getElementById('add-input');
-							   addButton.addEventListener('click', add);
-							  ```
-							- Function
-								- Old
-								  ```
-								   function add(initialText) { 
-								   todos.push({todoText: initialText, completed: false});
-								   displayTodos();
-								   }
-								  ```
-								- New
-								  ```
-								   function add() { 
-								   var initialText = addInput.value;
-								   todos.push({todoText: initialText, completed: false});
-								   displayTodos();
-								   }
-								  ```
-								- Also: this additional last line of this function now clears the textbox after the todo is added
-								  ```
-								   function add() { 
-								   var initialText = addInput.value;
-								   todos.push({todoText: initialText, completed: false});
-								   displayTodos();
-								   addInput.value = '';
-								   }
-								  ```
-						- 13.5) There should be a working button for editing a todo.
-						  collapsed:: true
-							- HTML elements
-							  ```
-							   <button id='edit-button'>Edit</button>
-							   <input id='edit-position-input'>
-							   <input id='edit-text-input'>
-							  ```
-							- Event listeners (needed for buttons to run functions)
-							  ```
-							  // 13.5) There should be a working button for editing a todo.
-							   var editButton = document.getElementById('edit-button');
-							   var editPositionInput = document.getElementById('edit-position-input');
-							   var editTextInput = document.getElementById('edit-text-input');
-							   editButton.addEventListener('click', edit);
-							  ```
-							- Function
-								- Old
-								  ```
-								  function edit(position, newTodoText) {
-								    todos[position.todoText = newTodoText);
-								    displayTodos();
-								  }
-								  ```
-								- New
-								  ```
-								   // 6.12) The edit function should edit objects
-								   function edit() {
-								   var position = editPositionInput.value;
-								   var newTodoText = editTextInput.value;
-								   todos[position].todoText = newTodoText;
-								   displayTodos();
-								   editPositionInput.value = '';
-								   editTextInput.value = '';
-								   }
-								  ```
-									- `value` property of these input boxes
-									- Last two lines clear the input boxes after the todo is added
-						- 13.6) There should be a working button for removing a todo.
-						  collapsed:: true
-							- HTML elements
-							  ```
-							   <button id='remove-button'>Remove</button>
-							   <input id='remove-input'>
-							  ```
-							- Event listeners (needed for buttons to run functions)
-							  ```
-							   var removeButton = document.getElementById('remove-button');
-							   var removeInput = document.getElementById('remove-input');
-							   removeButton.addEventListener('click', remove);
-							  ```
-							- Function
-								- Old
-								  ```
-								   function remove(position) {
-								     todos.splice(position, 1);
-								     displayTodos();
-								   }
-								  ```
-								- New
-								  ```
-								  function remove() {
-								    var position = removeInput.value;
-								    todos.splice(position, 1);
-								    displayTodos();
-								    removeInput.value = '';
-								  }
-								  ```
-						- 13.7) There should be a working button for toggling a todo.
-						  collapsed:: true
-							- HTML elements
-							  ```
-							   <button id='toggle-button'>Toggle</button>
-							   <input id='toggle-input'>
-							  ```
-							- Event listeners (needed for buttons to run functions)
-							  ```
-							   // 13.7) There should be a working button for toggling a todo.
-							   var toggleButton = document.getElementById('toggle button');
-							   var toggleInput = document.getElementById('toggle-input');
-							   toggleButton.addEventListener('click', toggle);
-							  ```
-							- Function
-								- Old
-								  ```
-								   function toggle(position) {
-								   if (todos[position].completed === true) {
-								   todos[position].completed = false;
-								   } else {
-								   todos[position].completed = true;
-								   }
-								   displayTodos();
-								   }
-								  ```
-								- New
-								  ```
-								   function toggle() {
-								   var position = toggleInput.value;
-								   if (todos[position].completed === true) {
-								   todos[position].completed = false;
-								   } else {
-								   todos[position].completed = true;
-								   }
-								   displayTodos();
-								   toggleInput.value = '';
-								   }
-								  ```
-						- Elements are objects not primitives, because they have properties e.g. `.value` is used to access input boxes frequently
-						- Setting a variable to be equal to a property will be either a reference or a primitive depending on if the property is an object or primitive e.g. `var input1Value = input1.value;`
-						- `.value` initial value is `''` i.e. empty string
-						- Example
-						  ```
-						  <html>
-						    <head>
-						      <title>Example</title>
-						    </head>
-						    <body>
-						      <input id='input-1'>
-						      <script>
-						        var input1 = document.getElementById('input-1');
-						        var input1Value = input1.value;
-						        input1Value = 'changed';
-						  
-						        var input2 = input1;
-						        input2.value = 'input 2';
-						  
-						        input1.value = '';
-						        input2.value = '';
-						      </script>
-						    </body>
-						  </html>
-						  ```
-							- For both `input1.value` and `input2.value`, it's value starts as `''`, then becomes `'input 2'`, then becomes `''`
-					- 14) Version 9 - Escape from the console
-					  collapsed:: true
-						- Creating a bullet point list out of todos
-							- `<ul>` is the element for an unordered list
-							- `<li>` is a list item
-							- Example structure
-							  ```
-							  <ul>
-							    <li></li>
-							  </ul>
-							  ```
-							- Needed methods
+							- _Key points_
+								- `return` inserts a value where the function was called
+								- Not using `return` is the same thing as having `return undefined`
+							- Experiment
 							  collapsed:: true
-								- createElement method
-									- Syntax
-										- `var element = document.createElement(tagName, options);`
-										- e.g. `var element = document.createElement('li');`
-									- Used for creating a specific type of element
-										- `document.createElement()` can be used for creating HTML elements e.g. creating `<li>` list items
-								- appendChild method - can be used for example to add <li> below a <ul> (bullet points for an unordered list)
-									- Syntax
-										- `element.appendChild(aChild)`
-										- e.g.
-								- innerHTML method - can be used to set or get HTML
-									- Syntax
-										- `element.innerHTML = ;`
-										- `var something = element.innerHTML;`
-								- innerText method - similar to innerHTML, except only changes string instead of HTML
-							- New version
-								- New HTML element
-								  ```html
-								  <body>
-								    <ul id='todos-ul'></ul> // new
-								    <script>
-								      function displayTodos() {}
-								    </script>
-								  </body>
+								- Example
 								  ```
-								- function displayTodos()
+								  function function1(inputFunction, inputString) { 
+								   return inputFunction(inputString);
+								  }
+								  
+								  function function2(thing) {
+								   return thing;
+								  }
+								  
+								  var experiment = function1(function2, 'yolo');
+								  ```
+									- Show my working for trying to calculate what `experiment` is equal to e.g. use `backquotes` to swap out parameters, or use code comments, or use `=something` e.g. inputFunction`=function2`,
+								- These are all true
+									- experiment will be equal to 'yolo'
+									- When function1 runs, inputFunction will be equal to function2
+									- When function1 runs, inputString will be equal to 'yolo'
+									- When function2 runs, thing will be equal to 'yolo'
+									- function2 will run once
+						- 13) Version 8 - Getting data from inputs
+						  collapsed:: true
+							- 13.4) There should be a working button for adding a todo.
+							  collapsed:: true
+								- HTML elements
+								  ```
+								   <button id='add-button'>Add</button>
+								   <input id='add-input'>
+								  ```
+								- Code for the buttons to run
+								  ```
+								   // 13.4) There should be a working button for adding a todo.
+								   var addButton = document.getElementById('add-button');
+								   var addInput = document.getElementById('add-input');
+								   addButton.addEventListener('click', add);
+								  ```
+								- Function
 									- Old
-									  ```javascript
-									  function displayTodos() {
-									    for (var i = 0; i < todos.length; i++) {
-									      console.log(todos[i]);
-									    }
+									  ```
+									   function add(initialText) { 
+									   todos.push({todoText: initialText, completed: false});
+									   displayTodos();
+									   }
+									  ```
+									- New
+									  ```
+									   function add() { 
+									   var initialText = addInput.value;
+									   todos.push({todoText: initialText, completed: false});
+									   displayTodos();
+									   }
+									  ```
+									- Also: this additional last line of this function now clears the textbox after the todo is added
+									  ```
+									   function add() { 
+									   var initialText = addInput.value;
+									   todos.push({todoText: initialText, completed: false});
+									   displayTodos();
+									   addInput.value = '';
+									   }
+									  ```
+							- 13.5) There should be a working button for editing a todo.
+							  collapsed:: true
+								- HTML elements
+								  ```
+								   <button id='edit-button'>Edit</button>
+								   <input id='edit-position-input'>
+								   <input id='edit-text-input'>
+								  ```
+								- Event listeners (needed for buttons to run functions)
+								  ```
+								  // 13.5) There should be a working button for editing a todo.
+								   var editButton = document.getElementById('edit-button');
+								   var editPositionInput = document.getElementById('edit-position-input');
+								   var editTextInput = document.getElementById('edit-text-input');
+								   editButton.addEventListener('click', edit);
+								  ```
+								- Function
+									- Old
+									  ```
+									  function edit(position, newTodoText) {
+									    todos[position.todoText = newTodoText);
+									    displayTodos();
 									  }
 									  ```
 									- New
-									  ```javascript
-									  function displayTodos() {
-									    var todosUl = document.getElementById('todos-ul'); //select the <ul> element by it's ID
-									  
-									    todos.Ul.innerHTML = ''; //clears any existing <li> elements inside of todosUl by setting it as an empty string first. This way if you run the function twice in a row, it'll clear the previous <li> elements
-									  
-									    for (var i = 0; i < todos.length; i++) {
-									      var todoLi = document.createElement('li'); // this var will create <li> element when used
-									      todosUl.appendChild(todoLi); // create <li> as a child of todoListUl
-									    }
+									  ```
+									   // 6.12) The edit function should edit objects
+									   function edit() {
+									   var position = editPositionInput.value;
+									   var newTodoText = editTextInput.value;
+									   todos[position].todoText = newTodoText;
+									   displayTodos();
+									   editPositionInput.value = '';
+									   editTextInput.value = '';
+									   }
+									  ```
+										- `value` property of these input boxes
+										- Last two lines clear the input boxes after the todo is added
+							- 13.6) There should be a working button for removing a todo.
+							  collapsed:: true
+								- HTML elements
+								  ```
+								   <button id='remove-button'>Remove</button>
+								   <input id='remove-input'>
+								  ```
+								- Event listeners (needed for buttons to run functions)
+								  ```
+								   var removeButton = document.getElementById('remove-button');
+								   var removeInput = document.getElementById('remove-input');
+								   removeButton.addEventListener('click', remove);
+								  ```
+								- Function
+									- Old
+									  ```
+									   function remove(position) {
+									     todos.splice(position, 1);
+									     displayTodos();
+									   }
+									  ```
+									- New
+									  ```
+									  function remove() {
+									    var position = removeInput.value;
+									    todos.splice(position, 1);
+									    displayTodos();
+									    removeInput.value = '';
 									  }
 									  ```
-										- Requirement: There should be an li for each todo.
-										- Note: This doesn't list the text for the todo, just a bullet point for each one
-								- Bugs
-									- If you use functions like `add()` it'll show extra bullet points on the page, rather than matching the number of items in `todos`
-										- Fix: `todos.Ul.innerHTML = '';` clears any existing <li> elements inside of todosUl by setting it as an empty string
-									- It doesn't display the `todoText` or `completed` property, just the unordered bullets
-										- New code:
-										  ```
-										  if (todos[i].completed === true) {
-										   todoLi.innerText = '[X] ' + todos[i].todoText;
-										   } else {
-										   todoLi.innerText = '[ ] ' + todos[i].todoText;
-										   }
-										  ```
-					- **<--submitted to GitHub snippets repo up to here-->**
-					- [**<--created Anki cards up to here-->**](((629e07ee-075d-4a72-9bd0-fd63cd35f152)))
-					  id:: 629ccb26-84b2-46d2-944d-7044c3629f37
-					- 15) Version 10 - Click to delete
-					  collapsed:: true
-						- 15.2) Each todo should have it's own remove button.
-						  collapsed:: true
-							- This create a remove button for each <li> but the button doesn't do anything
-							  ```javascript
-							  // 15.2) Each todo should have it's own remove button.
-							   var removeButton = document.createElement('button'); // this var will create <button> element when used
-							   removeButton.innerText = 'Remove'; // label
-							  
-							  todoLi.appendChild(removeButton); // have the button appear in each <li>
-							  ```
-						- 15.4) The remove buttons should actually work.
-						  collapsed:: true
-							- In the debugger can place a breakpoint in the middle of the `remove()` function, then click different 'remove' buttons and see what event is also sent (local section of the tab)
-								- Hovering over `toElement` says `button` each time, but hovering over 'button' will highlight the appropriate button on the screen
-								- Likewise so does `target`, `currentTarget`, `srcElement` properties
-							- `event` refers to the event itself i.e. mouse click (pointer action) on a 'remove' button
-								- We can then access properties that are sent with this event, such as where the mouse was on the screen, screen size, button info etc
-								- `target` one such property of the `event`, which tells you which particular button was pressed
-								- Can also access the`id` property of the target (`event.target.id`) button, and it's the same as `id` part of HTML elements
-							- `function remove()`
-								- Old
-								  ```javascript
-								  function remove() {
-								    var position = removeInput.value;
-								    todos.splice(position, 1);
-								    displayTodos();
-								    removeInput.value = '';
-								  }
+							- 13.7) There should be a working button for toggling a todo.
+							  collapsed:: true
+								- HTML elements
 								  ```
-					- 16) Version 11 - Click to toggle
-					- 17) Version 12 - Click to edit
-				- Premium
-					- It's probably worth it because of the structured progress will more likely guarantee I actually get good
-				- Assorted
-					- JavaScript has three ways to declare a variable: var, let, const.
-					- https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603
-			- DONE [Founders and Coders](((629ccb26-c33a-4e26-8262-1fe1d869027a))) pre-requisites (AKA freeCodeCamp and CodeWars)
-			  :LOGBOOK:
-			  CLOCK: [2022-10-18 Tue 09:15:16]--[2022-10-18 Tue 09:15:17] =>  00:00:01
-			  :END:
-			- [freeCodeCamp](((629ccb25-3ea5-4bc3-84fd-050077003522))) frontend course
-			- ((62a0d2df-fa7f-40a6-81ef-928c8dd743d8))
-			- [You Don't Know JavaScript series by Kyle Simpson](((629ccb26-ef1d-47b6-a890-d6be1548a7f5)))
-			- [TeamTreehouse](((629ccb25-b2a8-4026-a415-7a478c4b5337)))
-			- [Exercism track for JavaScript](https://exercism.org/tracks/javascript)
-			- [MDN Web Docs - JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
-			- [Clientside.dev](https://www.clientside.dev)
-			  collapsed:: true
-				- Cons
-					- First free easy exercise I've seen uses Classes not Hooks, so it's at least two years out of date
-			- ((64024e3e-a577-4332-943b-5427a406cb7b))
-		- [[Currently_studying]]
-		- _Intermediate_
-		  id:: 629d5445-b4d5-4e4a-86e1-539ebb4a897b
-			- [Frontend Masters](https://frontendmasters.com)
-			  id:: 640991f2-e312-4f6d-843f-f8b8789c5a98
-			  collapsed:: true
-				- [[Currently_studying]] : ((64099096-2639-4fff-9b71-b0619e5d4dc2))
-				- Recommended
-					- [Deep JavaScript Foundations | Frontend Masters | Frontend Masters](https://frontendmasters.com/courses/deep-javascript-v3/)
-					- [Algorithms & Data Structures | Learn Algorithms with TypeScript for Interviews | Frontend Masters](https://frontendmasters.com/courses/algorithms/)
-					- [JavaScript Learning Path - Write Professional, Modern JavaScript | Frontend Masters](https://frontendmasters.com/learn/javascript/)
-			- Watch and Code premium course
-			- ((637210b6-f566-4a57-94d5-4b2ecbda71e8))
-			- https://github.com/jwasham/coding-interview-university
-			- ((629ccb26-051d-46ed-910d-bd6d0e0af723))
-			- _Frameworks_
-				- https://www.hntrends.com - tells you what language/frameworks is popular
-				- [React](((629ccb26-62cc-426a-9616-4d8969f32580)))
-			- ((629ccb26-1eab-4686-a7b8-f9433a871440))
-			- [freeCodeCamp](((629ccb25-3ea5-4bc3-84fd-050077003522))) backend course
-			- [CSS3: The Missing Manual](((629ccb26-11e7-4183-bc26-3a72de4fcae6)))
-			- Learn what is
-				- ((635d53fe-64b5-4313-837f-092afae03ade))
-			- **maybe** (review first)
-				- Non-JS simpler alternatives
-					- http://youmightnotneedjs.com
-					- [HTMX](https://htmx.org/)
-					  collapsed:: true
-						- [Htmx in a Nutshell | Hacker News](https://news.ycombinator.com/item?id=33987578)
-						- https://nomadiq.hashnode.dev/reimagining-front-end-web-development-with-htmx-and-hyperscript
-						- [Htmx Is the Future | Hacker News](https://news.ycombinator.com/item?id=35829733)
-						-
-					- ((63471096-6708-422f-8f02-088fc7da91a1))
-				- ((629ccb26-6ecf-41ff-b479-f404b7eddbe0)) once I reach like 3 kyu in CodeWars
+								   <button id='toggle-button'>Toggle</button>
+								   <input id='toggle-input'>
+								  ```
+								- Event listeners (needed for buttons to run functions)
+								  ```
+								   // 13.7) There should be a working button for toggling a todo.
+								   var toggleButton = document.getElementById('toggle button');
+								   var toggleInput = document.getElementById('toggle-input');
+								   toggleButton.addEventListener('click', toggle);
+								  ```
+								- Function
+									- Old
+									  ```
+									   function toggle(position) {
+									   if (todos[position].completed === true) {
+									   todos[position].completed = false;
+									   } else {
+									   todos[position].completed = true;
+									   }
+									   displayTodos();
+									   }
+									  ```
+									- New
+									  ```
+									   function toggle() {
+									   var position = toggleInput.value;
+									   if (todos[position].completed === true) {
+									   todos[position].completed = false;
+									   } else {
+									   todos[position].completed = true;
+									   }
+									   displayTodos();
+									   toggleInput.value = '';
+									   }
+									  ```
+							- Elements are objects not primitives, because they have properties e.g. `.value` is used to access input boxes frequently
+							- Setting a variable to be equal to a property will be either a reference or a primitive depending on if the property is an object or primitive e.g. `var input1Value = input1.value;`
+							- `.value` initial value is `''` i.e. empty string
+							- Example
+							  ```
+							  <html>
+							    <head>
+							      <title>Example</title>
+							    </head>
+							    <body>
+							      <input id='input-1'>
+							      <script>
+							        var input1 = document.getElementById('input-1');
+							        var input1Value = input1.value;
+							        input1Value = 'changed';
+							  
+							        var input2 = input1;
+							        input2.value = 'input 2';
+							  
+							        input1.value = '';
+							        input2.value = '';
+							      </script>
+							    </body>
+							  </html>
+							  ```
+								- For both `input1.value` and `input2.value`, it's value starts as `''`, then becomes `'input 2'`, then becomes `''`
+						- 14) Version 9 - Escape from the console
+						  collapsed:: true
+							- Creating a bullet point list out of todos
+								- `<ul>` is the element for an unordered list
+								- `<li>` is a list item
+								- Example structure
+								  ```
+								  <ul>
+								    <li></li>
+								  </ul>
+								  ```
+								- Needed methods
+								  collapsed:: true
+									- createElement method
+										- Syntax
+											- `var element = document.createElement(tagName, options);`
+											- e.g. `var element = document.createElement('li');`
+										- Used for creating a specific type of element
+											- `document.createElement()` can be used for creating HTML elements e.g. creating `<li>` list items
+									- appendChild method - can be used for example to add <li> below a <ul> (bullet points for an unordered list)
+										- Syntax
+											- `element.appendChild(aChild)`
+											- e.g.
+									- innerHTML method - can be used to set or get HTML
+										- Syntax
+											- `element.innerHTML = ;`
+											- `var something = element.innerHTML;`
+									- innerText method - similar to innerHTML, except only changes string instead of HTML
+								- New version
+									- New HTML element
+									  ```html
+									  <body>
+									    <ul id='todos-ul'></ul> // new
+									    <script>
+									      function displayTodos() {}
+									    </script>
+									  </body>
+									  ```
+									- function displayTodos()
+										- Old
+										  ```javascript
+										  function displayTodos() {
+										    for (var i = 0; i < todos.length; i++) {
+										      console.log(todos[i]);
+										    }
+										  }
+										  ```
+										- New
+										  ```javascript
+										  function displayTodos() {
+										    var todosUl = document.getElementById('todos-ul'); //select the <ul> element by it's ID
+										  
+										    todos.Ul.innerHTML = ''; //clears any existing <li> elements inside of todosUl by setting it as an empty string first. This way if you run the function twice in a row, it'll clear the previous <li> elements
+										  
+										    for (var i = 0; i < todos.length; i++) {
+										      var todoLi = document.createElement('li'); // this var will create <li> element when used
+										      todosUl.appendChild(todoLi); // create <li> as a child of todoListUl
+										    }
+										  }
+										  ```
+											- Requirement: There should be an li for each todo.
+											- Note: This doesn't list the text for the todo, just a bullet point for each one
+									- Bugs
+										- If you use functions like `add()` it'll show extra bullet points on the page, rather than matching the number of items in `todos`
+											- Fix: `todos.Ul.innerHTML = '';` clears any existing <li> elements inside of todosUl by setting it as an empty string
+										- It doesn't display the `todoText` or `completed` property, just the unordered bullets
+											- New code:
+											  ```
+											  if (todos[i].completed === true) {
+											   todoLi.innerText = '[X] ' + todos[i].todoText;
+											   } else {
+											   todoLi.innerText = '[ ] ' + todos[i].todoText;
+											   }
+											  ```
+						- **<--submitted to GitHub snippets repo up to here-->**
+						- [**<--created Anki cards up to here-->**](((629e07ee-075d-4a72-9bd0-fd63cd35f152)))
+						  id:: 629ccb26-84b2-46d2-944d-7044c3629f37
+						- 15) Version 10 - Click to delete
+						  collapsed:: true
+							- 15.2) Each todo should have it's own remove button.
+							  collapsed:: true
+								- This create a remove button for each <li> but the button doesn't do anything
+								  ```javascript
+								  // 15.2) Each todo should have it's own remove button.
+								   var removeButton = document.createElement('button'); // this var will create <button> element when used
+								   removeButton.innerText = 'Remove'; // label
+								  
+								  todoLi.appendChild(removeButton); // have the button appear in each <li>
+								  ```
+							- 15.4) The remove buttons should actually work.
+							  collapsed:: true
+								- In the debugger can place a breakpoint in the middle of the `remove()` function, then click different 'remove' buttons and see what event is also sent (local section of the tab)
+									- Hovering over `toElement` says `button` each time, but hovering over 'button' will highlight the appropriate button on the screen
+									- Likewise so does `target`, `currentTarget`, `srcElement` properties
+								- `event` refers to the event itself i.e. mouse click (pointer action) on a 'remove' button
+									- We can then access properties that are sent with this event, such as where the mouse was on the screen, screen size, button info etc
+									- `target` one such property of the `event`, which tells you which particular button was pressed
+									- Can also access the`id` property of the target (`event.target.id`) button, and it's the same as `id` part of HTML elements
+								- `function remove()`
+									- Old
+									  ```javascript
+									  function remove() {
+									    var position = removeInput.value;
+									    todos.splice(position, 1);
+									    displayTodos();
+									    removeInput.value = '';
+									  }
+									  ```
+						- 16) Version 11 - Click to toggle
+						- 17) Version 12 - Click to edit
+					- Premium
+						- It's probably worth it because of the structured progress will more likely guarantee I actually get good
+					- Assorted
+						- JavaScript has three ways to declare a variable: var, let, const.
+						- https://medium.com/@gordon_zhu/how-to-be-great-at-asking-questions-e37be04d0603
+				- DONE [Founders and Coders](((629ccb26-c33a-4e26-8262-1fe1d869027a))) pre-requisites (AKA freeCodeCamp and CodeWars)
+				  :LOGBOOK:
+				  CLOCK: [2022-10-18 Tue 09:15:16]--[2022-10-18 Tue 09:15:17] =>  00:00:01
+				  :END:
+				- [freeCodeCamp](((629ccb25-3ea5-4bc3-84fd-050077003522))) frontend course
+				- ((62a0d2df-fa7f-40a6-81ef-928c8dd743d8))
+				- [You Don't Know JavaScript series by Kyle Simpson](((629ccb26-ef1d-47b6-a890-d6be1548a7f5)))
+				- [TeamTreehouse](((629ccb25-b2a8-4026-a415-7a478c4b5337)))
+				- [Exercism track for JavaScript](https://exercism.org/tracks/javascript)
+				- [MDN Web Docs - JavaScript First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps)
+				- [Clientside.dev](https://www.clientside.dev)
+				  collapsed:: true
+					- Cons
+						- First free easy exercise I've seen uses Classes not Hooks, so it's at least two years out of date
+				- ((64024e3e-a577-4332-943b-5427a406cb7b))
+			- [[Currently_studying]]
+			- _Intermediate_
+			  id:: 629d5445-b4d5-4e4a-86e1-539ebb4a897b
+				- [Frontend Masters](https://frontendmasters.com)
+				  id:: 640991f2-e312-4f6d-843f-f8b8789c5a98
+				  collapsed:: true
+					- [[Currently_studying]] : ((64099096-2639-4fff-9b71-b0619e5d4dc2))
+					- Recommended
+						- [Deep JavaScript Foundations | Frontend Masters | Frontend Masters](https://frontendmasters.com/courses/deep-javascript-v3/)
+						- [Algorithms & Data Structures | Learn Algorithms with TypeScript for Interviews | Frontend Masters](https://frontendmasters.com/courses/algorithms/)
+						- [JavaScript Learning Path - Write Professional, Modern JavaScript | Frontend Masters](https://frontendmasters.com/learn/javascript/)
+				- Watch and Code premium course
+				- ((637210b6-f566-4a57-94d5-4b2ecbda71e8))
+				- https://github.com/jwasham/coding-interview-university
+				- ((629ccb26-051d-46ed-910d-bd6d0e0af723))
+				- _Frameworks_
+					- https://www.hntrends.com - tells you what language/frameworks is popular
+					- [React](((629ccb26-62cc-426a-9616-4d8969f32580)))
+				- ((629ccb26-1eab-4686-a7b8-f9433a871440))
+				- [freeCodeCamp](((629ccb25-3ea5-4bc3-84fd-050077003522))) backend course
+				- [CSS3: The Missing Manual](((629ccb26-11e7-4183-bc26-3a72de4fcae6)))
+				- Learn what is
+					- ((635d53fe-64b5-4313-837f-092afae03ade))
+				- **maybe** (review first)
+					- Non-JS simpler alternatives
+						- http://youmightnotneedjs.com
+						- [HTMX](https://htmx.org/)
+						  collapsed:: true
+							- [Htmx in a Nutshell | Hacker News](https://news.ycombinator.com/item?id=33987578)
+							- https://nomadiq.hashnode.dev/reimagining-front-end-web-development-with-htmx-and-hyperscript
+							- [Htmx Is the Future | Hacker News](https://news.ycombinator.com/item?id=35829733)
+							-
+						- ((63471096-6708-422f-8f02-088fc7da91a1))
+					- ((629ccb26-6ecf-41ff-b479-f404b7eddbe0)) once I reach like 3 kyu in CodeWars
+			- *Advanced*
+				- [Object-oriented Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-object-oriented-concepts)
+				  id:: 654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd
+					- ## Course Introduction
+					- ## Understanding JavaScript Prototypes
+				- [Functional Programming Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-functional-programming-concepts)
 	- Assorted topics
 	  collapsed:: true
 		- 7 Data Types : `number`, `string`, `boolean`, `undefined`, `null`, `object`, `symbol` (ES2015)
@@ -8667,6 +8676,7 @@
 			- [Elm](https://elm-lang.org/) (Rust-like)
 	- _Frameworks and Libraries_
 	  id:: 63baa386-e89b-4c6f-9dad-19586353252f
+	  collapsed:: true
 		- Sorted by end
 			- Frontend
 			  id:: 63679852-9cb5-4278-b624-6f742ac0088f
@@ -10438,10 +10448,13 @@
 	- [11 Javascript Resources For Every Level of Expertise](https://www.fullstackacademy.com/blog/learn-javascript-for-free-11-online-tutorials-resources)
 	- [Best Javascript learning resource that you think (almost) no one is aware of](https://www.reddit.com/r/javascript/comments/8v2t7h/best_javascript_learning_resource_that_you_think/)
 	- [Comments for JavaScript fundamentals before learning React](https://reddit.com/comments/90i06g)
-	- The 5 main pillars of learning programming
-	  (https://medium.freecodecamp.org/the-main-pillars-of-learning-programming-and-why-beginners-should-master-them-e04245c17c56
+	- [The 5 main pillars of learning programming](https://medium.freecodecamp.org/the-main-pillars-of-learning-programming-and-why-beginners-should-master-them-e04245c17c56)
 	  collapsed:: true
-		- Test-Driven Development; Fundamentals First; Libraries & Frameworks; Master & Apprentice; Challenge & Motivation
+		- Test-Driven Development
+		- Fundamentals First
+		- Libraries & Frameworks
+		- Master & Apprentice
+		- Challenge & Motivation
 	- References/Ongoing learning
 		- ((6343d066-e388-4d88-808d-94ce2960681d))
 		- [JavaScript in Plain English](https://javascript.plainenglish.io)
@@ -10502,8 +10515,8 @@
 	- Hacker News hiring trends
 	  collapsed:: true
 		- https://www.hntrends.com/2018/jan-react-continues-streak.html?compare1=React&compare2=AngularJS&compare3=Vue&compare4=Ember
-	- Flow is a static type checker for JavaScript
-	  https://flow.org/
+	- [Flow](https://flow.org/) is a static type checker for JavaScript
+	- [Sign In | Pluralsight](https://app.pluralsight.com/paths/skills/javascript-2022)
 - _Related:_
 	- [[CSS]]
 	- [Priority coding to-do](((629ccb27-fddd-452f-94f6-77bfc30bcfcf)))
