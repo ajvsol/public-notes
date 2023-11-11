@@ -5854,6 +5854,7 @@
 		- Sorted by difficulty
 			- Beginner-Advanced
 				- [JavaScript 2022 | Pluralsight path](https://app.pluralsight.com/paths/skills/javascript-2022)
+				  id:: 65500703-75a9-4a9c-8cd6-08519600f536
 				  collapsed:: true
 					- Novice
 						- [JavaScript: The Big Picture](https://app.pluralsight.com/library/courses/javascript-big-picture)
@@ -5861,7 +5862,66 @@
 						- [JavaScript Fundamentals](https://app.pluralsight.com/library/courses/fundamentals-javascript)
 						- [Debugging JavaScript Applications](https://app.pluralsight.com/library/courses/javascript-debugging-applications)
 					- Practitioner
-						-
+						- [Arrays and Objects in JavaScript](https://app.pluralsight.com/library/courses/javascript-arrays-objects)
+						- Strings and Regular Expressions in JavaScript
+						- Functions in JavaScript
+						- Error Handling in JavaScript
+						- Looping and Branching in JavaScript
+						- Asynchronous Programming in JavaScript
+						- Network Requests in JavaScript
+						- Modules in JavaScript
+						- JavaScript in the Browser
+						- Package Management in JavaScript with npm and Yarn
+						- JavaScript Unit Testing with Jest
+						- Building a REST API in JavaScript with Express
+						- Building a Web Application with JavaScript
+					- Advanced
+					  id:: 655007c9-5a7b-4d3b-897e-d24db018a0b7
+					  collapsed:: true
+						- [Object-oriented Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-object-oriented-concepts)
+						  id:: 654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd
+						  collapsed:: true
+							- ## Course Introduction
+								- JavaScript is a prototypes-based language instead an object-based ones
+								- ### What is Object-oriented Programming
+									- Object-oriented Concepts
+										- Encapsulation - grouping of data or functionality e.g. a Person, Vehicle
+										- Composition - composing objects from other objects e.g. Person object might also contain their own Vehicle object
+										  collapsed:: true
+											- Classes are typically used to create a set of objects with a consistent set of properties and functionality
+											  collapsed:: true
+												- ```js
+												  class Person {
+												    firstName = '';
+												    lastName = '';
+												    isAdult() { ... }
+												  }
+												  let jim = new Person('Jim', 'Cooper'); 
+												  let kris = new Person('Kris', 'Cooper');
+												  ```
+										- Inheritance
+										  collapsed:: true
+											- Allows us to create additional types of objects that inherit properties and methods from another type of object
+											- e.g. Student extends Person class
+										- Polymorphism
+										  collapsed:: true
+											- One aspect is that an object inherits from another object can be used as if it were the parent object
+											  collapsed:: true
+												- e.g. if a function expects a Person object to be entered you can instead use the Student object instead there since you know it'll inherit the same methods and properties
+											- Another aspect is to do with overriding methods. We can code overrides in the extended class (e.g. Student) so that it doesn't inherit, it'll instead use a different method/property
+											-
+								- ### JavaScript is a Loosely-typed, Prototype-based Language
+									-
+							- ## Understanding JavaScript Prototypes
+							- ## Using JavaScript Constructor Functions
+							- ## Inheritance with Constructor Functions and Prototypes
+							- ## Using JavaScript Classes
+							- ## Inheritance with JavaScript Classes
+						- [Functional Programming Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-functional-programming-concepts)
+						- Transpiling and Polyfills for Extended JavaScript Support
+					- Expert
+						- Proxy Objects and Reflect in JavaScript
+						- Web Assembly Interaction with JavaScript
 			- _Beginner_
 			  id:: 629d542c-4f95-4966-84fe-a2170d83484d
 				- ((646349ac-4774-4376-b96f-863fd43d5b4d))
@@ -7543,15 +7603,8 @@
 						- ((63471096-6708-422f-8f02-088fc7da91a1))
 					- ((629ccb26-6ecf-41ff-b479-f404b7eddbe0)) once I reach like 3 kyu in CodeWars
 			- *Advanced*
-				- [Object-oriented Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-object-oriented-concepts)
-				  id:: 654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd
-					- ## Course Introduction
-					- ## Understanding JavaScript Prototypes
-					- ## Using JavaScript Constructor Functions
-					- ## Inheritance with Constructor Functions and Prototypes
-					- ## Using JavaScript Classes
-					- ## Inheritance with JavaScript Classes
-				- [Functional Programming Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-functional-programming-concepts)
+				- ((65500703-75a9-4a9c-8cd6-08519600f536))
+					- {{embed ((655007c9-5a7b-4d3b-897e-d24db018a0b7))}}
 	- Assorted topics
 	  collapsed:: true
 		- 7 Data Types : `number`, `string`, `boolean`, `undefined`, `null`, `object`, `symbol` (ES2015)
