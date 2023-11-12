@@ -5882,6 +5882,7 @@
 						  id:: 654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd
 						  collapsed:: true
 							- ## Course Introduction
+							  collapsed:: true
 								- JavaScript is a prototypes-based language instead an object-based ones
 								- ### What is Object-oriented Programming
 									- Object-oriented Concepts
@@ -5911,8 +5912,24 @@
 											- Another aspect is to do with overriding methods. We can code overrides in the extended class (e.g. Student) so that it doesn't inherit, it'll instead use a different method/property
 											-
 								- ### JavaScript is a Loosely-typed, Prototype-based Language
+									- Loosely-typed means we just use the keyword `let` and JavaScript infers the type of the variable
+										- As opposed to strongly typed where we'd instead do `int age = 5`
+									- JavaScript also doesn't do type checking on parameters
+									- When you create new classes they're still of the data type object. As opposed to strongly-typed languages where you're actually creating a new data type e.g. Person
+									- Classes-based vs Prototypes-based
+									  collapsed:: true
+										- ![image.png](../assets/image_1699750052006_0.png)
+											- Pseudocode
+											- JavaScript uses prototypes and objects, and even their "classes" still use prototypes behind-the-scenes
+								- ### Using the [Stackblitz](https://stackblitz.com/) Environment
+									- [StackBlitz | Instant Dev Environments | Click. Code. Done.](https://stackblitz.com/) uses an embedded ((63209272-1088-4824-a762-4ac7ded04b0a)) editor on the left and an embedded browser on the right
+									- Fork this dev environment - [Object-Oriented JavaScript - StackBlitz](https://stackblitz.com/edit/oo-javascript)
 									-
 							- ## Understanding JavaScript Prototypes
+								- ### How JavaScript Prototypes Work
+								- ### Instance vs Prototype Properties
+								- ### Creating Prototype Chains
+								- ### A Graphical Overview of Prototypes
 							- ## Using JavaScript Constructor Functions
 							- ## Inheritance with Constructor Functions and Prototypes
 							- ## Using JavaScript Classes
