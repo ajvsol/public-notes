@@ -658,6 +658,27 @@
 									- Sealing an object [prevents extensions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions) and makes existing properties non-configurable. A sealed object has a fixed set of properties: new properties cannot be added, existing properties cannot be removed, their enumerability and configurability cannot be changed, and its prototype cannot be re-assigned. Values of existing properties can still be changed as long as they are writable. `seal()` returns the same object that was passed in.
 								- Related: ((64024e3f-2814-4615-b4f0-a2b49b57e78f))
 							- [`Object.setPrototypeOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf)
+							  id:: 646349b0-93d7-4477-add9-481d59e062c3
+								- Syntax
+									- ```js
+									  Object.setPrototypeOf(obj, prototype)
+									  ```
+									- Parameters
+										- [`obj`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf#obj) : The object which is to have its prototype set.
+										- [`prototype`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf#prototype) : The object's new prototype (an object or [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)).
+									- Return value
+										- The specified object.
+								- Examples
+									- ```js
+									  let Person = {
+									    firstName: '',
+									    lastname: '',
+									    age: 0
+									  }
+									  
+									  let jim = {};
+									  Object.setPrototypeOf(jim, Person);
+									  ```
 							- [`Object.prototype.toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)
 							- [`Object.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
 							  id:: 64024e3f-cc84-4091-bb07-e55be6c3abdb
@@ -5916,7 +5937,7 @@
 										- As opposed to strongly typed where we'd instead do `int age = 5`
 									- JavaScript also doesn't do type checking on parameters
 									- When you create new classes they're still of the data type object. As opposed to strongly-typed languages where you're actually creating a new data type e.g. Person
-									- Classes-based vs Prototypes-based
+									- Classes-based vs Prototypes-based (objects)
 									  collapsed:: true
 										- ![image.png](../assets/image_1699750052006_0.png)
 											- Pseudocode
@@ -5927,6 +5948,8 @@
 									-
 							- ## Understanding JavaScript Prototypes
 								- ### How JavaScript Prototypes Work
+									- ((646349b0-93d7-4477-add9-481d59e062c3)) can be used for inheritance
+										-
 								- ### Instance vs Prototype Properties
 								- ### Creating Prototype Chains
 								- ### A Graphical Overview of Prototypes
