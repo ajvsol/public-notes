@@ -450,6 +450,7 @@
 							- {Archive} ^^Deprecated^^
 							  collapsed:: true
 								- [`Object.prototype.__proto__`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto)
+								  id:: 646349b1-801a-47e3-a73e-de2360725a07
 						- Methods
 							- [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 							  collapsed:: true
@@ -591,6 +592,10 @@
 							- [`Object.getOwnPropertyNames()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames)
 							- [`Object.getOwnPropertySymbols()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols)
 							- [`Object.getPrototypeOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)
+							  id:: 646349b0-c2cf-4be8-8ad1-b93767059a94
+							  collapsed:: true
+							  Returns the prototype (i.e. the value of the internal [[Prototype]] property) of the specified object.
+								-
 							- [`Object.hasOwn()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn)
 							  id:: 64024e3f-34f6-4295-8f37-be8258ca0c9e
 							  collapsed:: true
@@ -659,17 +664,19 @@
 								- Related: ((64024e3f-2814-4615-b4f0-a2b49b57e78f))
 							- [`Object.setPrototypeOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf)
 							  id:: 646349b0-93d7-4477-add9-481d59e062c3
+							  Sets the prototype (i.e., the internal `[[Prototype]]` property) of a specified object to another object or [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null).
 								- Syntax
 									- ```js
 									  Object.setPrototypeOf(obj, prototype)
 									  ```
 									- Parameters
 										- [`obj`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf#obj) : The object which is to have its prototype set.
-										- [`prototype`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf#prototype) : The object's new prototype (an object or [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)).
+										- [`prototype`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf#prototype) : The object's new prototype (an object or [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)). Naming convention it that it should be ((b2c095a3-5b8c-49e3-a10d-877a42e8cb78)) ?
 									- Return value
 										- The specified object.
 								- Examples
-									- ```js
+									- id:: 6550d30d-a061-4ad7-9a2b-5732508af02f
+									  ```js
 									  let Person = {
 									    firstName: '',
 									    lastname: '',
@@ -5948,8 +5955,11 @@
 									-
 							- ## Understanding JavaScript Prototypes
 								- ### How JavaScript Prototypes Work
+								  collapsed:: true
 									- ((646349b0-93d7-4477-add9-481d59e062c3)) can be used for inheritance
-										-
+									- ((6550d30d-a061-4ad7-9a2b-5732508af02f))
+									- ((646349b0-c2cf-4be8-8ad1-b93767059a94)) can be used to find out an object's prototype
+									-
 								- ### Instance vs Prototype Properties
 								- ### Creating Prototype Chains
 								- ### A Graphical Overview of Prototypes
