@@ -9905,11 +9905,8 @@
 				- _JavaScript CMS_
 				  id:: 629ccb26-512b-4462-9cb0-4527492e6ddb
 				  collapsed:: true
-					- Ghost
+					- ((646349df-5c24-45d6-a241-75f2cb033321))
 					  collapsed:: true
-						- https://ghost.org/features/
-						- https://github.com/TryGhost/Ghost
-						- Ember.js admin client, Node.js JSON API, Handlebars.js front-end
 					- https://apostrophecms.org/
 					- https://www.contentful.com/
 					- https://cosmicjs.com/
@@ -10222,7 +10219,7 @@
 				  https://workflowy.com/#/7c4066396b5a
 				- Bookmark Tab
 			- Website built in Bootstrap
-			- Website built in Ghost
+			- Website built in ((646349df-5c24-45d6-a241-75f2cb033321))
 			- React Dapp which pulls some blockchain data or smart contract
 			- Small JavaScript game engine games
 			- React app that will work well with Filecoin API (or Sia API for now?)
