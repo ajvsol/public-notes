@@ -6042,7 +6042,25 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 								- ### Using JavaScript Constructor Functions
 									- Classes are just syntactic sugar on top of constructor functions
 									- Constructor functions are functions which are used to construct new objects
-									-
+									- Constructor function compared to an object prototype
+										- ```js
+										  // Constructor function
+										  function Person(firstName, lastName, age) {
+										    // Parameter values are assigned as properties on new objects created iwth this function
+										    this.firstName = firstName;
+										    this.lastName = lastName
+										  }
+										  
+										  // Object prototype
+										  let Person = {
+										    firstName: '',
+										    lastName: '',
+										    age: 21,
+										    fullName() {
+										      return `${this.firstName} ${this.lastName}`;
+										    }
+										  }
+										  ```
 								- ### Understanding the new Keyword
 								- ### Adding Methods to a Constructor Function's Prototype
 								- ### A Graphical Overview of Constructor Functions
