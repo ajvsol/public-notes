@@ -3591,6 +3591,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							  ```
 							- Works well with ((63679853-35a3-4095-bffa-b1266212d17b)) to only assign a value if it's nullish
 					- [`new`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new)
+					  id:: 646349af-34cf-4f75-9faa-865b2c30af88
 					- [`new.target`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
 					- [`import.meta`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import.meta)
 					- [`super`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
@@ -6028,7 +6029,6 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- ((6550d30d-a061-4ad7-9a2b-5732508af02f))
 									- ((646349b0-c2cf-4be8-8ad1-b93767059a94)) can be used to find out an object's prototype
 								- ### Instance vs Prototype Properties
-								  collapsed:: true
 									- ((646349b0-11fb-44f1-a715-ee5bd59d8f1c)) is used to find out if an object inherits a property
 									- ((65539093-0042-4124-8394-bb0f4b8ecd9d))
 									- Child objects inherit properties and methods from their prototype
@@ -6048,9 +6048,22 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										  function Person(firstName, lastName, age) {
 										    // Parameter values are assigned as properties on new objects created iwth this function
 										    this.firstName = firstName;
-										    this.lastName = lastName
+										    this.lastName = lastName;
+										    this.age = age;
+										    this.fullName = function() {
+										    	return `${this.firstName} ${this.lastName}`; 
+										    }
 										  }
 										  
+										  // Creating a new instance
+										  let jim = new Person('Jim', 'Cooper', 29);
+										  ```
+											- ((64024e3f-159e-41ab-800d-5a5bf7e98bda)) refers to the context itself
+											- ```js
+											  jim.hasOwnProperty('firstname'); // This evaluates as `true` now, since unlike object prototypes this puts properties
+											  								// on the instance itself
+											  ```
+										- ```js
 										  // Object prototype
 										  let Person = {
 										    firstName: '',
@@ -6060,8 +6073,14 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										      return `${this.firstName} ${this.lastName}`;
 										    }
 										  }
+										  
+										  // Creating a new instance
+										  let jim = { firstName: 'Jim', lastName: 'Cooper', age: 29 }
+										  Object.setPrototypeof(jim, Student);
 										  ```
-								- ### Understanding the new Keyword
+											- Much more verbose to create a new instance
+								- ### Understanding the ((646349af-34cf-4f75-9faa-865b2c30af88)) Keyword
+									-
 								- ### Adding Methods to a Constructor Function's Prototype
 								- ### A Graphical Overview of Constructor Functions
 								- ### Creating Getter and Setter Properties
