@@ -6040,6 +6040,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- ## Using JavaScript Constructor Functions
 								- See intro for why these are useful
 								- ### Using JavaScript Constructor Functions
+								  collapsed:: true
 									- Classes are just syntactic sugar on top of constructor functions
 									- Constructor functions are functions which are used to construct new objects
 									- Constructor function compared to an object prototype
@@ -6058,7 +6059,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										  // Creating a new instance
 										  let jim = new Person('Jim', 'Cooper', 29);
 										  ```
-											- ((64024e3f-159e-41ab-800d-5a5bf7e98bda)) refers to the context itself
+											- ((64024e3f-159e-41ab-800d-5a5bf7e98bda)) refers to an object in memory, which one it is depends on the context in which it's called
 											- ```js
 											  jim.hasOwnProperty('firstname'); // This evaluates as `true` now, since unlike object prototypes this puts properties
 											  								// on the instance itself
@@ -6080,8 +6081,19 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										  ```
 											- Much more verbose to create a new instance
 								- ### Understanding the ((646349af-34cf-4f75-9faa-865b2c30af88)) Keyword
-									-
+								  collapsed:: true
+									- Does 4 things:
+										- Creates a new object in-memory
+										  logseq.order-list-type:: number
+										- Binds ((64024e3f-159e-41ab-800d-5a5bf7e98bda)) to the new object
+										  logseq.order-list-type:: number
+										- Calls the function that follows the `new` keyword
+										  logseq.order-list-type:: number
+										- Implicitly returns the newly created object i.e. the constructor function doesn't need a `return` statement
+										  logseq.order-list-type:: number
 								- ### Adding Methods to a Constructor Function's Prototype
+								  id:: e101673f-b28a-40dc-af87-231d1e344dc1
+								-
 								- ### A Graphical Overview of Constructor Functions
 								- ### Creating Getter and Setter Properties
 								- ### Creating Static Properties
