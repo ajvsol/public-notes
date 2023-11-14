@@ -808,6 +808,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- [`Function.prototype.length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length)
 							- [`Function.prototype.name`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name)
 							- [`Function.prototype.prototype`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype)
+							  id:: 646349b0-04f1-4f6c-a7ad-c0bb87216141
 						- Methods
 							- [`Function.prototype.apply()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
 							  id:: 63f8fe4d-795b-436e-9fc4-1c0cb402cbda
@@ -6044,13 +6045,15 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- Classes are just syntactic sugar on top of constructor functions
 									- Constructor functions are functions which are used to construct new objects
 									- Constructor function compared to an object prototype
-										- ```js
+										- id:: 6553cab5-299d-4490-aa61-6f7190b83b8e
+										  ```js
 										  // Constructor function
 										  function Person(firstName, lastName, age) {
 										    // Parameter values are assigned as properties on new objects created iwth this function
 										    this.firstName = firstName;
 										    this.lastName = lastName;
 										    this.age = age;
+										    // This isn't best practice - instead see "Adding Methods to a Constructor Function's Prototype"
 										    this.fullName = function() {
 										    	return `${this.firstName} ${this.lastName}`; 
 										    }
@@ -6093,7 +6096,52 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										  logseq.order-list-type:: number
 								- ### Adding Methods to a Constructor Function's Prototype
 								  id:: e101673f-b28a-40dc-af87-231d1e344dc1
-								-
+								  collapsed:: true
+									- Old
+									  ((6553cab5-299d-4490-aa61-6f7190b83b8e))
+									- Best practice
+									  ```js
+									  // Constructor function
+									  function Person(firstName, lastName, age) {
+									    // Parameter values are assigned as properties on new objects created iwth this function
+									    this.firstName = firstName;
+									    this.lastName = lastName;
+									    this.age = age;
+									  }
+									  // Best practice for how to add methods onto a constructor function
+									  Person.prototype.fullName = function() {
+									    return `${this.firstName} ${this.lastName}`; 
+									  };
+									  
+									  // Creating a new instance
+									  let jim = new Person('Jim', 'Cooper', 29);
+									  ```
+									- Every function you create has a prototype object which is created once we first define the function
+									- Unlike objects which require ((646349b0-c2cf-4be8-8ad1-b93767059a94)) you can instead access a function's prototype using the `.prototype` property
+										- e.g.
+										  ```js
+										  Person.prototype;
+										  ```
+										- ((646349b0-04f1-4f6c-a7ad-c0bb87216141))
+									- An Object's Prototype is the object instance from which the object was inherited.
+									- A Function’s Prototype is the object instance that will become the prototype for all objects created using this function as a constructor
+										- ```js
+										  // This means as soon as you create it using this:
+										  this.fullName = function() {
+										    	return `${this.firstName} ${this.lastName}`; 
+										    }
+										  
+										  // It's now stored here in-memory as method on the `prototype` property
+										  // and the old `this.fullName` line can be deleted
+										  Person.prototype.fullName = function() {
+										    	return `${this.firstName} ${this.lastName}`; 
+										    }
+										  
+										  // You can even test this 
+										  jim.hasOwnProperty('fullName'); // returns `false`
+										  jim.getPrototypeOf().hasOwnProperty('fullName'); // returns `true`
+										  ```
+										- This prototype object (`Person.prototype`) becomes the prototype for any new object created by this constructor function
 								- ### A Graphical Overview of Constructor Functions
 								- ### Creating Getter and Setter Properties
 								- ### Creating Static Properties
