@@ -6038,8 +6038,10 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- ((646349b0-93d7-4477-add9-481d59e062c3)) can be used for this
 										- ((655392b4-1e44-4721-ad10-c6f13b7055fd))
 							- ## Using JavaScript Constructor Functions
+								- See intro for why these are useful
 								- ### Using JavaScript Constructor Functions
 									- Classes are just syntactic sugar on top of constructor functions
+									- Constructor functions are functions which are used to construct new objects
 									-
 								- ### Understanding the new Keyword
 								- ### Adding Methods to a Constructor Function's Prototype
@@ -6052,6 +6054,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- ## Inheritance with Constructor Functions and Prototypes
 							- ## Using JavaScript Classes
 							- ## Inheritance with JavaScript Classes
+							  collapsed:: true
 								- ### Inheritance with JavaScript Classes
 								- ### Inheritance with Class Constructors
 								- ### Using the typeof and instanceof Operators
@@ -6059,7 +6062,8 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 								- ### Overriding Methods in JavaScript Classes
 								- ### A Word of Warning About Object-oriented Design
 									- Search `what is wrong with object oriented programming`
-									-
+									- Gives the example of using many classes for vehicles, cars, engine etc. But then along comes electric cars and they lack an engine and use different fuel. This results in months of refactoring if you've got a large codebase
+									- Classes are still being used in modern JavaScript applications but not large inheritance chains. Instead composition is being used, and some instead go as far as using ((63fe5474-f771-4530-8f8a-58b55c71204e))
 							- Related:
 								- ((63fe5472-f72c-4a29-9067-7d7edc128d06))
 								- ((f16a5715-3945-4df4-88e5-598969dec550))
