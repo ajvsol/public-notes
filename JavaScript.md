@@ -6050,6 +6050,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- ## Inheritance with Constructor Functions and Prototypes
 							- ## Using JavaScript Classes
 							- ## Inheritance with JavaScript Classes
+							- Related: ((63fe5472-f72c-4a29-9067-7d7edc128d06))
 						- [Functional Programming Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-functional-programming-concepts)
 						- Transpiling and Polyfills for Extended JavaScript Support
 					- Expert
@@ -8004,15 +8005,13 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 					- https://ionicframework.com/docs/publishing/progressive-web-app/
 			- [Learning Resources]
 				- https://web.dev/learn/pwa/ - [discussion](https://news.ycombinator.com/item?id=32675791)
-		- Functional Vs OOP
+		- ((f16a5715-3945-4df4-88e5-598969dec550)) in JavaScript
 		  id:: 629ccb26-33a2-445c-859c-adeaa91e4f27
 		  collapsed:: true
-			- [Functional Programming (FP) vs Object-Oriented Programming (OOP)](((629ccb26-a92e-4bab-8b21-2a5f41f7a04d)))
 			- Object-oriented JavaScript
 				- [Object-oriented JavaScript for beginners - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 				- [JavaScript OOP in 4 steps](http://exploringjs.com/impatient-js/ch_single-objects.html)
 			- Functional Programming in JavaScript
-			  collapsed:: true
 			  id:: 629ccb26-05a4-476c-93b3-c50de3455318
 				- https://github.com/stoeffel/awesome-fp-js
 				- https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
