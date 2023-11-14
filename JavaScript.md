@@ -453,7 +453,6 @@
 								  id:: 646349b1-801a-47e3-a73e-de2360725a07
 						- Methods
 							- [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-							  collapsed:: true
 							  ((6408c21b-fe9b-4417-b6a1-d9442a257977))
 								- It copies all [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable) [own properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn) from one or more *source objects* to a *target object*. It returns the modified target object.
 								  id:: 6408c21b-fe9b-4417-b6a1-d9442a257977
@@ -475,7 +474,6 @@
 									  // Expected output: true
 									  ```
 							- [`Object.create()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
-							  collapsed:: true
 								- It creates a new object, using an existing object as the prototype of the newly created object.
 								- Examples
 									- ```js
@@ -497,7 +495,6 @@
 							- [`Object.defineProperties()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties)
 							- [`Object.defineProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 							  id:: 63679853-849e-4274-8f95-b5178cb66a6c
-							  collapsed:: true
 								- [How to hide object properties from console logs and iteration #shorts - YouTube](https://youtu.be/51S1hevmQd0)
 								  id:: 6367a0ff-8d8b-4d0d-b757-9219291e7ed8
 									- ```javascript
@@ -535,7 +532,6 @@
 									- ((64024e42-a0ab-4278-9c5b-4cc98409efd8)) for checking non-object data structures
 							- [`Object.freeze()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
 							  id:: 64024e3f-2814-4615-b4f0-a2b49b57e78f
-							  collapsed:: true
 							  ((6408c51c-ad3a-4c43-b4b1-9cd9fee3d51b))
 								- This *freezes* an object
 								  id:: 6408c51c-ad3a-4c43-b4b1-9cd9fee3d51b
@@ -558,7 +554,6 @@
 								- Related: ((64024e3f-ac91-4d7c-a821-0002462bb14d))
 							- [`Object.fromEntries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
 							  id:: 64024e3f-dbb1-4d5c-9b49-76009df56467
-							  collapsed:: true
 							  ((64024e3f-ab8d-4776-964c-79c44a5c8c1f))
 								- It transforms a list of key-value pairs (e.g. an array) into an object.
 								  id:: 64024e3f-ab8d-4776-964c-79c44a5c8c1f
@@ -575,7 +570,6 @@
 									  // expected output: Object { foo: "bar", baz: 42 }
 									  ```
 								- [How to use Object.fromEntries to convert arrays to objects #shorts - YouTube](https://youtu.be/9Vn4q_zy3ls)
-								  collapsed:: true
 								  id:: 6367a146-06fc-4e50-b64f-a112da9ad635
 									- Opposite of ((6367a177-676f-4518-ad91-4fad0759ab49))
 									- ```javascript
@@ -599,11 +593,23 @@
 							- [`Object.hasOwn()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn)
 							  id:: 64024e3f-34f6-4295-8f37-be8258ca0c9e
 							  collapsed:: true
-							  ((640866c5-5fd1-4955-b2c3-4393598adecc))
+							  ((640866c5-5fd1-4955-b2c3-4393598adecc)) | Intended to replace ((646349b0-11fb-44f1-a715-ee5bd59d8f1c))
+								-
 								- It returns `true` if the specified object has the indicated property as its *own* property.  If the property is inherited, or does not exist, the method returns `false`.
 								  id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- [`Object.prototype.hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
+							  id:: 646349b0-11fb-44f1-a715-ee5bd59d8f1c
+							  collapsed:: true
 							  Replaced by ((64024e3f-34f6-4295-8f37-be8258ca0c9e))
+								- Returns a boolean indicating whether this object has the specified property as its own property (as opposed to inheriting it).
+								- Syntax
+									- ```js
+									  hasOwnProperty(prop)
+									  ```
+										- Parameters
+											- [`prop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty#prop) : The [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) name or [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) of the property to test.
+										- Return value
+											- Returns `true` if the object has the specified property as own property; `false` otherwise.
 							- [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
 							  collapsed:: true
 							  ((6408c5ad-72f9-4e3d-b81d-e991970e1fd3))
@@ -664,6 +670,7 @@
 								- Related: ((64024e3f-2814-4615-b4f0-a2b49b57e78f))
 							- [`Object.setPrototypeOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf)
 							  id:: 646349b0-93d7-4477-add9-481d59e062c3
+							  collapsed:: true
 							  Sets the prototype (i.e., the internal `[[Prototype]]` property) of a specified object to another object or [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null).
 								- Syntax
 									- ```js
@@ -726,7 +733,6 @@
 									- ((6377ece4-b9b9-413a-8195-15de9b9c5ec2)) for the keys
 									- ((6377ece4-3a89-4765-b6d0-8c1620f49c11)) for the keys and values
 							- {Archive} ^^Deprecated^^
-							  collapsed:: true
 								- [`Object.prototype.__defineGetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineGetter__)
 								- [`Object.prototype.__defineSetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineSetter__)
 								- [`Object.prototype.__lookupGetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupGetter__)
@@ -5955,13 +5961,11 @@
 									-
 							- ## Understanding JavaScript Prototypes
 								- ### How JavaScript Prototypes Work
-								  collapsed:: true
 									- ((646349b0-93d7-4477-add9-481d59e062c3)) can be used for inheritance
 									- ((6550d30d-a061-4ad7-9a2b-5732508af02f))
 									- ((646349b0-c2cf-4be8-8ad1-b93767059a94)) can be used to find out an object's prototype
-									-
 								- ### Instance vs Prototype Properties
-									-
+									- ((646349b0-11fb-44f1-a715-ee5bd59d8f1c)) is used to
 								- ### Creating Prototype Chains
 								- ### A Graphical Overview of Prototypes
 							- ## Using JavaScript Constructor Functions
