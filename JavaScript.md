@@ -6050,8 +6050,11 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- ## Inheritance with Constructor Functions and Prototypes
 							- ## Using JavaScript Classes
 							- ## Inheritance with JavaScript Classes
-							- Related: ((63fe5472-f72c-4a29-9067-7d7edc128d06))
+							- Related:
+								- ((63fe5472-f72c-4a29-9067-7d7edc128d06))
+								- ((f16a5715-3945-4df4-88e5-598969dec550))
 						- [Functional Programming Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-functional-programming-concepts)
+						  id:: 654fdfa7-337d-4fa9-915b-a1ce80421fde
 						- Transpiling and Polyfills for Extended JavaScript Support
 					- Expert
 						- Proxy Objects and Reflect in JavaScript
