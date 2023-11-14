@@ -6039,6 +6039,8 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										- ((655392b4-1e44-4721-ad10-c6f13b7055fd))
 							- ## Using JavaScript Constructor Functions
 								- ### Using JavaScript Constructor Functions
+									- Classes are just syntactic sugar on top of constructor functions
+									-
 								- ### Understanding the new Keyword
 								- ### Adding Methods to a Constructor Function's Prototype
 								- ### A Graphical Overview of Constructor Functions
@@ -6050,6 +6052,14 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- ## Inheritance with Constructor Functions and Prototypes
 							- ## Using JavaScript Classes
 							- ## Inheritance with JavaScript Classes
+								- ### Inheritance with JavaScript Classes
+								- ### Inheritance with Class Constructors
+								- ### Using the typeof and instanceof Operators
+								- ### Polymorphism with JavaScript Classes
+								- ### Overriding Methods in JavaScript Classes
+								- ### A Word of Warning About Object-oriented Design
+									- Search `what is wrong with object oriented programming`
+									-
 							- Related:
 								- ((63fe5472-f72c-4a29-9067-7d7edc128d06))
 								- ((f16a5715-3945-4df4-88e5-598969dec550))
