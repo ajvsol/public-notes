@@ -594,13 +594,36 @@
 							  id:: 64024e3f-34f6-4295-8f37-be8258ca0c9e
 							  collapsed:: true
 							  ((640866c5-5fd1-4955-b2c3-4393598adecc)) | Intended to replace ((646349b0-11fb-44f1-a715-ee5bd59d8f1c))
-								-
 								- It returns `true` if the specified object has the indicated property as its *own* property.  If the property is inherited, or does not exist, the method returns `false`.
-								  id:: 640866c5-5fd1-4955-b2c3-4393598adecc
+id:: 640866c5-5fd1-4955-b2c3-4393598adecc
+								- Syntax
+									- ```js
+									  Object.hasOwn(obj, prop)
+									  ```
+										- Parameters
+											- [`obj`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn#obj) : The JavaScript object instance to test.
+											- [`prop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn#prop) : The [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) name or [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) of the property to test.
+										- Return value
+											- `true` if the specified object has directly defined the specified property. Otherwise `false`
+								- Examples
+									- Using hasOwn to test for a property's existence
+									  ```js
+									  const example = {};
+									  Object.hasOwn(example, "prop"); // false - 'prop' has not been defined
+									  
+									  example.prop = "exists";
+									  Object.hasOwn(example, "prop"); // true - 'prop' has been defined
+									  
+									  example.prop = null;
+									  Object.hasOwn(example, "prop"); // true - own property exists with value of null
+									  
+									  example.prop = undefined;
+									  Object.hasOwn(example, "prop"); // true - own property exists with value of undefined
+									  ```
 							- [`Object.prototype.hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
 							  id:: 646349b0-11fb-44f1-a715-ee5bd59d8f1c
 							  collapsed:: true
-							  Replaced by ((64024e3f-34f6-4295-8f37-be8258ca0c9e))
+							  Being replaced by ((64024e3f-34f6-4295-8f37-be8258ca0c9e))
 								- Returns a boolean indicating whether this object has the specified property as its own property (as opposed to inheriting it).
 								- Syntax
 									- ```js
@@ -610,6 +633,26 @@
 											- [`prop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty#prop) : The [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) name or [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) of the property to test.
 										- Return value
 											- Returns `true` if the object has the specified property as own property; `false` otherwise.
+								- Examples
+									- ```js
+									  const fruits = ["Apple", "Banana", "Watermelon", "Orange"];
+									  fruits.hasOwnProperty(3); // true ('Orange')
+									  fruits.hasOwnProperty(4); // false - not defined
+									  ```
+									- id:: 65539093-0042-4124-8394-bb0f4b8ecd9d
+									  ```js
+									  let Person = {
+									    firstName: '',
+									    lastName: '',
+									    age: 18
+									  }
+									  
+									  let jim = { firstName: 'Jim', lastName: 'Cooper' }
+									  Object.setPrototypeOf(jim, Person);
+									  
+									  jim.hasOwnProperty('firstName'); // true
+									  jim.hasOwnProperty('age'); // false
+									  ```
 							- [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
 							  collapsed:: true
 							  ((6408c5ad-72f9-4e3d-b81d-e991970e1fd3))
@@ -5965,8 +6008,14 @@
 									- ((6550d30d-a061-4ad7-9a2b-5732508af02f))
 									- ((646349b0-c2cf-4be8-8ad1-b93767059a94)) can be used to find out an object's prototype
 								- ### Instance vs Prototype Properties
-									- ((646349b0-11fb-44f1-a715-ee5bd59d8f1c)) is used to
+								  collapsed:: true
+									- ((646349b0-11fb-44f1-a715-ee5bd59d8f1c)) is used to find out if an object inherits a property
+									- ((65539093-0042-4124-8394-bb0f4b8ecd9d))
+									- Child objects inherit properties and methods from their prototype
 								- ### Creating Prototype Chains
+									- Multiple levels of inheritance
+									- All objects created in JavaScript have the prototype `Object`, and this holds all the methods such as ((64024e3f-34f6-4295-8f37-be8258ca0c9e))
+									-
 								- ### A Graphical Overview of Prototypes
 							- ## Using JavaScript Constructor Functions
 							- ## Inheritance with Constructor Functions and Prototypes
