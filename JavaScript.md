@@ -5961,6 +5961,7 @@
 									- ((646349b0-c2cf-4be8-8ad1-b93767059a94)) can be used to find out an object's prototype
 									-
 								- ### Instance vs Prototype Properties
+									-
 								- ### Creating Prototype Chains
 								- ### A Graphical Overview of Prototypes
 							- ## Using JavaScript Constructor Functions
