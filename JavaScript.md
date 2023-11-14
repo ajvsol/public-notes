@@ -736,6 +736,25 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									  let jim = {};
 									  Object.setPrototypeOf(jim, Person);
 									  ```
+									- Creating multiple levels of inheritance (prototype chain)
+									  id:: 655392b4-1e44-4721-ad10-c6f13b7055fd
+									  ```js
+									  let Person = {
+									    firstName: '',
+									    lastname: '',
+									    age: 0
+									  }
+									  
+									  let Student = {
+									    enrolledCourses = [],
+									    yearOfGraduation = 2015
+									  }
+									  
+									  Object.setPrototypeOf(Student, Person);
+									  
+									  let jim = {};
+									  Object.setPrototypeOf(jim, Student);
+									  ```
 							- [`Object.prototype.toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString)
 							- [`Object.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString)
 							  id:: 64024e3f-cc84-4091-bb07-e55be6c3abdb
@@ -6003,6 +6022,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- Fork this dev environment - [Object-Oriented JavaScript - StackBlitz](https://stackblitz.com/edit/oo-javascript)
 									-
 							- ## Understanding JavaScript Prototypes
+							  collapsed:: true
 								- ### How JavaScript Prototypes Work
 									- ((646349b0-93d7-4477-add9-481d59e062c3)) can be used for inheritance
 									- ((6550d30d-a061-4ad7-9a2b-5732508af02f))
@@ -6015,9 +6035,18 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 								- ### Creating Prototype Chains
 									- Multiple levels of inheritance
 									- All objects created in JavaScript have the prototype `Object`, and this holds all the methods such as ((64024e3f-34f6-4295-8f37-be8258ca0c9e))
-									-
-								- ### A Graphical Overview of Prototypes
+									- ((646349b0-93d7-4477-add9-481d59e062c3)) can be used for this
+										- ((655392b4-1e44-4721-ad10-c6f13b7055fd))
 							- ## Using JavaScript Constructor Functions
+								- ### Using JavaScript Constructor Functions
+								- ### Understanding the new Keyword
+								- ### Adding Methods to a Constructor Function's Prototype
+								- ### A Graphical Overview of Constructor Functions
+								- ### Creating Getter and Setter Properties
+								- ### Creating Static Properties
+								- ### Creating Static Methods
+								- ### Creating Private Properties with Closures
+								- ### Creating Private Methods with Closures
 							- ## Inheritance with Constructor Functions and Prototypes
 							- ## Using JavaScript Classes
 							- ## Inheritance with JavaScript Classes
