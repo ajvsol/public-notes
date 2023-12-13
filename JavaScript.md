@@ -453,6 +453,7 @@
 								  id:: 646349b1-801a-47e3-a73e-de2360725a07
 						- Methods
 							- [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+							  collapsed:: true
 							  ((6408c21b-fe9b-4417-b6a1-d9442a257977))
 								- It copies all [enumerable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable) [own properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn) from one or more *source objects* to a *target object*. It returns the modified target object.
 								  id:: 6408c21b-fe9b-4417-b6a1-d9442a257977
@@ -474,6 +475,7 @@
 									  // Expected output: true
 									  ```
 							- [`Object.create()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
+							  collapsed:: true
 								- It creates a new object, using an existing object as the prototype of the newly created object.
 								- Examples
 									- ```js
@@ -495,6 +497,7 @@
 							- [`Object.defineProperties()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties)
 							- [`Object.defineProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
 							  id:: 63679853-849e-4274-8f95-b5178cb66a6c
+							  collapsed:: true
 								- [How to hide object properties from console logs and iteration #shorts - YouTube](https://youtu.be/51S1hevmQd0)
 								  id:: 6367a0ff-8d8b-4d0d-b757-9219291e7ed8
 									- ```javascript
@@ -532,6 +535,7 @@
 									- ((64024e42-a0ab-4278-9c5b-4cc98409efd8)) for checking non-object data structures
 							- [`Object.freeze()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze)
 							  id:: 64024e3f-2814-4615-b4f0-a2b49b57e78f
+							  collapsed:: true
 							  ((6408c51c-ad3a-4c43-b4b1-9cd9fee3d51b))
 								- This *freezes* an object
 								  id:: 6408c51c-ad3a-4c43-b4b1-9cd9fee3d51b
@@ -554,6 +558,7 @@
 								- Related: ((64024e3f-ac91-4d7c-a821-0002462bb14d))
 							- [`Object.fromEntries()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
 							  id:: 64024e3f-dbb1-4d5c-9b49-76009df56467
+							  collapsed:: true
 							  ((64024e3f-ab8d-4776-964c-79c44a5c8c1f))
 								- It transforms a list of key-value pairs (e.g. an array) into an object.
 								  id:: 64024e3f-ab8d-4776-964c-79c44a5c8c1f
@@ -590,6 +595,10 @@
 							  collapsed:: true
 							  Returns the prototype (i.e. the value of the internal [[Prototype]] property) of the specified object.
 								-
+							- [`Object.groupBy`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy)
+							  id:: 6579fe15-797f-4976-a9a1-2f7a4d0995a7
+							  collapsed:: true
+								- allows you to organise all the objects in an array by a specific value e.g. sort ages into two groups
 							- [`Object.hasOwn()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwn)
 							  id:: 64024e3f-34f6-4295-8f37-be8258ca0c9e
 							  collapsed:: true
@@ -799,6 +808,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 								- [`Object.prototype.__defineSetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineSetter__)
 								- [`Object.prototype.__lookupGetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupGetter__)
 								- [`Object.prototype.__lookupSetter__()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupSetter__)
+						- Related: ((64024e3f-2a66-4456-816f-f0b00cfd0c4e))
 					- [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 					  collapsed:: true
 						- Properties
@@ -1699,8 +1709,8 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 						- Related: ((63470fd1-1f37-4428-9546-d674c323d5d1))
 				- Indexed Collections
 					- [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-					  collapsed:: true
 					  id:: 64024e3f-2a66-4456-816f-f0b00cfd0c4e
+					  collapsed:: true
 						- Properties
 							- [`get Array[@@species]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@species)
 							- [`Array.prototype[@@unscopables]`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@unscopables)
@@ -2929,7 +2939,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- ((63679853-27fd-40a4-bd44-b836c61f4394))
 									- ((634bc0c2-0b68-4da7-83b6-5abefa297cac)) : ((636d0fc5-9fbf-432f-8246-1f5884e5a5f6))
 							- [`Array.prototype.values()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values)
-						-
+						- Related: ((63f33e7c-e71b-4d14-b352-7b9fe2d600b1))
 					- [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array)
 					- [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)
 					- [`Uint8ClampedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray)
@@ -5949,6 +5959,14 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 	  collapsed:: true
 		- Sorted by priority
 			- ((654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd))
+		- Regularly updated
+			- [ECMAScript® 2023 Language Specification](https://262.ecma-international.org)
+			  id:: 6579fcc0-3004-4cdb-a9d2-59af1450fa77
+			  collapsed:: true
+			  See Introduction for yearly changelog
+				- Changes summary
+					- ECMAScript 2023, the 14th edition, introduced the `toSorted`, `toReversed`, `with`, `findLast`, and `findLastIndex` methods on `Array.prototype` and `TypedArray.prototype`, as well as the `toSpliced` method on `Array.prototype`; added support for `#!` comments at the beginning of files to better facilitate executable ECMAScript files; and allowed the use of most Symbols as keys in weak collections.
+					- ((6579fe15-797f-4976-a9a1-2f7a4d0995a7))
 		- Sorted by difficulty
 			- Beginner-Advanced
 				- [JavaScript 2022 | Pluralsight path](https://app.pluralsight.com/paths/skills/javascript-2022)
@@ -7855,6 +7873,26 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 					- {{embed ((655007c9-5a7b-4d3b-897e-d24db018a0b7))}}
 	- Assorted topics
 	  collapsed:: true
+		- New changes sorted by year
+			- 2023
+				- ((6579fe15-797f-4976-a9a1-2f7a4d0995a7))
+				- `Array.toSorted`
+				-
+		- ECMAScript versions
+		  collapsed:: true
+			- Learn newer EMCA because old stuff like var isn't as good
+			  collapsed:: true
+				- Now we have ES7, ES8 and ES9 on the way.
+				  
+				  Why would you learn callbacks and promises when async/await is a much better paradigm? Why learning the weirdness of \`var\` instead of using \`const\` and \`let\`? Why using regular functions when arrow functions are better in most cases? You'll need to unlearn lots of stuff, which you don't need to if you start with modern JS in the first place.
+				  
+				  Don't worry about scale or speed, it's fast enough for almost everyone.
+				  
+				  Personal opinion here, everyone will tell you different things: go with React or Vue, use VSCode.
+				  
+				  https://reddit.com/comments/8x7d39/comment/e21vokb?context=3
+			- Learn ES6 to ES5 compatibility procedure [ECMAScript 6 compatibility table](https://kangax.github.io/compat-table/es6/)
+			- [Javascript ES6 — You don’t really need to learn Generators](https://medium.com/@_bengarrison/javascript-es6-you-dont-really-need-to-learn-generators-96aa2e9114fa)
 		- 7 Data Types : `number`, `string`, `boolean`, `undefined`, `null`, `object`, `symbol` (ES2015)
 		  id:: 629ccb26-0412-44d5-8c9b-22f20cc7e773
 		- ((634ae294-d1f4-4480-8025-ee9f80daa935))
@@ -8091,21 +8129,6 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 			- Promises
 			- https://frontarm.com/courses/async-javascript/promises/why-async/
 			-
-		- ECMAScript versions
-		  collapsed:: true
-			- Learn newer EMCA because old stuff like var isn't as good
-			  collapsed:: true
-				- Now we have ES7, ES8 and ES9 on the way.
-				  
-				  Why would you learn callbacks and promises when async/await is a much better paradigm? Why learning the weirdness of \`var\` instead of using \`const\` and \`let\`? Why using regular functions when arrow functions are better in most cases? You'll need to unlearn lots of stuff, which you don't need to if you start with modern JS in the first place.
-				  
-				  Don't worry about scale or speed, it's fast enough for almost everyone.
-				  
-				  Personal opinion here, everyone will tell you different things: go with React or Vue, use VSCode.
-				  
-				  https://reddit.com/comments/8x7d39/comment/e21vokb?context=3
-			- Learn ES6 to ES5 compatibility procedure [ECMAScript 6 compatibility table](https://kangax.github.io/compat-table/es6/)
-			- [Javascript ES6 — You don’t really need to learn Generators](https://medium.com/@_bengarrison/javascript-es6-you-dont-really-need-to-learn-generators-96aa2e9114fa)
 		- Progressive Web Apps (PWA)
 		  collapsed:: true
 			- What
