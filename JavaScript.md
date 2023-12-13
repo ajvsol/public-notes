@@ -2078,7 +2078,9 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- ((63679853-bf0c-44a1-9fba-087790dbcc45)), which returns the first element that satisfies the testing function (rather than its index)
 									- ((63679853-7115-4961-bd6b-0b224f149a11))
 							- [`Array.prototype.findLast()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLast)
+							  id:: 646349b0-29c2-4fc3-9beb-1582086c806c
 							- [`Array.prototype.findLastIndex()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findLastIndex)
+							  id:: 646349b0-1bfd-4201-a31e-3882ac88972b
 							- [`Array.prototype.flat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat)
 							- [`Array.prototype.flatMap()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
 							- [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
@@ -2494,7 +2496,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- [`Array.prototype.reverse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
 							  id:: 635eb08f-bc21-4a5c-baa9-813d9170753a
 							  collapsed:: true
-							  Inverse of ((63470fd1-5c6c-4c4d-aea0-9d111a003975)) | It reverses an array in-place
+							  Inverse of ((63470fd1-5c6c-4c4d-aea0-9d111a003975)) | Mutable of ((657a0339-beca-427d-9840-468296d19588)) | It reverses an array in-place
 								- Examples
 									- ```javascript
 									  const array1 = ['one', 'two', 'three'];
@@ -2655,7 +2657,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- [`Array.prototype.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 							  id:: 63470fd1-5c6c-4c4d-aea0-9d111a003975
 							  collapsed:: true
-							  Inverse of ((635eb08f-bc21-4a5c-baa9-813d9170753a)) | Can be used to sort arrays, including ones with objects in them
+							  Inverse of ((635eb08f-bc21-4a5c-baa9-813d9170753a)) | Mutable version of ((657a032d-9e70-4c5a-a1da-aaae4d7d1730)) | Can be used to sort arrays, including ones with objects in them
 								- Sort an array of numbers or strings. But use ((5c654b22-085e-4bd2-9d05-6e4692cf0929)) or ((0257c452-a8cc-40b2-b47a-235d81f263ce)) instead to find the highest/lowest number in an array, as it's a lot more efficient
 								- `Array.sort(compareFunction)` The Compare Function
 								  id:: 63642aac-c79a-4855-9c12-fae94a472481
@@ -2878,7 +2880,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- [`Array.prototype.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 							  id:: 634bc0c2-38ee-4fdb-b785-2b19b9d2a6e1
 							  collapsed:: true
-							  This changes the contents of an array by removing or replacing existing elements and/or adding new elements [in place](https://en.wikipedia.org/wiki/In-place_algorithm) | Mutable version of ((634bc0c2-0b68-4da7-83b6-5abefa297cac))
+							  This changes the contents of an array by removing or replacing existing elements and/or adding new elements [in place](https://en.wikipedia.org/wiki/In-place_algorithm) | Mutable version of ((634bc0c2-0b68-4da7-83b6-5abefa297cac)) / ((657a032a-26ac-4c21-99ee-d33ff1fc3e78))
 								- Unlike ((63679853-27fd-40a4-bd44-b836c61f4394)) and ((63679853-dcb7-4c52-a93f-2ba70da4b082)) this method removes items starting from an arbitrary index
 								- #+BEGIN_WARNING
 								  This is a mutable method, unlike ((634bc0c2-0b68-4da7-83b6-5abefa297cac))
@@ -2930,6 +2932,15 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- ((63679853-dcb7-4c52-a93f-2ba70da4b082))
 							- [`Array.prototype.toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString)
 							- [`Array.prototype.toString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
+							- [`Array.prototype.toSpliced()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSpliced)
+							  id:: 657a032a-26ac-4c21-99ee-d33ff1fc3e78
+							  Immutable version of ((634bc0c2-38ee-4fdb-b785-2b19b9d2a6e1))
+							- [`Array.prototype.toSorted()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted)
+							  id:: 657a032d-9e70-4c5a-a1da-aaae4d7d1730
+							  Immutable version of ((63470fd1-5c6c-4c4d-aea0-9d111a003975))
+							- [`Array.prototype.toReversed()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toReversed)
+							  id:: 657a0339-beca-427d-9840-468296d19588
+							  Immutable version of ((635eb08f-bc21-4a5c-baa9-813d9170753a))
 							- [`Array.prototype.unshift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 							  id:: 63679853-f388-4ef7-98f4-ccfcebf4cd89
 							  collapsed:: true
@@ -2939,6 +2950,11 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- ((63679853-27fd-40a4-bd44-b836c61f4394))
 									- ((634bc0c2-0b68-4da7-83b6-5abefa297cac)) : ((636d0fc5-9fbf-432f-8246-1f5884e5a5f6))
 							- [`Array.prototype.values()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values)
+							- [`Array.prototype.with()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/with)
+							  id:: 657a04d8-14b8-4e87-9763-a68fc3215d08
+							  collapsed:: true
+							  [Copying](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#copying_methods_and_mutating_methods) (immutable) version of using the [bracket notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors#bracket_notation) to change the value of a given index. It returns a new array with the element at the given index replaced with the given value.
+								-
 						- Related: ((63f33e7c-e71b-4d14-b352-7b9fe2d600b1))
 					- [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array)
 					- [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)
@@ -5963,10 +5979,17 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 			- [ECMAScript® 2023 Language Specification](https://262.ecma-international.org)
 			  id:: 6579fcc0-3004-4cdb-a9d2-59af1450fa77
 			  collapsed:: true
-			  See Introduction for yearly changelog
+			  See Introduction section on webpage for yearly changelog
 				- Changes summary
-					- ECMAScript 2023, the 14th edition, introduced the `toSorted`, `toReversed`, `with`, `findLast`, and `findLastIndex` methods on `Array.prototype` and `TypedArray.prototype`, as well as the `toSpliced` method on `Array.prototype`; added support for `#!` comments at the beginning of files to better facilitate executable ECMAScript files; and allowed the use of most Symbols as keys in weak collections.
-					- ((6579fe15-797f-4976-a9a1-2f7a4d0995a7))
+					- ECMAScript 2023, the 14th edition, introduced the ((657a032d-9e70-4c5a-a1da-aaae4d7d1730)), ((657a0339-beca-427d-9840-468296d19588)), ((657a04d8-14b8-4e87-9763-a68fc3215d08)), ((646349b0-29c2-4fc3-9beb-1582086c806c)), and ((646349b0-1bfd-4201-a31e-3882ac88972b)) methods on `Array.prototype` and `TypedArray.prototype`, as well as the ((657a032a-26ac-4c21-99ee-d33ff1fc3e78)); added support for `#!` comments at the beginning of files to better facilitate executable ECMAScript files; and allowed the use of most Symbols as keys in weak collections.
+						- Also:
+							- ((6579fe15-797f-4976-a9a1-2f7a4d0995a7))
+					- ECMAScript 2022, the 13th edition, introduced top-level `await`, allowing the [keyword](https://262.ecma-international.org/#sec-keywords-and-reserved-words) to be used at the top level of modules; new class elements: public and private instance fields, public and private static fields, private instance methods and accessors, and private static methods and accessors; static blocks inside classes, to perform per-class evaluation initialization; the `#x in obj` syntax, to test for presence of private fields on objects; regular expression match indices via the `/d` flag, which provides start and end indices for matched substrings; the `cause` property on `Error` objects, which can be used to record a causation chain in errors; the `at` method for Strings, Arrays, and TypedArrays, which allows relative indexing; and `Object.hasOwn`, a convenient alternative to `Object.prototype.hasOwnProperty`.
+					- ECMAScript 2021, the 12th edition, introduced the `replaceAll` method for Strings; `Promise.any`, a Promise combinator that short-circuits when an input value is fulfilled; `AggregateError`, a new Error type to represent multiple errors at once; logical assignment operators (`??=`, `&&=`, `||=`); `WeakRef`, for referring to a target object without preserving it from garbage collection, and `FinalizationRegistry`, to manage registration and unregistration of cleanup operations 
+					  performed when target objects are garbage collected; separators for numeric literals (`1_000`); and `Array.prototype.sort` was made more precise, reducing the amount of cases that result in an [implementation-defined](https://262.ecma-international.org/#implementation-defined) [sort order](https://262.ecma-international.org/#sort-order).
+					- ECMAScript 2020, the 11th edition, introduced the `matchAll` method for Strings, to produce an iterator for all match objects generated by a global regular expression; `import()`, a syntax to asynchronously import Modules with a dynamic specifier; `BigInt`, a new number primitive for working with arbitrary precision [integers](https://262.ecma-international.org/#integer); `Promise.allSettled`, a new Promise combinator that does not short-circuit; `globalThis`, a universal way to access the global `this` value; dedicated `export * as ns from 'module'` syntax for use within modules; increased standardization of `for-in` enumeration order; `import.meta`, a [host](https://262.ecma-international.org/#host)-populated object available in Modules that may contain contextual information about the Module; as well as adding two new syntax features to improve working with “nullish” values (null or undefined): nullish coalescing, a value selection operator; and optional chaining, a property access and function invocation operator that short-circuits if the value to access/invoke is nullish.
+			- [tc39/proposals: Tracking ECMAScript Proposals](https://github.com/tc39/proposals)
+			  id:: 657a009b-e9e7-43e4-a2b4-1cb135d98e18
 		- Sorted by difficulty
 			- Beginner-Advanced
 				- [JavaScript 2022 | Pluralsight path](https://app.pluralsight.com/paths/skills/javascript-2022)
@@ -7877,7 +7900,12 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 			- 2023
 				- ((6579fe15-797f-4976-a9a1-2f7a4d0995a7))
 				- `Array.toSorted`
-				-
+				- Array.toReversed
+				- Array.toSpliced - copies, doesn't mutate
+				- HTML
+					- `<search>` tag, more specific than `<form>`
+					- `<dialog>` - show modals
+					-
 		- ECMAScript versions
 		  collapsed:: true
 			- Learn newer EMCA because old stuff like var isn't as good
@@ -8385,7 +8413,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 									- Optional chaining and nullish coalescing operators, two features that were introduced in [ECMAScript 2020.](https://262.ecma-international.org/11.0/)
 						- It adds extra features not yet available in JavaScript
 						  collapsed:: true
-							- [Currently JavaScript proposals](https://github.com/tc39/proposals)
+							- ((657a009b-e9e7-43e4-a2b4-1cb135d98e18))
 							- TypeScript offers some features that aren't available in normal JavaScript (yet) e.g. enums, decorators, function overloading, tuples, access modifiers, read-only objects/members, parameter properties
 							- Optional static typing
 							- https://stackify.com/typescript-vs-javascript-migrate/
