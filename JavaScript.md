@@ -7896,16 +7896,6 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 					- {{embed ((655007c9-5a7b-4d3b-897e-d24db018a0b7))}}
 	- Assorted topics
 	  collapsed:: true
-		- New changes sorted by year
-			- 2023
-				- ((6579fe15-797f-4976-a9a1-2f7a4d0995a7))
-				- `Array.toSorted`
-				- Array.toReversed
-				- Array.toSpliced - copies, doesn't mutate
-				- HTML
-					- `<search>` tag, more specific than `<form>`
-					- `<dialog>` - show modals
-					-
 		- ECMAScript versions
 		  collapsed:: true
 			- Learn newer EMCA because old stuff like var isn't as good
