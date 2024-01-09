@@ -6186,7 +6186,11 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 								- ### A Graphical Overview of Constructor Functions
 									- As soon as we declare a Person constructor function, it creates a prototype in the background
 										- ```js
-										  
+										  function Person(firstName, lastName, age) {
+										    this.firstName = firstName;
+										    this.lastName = lastName;
+										    this.age 
+										  }
 										  ```
 								- ### Creating Getter and Setter Properties
 								- ### Creating Static Properties
