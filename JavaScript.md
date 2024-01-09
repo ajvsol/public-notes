@@ -6184,6 +6184,10 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										  ```
 										- This prototype object (`Person.prototype`) becomes the prototype for any new object created by this constructor function
 								- ### A Graphical Overview of Constructor Functions
+									- As soon as we declare a Person constructor function, it creates a prototype in the background
+										- ```js
+										  
+										  ```
 								- ### Creating Getter and Setter Properties
 								- ### Creating Static Properties
 								- ### Creating Static Methods
