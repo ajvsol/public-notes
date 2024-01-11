@@ -6184,6 +6184,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										  ```
 										- This prototype object (`Person.prototype`) becomes the prototype for any new object created by this constructor function
 								- ### A Graphical Overview of Constructor Functions
+								  collapsed:: true
 									- As soon as we declare a Person constructor function, it creates a prototype in the background
 										- ```js
 										  function Person(firstName, lastName, age) {
@@ -6192,7 +6193,43 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 										    this.age 
 										  }
 										  ```
+										- Background
+									- ```js
+									  Person.prototype:
+									  	__proto__: Object // The prototype of Person is by default Object
+									  
+									  Person.prototype.fullName = function () {} // Methods can be added to the Person prototype
+									  ```
+									- Creating a new object using this constructor function
+										- ```js
+										  let jim = new Person('Jim', 'Cooper', 29);
+										  ```
+										- It follows the `this` keywords in the constructor function to add these as new properties to the object
+											- ```js
+											  // jim
+											  __proto__: Person
+											  firstName: 'Jim'
+											  lastName: 'Cooper'
+											  age: 29;
+											  ```
 								- ### Creating Getter and Setter Properties
+									- ```js
+									  function Person(firstName, lastName, age) {
+									    this.firstName = firstName;
+									    this.lastName = lastName;
+									    this.age 
+									  }
+									  Person.prototype.fullName = () => {
+									    
+									  }
+									  ```
+									- Getter properties are basically methods which are accessed like a normal property instead of as a function
+									- Using an object literal:
+										- ```js
+										  let kris = {
+										    
+										  }
+										  ```
 								- ### Creating Static Properties
 								- ### Creating Static Methods
 								- ### Creating Private Properties with Closures
