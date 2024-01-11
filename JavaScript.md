@@ -4349,7 +4349,23 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 				- [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 				- [Method definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions)
 				- [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
+				  id:: 646349af-03ff-479d-9752-1f16dd01262d
+				  This binds an object property to a function that will be called when that property is looked up. It can also be used in ((6377ece3-2e80-40ca-8e8b-f9f734259790))
+					- Examples
+						- ```js
+						  const obj = {
+						    log: ['a', 'b', 'c'],
+						    get latest() {
+						      return this.log[this.log.length - 1];
+						    },
+						  };
+						  
+						  console.log(obj.latest);
+						  // Expected output: "c"
+						  
+						  ```
 				- [setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set)
+				  id:: 646349af-6311-4d14-b0ad-1c303197741b
 				- [Function declarations vs Function expressions](https://www.sitepoint.com/function-expressions-vs-declarations/)
 				  collapsed:: true
 					- Function declarations
@@ -6213,31 +6229,106 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 											  age: 29;
 											  ```
 								- ### Creating Getter and Setter Properties
+								  collapsed:: true
 									- ```js
 									  function Person(firstName, lastName, age) {
 									    this.firstName = firstName;
 									    this.lastName = lastName;
-									    this.age 
+									    this.age = age;
 									  }
-									  Person.prototype.fullName = () => {
-									    
-									  }
+									  Person.prototype.fullName = () => `${this.firstName} ${this.lastName}`;
 									  ```
 									- Getter properties are basically methods which are accessed like a normal property instead of as a function
 									- Using an object literal:
 										- ```js
 										  let kris = {
-										    
+										    firstName: 'Kris',
+										    lastName: 'Cooper',
+										    get fullName() {
+										      return `${this.firstName} ${this.lastName}`;
+										    }
 										  }
 										  ```
+										- ((646349af-03ff-479d-9752-1f16dd01262d)) allows you to use `kris.fullName` to obtain the value. Notice there's no `()` unlike calling a method
+									- Note: you can't use ((646349af-03ff-479d-9752-1f16dd01262d)) inside a function e.g. the Person constructor function
+									- You can use it inside the Person constructor function in one of two ways:
+									  collapsed:: true
+										- Simple way by adding ((646349af-03ff-479d-9752-1f16dd01262d)) and ((646349af-6311-4d14-b0ad-1c303197741b)) properties to the prototype
+											- ```js
+											  function Person(firstName, lastName, age) {
+											    this.firstName = firstName;
+											    this.lastName = lastName;
+											    this.age = age;
+											  }
+											  
+											  Person.prototype = {
+											    get fullName() {
+											      return `${this.firstName} ${this.lastName}`;
+											    },
+											    set fullName(fullName) {
+											      let nameParts = fullName.split(' ');
+											      this.firstName = nameParts[0];
+											      this.lastName = nameParts[1];
+											    }
+											  }
+											  ```
+										- Verbose way using ((63679853-849e-4274-8f95-b5178cb66a6c)). Not used frequently unless you want to set other properties like `writeable`
+											- ```js
+											  function Person(firstName, lastName, age) {
+											    this.firstName = firstName;
+											    this.lastName = lastName;
+											    // Below is equivalent to `this.age = age;``
+											    // This is a lot more verbose 
+											    Object.defineProperty(this, 'age', {
+											      value: age
+											    })
+											  }
+											  ```
+											- How to use with ((646349af-03ff-479d-9752-1f16dd01262d)):
+											  collapsed:: true
+												- ```js
+												  function Person(firstName, lastName, age) {
+												    this.firstName = firstName;
+												    this.lastName = lastName;
+												    this.age = age;
+												    Object.defineProperty(this, 'fullName', {
+												      get: () => `${this.firstName} ${this.lastName}`;
+												    })
+												  }
+												  ```
+												- Allows you to access it like a property e.g:
+												  ```js
+												  let jim = new Person('Jim', 'Cooper', 29);
+												  console.log(jim.fullName);
+												  ```
+											- How to use with ((646349af-6311-4d14-b0ad-1c303197741b)):
+											  collapsed:: true
+												- ((646349af-6311-4d14-b0ad-1c303197741b)) works like ((646349af-03ff-479d-9752-1f16dd01262d)) but in the opposite direction
+												- ```js
+												  function Person(firstName, lastName, age) {
+												    this.firstName = firstName;
+												    this.lastName = lastName;
+												    this.age = age;
+												    Object.defineProperty(this, 'fullName', {
+												      get: () => `${this.firstName} ${this.lastName}`;
+												      // This setter function allows you to change the 'fullName' of someone
+												      set: () => {
+												      	let nameParts = fullName.split(' ');
+												      	this.firstName = nameParts[0];
+												      	this.lastName = nameParts[1];
+												    	}
+												    })
+												  }
+												  ```
+												- This then allows you to use `jim.fullName = 'John Doe';` to easily change the `fullName`
 								- ### Creating Static Properties
+									-
 								- ### Creating Static Methods
 								- ### Creating Private Properties with Closures
 								- ### Creating Private Methods with Closures
 							- ## Inheritance with Constructor Functions and Prototypes
 							- ## Using JavaScript Classes
 							- ## Inheritance with JavaScript Classes
-							  collapsed:: true
 								- ### Inheritance with JavaScript Classes
 								- ### Inheritance with Class Constructors
 								- ### Using the typeof and instanceof Operators
