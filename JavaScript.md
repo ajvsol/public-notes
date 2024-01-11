@@ -5990,7 +5990,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 	  id:: 629d4e63-367b-48ab-a942-170b827a143f
 	  collapsed:: true
 		- Sorted by priority
-			- ((654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd))
+			-
 		- Regularly updated
 			- [ECMAScript® 2023 Language Specification](https://262.ecma-international.org)
 			  id:: 6579fcc0-3004-4cdb-a9d2-59af1450fa77
@@ -6036,6 +6036,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 						- [Object-oriented Concepts in JavaScript](https://app.pluralsight.com/library/courses/javascript-object-oriented-concepts)
 						  id:: 654fdf5c-2455-4dc2-ad96-b60cd6fd1ddd
 						  collapsed:: true
+						  Paused this because OO is never used in JavaScript, and it's complexity makes me think I'm better off learning it in a real OO language
 							- ## Course Introduction
 							  collapsed:: true
 								- JavaScript is a prototypes-based language instead an object-based ones
