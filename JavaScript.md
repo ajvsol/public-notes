@@ -9997,7 +9997,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 								- [puppeteer](https://www.npmjs.com/package/puppeteer)
 								  id:: 637920f1-86d3-42b3-9dcd-7fd99ad01f12
 								  collapsed:: true
-								  Browser automation tool using Chromium DevTools
+								  ((6360e332-3615-46d4-b233-fee7e35bfbbd)) tool using Chromium DevTools
 									- Working example
 										- ```javascript
 										  import puppeteer from 'puppeteer';
