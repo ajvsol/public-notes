@@ -8497,6 +8497,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 						- How to setup a TypeScript project
 						  collapsed:: true
 							- `npm install -g typescript`
+							  id:: 646349ad-a758-4162-98a2-67e78cef36f4
 								- This will install TypeScript compiler globally
 							- `tsc --init`
 								- This creates a tsconfig.json file, which is used to specify the compiler options for your project
@@ -8631,7 +8632,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 						  let a = 'a';
 						  a = 1; // throws: error TS2322: Type '1' is not assignable to type 'string'.
 						  ```
-					- [Packages to install on new Linux installs](((629ccb26-9519-414a-937d-8b616597d270)))
+					- [[Programming software setup]]
 					- `tsconfig.json`
 					- Type annotations for parameters
 					  collapsed:: true
