@@ -9026,7 +9026,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- yarn (Facebook's JavaScript package manager) is often faster than npm
 								- yarn global add typescript
 								  Installing typescript
-								- In VS Code terminal run `tsc --init` to create a `tsconfig.json` file
+								- In ((63209272-1088-4824-a762-4ac7ded04b0a)) terminal run `tsc --init` to create a `tsconfig.json` file
 									- change `target` to different than es5?
 										- `tsc --target es2015`
 										- Add to `compilerOptions` bit
