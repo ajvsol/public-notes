@@ -10384,6 +10384,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							- [https://www.meteor.com/](https://www.meteor.com/)
 						- There are many more to explore, so I'll drop a few real quick: Nest.js, Hapi.js, Socket.io, Mean.js, Total.js, Derby.js & Keystone.js.
 					- [Learning Resources]
+						- https://roadmap.sh/questions/nodejs
 						- ((634d2517-30eb-4bbf-b214-abae3ac1b92d))
 				- [Deno](https://deno.land/)
 				  id:: 63baa386-9946-4219-9c0b-e727cadf287d
@@ -10393,7 +10394,7 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 					- https://news.ycombinator.com/item?id=26620116
 					- https://github.com/denoland
 					- Background
-						- Made by creator of Node.js
+						- Made by creator of ((629ccb26-3115-4d41-b4db-a686fe51a4a2))
 						- Also built on V8 like Node
 					- [Deno in 100 Seconds - YouTube](https://youtu.be/F0G9lZ7gecE)
 						- Deno is aJavaScript runtime, similar to Node.js. Use it to develop secure server-side apps with built-in TypeScript support, ES modules, and promise-based APIs.
