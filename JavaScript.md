@@ -2390,15 +2390,13 @@
 										  let word = 'hello'
 										  numWordPairs.push({ [property] : word })
 										  console.log(`numWordPairs:`, numWordPairs)
-										  return numWordPairs
+										  return JSON.stringify(numWordPairs)
 										  ```
-											- {{evalparent}}
+											-
 										- ```javascript
 										  let importantThings = [];
-										  let newItemText = 'test';
-										  let newItemPriority = 1;
 										  
-										  function addItem() {
+										  function addItem(newItemText, newItemPriority) {
 										      importantThings.push({
 										        text: newItemText, 
 										        priority: newItemPriority
@@ -2406,8 +2404,13 @@
 										    
 										    return importantThings
 										  }
+										  
+										  addItem('hello', 1);
 										  ```
 											- {{evalparent}}
+										- ```javascript
+										  ```
+											-
 								- Related:
 									- ((63679853-dcb7-4c52-a93f-2ba70da4b082))
 									- ((634bc0c2-0b68-4da7-83b6-5abefa297cac)) : ((636d0fc5-9fbf-432f-8246-1f5884e5a5f6))
@@ -3246,6 +3249,11 @@
 								- Meta
 								- Examples
 									- ```js
+									  let myObject = { key1: 'value1', key2: 'value2', key3: 'value3' };
+									  
+									  let jsonString = JSON.stringify(myObject);
+									  
+									  console.log(jsonString);
 									  ```
 									- Can ensure that JSON file keeps indentation so it remains readable
 									  id:: 63528e53-2831-43a9-8463-6fb0afb8cbf0
