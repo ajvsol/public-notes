@@ -2405,9 +2405,10 @@
 									  id:: 646349b1-7599-465f-978d-a5b10b88a004
 										- ```javascript
 										  const numWordPairs = [];
-										  let property = 3;
-										  let word = 'hello'
-										  numWordPairs.push({ [property] : word })
+										  let key = 'hello'
+										  let value = 3;
+										  numWordPairs.push({ [key] : value })
+										  
 										  console.log(`numWordPairs:`, numWordPairs)
 										  return JSON.stringify(numWordPairs)
 										  ```
@@ -2420,12 +2421,13 @@
 										      importantThings.push({
 										        text: newItemText, 
 										        priority: newItemPriority
-										      });
-										    
-										    return importantThings
+										      })
 										  }
+										  addItem('hello', 1)
+										  addItem('world', 2);
 										  
-										  addItem('hello', 1);
+										  console.log(importantThings)
+										  return JSON.stringify(importantThings)
 										  ```
 											- {{evalparent}}
 								- Related:
