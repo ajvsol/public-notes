@@ -2399,11 +2399,11 @@
 												  ```
 													- {{evalparent}}
 												- ```javascript
-												  const numWordPairs = {'hello': 3};
+												  let numWordPairs = {'hello': 3};
 												  let property = 3;
 												  let word = 'hello'
 												  
-												  return numWordPairs
+												  return typeof numWordPairs
 												  ```
 													- {{evalparent}}
 										- ```javascript
@@ -2417,11 +2417,10 @@
 										        priority: newItemPriority
 										      });
 										    
-										    return typeof importantThings
+										    return importantThings
 										  }
 										  ```
 											- {{evalparent}}
-											- {{togglemsg}}
 								- Related:
 									- ((63679853-dcb7-4c52-a93f-2ba70da4b082))
 									- ((634bc0c2-0b68-4da7-83b6-5abefa297cac)) : ((636d0fc5-9fbf-432f-8246-1f5884e5a5f6))
