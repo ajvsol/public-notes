@@ -416,7 +416,7 @@
 					  id:: 63f33e7c-e71b-4d14-b352-7b9fe2d600b1
 					  collapsed:: true
 						- Meta
-							- ((63679853-975f-4456-b131-53731a001078)) : ((63910f56-dc95-4d5c-a222-f623d8081b4e))
+							- ((63679853-975f-4456-b131-53731a001078)) : ((646349b1-7599-465f-978d-a5b10b88a004))
 							- Dot notation vs Bracket notation
 							  id:: 63f8fedc-7c7f-4902-abd1-b925c86c93ce
 							  collapsed:: true
@@ -428,7 +428,7 @@
 									  sentPacks[i][packSizes[i]]
 									  ```
 								- Related:
-									- ((63679853-975f-4456-b131-53731a001078)) : ((63910f56-dc95-4d5c-a222-f623d8081b4e))
+									- ((63679853-975f-4456-b131-53731a001078)) : ((646349b1-7599-465f-978d-a5b10b88a004))
 									- [Introducing JavaScript objects - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 							- ((507dc5b1-e753-4ada-9eee-5acd64ec1f7d)) : ((6408c102-0f97-4a12-820b-ce707252c952))
 						- Properties
@@ -2380,11 +2380,30 @@
 							  id:: 63679853-975f-4456-b131-53731a001078
 							  collapsed:: true
 							  Adds to end of array | Opposite side to ((63679853-f388-4ef7-98f4-ccfcebf4cd89)) | Inverse of ((63679853-27fd-40a4-bd44-b836c61f4394))
-								- Example
+								- Syntax
+									- ```js
+									  push()
+									  push(element1)
+									  push(element1, element2)
+									  push(element1, element2, /* …, */ elementN)
+									  ```
+								- Examples
+									- ```js
+									  const animals = ['pigs', 'goats', 'sheep'];
+									  
+									  const count = animals.push('cows');
+									  console.log(count);
+									  // Expected output: 4
+									  console.log(animals);
+									  // Expected output: Array ["pigs", "goats", "sheep", "cows"]
+									  
+									  animals.push('chickens', 'cats', 'dogs');
+									  console.log(animals);
+									  // Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+									  ```
 									- Adding an object into an array
 									  id:: 646349b1-7599-465f-978d-a5b10b88a004
-										- id:: 63910f56-dc95-4d5c-a222-f623d8081b4e
-										  ```javascript
+										- ```javascript
 										  const numWordPairs = [];
 										  let property = 3;
 										  let word = 'hello'
@@ -2392,7 +2411,8 @@
 										  console.log(`numWordPairs:`, numWordPairs)
 										  return JSON.stringify(numWordPairs)
 										  ```
-											-
+											- {{evalparent}}
+											  id:: 63910f56-dc95-4d5c-a222-f623d8081b4e
 										- ```javascript
 										  let importantThings = [];
 										  
@@ -2408,9 +2428,6 @@
 										  addItem('hello', 1);
 										  ```
 											- {{evalparent}}
-										- ```javascript
-										  ```
-											-
 								- Related:
 									- ((63679853-dcb7-4c52-a93f-2ba70da4b082))
 									- ((634bc0c2-0b68-4da7-83b6-5abefa297cac)) : ((636d0fc5-9fbf-432f-8246-1f5884e5a5f6))
