@@ -186,6 +186,7 @@
 				- ((63679853-c651-4513-ae6a-b293b5290bd8))
 				- ((63a9bb68-a490-44d5-a4db-57db695b5146))
 				- ((63470fd1-ff2c-4b9a-b116-136a41a52b94)) : ((64084faa-6068-42d4-a193-2263c4b4d039))
+				- ((63e40d8b-b5b5-4124-a386-e28fb962d7e1))
 			- ((636d1397-3729-49ea-bdd0-7f5745334aa8))
 			- ((2e08cf60-c991-45bb-b23d-a34699a9d300))
 			- ((634d55c2-c0e5-4126-b819-8be4151dbd5f)) / ((63642a2b-028e-460f-aed5-9d6bf0113e1e))
@@ -2392,20 +2393,6 @@
 										  return numWordPairs
 										  ```
 											- {{evalparent}}
-											- Random `{{evalparent}}` tests:
-												- ```javascript
-												  let test = 1
-												  return test
-												  ```
-													- {{evalparent}}
-												- ```javascript
-												  let numWordPairs = {'hello': 3};
-												  let property = 3;
-												  let word = 'hello'
-												  
-												  return typeof numWordPairs
-												  ```
-													- {{evalparent}}
 										- ```javascript
 										  let importantThings = [];
 										  let newItemText = 'test';
