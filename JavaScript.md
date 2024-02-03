@@ -195,22 +195,7 @@
 			  collapsed:: true
 				- By topic
 				  id:: 6343d976-3539-4362-a57f-0b267a7fe4fa
-					- `push()`
-						- Adding an object into an array
-						  collapsed:: true
-							- ```javascript
-							  let importantThings = [];
-							  
-							  function addItem() {
-							      let newItemText = 'test';
-							      let newItemPriority = 1;
-							  
-							      importantThings.push({
-							        text: newItemText, 
-							        priority: newItemPriority
-							      });
-							  }
-							  ```
+					- ((63679853-975f-4456-b131-53731a001078))
 					- `removeChild()`
 					  collapsed:: true
 						- How to remove an element without specifying it's parent element
@@ -604,7 +589,7 @@
 							  collapsed:: true
 							  ((640866c5-5fd1-4955-b2c3-4393598adecc)) | Intended to replace ((646349b0-11fb-44f1-a715-ee5bd59d8f1c))
 								- It returns `true` if the specified object has the indicated property as its *own* property.  If the property is inherited, or does not exist, the method returns `false`.
-id:: 640866c5-5fd1-4955-b2c3-4393598adecc
+								  id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 								- Syntax
 									- ```js
 									  Object.hasOwn(obj, prop)
@@ -2395,16 +2380,48 @@ id:: 640866c5-5fd1-4955-b2c3-4393598adecc
 							  collapsed:: true
 							  Adds to end of array | Opposite side to ((63679853-f388-4ef7-98f4-ccfcebf4cd89)) | Inverse of ((63679853-27fd-40a4-bd44-b836c61f4394))
 								- Example
-									- How to add an object 
-									  id:: 63910f56-dc95-4d5c-a222-f623d8081b4e
-									  ```javascript
-									  const numWordPairs = [];
-									  let property = 3;
-									  let word = 'hello'
-									  numWordPairs.push({ [property] : word })
-									  console.log(`numWordPairs:`, numWordPairs)
-									  ```
-										-
+									- Adding an object into an array
+									  id:: 646349b1-7599-465f-978d-a5b10b88a004
+										- id:: 63910f56-dc95-4d5c-a222-f623d8081b4e
+										  ```javascript
+										  const numWordPairs = [];
+										  let property = 3;
+										  let word = 'hello'
+										  numWordPairs.push({ [property] : word })
+										  console.log(`numWordPairs:`, numWordPairs)
+										  return numWordPairs
+										  ```
+											- {{evalparent}}
+											- Random `{{evalparent}}` tests:
+												- ```javascript
+												  let test = 1
+												  return test
+												  ```
+													- {{evalparent}}
+												- ```javascript
+												  const numWordPairs = {'hello': 3};
+												  let property = 3;
+												  let word = 'hello'
+												  
+												  return numWordPairs
+												  ```
+													- {{evalparent}}
+										- ```javascript
+										  let importantThings = [];
+										  let newItemText = 'test';
+										  let newItemPriority = 1;
+										  
+										  function addItem() {
+										      importantThings.push({
+										        text: newItemText, 
+										        priority: newItemPriority
+										      });
+										    
+										    return typeof importantThings
+										  }
+										  ```
+											- {{evalparent}}
+											- {{togglemsg}}
 								- Related:
 									- ((63679853-dcb7-4c52-a93f-2ba70da4b082))
 									- ((634bc0c2-0b68-4da7-83b6-5abefa297cac)) : ((636d0fc5-9fbf-432f-8246-1f5884e5a5f6))
