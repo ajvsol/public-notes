@@ -10763,6 +10763,14 @@
 	- See [JavaScript-based games](((629ccb26-efd3-4584-aaa7-8c8bcc02034e)))
 	- See dApps
 		- [Crypto gaming Dapps](((629ccb25-31b7-4b77-8db8-c84628ecc4c2)))
+	- Scripting
+	  id:: 65cd3f2d-1087-4801-a05d-2065925ef994
+	  collapsed:: true
+		- https://github.com/google/zx
+		- https://github.com/dsherret/dax
+			- https://david.deno.dev/posts/dax-node-js/
+		- https://bun.sh/blog/the-bun-shell
+		- Related: [[Programming]] : ((65cd3f7c-24c9-4260-b67c-2fe5f005e6a2))
 - [Learning Resources]
   collapsed:: true
 	- **FOSS**
