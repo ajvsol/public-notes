@@ -10519,7 +10519,7 @@
 	  id:: 63904f3c-e689-458b-a036-672778a7e77c
 	  collapsed:: true
 	  AKA Toolchain
-		- Types
+		- Toolchain
 			- All-in-one
 			  collapsed:: true
 				- *Webpack-based*
@@ -10738,6 +10738,11 @@
 				- You may prefer to create and configure your own toolchain. A toolchain typically consists of:
 				- A **minifier** makes your code more compact so that it loads faster. Popular minifiers: [Terser](https://terser.org/), [swc.](https://swc.rs/)
 				- A **server** handles server requests so that you can render components to HTML. Popular servers: [Express.](https://expressjs.com/)
+		- Misc utility
+			- [JS Benchmark](https://jsbenchmark.com/)
+			  more easily compare the performance of JS snippets and packages
+				- https://github.com/jsbenchmark
+				- Related: https://jsperf.app/
 		- Related: [[Programming]] : ((6396fb64-ade6-48f7-a7f0-10b006cab400))
 - _Applications/Usecases_
 	- ((634ae34a-1409-46ff-ace7-6fac429027b0))
