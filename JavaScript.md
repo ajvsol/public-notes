@@ -10740,6 +10740,7 @@
 				- A **server** handles server requests so that you can render components to HTML. Popular servers: [Express.](https://expressjs.com/)
 		- Misc utility
 			- [JS Benchmark](https://jsbenchmark.com/)
+			  collapsed:: true
 			  more easily compare the performance of JS snippets and packages
 				- https://github.com/jsbenchmark
 				- Related: https://jsperf.app/
