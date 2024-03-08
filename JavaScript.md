@@ -10843,13 +10843,12 @@
 				- Types & Grammar
 				- Assync & Performance
 				- ES6 & Beyond
-				- You Don't Know JavaScript Yet series by Kyle Simpson
-				  id:: 62a0d2df-fa7f-40a6-81ef-928c8dd743d8
-					- 1) Get Started
-						- ![You Dont Know JS Yet Get Started (Kyle Simpson).pdf](../assets/You_Dont_Know_JS_Yet_Get_Started_(Kyle_Simpson)_1654707207731_0.pdf)
-					- 2) Scopes & Closures
-						- ![You Dont Know JS Yet Scope Closures (Kyle Simpson).pdf](../assets/You_Dont_Know_JS_Yet_Scope_Closures_(Kyle_Simpson)_1654706968521_0.pdf)
-					- Upcoming drafts being [completed here](https://github.com/getify/You-Dont-Know-JS), already following the Kickstarter RSS for updates
+			- You Don't Know JavaScript Yet series by Kyle Simpson (2nd edition)
+			  id:: 62a0d2df-fa7f-40a6-81ef-928c8dd743d8
+			  See Calibre
+				- 1) Get Started
+				- 2) Scopes & Closures
+				- Upcoming drafts being [completed here](https://github.com/getify/You-Dont-Know-JS), already following the Kickstarter RSS for updates
 			- Eloquent Javascript by Marijn Haverbeke [ATHENAEUM]
 			  collapsed:: true
 				- http://eloquentjavascript.net/
