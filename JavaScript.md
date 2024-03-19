@@ -10872,12 +10872,19 @@
 			- _Intermediate/Advanced_
 				- [Leetcode](https://leetcode.com/)
 				  id:: 629ccb26-6ecf-41ff-b479-f404b7eddbe0
-					- Comparison vs  [[CodeWars - JavaScript]]
-						- Pros for Leetcode
-							- Leetcode generally has questions more geared towards what companies are actually asking, so it's better for interview prep
-						- Pros for CodeWars
-							- Gamified
-							- Lots of easier questions available, great for beginners
+					- Pros/Cons
+						- Pros
+							-
+						- Cons
+							-
+						- Unclear
+						- Comparisons
+							- ((629ccb26-6ecf-41ff-b479-f404b7eddbe0)) vs [[CodeWars - JavaScript]]
+								- For ((629ccb26-6ecf-41ff-b479-f404b7eddbe0))
+									- Leetcode generally has questions more geared towards what companies are actually asking, so it's better for interview prep
+								- For  [[CodeWars - JavaScript]]
+									- Gamified
+									- Lots of easier questions available, great for beginners
 				- https://www.hackerrank.com/
 				- https://www.topcoder.com/challenges/
 				- https://www.codechef.com/
