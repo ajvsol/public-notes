@@ -9476,8 +9476,7 @@
 										  collapsed:: true
 											- `curl -fsSL https://fnm.vercel.app/install | bash`
 											- `sudo nano ~/.bashrc`
-											- `source ~/.bashrc`
-											  Reload bash
+											- ((644c0b9b-cdd7-48ca-900d-1ae586db9309))
 											- `fnm list-remote`
 											  List available versions to install
 											- `fnm install 18.1.0`
