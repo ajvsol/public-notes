@@ -416,6 +416,11 @@
 					  id:: 63f33e7c-e71b-4d14-b352-7b9fe2d600b1
 					  collapsed:: true
 						- Meta
+							- ((66044236-7c13-489c-90d8-c596c760179a))
+							- Features
+								- Collections of key-value pairs
+								- Mutable, meaning their state can be updated
+								- Can store various data types e.g. strings, numbers, arrays, functions
 							- ((63679853-975f-4456-b131-53731a001078)) : ((646349b1-7599-465f-978d-a5b10b88a004))
 							- Dot notation vs Bracket notation
 							  id:: 63f8fedc-7c7f-4902-abd1-b925c86c93ce
