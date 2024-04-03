@@ -10734,6 +10734,13 @@
 					  https://prettier.io/docs/en/integrating-with-linters.html
 				- [Prettier](https://prettier.io)
 				  id:: 63dc1965-e60c-418a-b045-991a2def0768
+					- Metadata
+						- Name: Prettier - Code formatter
+						  Id: esbenp.prettier-vscode
+						  Description: Code formatter using prettier
+						  Version: 9.10.4
+						  Publisher: Prettier
+						  VS Marketplace Link: [Prettier - Code formatter - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 					- [VSCode extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 					  id:: 63dc1b89-0a11-40e1-9db2-3380b2da19e8
 					- Documentation
@@ -10750,8 +10757,31 @@
 								- Create a `.prettierignore` file (similar to `.gitignore`) to prevent `node_modules/` from being formatted if using `npx prettier --write .`
 								- Create `.prettierrc` as a custom Prettier config file
 									- e.g.
-									  ![image.png](../assets/image_1675372051878_0.png)
-								-
+									  ```json
+									  {
+									    "semi": true, 
+									    "overrides": [ 
+									      {
+									        "files": "legacy/*", 
+									        "options": { 
+									          "semi": false
+									        }
+									    ]
+									  }
+									  ```
+						- Disable in a workspace
+						  collapsed:: true
+							- `touch .prettierignore`
+							  Create a `.prettierignore` file
+							- `nano .prettierignore`
+							  Update the file
+								- ```
+								  # This will ignore all files
+								  *
+								  
+								  # This will ignore a specific file
+								  src/index.js
+								  ```
 			- Linter
 			  collapsed:: true
 				- A **linter** checks your code for common mistakes.
