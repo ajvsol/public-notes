@@ -30,7 +30,7 @@
 	  id:: 635593b2-818d-4d6c-a00c-cfa7f4cd850a
 	  collapsed:: true
 		- *Categories*
-			- [[JavaScript]] / ((629ccb26-1eab-4686-a7b8-f9433a871440))
+			- [[JavaScript]] / ((629ccb26-1eab-4686-a7b8-f9433a871440)) cheatsheet
 			  collapsed:: true
 				- **To ingrain**
 				  id:: 6408d44e-1000-4594-ab4b-8e5a18543479
@@ -165,6 +165,7 @@
 					- ((63470fd1-ff2c-4b9a-b116-136a41a52b94)) : ((63f29a46-c5f9-4702-9615-3e231e17ffd2))
 					- ((6363f60d-5a9d-48a8-a1d9-996e21bd4858))
 					  id:: 634bc0c2-1dad-4964-ae4a-39d0b670b534
+			- ((629ccb26-3115-4d41-b4db-a686fe51a4a2)) : ((660d69d8-2984-48b1-8ddd-19e4605d1188))
 			- ((629ccb26-62cc-426a-9616-4d8969f32580)) : ((6408d4c2-ff21-45ef-af97-e8bd60dbbcfb))
 			  collapsed:: true
 				- {{embed ((6408d4c2-ff21-45ef-af97-e8bd60dbbcfb))}}
@@ -8663,6 +8664,11 @@
 					- Syntax
 						- For example: `var x = "hello"` in TypeScript is the same as `var x : string = "hello"`
 					- SOPs
+						- Commands
+							- `tsc -v`
+							  AKA `tsc --version` | Print the current version of TypeScript
+							- `tsc -w`
+							  AKA `tsc --watch` | Watch input file
 						- How to setup a TypeScript project
 						  collapsed:: true
 							- `npm install -g typescript`
@@ -8865,6 +8871,7 @@
 							- Defining Types
 								- How to use an interface declaration to an object
 								  id:: 63904f3c-71bc-480b-8f11-20935e46a3a8
+								  collapsed:: true
 									- Example object
 									  ```javascript
 									  const user = {
@@ -8888,6 +8895,7 @@
 									  ```
 									- Related: ((63904f3c-ab98-4640-9ba6-5c42f4d1961c))
 								- You can use an `interface` declaration with classes
+								  collapsed:: true
 									- ```typescript
 									  interface User {
 									    name: string;
@@ -8909,6 +8917,7 @@
 									- Related: ((6377ece3-2e80-40ca-8e8b-f9f734259790))
 								- Usage with functions
 								  id:: 63904f3c-a301-4b67-ab59-38411595949c
+								  collapsed:: true
 									- You can use `interfaces` to annotate parameters
 										- ```typescript
 										  function deleteUser(user: User) {
@@ -8943,6 +8952,7 @@
 										  ```
 								- Interfaces vs Type aliases
 								  id:: 63904f3c-ab98-4640-9ba6-5c42f4d1961c
+								  collapsed:: true
 									- there are two syntaxes for building types: Interfaces and Type (aliases)
 									- You should prefer `interface`. Use `type` when you need specific features.
 									- ```typescript
@@ -9032,6 +9042,7 @@
 							- Composing Types
 								- You can create complex types by combining simple ones. There are two popular ways to do so: with unions, and with generics.
 								- Unions
+								  collapsed:: true
 									- You can declare that a type could be one of many types
 										- Examples
 											- Mouseover `MyBoo1` and it'll be classed as `boolean`
@@ -9065,6 +9076,7 @@
 											  }
 											  ```
 								- Generics
+								  collapsed:: true
 									- Generics provide variables to types
 									- A common example is an array. An array without generics could contain anything. An array with generics can describe the values that the array contains.
 										- ```typescript
@@ -9092,6 +9104,7 @@
 							- Structural Type System
 								- One of TypeScript’s core principles is that type checking focuses on the shape that values have. This is sometimes called “duck typing” or “structural typing”.
 								- In a structural type system, if two objects have the same shape, they are considered to be of the same type.
+								  collapsed:: true
 									- Example: The point variable is never declared to be a Point type. However, TypeScript compares the shape of point to the shape of Point in the type-check. They have the same shape, so the code passes.
 									  ```typescript
 									  interface Point {
@@ -9119,20 +9132,21 @@
 									  logPoint(color); // error, it's missing the properties from type 'Point': x, y
 									  ```
 								- There is no difference between how classes and objects conform to shapes:
-								  ```typescript
-								  class VirtualPoint {
-								    x: number;
-								    y: number;
-								   
-								    constructor(x: number, y: number) {
-								      this.x = x;
-								      this.y = y;
-								    }
-								  }
-								   
-								  const newVPoint = new VirtualPoint(13, 56);
-								  logPoint(newVPoint); // logs "13, 56"
-								  ```
+								  collapsed:: true
+									- ```typescript
+									  class VirtualPoint {
+									    x: number;
+									    y: number;
+									   
+									    constructor(x: number, y: number) {
+									      this.x = x;
+									      this.y = y;
+									    }
+									  }
+									   
+									  const newVPoint = new VirtualPoint(13, 56);
+									  logPoint(newVPoint); // logs "13, 56"
+									  ```
 							- [TypeScript: Documentation - The Basics](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
 						- [TypeScript Roadmap: Learn to become a TypeScript developer](https://roadmap.sh/typescript)
 						  id:: 63fdd825-6038-4479-b887-214407b6f379
@@ -9449,8 +9463,11 @@
 							  collapsed:: true
 								- Basic install
 									- `sudo apt install nodejs`
+									- `node -v`
+									  Check Node version
 								- [Install via a Node version manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-nodejs-and-npm)
 								  id:: 64024e3e-17bd-46f7-b70d-41a02bf20981
+								  collapsed:: true
 									- Install `nvm`
 										- Note: don't have to uninstall npm to use this
 										- ```bash
@@ -9493,6 +9510,7 @@
 										- May also need to do `chown boss .fnm`
 								- ...
 								- https://github.com/nodesource/distributions/blob/master/README.md#using-ubuntu
+								-
 							- Basics
 							  collapsed:: true
 								- To run code, on the terminal run `node main.js` assuming `main.js` is the JS file in the directory you're in
@@ -9502,8 +9520,8 @@
 							  id:: 63679852-8d12-4f83-994e-52e0dcbd642f
 							  collapsed:: true
 								- ((634fd63d-dd88-4a10-a762-9bc0fa467de6))
+								  collapsed:: true
 									- {{embed ((634fd63d-dd88-4a10-a762-9bc0fa467de6))}}
-								-
 								- Either
 									- `npm init`
 									- `git clone`
@@ -9535,7 +9553,6 @@
 										- `require` will load our environment variables for us
 								- `node run dev` to run the dev script
 								- *If project uses a database*
-								  collapsed:: true
 									- `npm i pg`
 									- Declare database URL via `.env`
 									  collapsed:: true
@@ -9544,16 +9561,19 @@
 										  PORT = 3000
 										  ```
 									- `/db/index.js`
+									  collapsed:: true
 										- Create and export pool
 										- e.g.
 										  ```javascript
 										  const databaseURL = process.env.DATABASE_URL
 										  ```
 									- `/models/models.js`
+									  collapsed:: true
 										- Import the database connection pool
 										- Create model functions
 										- Export functions
 									- `/routes/routes.js`
+									  collapsed:: true
 										- Import express
 										- Import models
 										- Export as express router
@@ -9602,6 +9622,10 @@
 											  ```
 								- Related: ((634d2517-30eb-4bbf-b214-abae3ac1b92d))
 							- ((63890cb6-2a0e-4039-9d9d-0106f11ccbf6))
+							- Cheatsheet
+							  id:: 660d69d8-2984-48b1-8ddd-19e4605d1188
+							  collapsed:: true
+								-
 						- [Official docs](https://nodejs.org/api/)
 							- https://github.com/nodejs/node
 							- `fs/promises`
