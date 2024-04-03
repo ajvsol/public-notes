@@ -10770,6 +10770,7 @@
 									  }
 									  ```
 						- Disable in a workspace
+						  id:: 660d7476-50d4-4ec0-ad40-0d0cbc7dcfb9
 						  collapsed:: true
 							- `touch .prettierignore`
 							  Create a `.prettierignore` file
