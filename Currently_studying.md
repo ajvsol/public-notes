@@ -1791,7 +1791,7 @@
 					- {{youtube-timestamp 47736}} Lecture 6 - Python
 					- {{youtube-timestamp 56365}} Lecture 7 - SQL
 					- {{youtube-timestamp 64855}} Lecture 8 - HTML, CSS, JavaScript
-					- {{youtube-timestamp 73418}} Lecture 9 - Flask
+					- {{youtube-timestamp 73418}} Lecture 9 - ((646349df-3dfb-4073-baba-acbe4bb9506c))
 					- {{youtube-timestamp 81541}} Lecture 10 - Emoji
 					- {{youtube-timestamp 86570}} Cybersecurity
 				- Slides, source code, and more at [CS50: Computer Science Courses and Programs from Harvard | edX](https://cs50.harvard.edu)

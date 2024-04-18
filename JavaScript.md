@@ -4331,7 +4331,7 @@
 						  ```
 					- [Arrow functions](https://www.sitepoint.com/arrow-functions-javascript/)
 					  collapsed:: true
-					-
+					- Related: [[C#]] : ((661bb3c7-5ad8-4244-b3fe-96209e36c02e))
 				- [Default parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 				  id:: 63a9bb68-a490-44d5-a4db-57db695b5146
 				  collapsed:: true
@@ -10680,7 +10680,22 @@
 					- ((6360f2aa-b95c-4675-b0c4-493f0b7f8ae5))
 					- ((6374d432-af66-4f00-9de3-39fc99e03c51))
 					- ((636275a3-1d1a-4c08-84ea-128a21fd3907))
-				- Related: ((635fa5a5-76d1-4894-a44b-c3fdcfd9cd48))
+				- Categories
+					- ## Unit Tests
+					- ## Integration Tests
+					- ## End-to-End Tests
+						- Robot Framework
+						  Automation framework
+							- Works with Python, .NET and Java
+							- Parallel test support can be achieved by using Selenium Grid
+						- TestProject Framework
+						  Automation framework
+							- Supports Pytest and Unittest frameworks
+							- Requires support for parallel testing as it only runs one test at a time (slow)
+							-
+				- Related:
+					- ((646349f6-d814-4277-ae6d-8a2d143c7e09))
+					- ((635fa5a5-76d1-4894-a44b-c3fdcfd9cd48))
 			- Validation
 			  collapsed:: true
 				- [Zod](https://zod.dev/)
